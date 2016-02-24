@@ -1,0 +1,16 @@
+{
+"foodsBlacklist": [
+        {
+            "name": "Quadrum:carrotSoup"
+        },
+        {
+            "name": "Quadrum:vegieSoup"
+        },
+        {
+            "name": "Quadrum:meatyStew"
+        },
+        {
+            "name": "Quadrum:meatyStewXL"
+        }
+    ]
+}

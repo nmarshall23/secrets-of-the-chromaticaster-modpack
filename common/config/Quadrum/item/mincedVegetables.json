@@ -1,0 +1,10 @@
+{
+    "name": "mincedVegetables",
+    "texture": "minced-vegies",
+    "type": "item",
+    "lore": [
+        "Use this in the pan to",
+	"make vegetable soup"
+    ],
+    "max-stack-size": 1
+}

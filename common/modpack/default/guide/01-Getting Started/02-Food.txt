@@ -1,0 +1,10 @@
+Eating food gives a 'Well Fed' effect that boosts health regen
+
+The larger the meal, the longer the effect will last
+
+Morsal (food value 2)
+Snack (food value 3)
+Light meal (food value 4) 
+Meal (food value 7) 
+Large meal (food value 10) 
+Feast (food value 14)

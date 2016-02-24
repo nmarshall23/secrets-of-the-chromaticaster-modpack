@@ -1,0 +1,33 @@
+{
+  "_name": "GeoStrata:geostrata_block_vent",
+  "stats": {
+    "opacity": 255,
+    "brightness": 0,
+    "hardness": 1.5,
+    "resistance": 90.0,
+    "sound": "stone",
+    "slipperiness": 0.6,
+    "tool_data": []
+  },
+  "break_speed": [],
+  "drops": [
+      {
+	"function": "!if_silk_touch",
+	"functions": [
+	  {
+        	"function": "add",
+        	"id": "minecraft:coal",
+		"count": "0~2"
+      	  }
+	]
+      }
+
+   ],
+  "harvest": [],
+  "xp": [
+      {
+        "function": "set",
+	"value": "0~2"
+      }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "_name": "ChromatiCraft:chromaticraft_block_tilecrystalnoncube",
+  "stats": {
+    "opacity": 0,
+    "brightness": 15,
+    "resistance": 18000.0,
+    "sound": "<unknown>",
+    "slipperiness": 0.6,
+    "tool_data": []
+  },
+  "break_speed": [],
+  "drops": [],
+  "harvest": [],
+  "xp": []
+}

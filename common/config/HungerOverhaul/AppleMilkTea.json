@@ -1,0 +1,70 @@
+{
+    "foods": [
+        {
+            "name": "DCsAppleMilk:defeatedcrow.bowlBlock",
+            "meta": 0,
+            "hunger": 3,
+            "saturationModifier": 0.25
+        },
+        {
+            "name": "DCsAppleMilk:defeatedcrow.bowlBlock",
+            "meta": 1,
+            "hunger": 2,
+            "saturationModifier": 1.0
+        },
+        {
+            "name": "DCsAppleMilk:defeatedcrow.bowlBlock",
+            "meta": 2,
+            "hunger": 2,
+            "saturationModifier": 1.5
+        },
+        {
+            "name": "DCsAppleMilk:defeatedcrow.bowlBlock",
+            "meta": 3,
+            "hunger": 3,
+            "saturationModifier": 1.5
+        },
+        {
+            "name": "DCsAppleMilk:defeatedcrow.bowlBlock",
+            "meta": 4,
+            "hunger": 3,
+            "saturationModifier": 0.5
+        },
+        {
+            "name": "DCsAppleMilk:defeatedcrow.bowlBlock",
+            "meta": 5,
+            "hunger": 3,
+            "saturationModifier": 0.5
+        },
+        {
+            "name": "DCsAppleMilk:defeatedcrow.bowlBlock",
+            "meta": 6,
+            "hunger": 3,
+            "saturationModifier": 0.5
+        },
+        {
+            "name": "DCsAppleMilk:defeatedcrow.bowlBlock",
+            "meta": 7,
+            "hunger": 3,
+            "saturationModifier": 0.5
+        },
+        {
+            "name": "DCsAppleMilk:defeatedcrow.bowlBlock",
+            "meta": 8,
+            "hunger": 3,
+            "saturationModifier": 0.5
+        },
+        {
+            "name": "DCsAppleMilk:defeatedcrow.bowlBlock",
+            "meta": 9,
+            "hunger": 3,
+            "saturationModifier": 0.5
+        },
+        {
+            "name": "DCsAppleMilk:defeatedcrow.bowlBlock",
+            "meta": 15,
+            "hunger": 3,
+            "saturationModifier": 0.5
+        }
+    ]
+}

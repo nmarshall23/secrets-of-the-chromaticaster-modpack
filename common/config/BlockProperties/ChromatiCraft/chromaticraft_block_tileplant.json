@@ -1,0 +1,15 @@
+{
+  "_name": "ChromatiCraft:chromaticraft_block_tileplant",
+  "stats": {
+    "opacity": 0,
+    "brightness": 7,
+    "resistance": 0.5,
+    "sound": "grass",
+    "slipperiness": 0.6,
+    "tool_data": []
+  },
+  "break_speed": [],
+  "drops": [],
+  "harvest": [],
+  "xp": []
+}

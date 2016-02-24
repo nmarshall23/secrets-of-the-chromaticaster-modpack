@@ -1,0 +1,67 @@
+# In this file, modpack creators can define config options that should NOT get overridden by modpack updates.
+# The values for these options will be restored to what they were before the pack update.
+# The format is the following: FILE/CATEGORY/TYPE:NAME (the TYPE: is optional)
+# If the config file is inside a sub-directory, encase the path inside square brackets, ex. [eirairc/shared.cfg]
+# Categories and sub-categories are split by periods, ex. general.subcategory
+# The type is a single-character just like Forge's configuration type prefix: B, I, S, D; for lists, append <> to the type character
+# Full Example #1: trashslot.cfg/general.I:trashSlotX
+# Full Example #2: [eirairc/client.cfg]/notifications.D:notificationSoundVolume
+# Also see the localconfig-example.txt for a collection of presets for commonly used mods.
+
+# AgriCraft
+[agricraft/Configuration.cfg]/agricraft/"Enable NEI"
+[agricraft/Configuration.cfg]/agricraft/"Render journal in analyzer"
+
+# Applied Energistics 2
+[AppliedEnergistics2/AppliedEnergistics2.cfg]/client/*
+[AppliedEnergistics2/VersionChecker.cfg]/client/*
+[AppliedEnergistics2/VersionChecker.cfg]/client/*
+
+
+# BiblioCraft
+BiblioCraft.cfg/defaultbigbooktextscale/general
+BiblioCraft.cfg/"force fast render"/*
+BiblioCraft.cfg/general/RenderTextShadow
+BiblioCraft.cfg/general/UseTextureSheets
+BiblioCraft.cfg/"text colors"/*
+
+# Chisel
+Chisel.cfg/client/*
+
+# COFHCore
+[cofh/core/client.cfg]/*/*
+
+# EnderTech
+[endertech/general.cfg]/rendering/*
+
+# ExtraUtilities
+ExtraUtilities.cfg/client_options/*
+
+# Forestry
+[forestry/common.conf]//performance.particleFX.enabled $format=simple
+[forestry/apiculture.conf]//(render.bees.fancy $format=simple
+
+
+# InventoryTweaks
+InvTweaks.cfg//* $format=simple
+!InvTweaks.cfg//enableServerItemSwap $format=simple
+
+# NEI
+[NEI/client.cfg]/*/* $format=simple
+
+# NEIIntegration
+neiintegration.cfg/tooltips/*
+
+# ProjectRed
+ProjectRed.cfg/general/3Dlogicwires
+ProjectRed.cfg/general/"Logic Sounds"
+
+# Waila
+Waila.cfg/general/*
+Waila.cfg/modules/*
+
+# Witchery
+witchery.cfg/general/GUIOnLeft
+witchery.cfg/general/HUDShowVampireTargetBloodText
+witchery.cfg/general/MantrapOpacity
+witchery.cfg/general/Render3dGlintEffect

@@ -1,0 +1,16 @@
+{
+  "_name": "AMTAddonJP:addonamtjp.lamp_alabaster",
+  "stats": {
+    "opacity": 0,
+    "brightness": 15,
+    "hardness": 0.2,
+    "resistance": 15.0,
+    "sound": "glass",
+    "slipperiness": 0.6,
+    "tool_data": []
+  },
+  "break_speed": [],
+  "drops": [],
+  "harvest": [],
+  "xp": []
+}

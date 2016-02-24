@@ -1,0 +1,11 @@
+{
+    "name": "meatyStewXL",
+    "texture": "stew_Meaty_Flavorful",
+    "type": "food",
+    "lore": [
+    ],
+    "consume-duration": 10,
+    "food-amount": 10,
+    "food-saturation": 1,
+    "max-stack-size": 2
+}
