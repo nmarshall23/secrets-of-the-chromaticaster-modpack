@@ -1,55 +1,60 @@
 
-description 'A Minecraft Modpack.'
-version '0.2.1'
+project('client') {
+ def packType = 'client'
 
-ext {
-   packType = 'client'
-   minecraftVersion = '1.7.10'
+ task copyFiles(type:Copy) {
+    from '.'
+    from '../common'
+    into "../target/$packType"
+ }
+
+ task buildPack(type: Zip, dependsOn: copyFiles) {
+  baseName project.parent.name
+  version project.version
+  appendix minecraftVersion
+  classifier packType
+  destinationDir file('../target')
+  from ("../target/$packType")
+ }
+
+ task syncCommonScript(type: Sync) {
+  include '*.zs'
+  from "../target/$packType/scripts"
+  into '../common/scripts'
+ }
+
+ task syncCommonConfig(type: Sync) {
+  include '**/*.cfg'
+  from "../target/$packType/config"
+  into '../common/config'
+ }
+
+ task sync(dependsOn: [syncCommonScript, syncCommonConfig])
 }
 
-project(':client') {
- 
+project('server') {
+ def packType = 'server'
+
+ task copyFiles(type:Copy) {
+    from '.'
+    from '../common'
+    into "../target/$packType"
+ }
+
+ task buildPack(type: Zip, dependsOn: copyFiles) {
+  baseName project.parent.name
+  version project.version
+  appendix minecraftVersion
+  classifier packType
+  destinationDir file('../target')
+  from ("../target/$packType")
+ }
 
 }
 
 
 task clean(type: Delete) {
   delete 'target'
-}
-
-
-task copyMods(type: Copy) {
-    description 'Copies the packs mods to the target directory.'
-    from "mods/packType"
-    from 'mods/common'
-    into "target/$packType/mods"
-}
-
-task copyConfigs(type: Copy) {
-    description 'Copies the packs configs to the target directory.'
-    from "configs/packType"
-    from 'configs/common'
-    into "target/$packType/config"
-}
-
-task copyOther(type: Copy) {
-    description 'Copies the packs other extra files to the target directory.'
-    from 'other'
-    into "target/$packType"
-}
-
-
-
-
-
-task zipPack(type: Zip, dependsOn: [copyMods, copyConfigs, copyOther]) {
- 
- baseName project.name
- version project.version
- appendix minecraftVersion
- classifier packType
- destinationDir file('target')
- from ("target/$packType")
 }
 
 
