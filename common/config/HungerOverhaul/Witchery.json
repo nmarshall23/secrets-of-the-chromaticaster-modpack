@@ -1,0 +1,10 @@
+{
+    "foods": [
+        {
+            "name": "witchery:stew",
+            "meta": 0,
+            "hunger": 5,
+            "saturationModifier": 0.6
+        }
+    ]
+}

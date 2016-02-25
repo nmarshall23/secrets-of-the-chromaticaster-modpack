@@ -1,0 +1,16 @@
+{
+    "foods": [
+        {
+            "name": "Mariculture:food",
+            "meta": 4,
+            "hunger": 5,
+            "saturationModifier": 1
+        },
+        {
+            "name": "Mariculture:food",
+            "meta": 5,
+            "hunger": 3,
+            "saturationModifier": 0.1
+        }
+    ]
+}

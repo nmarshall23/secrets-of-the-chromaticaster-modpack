@@ -1,0 +1,10 @@
+{
+    "foods": [
+        {
+            "name": "SilentGems:Food",
+            "meta": 4,
+            "hunger": 6,
+            "saturationModifier": 1
+        }
+    ]
+}

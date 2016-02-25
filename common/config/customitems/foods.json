@@ -1,12 +1,19 @@
 {
 "foods": [
         {
-        "name":"food 1",
+        "name":"CarrotSoup",
         "textureName":"CarrotSoup",
         "healAmount": 1,
-        "saturationModifier":1,
+        "saturationModifier": 0.2,
 	"useAction": "eat",
-	"dropItemName": "minecraft:bowel"
+	"dropItemName": "minecraft:bowl"
+        },
+        {
+        "name":"FishSoup Raw",
+        "textureName":"FishSoup",
+        "healAmount": 1,
+        "saturationModifier": 0.5,
+	"useAction": "eat"
         }
     ]
 }
