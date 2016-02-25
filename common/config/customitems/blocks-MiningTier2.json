@@ -1,0 +1,9 @@
+{
+ "changeBlocks":[
+   {
+    "name":"minecraft:iron_ore",
+    "harvestLevel": 2,
+    "toolClass": "pickaxe"
+   }
+ ]
+}

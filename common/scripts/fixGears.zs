@@ -28,11 +28,15 @@ val chalcedonyGear = <DCsAppleMilk:defeatedcrow.condensedMilk:3>;
 val gearsToRemove = [ironGearTF, goldGearTF, copperGearTF, tinGearTF, silverGearTF, leadGearTF, nickalGearTF, platinumGearTF, mithrilGearTF, electrumGearTF, invarGearTF, bronzeGearTF, signalumGearTF, lumiumGearTF, enderiumGearTF, chalcedonyGear] as IItemStack[];
 
 
+
 for i, gear in gearsToRemove {
   recipes.removeShaped(gear);
   NEI.hide(gear);
   gear.addTooltip(format.yellow("This gear has been disabled for balance."));
 }
+
+val gearOreDic = <ore:gearIron>;
+gearOreDic.remove(chalcedonyGear);
 
 // ingredients
 

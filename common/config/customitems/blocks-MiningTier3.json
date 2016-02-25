@@ -1,0 +1,24 @@
+{
+ "changeBlocks":[
+   {
+    "name":"appliedenergistics2:tile.OreQuartz",
+    "harvestLevel": 3,
+    "toolClass": "pickaxe"
+   },
+   {
+    "name":"appliedenergistics2:tile.OreQuartzCharged",
+    "harvestLevel": 3,
+    "toolClass": "pickaxe"
+   },
+   {
+    "name":"minecraft:diamond_ore",
+    "harvestLevel": 3,
+    "toolClass": "pickaxe"
+   },
+   {
+    "name":"SilentGems:GemOre",
+    "harvestLevel": 3,
+    "toolClass": "pickaxe"
+   }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "changeBlocks":[
+   {
+    "name":"appliedenergistics2:tile.BlockSkyStone",
+    "harvestLevel": 6,
+    "toolClass": "pickaxe"
+   },
+   {
+    "name":"appliedenergistics2:tile.BlockSkyChest",
+    "harvestLevel": 6,
+    "toolClass": "pickaxe"
+   },
+   {
+    "name":"denseores:block0",
+    "harvestLevel": 6,
+    "toolClass": "pickaxe"
+   },
+   {
+    "name":"ThermalFoundation:Ore",
+    "harvestLevel": 6,
+    "toolClass": "pickaxe"
+   },
+   {
+    "name":"SilentGems:ChaosOre",
+    "harvestLevel": 6,
+    "toolClass": "pickaxe"
+   },
+   {
+    "name":"NetherOres:tile.netherores.ore.0",
+    "harvestLevel": 6,
+    "toolClass": "pickaxe"
+   },
+   {
+    "name":"NetherOres:tile.netherores.ore.1",
+    "harvestLevel": 6,
+    "toolClass": "pickaxe"
+   }
+ ]
+}
