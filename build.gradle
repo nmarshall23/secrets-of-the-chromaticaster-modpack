@@ -30,6 +30,13 @@ project('client') {
  }
 
  task sync(dependsOn: [syncCommonScript, syncCommonConfig])
+ 
+ task clean(type: Delete) {
+  delete '../target'
+ }
+
+ task testSetup(dependsOn: [clean, copyFiles])
+
 }
 
 project('server') {
