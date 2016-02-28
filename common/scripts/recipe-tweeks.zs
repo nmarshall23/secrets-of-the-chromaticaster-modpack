@@ -37,12 +37,7 @@ recipes.addShaped(smallGong, [[null, stringMC, null], [null, bronzeIngot, null],
 recipes.addShaped(gong,      [[null, stringMC, null], [null, bronzeBlock, null], [bronzeIngot, null, bronzeIngot]]);
 recipes.addShaped(largeGong, [[null, stringMC, null], [null, bronzeBlock, null], [bronzeBlock, null, bronzeBlock]]);
 
-// Remove baubles that give creative flight
 
-//recipes.remove(<runicdungeons:item.flyBelt>);
-//NEI.hide(<runicdungeons:item.flyBelt>);
-recipes.remove(<baublelicious:ItemFlyingRing>);
-NEI.hide(<baublelicious:ItemFlyingRing>);
 
 // ExtraUtilities Drum is too cheap
 // Now gated behind Rotarycraft aluminumIngot

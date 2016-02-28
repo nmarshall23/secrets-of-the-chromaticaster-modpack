@@ -23,7 +23,8 @@ val chest = <minecraft:chest>;
 val wovenSilk = <Forestry:craftingMaterial:3>;
 val nest = <ironbackpacks:nest>;
 val egg = <minecraft:egg>;
-val ravenFeather = <TwilightForest:item.tfFeather>;
+//val ravenFeather = <TwilightForest:item.tfFeather>;
+val feather = <minecraft:feather>;
 val stick = <ore:stickWood>;
 val linenCloth = <AMTAddonJP:addonamtjp.linen_cloth>;
 val linenBall = <AMTAddonJP:addonamtjp.linen_ball>;
@@ -64,7 +65,7 @@ recipes.remove(depositUpgrade);
 recipes.remove(advDepositUpgrade);
 
 recipes.remove(nest);
-recipes.addShaped(nest, [[stick, linenBall, stick], [ravenFeather, egg, ravenFeather], [stick, linenBall, stick]]);
+recipes.addShaped(nest, [[stick, linenBall, stick], [feather, egg, feather], [stick, linenBall, stick]]);
 recipes.addShaped(upgradeCore, [[leather], [paper], [tinPlate]]);
 
 

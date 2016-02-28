@@ -21,7 +21,7 @@ val listAllmeatraw = <ore:listAllmeatraw>;
 listAllmeatraw.add(RawMutton);
 
 val rice = <DCsAppleMilk:defeatedcrow.mincedFoods:3>;
-val salt = <RotaryCraft:rotarycraft_item_powders:5>;
+val salt = <ore:foodSalt>;
 
 // Prepped Stage Items
 val MeatlyStewRaw = <witchery:stewraw>;

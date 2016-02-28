@@ -3,7 +3,7 @@
         {
             "name": "witchery:stew",
             "meta": 0,
-            "hunger": 5,
+            "hunger": 4,
             "saturationModifier": 0.6
         }
     ]
