@@ -1,77 +1,54 @@
-NxPck 
-=======
+Secrets of the Chromaticaster
+=============================
+
+You world is in disarray. The magics stopped flowing. You have been sent to discover what ever happened to the Chromaticaster?
+
+You have been tasked with learning Magics both High and Low. Maybe it's not too late to save your World.
+
+
+Description
+===========
+
+This is a Minecraft Modpack. There is a light theme, and quest if you choose to enage it. It is still in early Alpha. 
+
 
 Tool Progression
 ================
 
-Wood, Stone, Flint -> Base
+Wood
+ - Stone
+
+Stone, Flint, Copper, Tin 
  - Copper Ore, Tin Ore
 
-Copper, Tin, Gold,  -> Entry 
- - Iron Ore, Lapis Lazuli Ore
+Bronze, Iron, Nickel, Gems
+ - Iron Ore, Gold Ore, Redstone Ore, Lapis Lazuli Ore
 
-Bronze, Iron, Steel -> Low
- - Gold Ore, Redstone Ore, 
-
-Steel HSLA, Invar -> Mid 
+Steel, Steel HSLA, Invar
  - Diamond Ore
 
-Diamond, Nether Quartz -> High
- - Obsidian
-
-BedRock -> Extreme
- - SkyStone
+Diamond, BedRock
+ - Obsidian, SkyStone
 
 
-Base Mining Level
------------------
+Quick Tool Progression Hints
+============================
 
-
-Entry Mining Level
-------------------
- 
- * Some Woods
- * Hardened Clay
- * Hardened Dirt
-
-
-Low Mining Level
-----------------
-
- * Witchery Wood
- * 
-{ "function": "set", "value": 0}
-
-		{ "function": "all", "functions": [
-		{
- 	   "function": "!if_has_harvest_level_2",
- 	   "functions": [{ "function": "set", "value": 0}]
-	  }
-		]}
-
-{
- 	   "function": "if_has_tool_level_pickaxe_2",
- 	   "functions": [{ "function": "set", "value": 0}]
-	  }
-
-
-   {
-    "function": "!if_has_harvest_level_1",
-    "functions": [{ "function": "set", "value": false}]
-   }
-
-      { 
-           "function": "!if_has_harvest_level_2", 
-           "functions": [{ "function": "default", "value": false}, 
-                                                                         { "function": "set_block", "id": "GeoStrata:geostrata_rock_hornfel_smooth"}] 
-          }
-
-
-ThermalFoundation:tool.shearsBronze; ThermalFoundation:tool.shearsCopper; 
-ThermalFoundation:tool.shearsElectrum; ThermalFoundation:tool.shearsInvar; ThermalFoundation:tool.shearsLead; ThermalFoundation:tool.shearsNickel; ThermalFoundation:tool.shearsPlatinum; ThermalFoundation:tool.shearsSilver; ThermalFoundation:tool.shearsTin; ThermalFoundation:tool.sickleBronze; ThermalFoundation:tool.sickleCopper; ThermalFoundation:tool.sickleElectrum; ThermalFoundation:tool.sickleInvar; ThermalFoundation:tool.sickleLead;  ThermalFoundation:tool.sickleNickel; ThermalFoundation:tool.sicklePlatinum; ThermalFoundation:tool.sickleSilver; ThermalFoundation:tool.sickleTin
-
-
-Mods to consider adding
------------------------
-
-FTB Utilities, would replace the need for backup tool, and Starting items. What up with FTB Utilities map?
+1. Collect Flint for Tools
+2. Collect Clay and Sand.
+3. Collect Tin Ore. Craft a **Watering Can**.
+4. Collect Copper Ore. Craft a **Basic Grader**.
+5. Use Basic Grader to make Tin and Copper dust. Craft 3 Copper dusts for each Tin dust to make Bronze Mix. Smelt Bronze Mix for Bronze Ingots.
+6. Craft Bronze PickAxe.
+7. Collect Iron Ore.
+8. Craft Bucket.
+9. Collect Lava.
+10. Craft Vat.
+11. Craft Tank to transport 16 Buckets of Lava in.
+13. Make Burnt Bricks.
+14. Craft Bloomery Furnace.
+15. Make Wrought Iron lattice.
+16. Collect Abyssal stone or Netherack for Netherbrick.
+17. Craft Basic Blast Furnace. 
+18. Make Steel, in Basic Blast Furnace.
+19. Collect Diamonds.

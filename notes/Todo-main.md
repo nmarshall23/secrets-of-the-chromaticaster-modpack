@@ -1,7 +1,12 @@
 TODO
 ==== 
 
-Remove Bedrock Axe from Treecapitator list.
+Is Garden Stuff wax is ore dictionary with What?
+
+Treecapitator
+-------------
+
+Test new settings. Changed maxVerLogBreakDist=-1 to 32. And maxNumberOfBlocksInTree=64 to 48.
 
 Guide
 -----
@@ -26,26 +31,57 @@ https://github.com/PhoenixTeamMC/PhoenixConfig/blob/master/PhoenixTeam/Santa's%2
 Balance
 -------
 
+Choose a set of Gears and remove the rest.
 
-
+Should the Carpender, be used to craft gears?
 
 Remove Forestery Gears.
 Remove BC Wooden Gear
 
-Check gems mining level. Add Tool tip.
+Food progression
+----------------
+
+ Salt should be a big deal. 
+ Same with Garlic <witchery:garlic>
+
+ Wheat should be a big deal.
+ Should Wheat -> flour -> bread be the only way to make bread?
+
+ Change Stacking for Foods. Some should stack more then others. 
+
+ Add Multistep food. aka Craft Mix -> Furnace -> Something else..
+
+Farming Progression
+-------------------
+
+ Need to think about a good crafting recipe.. Where does it fit? <RandomThings:fertilizedDirt>
+ Magic Bees also have a dirt type.
+
+
+Fix Recipe Conflicts
+--------------------
 
 
 
-Check Runic Dungeon loot, might need boosting.
-Review Roguelike Dungeons Lootz
-https://github.com/Greymerk/minecraft-roguelike/wiki/Loot-Customisation
+Need to Check On
+================
 
 
-<DCIronChain:toolBag>.withTag({Items: [{Slot: 0 as byte, id: 271 as short, Count: 1 as byte, Damage: 0 as short}, {Slot: 1 as byte, id: 270 as short, Count: 1 as byte, Damage: 0 as short}, {Slot: 2 as byte, id: 269 as short, Count: 1 as byte, Damage: 0 as short}, {Slot: 3 as byte, id: 271 as short, Count: 1 as byte, Damage: 0 as short}, {Slot: 4 as byte, id: 270 as short, Count: 1 as byte, Damage: 0 as short}, {Slot: 5 as byte, id: 4120 as short, Count: 1 as byte, Damage: 0 as short}]})
+Forestry
+--------
+
+Mailbox add magical item to recipe. Might need to be cheaper.
 
 
-Add to composter
+Agricraft
+---------
 
+Do I like the resource farming or should I move to Magic Plants?
+
+
+
+Chromatrcraft
+-------------
 
 
 Ye Gamol Chattels
@@ -54,23 +90,13 @@ Ye Gamol Chattels
 Add more equippableStatues
 
 
-Food progression
-----------------
-
- Salt should be a big deal. 
- Same with Garlic <witchery:garlic>
-
- Need to think about a good crafting recipe.. Where does it fit? <RandomThings:fertilizedDirt>
-
-
-Fix Recipe Conflicts
---------------------
-
 
 
 
 Changes to Loot tables
 ----------------------
+
+Check Runic Dungeon loot, might need boosting.
 
 Add Bibliocraft atlas with Eternal Compass.
 
@@ -83,11 +109,13 @@ Add forestry apple oak sapirling to low level loot chest
 Review Food Values with HungerOverhaul enabled
 ----------------------------------------------
 
-Most likely need to change AppleMilkTea2's food so that you don't starve.
+Need to review AppleMilkTea2's food.
 https://github.com/progwml6/HungerOverhaul/wiki#custom-food-values
 
 See for mineTweaker functions
 https://github.com/Belgabor/AMTweaker/wiki/
+
+
 
 
 DONE
@@ -141,44 +169,15 @@ powerratios {
     D:UsageMultiplier=1.0
 }
 
-
-Need to Check On
-================
-
-
-
- Agricraft check config, what mechanices are enabled be default.
-
- Wheat to flour to bread should that be the only way to make bread?
-
- Forestry - Mailbox add magical item to recipe. 
-
-
-RogueLike Dungeons
-------------------
-
- Should They spawn in any other dimentions then the overworld? And the Nether?
-
- Looks like setting custom loot might not be ready. https://github.com/Greymerk/minecraft-roguelike/issues/37
-
-TwilightForest
---------------
-
- How hard is it to get Axes? If too easy change Treecapitator settings.
-
-
-Chromatrcraft
--------------
-
-
 NEI filter
 ----------
 
-Found to make logins very slow, need to test.
-Would like to Add:
+Found to make logins very slow.
+Have added:
 
- - Ye Gamol - vita, banners, flags
+ - Ye Gamol - vita
  - Recurrent_Complex
  - Fairy Lights
  - Grave Stone
+
 
