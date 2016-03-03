@@ -1,9 +1,10 @@
 // Items I removed
 
+import mods.nei.NEI;
+
 // Remove baubles that give creative flight
 
-//recipes.remove(<runicdungeons:item.flyBelt>);
-//NEI.hide(<runicdungeons:item.flyBelt>);
+
 recipes.remove(<baublelicious:ItemFlyingRing>);
 NEI.hide(<baublelicious:ItemFlyingRing>);
 

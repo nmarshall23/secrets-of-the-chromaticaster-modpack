@@ -1,0 +1,30 @@
+Ore distribution
+
+Copper, Motherlodes with groups of long narrow veins found around height 40.
+3x more common in Jungles, Jungle Hills, Extreme Jungles*, and Mini Jungles*.
+
+Tin, Motherlodes with groups of long narrow veins found around height 30.
+3x more common in Plains, Meadows*, Savannas*, and Shrublands*.
+
+Iron, Motherlodes with groups of long narrow veins found around height 43.
+3x more common in cold biomes (Taigas, Taiga Hills, Ice Plains, Ice Mountains, Alpine*, Glacier*, Ice Wasteland*, Mountain Taiga*, Snow Forest*, and Tundra*).
+
+RedStone Ore, Isolated veins (no motherlodes) starting at height 64-70 and running straight downward for about 35 blocks. Fairly common, but challenging to mine because the player must tunnel vertically.
+3x more common in Deserts, Desert Hills, and Mountainous Desert*.
+
+Gold Ore, Motherlodes with groups of long narrow veins found around height 20. Rarer and shorter than iron veins.
+3x more common in temperate hardwood Forest biomes (Forest, Forest Hills, Birch Forest*, Autumn Woods*, Forested Island*, Forested Hills*, Rainforest*, and Woodlands*).
+
+Diamond Ore, Short hollow tubes starting at bedrock and sloping gently upward. The center of the tube is filled with lava, and the diamonds are scattered sparsely around the outside. Diamonds veins occur equally in all biomes.
+
+Emeralds Ore, Short hollow tubes starting around height 10 and sloping gently upward. 5x more common under Extreme Hills, Extreme Hills Edge, and Green Hills*.
+
+Nickel Ore, Small, motherlodes found around height 12 with 2-4 horizontal veins each. More common under Mountain biomes.
+
+Platinum Ore, Small, fairly rare motherlodes found around height 17 with 2-4 horizontal veins each. More common under Mountain biomes.
+
+Silver Ore, Small, fairly rare Motherlodes found around height 25 with 2-4 horizontal veins each. Silver veins occur equally in all biomes.
+
+Aluminum Ore, Medium motherlodes with 2-4 horizontal veins each. Found around height 94. 
+
+

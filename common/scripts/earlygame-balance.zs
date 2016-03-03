@@ -7,8 +7,8 @@ import mods.nei.NEI;
 val woodenGrater = <AMTAddonJP:addonamtjp.grater_wooden>;
 
 
-val bronzeIngot = <ore:ingotBronze>;
+val copperIngot = <ore:ingotCopper>;
 val stick = <ore:stickWood>;
 
 recipes.remove(woodenGrater);
-recipes.addShaped(woodenGrater, [[null, stick, null], [stick, bronzeIngot, stick], [stick, bronzeIngot, stick]]);
+recipes.addShaped(woodenGrater, [[null, stick, null], [stick, copperIngot, stick], [stick, copperIngot, stick]]);

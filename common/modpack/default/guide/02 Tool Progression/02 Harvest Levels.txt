@@ -1,0 +1,16 @@
+Mining Progression
+
+There are 5 Harvest Levels. Wood, Stone, Bronze, Steel, Diamond.
+
+Wood is the base level.
+
+Stone includes tools made from Flint, Copper, Tin, and Gold. Tools of this level can harvest Copper and Tin Ore.
+
+Bronze includes tools made from Iron, Nickel, and Gems. Tools of this level can harvest Iron Ore, RedStone Ore, Gold Ore, and Gems.
+
+Steel includes tools made from Invar and HSLA Steel. Tools of this level can harvest Diamond Ore, AE Quartz Ore.
+
+Diamond includes tools made from Platinum, BedRock, and Supercharged Gems. Tools of this level can harvest Platinum Ore, Nickel Ore, NetherOres, and SkyStone.
+
+
+

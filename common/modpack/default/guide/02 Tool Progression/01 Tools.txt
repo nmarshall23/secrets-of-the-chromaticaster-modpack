@@ -1,0 +1,29 @@
+A few notes on the Unique Tools available. 
+
+
+Tools made from Flint and Gems.
+
+These are from the Silent's Gems Mod. 
+
+Right-click to place things: If you have a block in the slot after a pickaxe, shovel, or axe, you can right-click with your tool to place it! This also works with the Torch Bandolier. If that slot is not placeable, it will check the last slot of your hotbar instead.
+
+Decorating: Place a tool in a crafting grid. Then place gems (regular or supercharged) in slots adjacent to the tool. This will exchange part of the tool with that gem, changing its appearance. You can also place a block of wool in any slot to add a cosmetic grip on the tool rod. Decorating a tool with gems also repairs it, making it a good way to keep your best tools alive! Flint can also be used for decorating, but will only repair flint tools! Use glass to restore a part to its original state.
+
+Tipped Upgrades: A Iron Ingot, Emerald, and Diamond can be applied, these will change the harvest level of the tool and boosts its durability.
+
+
+Hammers
+
+These are from the Hammerz Mod. 
+
+Hammers mine in a 3x3 pattern.
+
+Right-click to place torches. When you right click on a block with a hammer, it will search you inventory for torches and place one if you have any, you do not need to have torches in your hotbar. This does not work with the Torch Bandolier.
+
+Hammers can be repaired with the same blocks/items that were used to make them.
+
+
+Torch Bandolier
+
+It stores 1024 torches. Right-click to place torches. Place in a crafting grid to extract a stack of torches. It absorbs torches from your inventory on its own.
+

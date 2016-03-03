@@ -11,8 +11,8 @@ import minetweaker.item.IItemStack;
  */
 
 // BuildCraft engines
-
-val bcEngines = [<BuildCraft|Core:engineBlock:1>, <BuildCraft|Core:engineBlock:2>, <BuildCraft|Core:engineBlock:3>] as IItemStack[];
+// Can't hide these they share name with other matchines.
+val bcEngines = [<BuildCraft|Core:engineBlock:1>, <BuildCraft|Core:engineBlock:2>, <BuildCraft|Core:engineBlock:3>, <Railcraft:machine.alpha:1>] as IItemStack[];
 
 for i, engine in bcEngines {
   recipes.removeShaped(engine);
@@ -23,7 +23,7 @@ for i, engine in bcEngines {
 
 // Railcraft engines
 
-val rcEngines = [<Railcraft:machine.alpha:1>, <Railcraft:machine.beta:3>, <Railcraft:machine.beta:4>, <Railcraft:machine.beta:5>, <Railcraft:machine.beta:6>, <Railcraft:machine.beta:7>, <Railcraft:part.turbine.disk>, <Railcraft:part.turbine.rotor>, <Railcraft:part.turbine.blade>] as IItemStack[];
+val rcEngines = [<Railcraft:machine.beta:3>, <Railcraft:machine.beta:4>, <Railcraft:machine.beta:5>, <Railcraft:machine.beta:6>, <Railcraft:machine.beta:7>, <Railcraft:part.turbine.disk>, <Railcraft:part.turbine.rotor>, <Railcraft:part.turbine.blade>] as IItemStack[];
 
 for i, engine in rcEngines {
   recipes.removeShaped(engine);
@@ -31,7 +31,6 @@ for i, engine in rcEngines {
   engine.addTooltip(format.yellow("All non-RotaryCraft engines"));
   engine.addTooltip(format.yellow("have been disabled"));
 }
-
 
 // Forestry & Mariculture engines
 

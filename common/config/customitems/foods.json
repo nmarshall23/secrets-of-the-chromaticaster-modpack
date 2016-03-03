@@ -2,18 +2,29 @@
 "foods": [
         {
         "name":"CarrotSoup",
-        "textureName":"CarrotSoup",
+        "textureName":"carrot_soup",
         "healAmount": 1,
-        "saturationModifier": 0.2,
+        "saturationModifier": 0.1,
 	"useAction": "eat",
-	"dropItemName": "minecraft:bowl"
+	"dropItemName": "minecraft:bowl",
+	"maxstackSize": 1-16
+        }
+    ],
+"items": [
+        {
+        "name":"Minced beef and vegetables",
+        "textureName":"mincedfoods_beef",
+	"maxstackSize": 1-8
         },
         {
-        "name":"FishSoup Raw",
-        "textureName":"FishSoup",
-        "healAmount": 1,
-        "saturationModifier": 0.5,
-	"useAction": "eat"
+        "name":"Minced pork and vegetables",
+        "textureName":"mincedfoods_beef",
+	"maxstackSize": 1-8
+        },
+        {
+        "name":"Minced chicken and vegetables",
+        "textureName":"mincedfoods_beef",
+	"maxstackSize": 1-8
         }
     ]
 }

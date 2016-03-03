@@ -3,7 +3,7 @@
 import mods.nei.NEI;
 
 //Tools
-val toolGrater = <ore:toolGrater>.reuse();
+val toolGrater = <ore:toolGrater>;
 
 // Ingredients
 val potato = <minecraft:potato>;

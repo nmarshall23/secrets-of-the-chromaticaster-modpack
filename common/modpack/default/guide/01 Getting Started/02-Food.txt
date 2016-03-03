@@ -1,0 +1,40 @@
+Eating food gives a 'Well Fed' effect that boosts health regen
+
+The larger the meal, the longer the effect will last
+
+Morsal (food value 2)
+Snack (food value 3)
+Light meal (food value 4) 
+Meal (food value 7) 
+Large meal (food value 10) 
+Feast (food value 14)
+
+
+§4 First Bites!
+
+Strawbarries are a great morsal. Pick with by left clicking on them. Right click will break them into seeds.
+
+You may find seeds using a Hoe on a grass block when water is not near. Another way of collecting seeds is to break tall grass.
+
+Carrots and Potatos will be the first plants you grow.
+
+
+§4Compost Bin
+
+To get started with a farm you will need to craft a Compost Bin. Fill it with spare seeds and saplings. When you mouse over the GUI it will highligh items that are compostable. 
+
+Use compost to make garden soil. This soil doesn't need water nearby for things to grew on it! 
+
+§4Watering Can
+
+After you find Tin Ore, you will want to save some and make a Watering Can. Fill it with water by clicking on a water block then, use it on seeds or saplings to help them grow.
+
+§4Clay Pot
+
+Soon you will tire of eating raw vegetables or plain meat. A clay Pot will let you step up your culinary skills. You will need Clay to craft one. The first thing you will cook is carrot soup. Use a carrot on the clay pot. That will fill it. Then use a bowl on the pot.
+
+§4Iron Plate
+
+The Iron Plate is required to cook Meals. 
+
+

@@ -46,7 +46,8 @@
     "allow_creative_interact_secure": true,
     "badge": "",
     "break_whitelist": [
-      "OpenBlocks:grave"
+      "OpenBlocks:grave",
+      "GraveStone:GSGraveStone"
     ],
     "chunkloader_type": "offline",
     "cross_dim_homes": true,
@@ -65,7 +66,8 @@
     "allow_creative_interact_secure": false,
     "badge": "",
     "break_whitelist": [
-      "OpenBlocks:grave"
+      "OpenBlocks:grave",
+      "GraveStone:GSGraveStone"
     ],
     "chunkloader_type": "offline",
     "cross_dim_homes": true,

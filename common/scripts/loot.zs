@@ -92,6 +92,7 @@ vanilla.loot.removeChestLoot("mineshaftCorridor", steel_shovel);
 vanilla.loot.removeChestLoot("mineshaftCorridor", steel_pickaxe);
 vanilla.loot.removeChestLoot("mineshaftCorridor", steel_axe);
 vanilla.loot.removeChestLoot("mineshaftCorridor", iron_ingot);    
+vanilla.loot.removeChestLoot("mineshaftCorridor", hsla_ingot);
 
 // dungeonChest
 

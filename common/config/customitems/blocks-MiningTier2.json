@@ -4,6 +4,11 @@
     "name":"minecraft:iron_ore",
     "harvestLevel": 2,
     "toolClass": "pickaxe"
+   },
+   {
+    "name":"SilentGems:GemOre",
+    "harvestLevel": 2,
+    "toolClass": "pickaxe"
    }
  ]
 }

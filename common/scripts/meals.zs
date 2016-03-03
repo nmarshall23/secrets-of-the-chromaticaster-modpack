@@ -34,7 +34,7 @@ val mincedPork =<customitems:minced_pork_and_vegetables>;
 val mincedChicken = <customitems:minced_chicken_and_vegetables>;
 
 //Tools
-val toolGrater = <ore:toolGrater>.reuse();
+val toolGrater = <ore:toolGrater>;
 
 
 recipes.addShapeless(mincedBeef * 2, [rawBeef, salt, garlic, mincedMushrooms, toolGrater]);
