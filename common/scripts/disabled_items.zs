@@ -15,3 +15,12 @@ NEI.hide(<grapplemod:launcheritem>);
 
 recipes.remove(<grapplemod:enderhook>);
 NEI.hide(<grapplemod:enderhook>);
+
+recipes.remove(<Forestry:bronzePickaxe>);
+NEI.hide(<Forestry:bronzePickaxe>);
+
+recipes.remove(<Forestry:kitPickaxe>);
+NEI.hide(<Forestry:kitPickaxe>);
+
+recipes.remove(<Forestry:brokenBronzePickaxe>);
+NEI.hide(<Forestry:brokenBronzePickaxe>);

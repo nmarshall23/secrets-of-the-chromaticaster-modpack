@@ -37,6 +37,7 @@ val ingotAluminium = <ore:ingotAluminium>;
 val piston = <minecraft:piston>;
 val craftingTable =<minecraft:crafting_table>;
 val gearsTin = <Forestry:gearTin>;
+val stick = <minecraft:stick>;
 
 
 // thickenGlass is made in a vat of lava
@@ -46,8 +47,8 @@ mods.mariculture.Vat.addRecipe(<liquid:lava> * 250 , sandyGlass, thickenGlass,  
 
 //Push fluidTank to use treated wood
 recipes.remove(fluidTank);
-recipes.addShaped(fluidTank * 2, [[copperIgnot, creosoteWoodBlock, copperIgnot], [creosoteWoodBlock, thickenGlass, creosoteWoodBlock], [copperIgnot, creosoteWoodBlock, copperIgnot]]);
-
+recipes.addShaped(fluidTank * 1, [[copperIgnot, stick, copperIgnot], [stick, thickenGlass, stick], [copperIgnot, stick, copperIgnot]]);
+recipes.addShaped(fluidTank * 2, [[copperIgnot, <ore:treatedStick>, copperIgnot], [<ore:treatedStick>, thickenGlass, <ore:treatedStick>], [copperIgnot, <ore:treatedStick>, copperIgnot]]);
 
 // rollingMachine
 recipes.remove(rollingMachine);

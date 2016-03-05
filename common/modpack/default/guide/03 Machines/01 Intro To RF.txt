@@ -1,0 +1,16 @@
+Introduction to Redstone Flux
+
+Many of the Machines will require RF engergy to function. You have three options when it comes to Generating RF, Clockwork Engine, Hobbyist's Steam Engine, and Rotational Dynamo.
+
+The Clockwork Engine
+
+To production RF this engine requires winding. To wind the clockwork engine, simply right click on it. Stop winding when the engine turns red, otherwise it will be over-wound and damage the player. This is a very inefficient engine. 
+
+The Hobbyist's Steam Engine
+
+This engine requires a redstone signal, and solid fuel along with Water to cool it down. It will get hotter as it runs for longer steady durations of time. When it gets hotter, it will also use less fuel. Adding water to a hot and dry engine will cause it to explode. If it runs out of water, to avoid an explosion, it should not be refilled with water until it has completely cooled down.
+
+
+The Rotational Dynamo
+
+This is your best means of creating RF. It requires RotaryCraft shaft power. Due to the limitations imposed by the internal magnetic fields, it can take a maximum of 1024 Nm of torque at a maximum of 8192 rad/s. Any excess, while not dangerous, will be wasted.

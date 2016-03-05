@@ -21,9 +21,9 @@ for i, engine in bcEngines {
   engine.addTooltip(format.yellow("have been disabled"));
 }
 
-// Railcraft engines
+// Engines Where NEI is removed.
 
-val rcEngines = [<Railcraft:machine.beta:3>, <Railcraft:machine.beta:4>, <Railcraft:machine.beta:5>, <Railcraft:machine.beta:6>, <Railcraft:machine.beta:7>, <Railcraft:part.turbine.disk>, <Railcraft:part.turbine.rotor>, <Railcraft:part.turbine.blade>] as IItemStack[];
+val rcEngines = [<Forestry:engine:1>, <Forestry:engine:2>, <Mariculture:machines_single:9>, <Railcraft:part.turbine.disk>, <Railcraft:part.turbine.rotor>, <Railcraft:part.turbine.blade>] as IItemStack[];
 
 for i, engine in rcEngines {
   recipes.removeShaped(engine);
@@ -32,20 +32,20 @@ for i, engine in rcEngines {
   engine.addTooltip(format.yellow("have been disabled"));
 }
 
-// Forestry & Mariculture engines
+// 
 
-val frEngines = [<Forestry:engine:1>, <Forestry:engine:2>, <Mariculture:machines_single:9>] as IItemStack[];
+val frEngines = [<Railcraft:machine.beta:3>, <Railcraft:machine.beta:4>, <Railcraft:machine.beta:5>, <Railcraft:machine.beta:6>,  ] as IItemStack[];
 
 for i, engine in frEngines {
   recipes.removeShaped(engine);
-  NEI.hide(engine);
+  //NEI.hide(engine);
   engine.addTooltip(format.yellow("All non-RotaryCraft engines"));
   engine.addTooltip(format.yellow("have been disabled"));
 }
 
 // Machines that have been disabled.
 // Forestry Fermenter and Still
-val disabledMachines = [<BuildCraft|Factory:refineryBlock>, <BuildCraft|Builders:machineBlock>, <BuildCraft|Factory:miningWellBlock>, <BuildCraft|Factory:floodGateBlock>, <Forestry:factory:3>, <Forestry:factory:6>] as IItemStack[];
+val disabledMachines = [<BuildCraft|Factory:refineryBlock>, <BuildCraft|Builders:machineBlock>, <BuildCraft|Factory:miningWellBlock>, <BuildCraft|Factory:floodGateBlock>, <Forestry:factory:3>, <Forestry:factory:6>, <BuildCraft|Factory:pumpBlock>] as IItemStack[];
 
 for i, machine in disabledMachines {
   recipes.removeShaped(machine);

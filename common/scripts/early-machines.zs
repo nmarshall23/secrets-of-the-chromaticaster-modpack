@@ -10,6 +10,7 @@ val rcBlastFurnace = <Railcraft:machine.alpha:12>;
 val grinder = <appliedenergistics2:tile.BlockGrinder>;
 val foodProcessor = <DCsAppleMilk:defeatedcrow.processor>;
 val clockworkRF = <Forestry:engine:4>;
+val hobbyistSteamRF = <Railcraft:machine.beta:7>;
 val crusher = <DCsAppleMilk:defeatedcrow.advProcessor>;
 val ironCookingPlate = <DCsAppleMilk:defeatedcrow.teppanII>;
 
@@ -28,11 +29,17 @@ val plankSlab = <ore:slabWood>;
 val edgedStone = <ExtraUtilities:decorativeBlock1>;
 val woodenGear = <BuildCraft|Core:woodenGearItem>;
 val tinIngot = <ore:ingotTin>;
+val bronzeIngot = <ore:ingotBronze>;
+val nuggetSilver = <ore:nuggetSilver>;
+val nuggetGold = <ore:nuggetGold>;
+
 val chalcedonyKnife = <DCsAppleMilk:defeatedcrow.chalcedonyKnife>;
 val thickGlass = <ExtraUtilities:decorativeBlock2>;
 val gearsCopper = <Forestry:gearCopper>;
 val gearsTin = <Forestry:gearTin>;
 val gearsBronze = <Forestry:gearBronze>;
+val gearsGold = <ore:gearGold>;
+
 val redstone = <minecraft:redstone>;
 
 val copperBattery = <Mariculture:battery_copper:*>;
@@ -55,6 +62,8 @@ val burntBrick = <Mariculture:crafting:14>;
 val fittedAbyssalBrick = <Railcraft:brick.abyssal:1>;
 val netherBrick = <minecraft:nether_brick>;
 val lavaCan = <Forestry:canLava>;
+
+val piston = <minecraft:piston>;
 
 // Hardcore Furnace 
 
@@ -94,7 +103,13 @@ recipes.addShaped(crusher, [[redClayBlock, redClayBlock, redClayBlock], [redClay
 
 // clockwork power
 recipes.remove(clockworkRF);
-//recipes.addShaped(clockworkRF, [[plank, plank, plank], [null, redstone, null], [gearsTin, gearsBronze, gearsCopper]]);
+recipes.addShaped(clockworkRF, [[plank, plank, plank], [null, thickGlass, null], [gearsTin, piston, gearsTin]]);
+
+// Hobbyst Steam Engine
+recipes.remove(hobbyistSteamRF);
+recipes.addShaped(hobbyistSteamRF, [[nuggetSilver, nuggetSilver, nuggetSilver], [null, thickGlass, null], [gearsBronze, piston, gearsBronze]]);
+recipes.addShaped(hobbyistSteamRF, [[nuggetGold, nuggetGold, nuggetGold], [null, thickGlass, null], [gearsBronze, piston, gearsBronze]]);
+
 
 // Iron Cooking Plate
 recipes.remove(ironCookingPlate);
