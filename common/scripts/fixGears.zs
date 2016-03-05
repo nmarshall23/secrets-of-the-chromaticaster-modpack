@@ -25,17 +25,34 @@ val enderiumGearTF = <ThermalFoundation:material:140>;
 // Apple Milk Tea chalcedony gear. It replaces Iron gears. 
 val chalcedonyGear = <DCsAppleMilk:defeatedcrow.condensedMilk:3>;
 
-val gearsToRemove = [ironGearTF, goldGearTF, copperGearTF, tinGearTF, silverGearTF, leadGearTF, nickalGearTF, platinumGearTF, mithrilGearTF, electrumGearTF, invarGearTF, bronzeGearTF, signalumGearTF, lumiumGearTF, enderiumGearTF, chalcedonyGear] as IItemStack[];
+val gearsToRemove =[ironGearTF,
+		goldGearTF,
+		copperGearTF,
+		tinGearTF,
+		silverGearTF,
+		leadGearTF,
+		nickalGearTF,
+		platinumGearTF,
+		mithrilGearTF,
+		electrumGearTF,
+		invarGearTF,
+		bronzeGearTF,
+		signalumGearTF,
+		lumiumGearTF,
+		enderiumGearTF
+		] as IItemStack[];
 
 
 
 for i, gear in gearsToRemove {
   recipes.removeShaped(gear);
-  NEI.hide(gear);
+  //NEI.hide(gear);
   gear.addTooltip(format.yellow("This gear has been disabled for balance."));
 }
 
 val gearOreDic = <ore:gearIron>;
+recipes.removeShaped(chalcedonyGear);
+chalcedonyGear.addTooltip(format.yellow("This gear has been disabled for balance."));
 gearOreDic.remove(chalcedonyGear);
 
 // ingredients
