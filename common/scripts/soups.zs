@@ -33,7 +33,8 @@ recipes.addShapeless(mincedMushrooms, [brownMushroom, toadStool, toadStool, tool
 
 recipes.remove(MeatlyStewRaw);
 recipes.addShapeless(MeatlyStewRaw, [potato, carrot, mincedMushrooms, listAllmeatraw]);
-recipes.addShapeless(MeatlyStewRaw, [potato, carrot, garlic, rice, listAllmeatraw]);
+recipes.addShapeless(MeatlyStewRaw, [potato, carrot, rice, listAllmeatraw]);
+recipes.addShapeless(MeatlyStewRaw, [potato, carrot, garlic, listAllmeatraw]);
 
 recipes.remove(RichMeatlyStewRaw);
 recipes.addShapeless(RichMeatlyStewRaw, [potato, carrot, listAllmeatraw, salt, rice, garlic]);
