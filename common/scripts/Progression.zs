@@ -19,7 +19,10 @@ val stoneLevelPickAxes =[<minecraft:stone_pickaxe:*>,
 			<ThermalFoundation:tool.pickaxeCopper:*>,
 			<ThermalFoundation:tool.pickaxeTin:*>,
 			<ThermalFoundation:tool.pickaxeSilver:*>,
-			<SilentGems:PickaxeFlint:*>
+			<SilentGems:PickaxeFlint:*>,
+			<hammerz:StoneHammer>,
+			<hammerz:CopperHammer>,
+			<hammerz:TinHammer>
 			] as IItemStack[];
 
 for i, pickAxes in stoneLevelPickAxes {
@@ -41,7 +44,11 @@ val bronzeLevelPickAxes=[<minecraft:iron_pickaxe:*>,
 <SilentGems:Pickaxe8:*>,
 <SilentGems:Pickaxe9:*>,
 <SilentGems:Pickaxe10:*>,
-<SilentGems:Pickaxe11:*>
+<SilentGems:Pickaxe11:*>,
+<ChromatiCraft:chromaticraft_item_multitool:*>,
+<hammerz:BronzeHammer:*>,
+<hammerz:IronHammer:*>,
+<hammerz:NickelHammer:*>
 			] as IItemStack[];
 
 for i, pickAxes in bronzeLevelPickAxes {
@@ -50,7 +57,11 @@ for i, pickAxes in bronzeLevelPickAxes {
 
 val steelPickAxes =	[<RotaryCraft:rotarycraft_item_steelpick:*>,
 			<ThermalFoundation:tool.pickaxeInvar:*>,
-			<Railcraft:tool.steel.pickaxe:*>
+			<Railcraft:tool.steel.pickaxe:*>,
+			<ChromatiCraft:chromaticraft_item_oresilk:*>,
+			<hammerz:SteelHammer:*>,
+			<hammerz:InvarHammer:*>,
+			<hammerz:HSLA:*>
 			] as IItemStack[];
 
 for i, pickAxes in steelPickAxes {
@@ -62,6 +73,7 @@ val diamondPickAxes =	[<minecraft:diamond_pickaxe:*>,
 			<ExtraUtilities:destructionpickaxe:*>,
 			<RotaryCraft:rotarycraft_item_bedpick>,
 <magnanimoustools:MagnanimousPick:*>,
+<magnanimoustools:MagnanimousHammer:*>,
 <SilentGems:Pickaxe0Plus:*>,
 <SilentGems:Pickaxe1Plus:*>,
 <SilentGems:Pickaxe2Plus:*>,
@@ -73,7 +85,10 @@ val diamondPickAxes =	[<minecraft:diamond_pickaxe:*>,
 <SilentGems:Pickaxe8Plus:*>,
 <SilentGems:Pickaxe9Plus:*>,
 <SilentGems:Pickaxe10Plus:*>,
-<SilentGems:Pickaxe11Plus:*>
+<SilentGems:Pickaxe11Plus:*>,
+<hammerz:Bedrock:*>,
+<hammerz:PlatinumHammer:*>,
+<hammerz:DiamondHammer:*>
 			] as IItemStack[];
 
 for i, pickAxes in diamondPickAxes {
@@ -82,7 +97,8 @@ for i, pickAxes in diamondPickAxes {
 
 
 
-
+//<ChromatiCraft:chromaticraft_item_oresilk:*>;
+//<ChromatiCraft:chromaticraft_item_multitool:*>
 
 /* Axe Lumber Axes */
 
