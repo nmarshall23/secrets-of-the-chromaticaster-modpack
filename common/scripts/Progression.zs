@@ -57,11 +57,11 @@ for i, pickAxes in bronzeLevelPickAxes {
 
 val steelPickAxes =	[<RotaryCraft:rotarycraft_item_steelpick:*>,
 			<ThermalFoundation:tool.pickaxeInvar:*>,
-			<Railcraft:tool.steel.pickaxe:*>,
 			<ChromatiCraft:chromaticraft_item_oresilk:*>,
 			<hammerz:SteelHammer:*>,
 			<hammerz:InvarHammer:*>,
-			<hammerz:HSLA:*>
+			<hammerz:HSLA:*>,
+			<customitems:steel_pickaxe:*>
 			] as IItemStack[];
 
 for i, pickAxes in steelPickAxes {
