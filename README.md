@@ -11,6 +11,7 @@ Description
 
 This is a Minecraft Modpack. There is a light theme, and quest if you choose to enage it. It is still in early Alpha. 
 
+This pack is features increased difficulty, with customised progression. 
 
 Tool Progression
 ================
