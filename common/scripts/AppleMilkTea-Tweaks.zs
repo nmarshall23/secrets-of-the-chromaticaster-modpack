@@ -6,3 +6,10 @@ val tea = <DCsAppleMilk:defeatedcrow.foodTea>;
 
 mods.amt.Plate.removeRecipe(leather);
 recipes.removeShapeless(leather, [rottenFlesh, tea]);
+
+
+// remove clayBall from JawCrusher
+
+val clayBall = <minecraft:clay_ball>;
+
+mods.amt.Processor.removeRecipe(clayBall);
