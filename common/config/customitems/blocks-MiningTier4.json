@@ -1,6 +1,11 @@
 {
  "changeBlocks":[
    {
+    "name":"minecraft:obsidian",
+    "harvestLevel": 6,
+    "toolClass": "pickaxe"
+   },
+   {
     "name":"appliedenergistics2:tile.BlockSkyStone",
     "harvestLevel": 6,
     "toolClass": "pickaxe"
