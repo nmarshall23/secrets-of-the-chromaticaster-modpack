@@ -83,7 +83,12 @@
             "meta": 2,
             "hunger": 7,
             "saturationModifier": 0.5
+        },
+        {
+            "name": "DCsAppleMilk:defeatedcrow.foodPlate",
+            "meta": 3,
+            "hunger": 4,
+            "saturationModifier": 0.25
         }
-
     ]
 }
