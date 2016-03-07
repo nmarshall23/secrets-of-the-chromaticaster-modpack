@@ -1,5 +1,6 @@
 // One off fixes
 
+import mods.nei.NEI;
 
 //Railcraft Steel pick is bugged I can't change it's harvest level.
 // Using a customItem Mod pick to replace it.
