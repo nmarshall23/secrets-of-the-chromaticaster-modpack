@@ -23,10 +23,13 @@ listAllmeatraw.add(RawMutton);
 val rice = <DCsAppleMilk:defeatedcrow.mincedFoods:3>;
 val salt = <ore:foodSalt>;
 
+val rawClam = <DCsAppleMilk:defeatedcrow.clam>;
+
 // Prepped Stage Items
 val MeatlyStewRaw = <witchery:stewraw>;
 val RichMeatlyStewRaw = <SilentGems:Food:3>;
 val mincedMushrooms = <DCsAppleMilk:defeatedcrow.mincedFoods>;
+val clamRiceRaw = <AMTAddonJP:addonamtjp.mincedfoods:1>;
 
 recipes.addShapeless(mincedMushrooms, [redMushroom, toadStool, toadStool, toolGrater]);
 recipes.addShapeless(mincedMushrooms, [brownMushroom, toadStool, toadStool, toolGrater]);
@@ -40,6 +43,10 @@ recipes.remove(RichMeatlyStewRaw);
 recipes.addShapeless(RichMeatlyStewRaw, [potato, carrot, listAllmeatraw, salt, rice, garlic]);
 recipes.addShapeless(RichMeatlyStewRaw, [potato, carrot, listAllmeatraw, salt, rice, brownMushroom]);
 recipes.addShapeless(RichMeatlyStewRaw, [potato, carrot, listAllmeatraw, salt, rice, redMushroom]);
+
+recipes.addShapeless(clamRiceRaw, [rice, rice, rawClam]);
+recipes.addShapeless(clamRiceRaw, [rice, redMushroom, rawClam]);
+recipes.addShapeless(clamRiceRaw, [rice, brownMushroom, rawClam]);
 
 // Soups are made in the Pan.
 val MeatlyStew = <witchery:stew>;
