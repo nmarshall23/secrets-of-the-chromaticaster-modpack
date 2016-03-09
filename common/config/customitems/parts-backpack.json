@@ -1,0 +1,27 @@
+{
+    "items":
+    [
+        {
+            "name":"Advanced Upgrade Core",
+            "textureName":"item1"
+        },
+        {
+            "name":"Aluminum Rod",
+            "textureName":"aluminum_rod"
+        },
+        {
+            "name":"Linen Ball",
+            "textureName":"string_linen"
+        },
+        {
+            "name":"Heavy Iron Rod",
+            "textureName":"item1",
+            "maxstackSize": 1-4
+        },
+        {
+            "name":"Heavy Gold Rod",
+            "textureName":"item1",
+            "maxstackSize": 1-4
+        }
+    ]
+}
