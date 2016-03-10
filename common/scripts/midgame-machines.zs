@@ -1,69 +1,76 @@
-//
-//Imports
-import mods.mariculture.Crucible;
-import mods.mariculture.Casting;
+// Harder recipes for Machines that Use RF
 
-//Machines
+// clockwork power
+val clockworkRF = <Forestry:engine:4>;
 
-val waterTank = <Railcraft:machine.alpha:14>;
-val fluidTank = <Mariculture:tanks>;
-val rollingMachine = <Railcraft:machine.alpha:8>;
-val redstoneEngine = <BuildCraft|Core:engineBlock>;
-
-// Machine Parts
-
-val burntBrick = <Mariculture:crafting:14>;
-val fittedAbyssalBrick = <Railcraft:brick.abyssal:1>;
-val lavaBucket = <minecraft:lava_bucket>;
-val lavaCan = <Forestry:canLava>;
-//val Furnace = <minecraft:furnace>;
-val steelGear = <Railcraft:part.gear:2>;
-val stoneBrick = <minecraft:stonebrick>;
-val emptyBucket = <minecraft:bucket>;
-val copperIgnot = <ore:ingotCopper>;
-val thickenGlass = <ExtraUtilities:decorativeBlock2>;
+// Materials
 val plank = <ore:plankWood>;
-val cobbleStone = <ore:cobblestone>;
-val redstoneDust = <ore:dustRedstone>;
-val sealant = <BuildCraft|Transport:pipeWaterproof>;
-val ingotIron = <ore:ingotIron>;
-val sand = <minecraft:sand>;
-val wroughtLattice = <GardenStuff:lattice:2>;
-val creosoteWoodBlock =<Railcraft:cube:8>;
-val sandyGlass = <ExtraUtilities:decorativeBlock1:9>;
-val brickConstruction = <Mariculture:rocks:4>;
-val sheetAluminium = <Mariculture:crafting:7>;
-val ingotAluminium = <ore:ingotAluminium>;
-val piston = <minecraft:piston>;
-val craftingTable =<minecraft:crafting_table>;
+val thickenGlass = <ExtraUtilities:decorativeBlock2>;
 val gearsTin = <Forestry:gearTin>;
-val stick = <minecraft:stick>;
+val piston = <minecraft:piston>;
+
+recipes.remove(clockworkRF);
+recipes.addShaped(clockworkRF, [[plank, plank, plank], [null, thickenGlass, null], [gearsTin, piston, gearsTin]]);
+
+// end clockwork power
+
+// Hobbyst Steam Engine
+
+val hobbyistSteamRF = <Railcraft:machine.beta:7>;
+
+// Materials
+val nuggetSilver = <ore:nuggetSilver>;
+val gearsBronze = <Forestry:gearBronze>;
+val nuggetGold = <ore:nuggetGold>;
+
+recipes.remove(hobbyistSteamRF);
+recipes.addShaped(hobbyistSteamRF, [[nuggetSilver, nuggetSilver, nuggetSilver], [null, thickenGlass, null], [gearsBronze, piston, gearsBronze]]);
+recipes.addShaped(hobbyistSteamRF, [[nuggetGold, nuggetGold, nuggetGold], [null, thickenGlass, null], [gearsBronze, piston, gearsBronze]]);
+
+// End Hobbyst Steam Engine
 
 
-// thickenGlass is made in a vat of lava
-furnace.remove(thickenGlass);
 
-mods.mariculture.Vat.addRecipe(<liquid:lava> * 250 , sandyGlass, thickenGlass,  16);
-
-//Push fluidTank to use treated wood
-recipes.remove(fluidTank);
-recipes.addShaped(fluidTank * 1, [[copperIgnot, stick, copperIgnot], [stick, thickenGlass, stick], [copperIgnot, stick, copperIgnot]]);
-recipes.addShaped(fluidTank * 2, [[copperIgnot, <ore:treatedStick>, copperIgnot], [<ore:treatedStick>, thickenGlass, <ore:treatedStick>], [copperIgnot, <ore:treatedStick>, copperIgnot]]);
 
 // rollingMachine
+val rollingMachine = <Railcraft:machine.alpha:8>;
+
+// Materials
+val ingotAluminum = <ore:ingotAluminum>;
+val craftingTable =<minecraft:crafting_table>;
+val brickConstruction = <Mariculture:rocks:4>;
+val redstoneDust = <ore:dustRedstone>;
+
 recipes.remove(rollingMachine);
-recipes.addShaped(rollingMachine, [[gearsTin, craftingTable, gearsTin], [piston, redstoneDust, piston], [brickConstruction, brickConstruction, brickConstruction]]);
+recipes.addShaped(rollingMachine, [[ingotAluminum, craftingTable, ingotAluminum], [piston, redstoneDust, piston], [gearsTin, brickConstruction, gearsTin]]);
+
+// end rollingMachine
+
+// foodProcessor
+val foodProcessor = <DCsAppleMilk:defeatedcrow.processor>;
+
+// Materials
+val ingotTin = <ore:ingotTin>;
+val chalcedonyKnife = <DCsAppleMilk:defeatedcrow.chalcedonyKnife>;
+val gearWood = <ore:gearWood>;
+
+recipes.remove(foodProcessor);
+recipes.addShaped(foodProcessor, [[thickenGlass, thickenGlass, thickenGlass], [ingotTin, chalcedonyKnife, ingotTin], [ingotTin, gearWood, ingotTin]]);
+
+// End Food Processor
+
+// Jaw Crusher
+val crusher = <DCsAppleMilk:defeatedcrow.advProcessor>;
+
+// Materials
+val redClayBlock = <minecraft:stained_hardened_clay:14>;
+val gearIron = <ore:gearIron>;
+val tinPlate = <Railcraft:part.plate:2>;
+
+recipes.remove(crusher);
+recipes.addShaped(crusher, [[redClayBlock, redClayBlock, redClayBlock], [redClayBlock, ingotAluminum, gearIron], [ingotTin, gearIron, ingotTin]]);
+recipes.addShaped(crusher, [[redClayBlock, redClayBlock, redClayBlock], [redClayBlock, ingotAluminum, gearIron], [tinPlate, gearIron, tinPlate]]);
+
+// End Jaw Crusher
 
 
-//Change Recipe for water tank siding to use sealant rather than slime
-recipes.remove(waterTank);
-recipes.addShaped(waterTank * 6, [[plank, plank, plank], [ingotIron, sealant, ingotIron], [plank, plank, plank]]);
-
-// Add Recipe piston using ingotAluminium
-recipes.addShaped(piston, [[plank, plank, plank], [cobbleStone, ingotAluminium, cobbleStone], [cobbleStone, redstoneDust, cobbleStone]]);
-
-//Add melting recipes for Chainmail
-Crucible.addRecipe(800, <minecraft:chainmail_boots>, <liquid:iron.molten> * 128);
-Crucible.addRecipe(800, <minecraft:chainmail_chestplate>, <liquid:iron.molten> * 256);
-Crucible.addRecipe(800, <minecraft:chainmail_helmet>, <liquid:iron.molten> * 160);
-Crucible.addRecipe(800, <minecraft:chainmail_leggings>, <liquid:iron.molten> * 224);

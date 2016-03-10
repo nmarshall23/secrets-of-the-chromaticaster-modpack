@@ -1,89 +1,75 @@
 //Early Machine Balencing
 // Machines that do not use RF.
 
-// Machines
 
-val seedAnalyzer = <AgriCraft:seedAnalyzer>;
+// Hardcore Furnace 
 val Furnace = <minecraft:furnace>;
-val rcBlastFurnace = <Railcraft:machine.alpha:12>;
 
-val grinder = <appliedenergistics2:tile.BlockGrinder>;
-val foodProcessor = <DCsAppleMilk:defeatedcrow.processor>;
-val clockworkRF = <Forestry:engine:4>;
-val hobbyistSteamRF = <Railcraft:machine.beta:7>;
-val crusher = <DCsAppleMilk:defeatedcrow.advProcessor>;
-val ironCookingPlate = <DCsAppleMilk:defeatedcrow.teppanII>;
+// Materials
+val cobblestoneCompressed = <ExtraUtilities:cobblestone_compressed>;
+val cobblestone = <minecraft:cobblestone>;
 
-val witchesOven = <witchery:witchesovenidle>;
-val fumeFunnel = <witchery:fumefunnel>;
+recipes.remove(Furnace);
+recipes.addShaped(Furnace, [[cobblestoneCompressed, cobblestone, cobblestoneCompressed], [cobblestone, null, cobblestone], [cobblestoneCompressed, cobblestone, cobblestoneCompressed]]);
+
+// End Furnace
+
+// SeedAnalyzer, requires Furnace
+val seedAnalyzer = <AgriCraft:seedAnalyzer>;
 
 // Materials
 
-val cobblestoneCompressed = <ExtraUtilities:cobblestone_compressed>;
-val cobblestone = <minecraft:cobblestone>;
 val paneGlass = <ore:paneGlass>;
 val plank = <ore:plankWood>;
 val stick = <ore:stickWood>;
 val stoneSlab = <minecraft:stone_slab>;
 val plankSlab = <ore:slabWood>;
-val edgedStone = <ExtraUtilities:decorativeBlock1>;
-val woodenGear = <BuildCraft|Core:woodenGearItem>;
-val tinIngot = <ore:ingotTin>;
-val bronzeIngot = <ore:ingotBronze>;
-val nuggetSilver = <ore:nuggetSilver>;
-val nuggetGold = <ore:nuggetGold>;
-
-val chalcedonyKnife = <DCsAppleMilk:defeatedcrow.chalcedonyKnife>;
-val thickGlass = <ExtraUtilities:decorativeBlock2>;
-val gearsCopper = <Forestry:gearCopper>;
-val gearsTin = <Forestry:gearTin>;
-val gearsBronze = <Forestry:gearBronze>;
-val gearsGold = <ore:gearGold>;
-
-val redstone = <minecraft:redstone>;
-
-val copperBattery = <Mariculture:battery_copper:*>;
-val gearsIron = <ore:gearIron>;
-val redClayBlock = <minecraft:stained_hardened_clay:14>;
-val tinPlate = <Railcraft:part.plate:2>;
-val brick = <ore:ingotBrick>;
-val ironPlate = <Railcraft:part.plate>;
-
-val wroughtIronBlock = <GardenStuff:metal_block>;
-val wroughtIronIngot = <GardenStuff:wrought_iron_ingot>;
-val brickConstruction = <Mariculture:rocks:4>;
-val emptyBucket = <minecraft:bucket>;
-val soulSand = <minecraft:soul_sand>;
-val lavaBucket = <minecraft:lava_bucket>;
-val ironBars = <minecraft:iron_bars>;
-
-val wroughtLattice = <GardenStuff:lattice:2>;
-val burntBrick = <Mariculture:crafting:14>;
-val fittedAbyssalBrick = <Railcraft:brick.abyssal:1>;
-val netherBrick = <minecraft:nether_brick>;
-val lavaCan = <Forestry:canLava>;
-
-val piston = <minecraft:piston>;
-
-// Hardcore Furnace 
-
-recipes.remove(Furnace);
-recipes.addShaped(Furnace, [[cobblestoneCompressed, cobblestone, cobblestoneCompressed], [cobblestone, null, cobblestone], [cobblestoneCompressed, cobblestone, cobblestoneCompressed]]);
-
-
-// SeedAnalyzer, requires Furnace
 
 recipes.remove(seedAnalyzer);
 recipes.addShaped(seedAnalyzer, [[stick, paneGlass, stick],[null, stoneSlab, stick], [plank, plankSlab, plank]]);
 
+// End SeedAnalyzer
+
+
 //  Quartz Grindstone
+
+val grinder = <appliedenergistics2:tile.BlockGrinder>;
+// Materials
+
+val edgedStone = <ExtraUtilities:decorativeBlock1>;
+val woodenGear = <BuildCraft|Core:woodenGearItem>;
 
 recipes.remove(grinder);
 recipes.addShaped(grinder, [[cobblestoneCompressed, woodenGear, cobblestoneCompressed], [cobblestoneCompressed, stoneSlab,  cobblestoneCompressed], [edgedStone, edgedStone, edgedStone]]);
 
+//  End Quartz Grindstone
+
+
+//fluidTank has a better recipe when using treated wood
+val fluidTank = <Mariculture:tanks>;
+// Materials
+val ingotCopper = <ore:ingotCopper>;
+val thickenGlass = <ExtraUtilities:decorativeBlock2>;
+
+recipes.remove(fluidTank);
+recipes.addShaped(fluidTank * 1, [[ingotCopper, stick, 	      ingotCopper], 
+				  [stick, 	thickenGlass, stick], 
+				  [ingotCopper, stick, 	      ingotCopper]]);
+
+recipes.addShaped(fluidTank * 2, [[ingotCopper, <ore:treatedStick>, ingotCopper], [<ore:treatedStick>, thickenGlass, <ore:treatedStick>], [ingotCopper, <ore:treatedStick>, ingotCopper]]);
+
+// End fluidTank.
 
 
 //Change blast furnace recipe
+val rcBlastFurnace = <Railcraft:machine.alpha:12>;
+
+// Materials
+val fittedAbyssalBrick = <Railcraft:brick.abyssal:1>;
+val burntBrick = <Mariculture:crafting:14>;
+val wroughtLattice = <GardenStuff:lattice:2>;
+val netherBrick = <minecraft:nether_brick>;
+
 recipes.remove(rcBlastFurnace);
 
 recipes.addShaped(rcBlastFurnace * 4, [[fittedAbyssalBrick, burntBrick, fittedAbyssalBrick], [burntBrick, wroughtLattice, burntBrick], [fittedAbyssalBrick, burntBrick, fittedAbyssalBrick]]);
@@ -91,36 +77,58 @@ recipes.addShaped(rcBlastFurnace * 4, [[fittedAbyssalBrick, burntBrick, fittedAb
 recipes.addShaped(rcBlastFurnace * 4, [[netherBrick, burntBrick, netherBrick], [burntBrick, wroughtLattice, burntBrick], [netherBrick, burntBrick, netherBrick]]);
 
 
-
-// foodProcessor
-
-recipes.remove(foodProcessor);
-recipes.addShaped(foodProcessor, [[thickGlass, thickGlass, thickGlass], [tinIngot, chalcedonyKnife, tinIngot], [tinIngot, woodenGear, tinIngot]]);
-
-// crusher
-recipes.remove(crusher);
-recipes.addShaped(crusher, [[redClayBlock, redClayBlock, redClayBlock], [redClayBlock, redstone, gearsIron], [tinPlate, redstone, tinPlate]]);
-
-// clockwork power
-recipes.remove(clockworkRF);
-recipes.addShaped(clockworkRF, [[plank, plank, plank], [null, thickGlass, null], [gearsTin, piston, gearsTin]]);
-
-// Hobbyst Steam Engine
-recipes.remove(hobbyistSteamRF);
-recipes.addShaped(hobbyistSteamRF, [[nuggetSilver, nuggetSilver, nuggetSilver], [null, thickGlass, null], [gearsBronze, piston, gearsBronze]]);
-recipes.addShaped(hobbyistSteamRF, [[nuggetGold, nuggetGold, nuggetGold], [null, thickGlass, null], [gearsBronze, piston, gearsBronze]]);
-
-
 // Iron Cooking Plate
+val ironCookingPlate = <DCsAppleMilk:defeatedcrow.teppanII>;
+
+// Materials
+val ironPlate = <Railcraft:part.plate>;
+val wroughtIronIngot = <GardenStuff:wrought_iron_ingot>;
+val brick = <ore:ingotBrick>;
+
 recipes.remove(ironCookingPlate);
 recipes.addShaped(ironCookingPlate, [[ironPlate, ironPlate, ironPlate], [brick, brick, brick]]);
 recipes.addShaped(ironCookingPlate, [[wroughtIronIngot, wroughtIronIngot, wroughtIronIngot], [wroughtIronIngot, wroughtIronIngot, wroughtIronIngot], [brick, brick, brick]]);
 
+// End Iron Cooking Plate
+
+
 
 // Witchs Oven
+
+val witchesOven = <witchery:witchesovenidle>;
+val fumeFunnel = <witchery:fumefunnel>;
+
+// Materials
+
+val ironBars = <minecraft:iron_bars>;
+val tinIngot = <ore:ingotTin>;
+
+val lavaBucket = <minecraft:lava_bucket>;
+val soulSand = <minecraft:soul_sand>;
+val brickConstruction = <Mariculture:rocks:4>;
+val wroughtIronBlock = <GardenStuff:metal_block>;
 
 recipes.remove(witchesOven);
 recipes.addShaped(witchesOven, [[null, ironBars, null], [tinIngot, ironBars, tinIngot], [wroughtIronIngot, Furnace, wroughtIronIngot]]);
 
 recipes.remove(fumeFunnel);
 recipes.addShaped(fumeFunnel, [[wroughtIronIngot, lavaBucket, wroughtIronIngot], [wroughtIronIngot, soulSand, wroughtIronIngot], [brickConstruction, wroughtIronBlock, brickConstruction]]);
+
+// End Witchs Oven
+
+
+
+//Change Recipe for water tank siding to use sealant rather than slime
+val waterTank = <Railcraft:machine.alpha:14>;
+
+// Materials
+val ingotIron = <ore:ingotIron>;
+val sealant = <BuildCraft|Transport:pipeWaterproof>;
+val creosoteWood = <Railcraft:cube:8>;
+
+recipes.remove(waterTank);
+recipes.addShaped(waterTank * 6, [[plank, plank, plank], [ingotIron, sealant, ingotIron], [plank, plank, plank]]);
+
+recipes.addShaped(waterTank * 6, [[creosoteWood, creosoteWood, creosoteWood],
+				  [ironBars, 	 sealant,      ironBars], 
+				  [creosoteWood, creosoteWood, creosoteWood]]);
