@@ -54,9 +54,12 @@ recipes.addShaped(<minecraft:wool>, [[flaxFiber, flaxFiber],[flaxFiber, flaxFibe
 
 // minecraft:saddle
 
+val saddle = <minecraft:saddle>;
 val blockCloth = <ore:blockCloth>;
+val nuggetTin = <ore:nuggetTin>;
+val treatedLeather = <ironbackpacks:treatedLeather>;
 
-recipes.addShaped(<minecraft:saddle>, [[<ironbackpacks:treatedLeather>, <ironbackpacks:treatedLeather>, <ironbackpacks:treatedLeather>], [<ironbackpacks:treatedLeather>, blockCloth, <ironbackpacks:treatedLeather>], [<minecraft:iron_ingot>, null, <minecraft:iron_ingot>] ]);
+recipes.addShaped(saddle, [[treatedLeather, blockCloth, treatedLeather], [nuggetTin, null, nuggetTin] ]);
 
 // flint from 3 gravel
 
