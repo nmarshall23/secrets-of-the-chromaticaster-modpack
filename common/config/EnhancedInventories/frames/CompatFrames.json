@@ -20,6 +20,15 @@
 		//ItemStack: {"name":"name", (optional)"meta":meta(set to "wildcard" to use any meta}, "nbt":{nbt data}}
 		"materials":"ingotCopper"
 	},
+	"Copper Plate":{
+		"name":"Copper Plate Frame",
+		"ColorRed":195,
+		"ColorGreen":125,
+		"ColorBlue":10,
+		"FrameType":0,
+		"tier":1,
+		"materials":{ "name": "Railcraft:part.plate", "meta": 3}
+	},
 	"Tin":{
 		"name":"frame.ore.tin",
 		"ColorRed":117,
@@ -29,14 +38,41 @@
 		"tier":1,
 		"materials":"ingotTin"
 	},
+	"Tin Plate":{
+		"name":"Tin Plate Frame",
+		"ColorRed":117,
+		"ColorGreen":117,
+		"ColorBlue":117,
+		"FrameType":0,
+		"tier":1,
+		"materials":{ "name": "Railcraft:part.plate", "meta": 2}
+	},
+	"Iron Plate":{
+		"name":"Iron Plate Frame",
+		"ColorRed":255,
+		"ColorGreen":255,
+		"ColorBlue":255,
+		"FrameType":0,
+		"tier":2,
+		"materials":{ "name": "Railcraft:part.plate", "meta": 0}
+	},
 	"Aluminum":{
-		"name":"frame.ore.aluminum",
+		"name":"Aluminum Frame",
 		"ColorRed":64,
 		"ColorGreen":224,
 		"ColorBlue":208,
 		"FrameType":0,
 		"tier":3,
 		"materials":"ingotAluminum"
+	},
+	"Aluminum Sheet":{
+		"name":"Aluminum Sheet Frame",
+		"ColorRed":64,
+		"ColorGreen":224,
+		"ColorBlue":208,
+		"FrameType":0,
+		"tier":3,
+		"materials":{ "name": "Mariculture:crafting", "meta": 7}
 	},
 	"Bronze":{
 		"name":"frame.ore.bronze",
@@ -84,7 +120,7 @@
 		"materials":"ingotPlatinum"
 	},
 	"SkyStone":{
-		"name":"frame.ore.skystone",
+		"name":"frame.ore.skyStone",
 		"ColorRed":59,
 		"ColorGreen":59,
 		"ColorBlue":59,

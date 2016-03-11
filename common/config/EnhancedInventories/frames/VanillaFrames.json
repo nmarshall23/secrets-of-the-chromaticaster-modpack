@@ -55,15 +55,6 @@
 		"tier":5,
 		"materials":"gemDiamond"
 	},
-	"Obsidian":{
-		"name":"frame.mc.obsidian",
-		"ColorRed":31,
-		"ColorGreen":27,
-		"ColorBlue":50,
-		"FrameType":2,
-		"tier":1,
-		"materials":"obsidian"
-	},
 	"Emerald":{
 		"name":"frame.mc.emerald",
 		"ColorRed":77,
