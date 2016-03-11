@@ -37,7 +37,7 @@ val grinder = <appliedenergistics2:tile.BlockGrinder>;
 // Materials
 
 val edgedStone = <ExtraUtilities:decorativeBlock1>;
-val woodenGear = <BuildCraft|Core:woodenGearItem>;
+val woodenGear = <ore:gearWood>;
 
 recipes.remove(grinder);
 recipes.addShaped(grinder, [[cobblestoneCompressed, woodenGear, cobblestoneCompressed], [cobblestoneCompressed, stoneSlab,  cobblestoneCompressed], [edgedStone, edgedStone, edgedStone]]);
