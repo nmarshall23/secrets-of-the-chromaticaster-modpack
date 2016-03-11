@@ -31,8 +31,8 @@ val RichMeatlyStewRaw = <SilentGems:Food:3>;
 val mincedMushrooms = <DCsAppleMilk:defeatedcrow.mincedFoods>;
 val clamRiceRaw = <AMTAddonJP:addonamtjp.mincedfoods:1>;
 
-recipes.addShapeless(mincedMushrooms, [redMushroom, toadStool, toadStool, toolGrater]);
-recipes.addShapeless(mincedMushrooms, [brownMushroom, toadStool, toadStool, toolGrater]);
+recipes.addShapeless(mincedMushrooms, [redMushroom, toadStool, toolGrater]);
+recipes.addShapeless(mincedMushrooms, [brownMushroom, toadStool, toolGrater]);
 
 recipes.remove(MeatlyStewRaw);
 recipes.addShapeless(MeatlyStewRaw, [potato, carrot, mincedMushrooms, listAllmeatraw]);
@@ -44,7 +44,8 @@ recipes.addShapeless(RichMeatlyStewRaw, [potato, carrot, listAllmeatraw, salt, r
 recipes.addShapeless(RichMeatlyStewRaw, [potato, carrot, listAllmeatraw, salt, rice, brownMushroom]);
 recipes.addShapeless(RichMeatlyStewRaw, [potato, carrot, listAllmeatraw, salt, rice, redMushroom]);
 
-recipes.addShapeless(clamRiceRaw, [rice, rice, rawClam]);
+// TODO - Add Seaweed or bamboo shoots
+//recipes.addShapeless(clamRiceRaw, [rice, rice, rawClam]);
 recipes.addShapeless(clamRiceRaw, [rice, redMushroom, rawClam]);
 recipes.addShapeless(clamRiceRaw, [rice, brownMushroom, rawClam]);
 
