@@ -3,6 +3,18 @@ TODO
 
 Is Garden Stuff wax is ore dictionary with What?
 
+Change how to craft ProjectRed Wire.
+ * In Copper Vat: Redstone + Molten Aluminum 
+ * In Rolling Matchine, Redstone Aluminum
+
+Change Pipe sealant 
+ * Grater + clay + Cactus Green
+ * Grater + wax + wax
+
+Enable Extra Utilities Culinary Generator, and Pink Generator? Need to test. Would be at Iron Level
+
+
+
 Treecapitator
 -------------
 
@@ -10,6 +22,11 @@ Test new settings. Changed maxVerLogBreakDist=-1 to 32. And maxNumberOfBlocksInT
 
 Guide
 -----
+
+Add Food Progression
+ * Furnace, Potato, Eggs?
+ * Clay Pot, Carrot, then stew, other foods
+ * Iron Cooking Plate
 
 Mods
 ----
@@ -31,12 +48,8 @@ https://github.com/PhoenixTeamMC/PhoenixConfig/blob/master/PhoenixTeam/Santa's%2
 Balance
 -------
 
-Choose a set of Gears and remove the rest.
-
-Should the Carpender, be used to craft gears?
 
 Remove Forestery Gears.
-Remove BC Wooden Gear
 
 Food progression
 ----------------
@@ -120,6 +133,13 @@ https://github.com/Belgabor/AMTweaker/wiki/
 
 DONE
 ==== 
+
+Gear Balencing
+--------------
+
+Removed BC wood and BC stone gears. OreDict'd RC wood and Stone Gears.
+
+Removed TF Gears. Have not looked at RC gears. Not Sure about Diamond Gears.
 
 Witchery
 --------
