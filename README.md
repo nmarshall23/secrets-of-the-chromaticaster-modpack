@@ -13,6 +13,16 @@ This is a Minecraft Modpack. There is a light theme, and quest if you choose to 
 
 This pack is features increased difficulty, with customised progression. 
 
+Licensing
+=========
+
+My content is Licensed under MIT License.
+
+However that License does give anyone permission to distribute a compete build of the pack.
+
+Also the art assets in `/common/resources/customitems/textures/items/` are licensed under. <FIXME> List each file.
+
+
 Tool Progression
 ================
 
