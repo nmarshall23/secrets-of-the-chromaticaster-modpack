@@ -50,10 +50,10 @@ for i, gear in gearsToRemove {
   gear.addTooltip(format.yellow("This gear has been disabled for balance."));
 }
 
-val gearOreDic = <ore:gearIron>;
+val gearIron = <ore:gearIron>;
 recipes.removeShaped(chalcedonyGear);
 chalcedonyGear.addTooltip(format.yellow("This gear has been disabled for balance."));
-gearOreDic.remove(chalcedonyGear);
+gearIron.remove(chalcedonyGear);
 
 // ingredients
 
@@ -64,15 +64,28 @@ val smoothStone = <ore:stone>;
 
 // Gears
 
-val woodenGear = <RotaryCraft:rotarycraft_item_enginecraft:9>;
-val stoneGear  = <RotaryCraft:rotarycraft_item_enginecraft:10>;
 
-recipes.removeShaped(woodenGear);
-recipes.removeShaped(stoneGear);
+// remove Buildcraft wooden and stone gear. Replace with RC gears
 
-mods.forestry.Carpenter.addRecipe(woodenGear * 3, [[null, woodPlank, null], [woodPlank, woodPlank, woodPlank], [null, woodPlank, null]], <liquid:water> * 200, 20, null);
-mods.forestry.Carpenter.addRecipe(woodenGear * 3, [[null, mcPlank,   null], [mcPlank,   mcPlank,   mcPlank  ], [null, mcPlank,   null]], <liquid:water> * 200, 20, null);
+val woodenGearRC = <RotaryCraft:rotarycraft_item_enginecraft:9>;
+val woodenGearBC = <BuildCraft|Core:woodenGearItem>;
+val woodenGearOD = <ore:gearWood>;
 
-mods.forestry.Carpenter.addRecipe(stoneGear * 3, [[null, mcStone,     null], [mcStone,     mcStone,     mcStone    ], [null, mcStone    , null]], <liquid:water> * 500, 20, null);
-mods.forestry.Carpenter.addRecipe(stoneGear * 3, [[null, smoothStone, null], [smoothStone, smoothStone, smoothStone], [null, smoothStone, null]], <liquid:water> * 500, 20, null);
+recipes.removeShaped(woodenGearBC);
+woodenGearOD.remove(woodenGearBC);
+woodenGearOD.add(woodenGearRC);
+
+woodenGearBC.addTooltip(format.yellow("This gear has been disabled for balance."));
+NEI.hide(woodenGearBC);
+
+val stoneGearRC  = <RotaryCraft:rotarycraft_item_enginecraft:10>;
+val stoneGearBC = <BuildCraft|Core:stoneGearItem>;
+val stoneGearOD = <ore:gearStone>;
+
+recipes.removeShaped(stoneGearBC);
+stoneGearOD.remove(stoneGearBC);
+stoneGearOD.add(stoneGearRC);
+
+stoneGearBC.addTooltip(format.yellow("This gear has been disabled for balance."));
+NEI.hide(stoneGearBC);
 
