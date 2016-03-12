@@ -49,7 +49,14 @@
               "Damage": 0
             }
           ],
-          "userProgress": [],
+          "userProgress": [
+            {
+              "uuid": "c703f945-53fd-4a04-a116-f5af186e68ab",
+              "data": [
+                0
+              ]
+            }
+          ],
           "taskID": "bq_standard:crafting"
         },
         {
@@ -85,7 +92,10 @@
               }
             }
           ],
-          "userProgress": [],
+          "userProgress": [
+            {
+            }
+          ],
           "taskID": "bq_standard:crafting"
         }
       ],
@@ -310,7 +320,14 @@
               "Damage": 0
             }
           ],
-          "userProgress": [],
+          "userProgress": [
+            {
+              "uuid": "c703f945-53fd-4a04-a116-f5af186e68ab",
+              "data": [
+                0
+              ]
+            }
+          ],
           "taskID": "bq_standard:crafting"
         }
       ],
@@ -321,8 +338,7 @@
           "rewardID": "bq_standard:xp"
         }
       ],
-      "completed": [
-      ],
+      "completed": [],
       "preRequisites": [
         3
       ]
@@ -370,11 +386,55 @@
           "rewardID": "bq_standard:xp"
         }
       ],
-      "completed": [
-      ],
+      "completed": [],
       "preRequisites": [
         4
       ]
+    },
+    {
+      "questID": 6,
+      "name": "Compost is no joke",
+      "description": "No Description",
+      "isMain": false,
+      "isSilent": false,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "GardenCore:compost_bin",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "tasks": [
+        {
+          "completeUsers": [],
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "GardenCore:compost_bin",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "userProgress": [],
+          "taskID": "bq_standard:crafting"
+        }
+      ],
+      "rewards": [],
+      "completed": [
+        {
+          "uuid": "c703f945-53fd-4a04-a116-f5af186e68ab",
+          "timestamp": 26627,
+          "claimed": false
+        }
+      ],
+      "preRequisites": []
     },
     {
       "questID": 7,
@@ -419,8 +479,7 @@
           "rewardID": "bq_standard:xp"
         }
       ],
-      "completed": [
-      ],
+      "completed": [],
       "preRequisites": [
         5
       ]
@@ -474,8 +533,7 @@
           "rewardID": "bq_standard:item"
         }
       ],
-      "completed": [
-      ],
+      "completed": [],
       "preRequisites": [
         5
       ]
@@ -605,8 +663,7 @@
           "rewardID": "bq_standard:xp"
         }
       ],
-      "completed": [
-      ],
+      "completed": [],
       "preRequisites": [
         9,
         13
@@ -655,8 +712,7 @@
           "rewardID": "bq_standard:xp"
         }
       ],
-      "completed": [
-      ],
+      "completed": [],
       "preRequisites": [
         11
       ]
@@ -692,7 +748,14 @@
               "Damage": 7
             }
           ],
-          "userProgress": [],
+          "userProgress": [
+            {
+              "uuid": "c703f945-53fd-4a04-a116-f5af186e68ab",
+              "data": [
+                0
+              ]
+            }
+          ],
           "taskID": "bq_standard:crafting"
         }
       ],
@@ -703,7 +766,226 @@
           "rewardID": "bq_standard:xp"
         }
       ],
+      "completed": [],
+      "preRequisites": []
+    },
+    {
+      "questID": 14,
+      "name": "Clay Pot",
+      "description": "No Description",
+      "isMain": false,
+      "isSilent": false,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.emptyPanG",
+        "Count": 1,
+        "OreDict": "blockEmptyPan",
+        "Damage": 0
+      },
+      "tasks": [
+        {
+          "completeUsers": [],
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "DCsAppleMilk:defeatedcrow.emptyPanG",
+              "Count": 1,
+              "OreDict": "blockEmptyPan",
+              "Damage": 0
+            }
+          ],
+          "userProgress": [],
+          "taskID": "bq_standard:crafting"
+        },
+        {
+          "completeUsers": [],
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": true,
+          "requiredItems": [
+            {
+              "id": "witchery:stew",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "customitems:carrotsoup",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "userProgress": [],
+          "taskID": "bq_standard:retrieval"
+        }
+      ],
+      "rewards": [],
       "completed": [
+        {
+          "uuid": "c703f945-53fd-4a04-a116-f5af186e68ab",
+          "timestamp": 28184,
+          "claimed": false
+        }
+      ],
+      "preRequisites": []
+    },
+    {
+      "questID": 15,
+      "name": "Simple Pipes",
+      "description": "place the RedStone Engine",
+      "isMain": false,
+      "isSilent": false,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "BuildCraft|Core:engineBlock",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "tasks": [
+        {
+          "completeUsers": [],
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "BuildCraft|Transport:item.buildcraftPipe.pipeitemswood",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "minecraft:lever",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsstone",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "BuildCraft|Core:engineBlock",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "userProgress": [],
+          "taskID": "bq_standard:crafting"
+        }
+      ],
+      "rewards": [],
+      "completed": [
+        {
+          "uuid": "c703f945-53fd-4a04-a116-f5af186e68ab",
+          "timestamp": 31309,
+          "claimed": false
+        }
+      ],
+      "preRequisites": []
+    },
+    {
+      "questID": 16,
+      "name": "Copper Vat",
+      "description": "For Mixing Liquids",
+      "isMain": false,
+      "isSilent": false,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "Mariculture:machines_multi_rendered",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 3
+      },
+      "tasks": [
+        {
+          "completeUsers": [],
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "Mariculture:machines_multi_rendered",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 3
+            }
+          ],
+          "userProgress": [],
+          "taskID": "bq_standard:crafting"
+        }
+      ],
+      "rewards": [],
+      "completed": [
+        {
+          "uuid": "c703f945-53fd-4a04-a116-f5af186e68ab",
+          "timestamp": 34550,
+          "claimed": false
+        }
+      ],
+      "preRequisites": []
+    },
+    {
+      "questID": 17,
+      "name": "Hot Iron",
+      "description": "No Description",
+      "isMain": false,
+      "isSilent": false,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.teppanII",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "tasks": [
+        {
+          "completeUsers": [],
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "requiredItems": [
+            {
+              "id": "DCsAppleMilk:defeatedcrow.teppanII",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "userProgress": [],
+          "taskID": "bq_standard:crafting"
+        }
+      ],
+      "rewards": [],
+      "completed": [
+        {
+          "uuid": "c703f945-53fd-4a04-a116-f5af186e68ab",
+          "timestamp": 43685,
+          "claimed": false
+        }
       ],
       "preRequisites": []
     }
@@ -772,6 +1054,43 @@
           "id": 13,
           "x": 0,
           "y": 144
+        }
+      ]
+    },
+    {
+      "name": "Farmer Pete Had a Farm",
+      "description": "It\u0027s not easy grewoing your own food. ",
+      "quests": [
+        {
+          "id": 6,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": 14,
+          "x": 24,
+          "y": 24
+        },
+        {
+          "id": 17,
+          "x": 48,
+          "y": 48
+        }
+      ]
+    },
+    {
+      "name": "Automation",
+      "description": "No description",
+      "quests": [
+        {
+          "id": 15,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": 16,
+          "x": 0,
+          "y": 48
         }
       ]
     }
