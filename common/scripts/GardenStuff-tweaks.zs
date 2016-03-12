@@ -3,6 +3,8 @@
 import minetweaker.item.IItemStack;
 import minetweaker.item.IIngredient;
 
+// fix for Recipe conflict with RC gears
+
 val planks = [<minecraft:planks:0>, <minecraft:planks:1>, <minecraft:planks:2>, 
 	      <minecraft:planks:3>, <minecraft:planks:4>, <minecraft:planks:5>
 	     ] as IItemStack[];

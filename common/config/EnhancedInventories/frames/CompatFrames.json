@@ -65,15 +65,6 @@
 		"tier":3,
 		"materials":"ingotAluminum"
 	},
-	"Aluminum Sheet":{
-		"name":"Aluminum Sheet Frame",
-		"ColorRed":64,
-		"ColorGreen":224,
-		"ColorBlue":208,
-		"FrameType":0,
-		"tier":3,
-		"materials":{ "name": "Mariculture:crafting", "meta": 7}
-	},
 	"Bronze":{
 		"name":"frame.ore.bronze",
 		"ColorRed":255,

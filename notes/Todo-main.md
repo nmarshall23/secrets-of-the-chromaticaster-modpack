@@ -3,9 +3,7 @@ TODO
 
 Is Garden Stuff wax is ore dictionary with What?
 
-Change how to craft ProjectRed Wire.
- * In Copper Vat: Redstone + Molten Aluminum 
- * In Rolling Matchine, Redstone Aluminum
+
 
 Change Pipe sealant 
  * Grater + clay + Cactus Green
