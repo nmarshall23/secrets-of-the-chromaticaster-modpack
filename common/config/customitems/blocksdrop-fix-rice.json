@@ -1,0 +1,100 @@
+{
+    "blocksDrop":[
+        {
+            "id": "Growthcraft|Rice:grc.riceBlock:7",
+            "overrides": true,
+            "drops":[
+                {
+                    "id": "Growthcraft|Rice:grc.rice",
+                    "min" : 3,
+                    "max" : 9,
+                    "chance" : 10.0
+                }
+            ]
+        },
+	{
+            "id": "Growthcraft|Rice:grc.riceBlock:0",
+            "overrides": true,
+            "drops":[
+                {
+                    "id": "Growthcraft|Rice:grc.rice",
+                    "min" : 1,
+                    "max" : 1,
+                    "chance" : 100.0
+                }
+            ]
+        },
+	{
+            "id": "Growthcraft|Rice:grc.riceBlock:1",
+            "overrides": true,
+            "drops":[
+                {
+                    "id": "Growthcraft|Rice:grc.rice",
+                    "min" : 1,
+                    "max" : 1,
+                    "chance" : 100.0
+                }
+            ]
+        },
+	{
+            "id": "Growthcraft|Rice:grc.riceBlock:2",
+            "overrides": true,
+            "drops":[
+                {
+                    "id": "Growthcraft|Rice:grc.rice",
+                    "min" : 1,
+                    "max" : 1,
+                    "chance" : 100.0
+                }
+            ]
+        },
+	{
+            "id": "Growthcraft|Rice:grc.riceBlock:3",
+            "overrides": true,
+            "drops":[
+                {
+                    "id": "Growthcraft|Rice:grc.rice",
+                    "min" : 1,
+                    "max" : 1,
+                    "chance" : 100.0
+                }
+            ]
+        },
+	{
+            "id": "Growthcraft|Rice:grc.riceBlock:4",
+            "overrides": true,
+            "drops":[
+                {
+                    "id": "Growthcraft|Rice:grc.rice",
+                    "min" : 1,
+                    "max" : 2,
+                    "chance" : 10.0
+                }
+            ]
+        },
+	{
+            "id": "Growthcraft|Rice:grc.riceBlock:5",
+            "overrides": true,
+            "drops":[
+                {
+                    "id": "Growthcraft|Rice:grc.rice",
+                    "min" : 1,
+                    "max" : 3,
+                    "chance" : 10.0
+                }
+            ]
+        },
+	{
+            "id": "Growthcraft|Rice:grc.riceBlock:6",
+            "overrides": true,
+            "drops":[
+                {
+                    "id": "Growthcraft|Rice:grc.rice",
+                    "min" : 1,
+                    "max" : 4,
+                    "chance" : 10.0
+                }
+            ]
+        }
+    ]
+}
