@@ -38,13 +38,13 @@ val toolGrater = <ore:toolGrater>;
 
 
 recipes.addShapeless(mincedBeef * 2, [rawBeef, salt, garlic, mincedMushrooms, toolGrater]);
-recipes.addShapeless(mincedBeef * 2, [rawBeef, salt, garlic, vegetable, vegetable, toolGrater]);
+recipes.addShapeless(mincedBeef * 2, [rawBeef, salt, garlic, potato, carrot, toolGrater]);
 
 recipes.addShapeless(mincedPork * 2, [rawPork, salt, garlic, mincedMushrooms, toolGrater]);
-recipes.addShapeless(mincedPork * 2, [rawPork, salt, garlic, vegetable, vegetable, toolGrater]);
+recipes.addShapeless(mincedPork * 2, [rawPork, salt, garlic, potato, carrot, toolGrater]);
 
-recipes.addShapeless(mincedChicken * 2, [rawChicken, salt, garlic, mincedMushrooms, toolGrater]);
-recipes.addShapeless(mincedChicken * 2, [rawChicken, salt, garlic, vegetable, vegetable, toolGrater]);
+recipes.addShapeless(mincedChicken * 2, [rawChicken, garlic, mincedMushrooms, vegetable, toolGrater]);
+recipes.addShapeless(mincedChicken * 2, [rawChicken, garlic, potato, carrot, vegetable,  toolGrater]);
 
 mods.amt.Plate.addRecipe(beefFoodPlate,    mincedBeef,    100, false);
 mods.amt.Plate.addRecipe(porkFoodPlate,    mincedPork,    100, false);

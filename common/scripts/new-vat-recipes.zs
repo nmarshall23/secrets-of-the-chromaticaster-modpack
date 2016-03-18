@@ -7,7 +7,7 @@ val concreteCH = <chisel:concrete>;
 
 furnace.remove(concreteCH);
 
-mods.mariculture.Vat.addRecipe(<liquid:water> * 500, <liquid:quicklime> * 100, <minecraft:gravel> , concreteCH, 80); 
+mods.mariculture.Vat.addRecipe(<liquid:water> * 500, <liquid:quicklime> * 50, <minecraft:gravel> , concreteCH, 80); 
 
 
 // ingotRedAlloy can be made in the vat

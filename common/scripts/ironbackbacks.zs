@@ -40,6 +40,14 @@ mods.railcraft.Rolling.addShaped(aluminumRod * 2, [[null, null, ingotAluminum],
 			        		   [null, ingotAluminum, null],
 						   [ingotAluminum, null, null]]);
 
+
+//Addtional recipe for iron Blackpack using iron plates
+val plateIron = <Railcraft:part.plate:0>;
+val treatedLeather = <ironbackpacks:treatedLeather>;
+
+recipes.addShaped(ironBackpack, [[plateIron, plateIron, plateIron], [aluminumRod, basicBackpack, aluminumRod], [aluminumRod, treatedLeather, aluminumRod]]);
+
+
 // Done with Custom Parts.
 
 // additional goldBackpack recipes
@@ -50,7 +58,6 @@ val goldenSilk = <Mariculture:crafting>;
 val goldenThread = <witchery:ingredient:102>;
 
 val wovenSilk = <Forestry:craftingMaterial:3>;
-val treatedLeather = <ironbackpacks:treatedLeather>;
 
 recipes.addShaped(goldBackpack, [[goldenSilk, goldenSilk, goldenSilk], [aluminumRod, ironBackpack, aluminumRod], [wovenSilk, treatedLeather, wovenSilk]]);
 recipes.addShaped(goldBackpack, [[goldenThread, goldenThread, goldenThread], [aluminumRod, ironBackpack, aluminumRod], [wovenSilk, treatedLeather, wovenSilk]]);
@@ -109,21 +116,4 @@ val resockUpgrade = <ironbackpacks:hopperUpgrade>;
 val depositUpgrade = <ironbackpacks:quickDepositUpgrade>;
 val advDepositUpgrade = <ironbackpacks:quickDepositPreciseUpgrade>;
 
-//recipes.remove(upgradeCore);
-//recipes.remove(nestingUpgrade);
-//ecipes.remove(advNesting);
-//recipes.remove(depthUpgrade);
-//recipes.remove(resockUpgrade);
-//recipes.remove(depositUpgrade);
-//recipes.remove(advDepositUpgrade);
 
-//recipes.remove(nest);
-//recipes.addShaped(nest, [[stick, linenBall, stick], [feather, egg, feather], [stick, linenBall, stick]]);
-//recipes.addShaped(upgradeCore, [[leather], [paper], [tinPlate]]);
-
-//recipes.addShaped(nestingUpgrade,   [[nest, upgradeCore, nest]]);
-//recipes.addShaped(advNesting,   [[wovenSilk, wovenSilk, wovenSilk],[wovenSilk, nestingUpgrade, wovenSilk], [wovenSilk, wovenSilk, wovenSilk]]);
-//recipes.addShaped(depthUpgrade, [[linenCloth, wovenSilk, linenCloth], [nestingUpgrade, upgradeCore, nestingUpgrade], [linenCloth, wovenSilk, linenCloth]]);
-//recipes.addShaped(resockUpgrade,[[upgradeCore],[chute]]);
-//recipes.addShaped(depositUpgrade,[[linenCloth, upgradeCore, linenCloth],[piston, piston, piston]]);
-//recipes.addShaped(advDepositUpgrade,[[wovenSilk, depositUpgrade, wovenSilk],[piston, piston, piston]]);

@@ -13,3 +13,20 @@ recipes.removeShapeless(leather, [rottenFlesh, tea]);
 val clayBall = <minecraft:clay_ball>;
 
 mods.amt.Processor.removeRecipe(clayBall);
+
+// Bat box is really nice. Push it back in the Progression.
+// Making the gelBattery more expensive
+val gelBattery = <DCsAppleMilk:defeatedcrow.gelBatContainer>;
+
+// Mat
+
+val redPowerCrystal = <ElectriCraft:electricraft_item_crystal>;
+val redGel = <DCsAppleMilk:defeatedcrow.redGel>;
+val glassPane = <minecraft:glass_pane>;
+
+recipes.remove(gelBattery);
+recipes.addShaped(gelBattery, [[redPowerCrystal, glassPane, redPowerCrystal], [glassPane, redGel, glassPane], [redPowerCrystal, glassPane, redPowerCrystal]]);
+
+
+
+//

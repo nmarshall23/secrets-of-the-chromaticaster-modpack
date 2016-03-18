@@ -62,7 +62,7 @@ recipes.remove(CarpentersBlocks);
 mods.forestry.Carpenter.addRecipe(CarpentersBlocks * 6, [[stick, stick, stick], [stick, woodPlank, stick], [stick, stick, stick]], <liquid:creosote> * 50, 15, null);
 
 // alt recipe for ladders
-mods.forestry.Carpenter.addRecipe(ladder * 6, [[stick, stick, stick], [null, stick, null], [stick, stick, stick]], <liquid:creosote> * 20, 15, null);
+mods.forestry.Carpenter.addRecipe(ladder * 6, [[stick, stick, stick], [null, stick, null], [stick, stick, stick]], <liquid:creosote> * 10, 5, null);
 
 
 
@@ -92,3 +92,14 @@ recipes.addShaped(ropeladder * 4,  [[null, ladder, null], [ladder, cottenBundle,
 recipes.addShaped(sturdyladder * 4,[[null, ladder, null], [ladder, rebar, ladder], [null, ladder, null]]);
 recipes.addShaped(vineladder * 2,  [[ladder, vines, ladder]]);
 
+
+// Hopper Bonus with Iron Plates
+
+val hopper = <minecraft:hopper>;
+val ironPlate = <Railcraft:part.plate:0>;
+
+val chestWood = <ore:chestWood>;
+
+recipes.addShaped(hopper,  [[ironPlate, null,      ironPlate], 
+			    [ironPlate, chestWood, ironPlate],
+			    [null,      ironPlate, null]]);
