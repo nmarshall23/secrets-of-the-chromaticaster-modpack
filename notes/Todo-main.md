@@ -4,12 +4,25 @@ TODO
 Is Garden Stuff wax is ore dictionary with What?
 
 
-
 Change Pipe sealant 
  * Grater + clay + Cactus Green
  * Grater + wax + wax
 
-Enable Extra Utilities Culinary Generator, and Pink Generator? Need to test. Would be at Iron Level
+
+Food Progression
+----------------
+
+Pumpkin Soup should stack to 32?
+Roasted Clam it too good. Maybe 3h 0.25s
+Move Fried Egg to Iron cooking Plate
+Bread.
+
+
+Tech Progression
+----------------
+
+
+
 
 
 

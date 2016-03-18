@@ -29,16 +29,6 @@
     "name":"SilentGems:ChaosOre",
     "harvestLevel": 6,
     "toolClass": "pickaxe"
-   },
-   {
-    "name":"NetherOres:tile.netherores.ore.0",
-    "harvestLevel": 6,
-    "toolClass": "pickaxe"
-   },
-   {
-    "name":"NetherOres:tile.netherores.ore.1",
-    "harvestLevel": 6,
-    "toolClass": "pickaxe"
    }
  ]
 }
