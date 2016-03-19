@@ -1,6 +1,20 @@
 TODO
 ==== 
 
+IronChain2
+----------
+
+Maybe add some tool tips.
+
+Check if config has option for Work clothes to speed up other ladders.
+
+Tool bag, change to use aluminum?? 
+
+Lumber Axe
+----------
+
+Check tool tips.
+
 Is Garden Stuff wax is ore dictionary with What?
 
 
