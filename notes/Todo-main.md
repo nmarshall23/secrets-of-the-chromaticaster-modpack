@@ -1,6 +1,9 @@
 TODO
 ==== 
 
+Can I change the xp costs in the anvil?
+Fixing tools is very expesive with Metals tools.
+
 IronChain2
 ----------
 
@@ -16,6 +19,12 @@ Lumber Axe
 Check tool tips.
 
 Is Garden Stuff wax is ore dictionary with What?
+
+Recipe Tweaks
+-------------
+
+Fix new Garden things logs Recipe
+
 
 
 Change Pipe sealant 
