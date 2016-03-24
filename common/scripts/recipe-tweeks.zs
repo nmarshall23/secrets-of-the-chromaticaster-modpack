@@ -54,12 +54,9 @@ recipes.addShaped(drum, [[aluminumRCIngot, basePanel, aluminumRCIngot], [aluminu
 // Add a few things made in the forestryCarpenter
 
 // outputs
-val CarpentersBlocks = <CarpentersBlocks:blockCarpentersBlock>;
+
 val ladder = <minecraft:ladder>;
 
-
-recipes.remove(CarpentersBlocks);
-mods.forestry.Carpenter.addRecipe(CarpentersBlocks * 6, [[stick, stick, stick], [stick, woodPlank, stick], [stick, stick, stick]], <liquid:creosote> * 50, 15, null);
 
 // alt recipe for ladders
 mods.forestry.Carpenter.addRecipe(ladder * 6, [[stick, stick, stick], [null, stick, null], [stick, stick, stick]], <liquid:creosote> * 10, 5, null);
@@ -103,3 +100,14 @@ val chestWood = <ore:chestWood>;
 recipes.addShaped(hopper,  [[ironPlate, null,      ironPlate], 
 			    [ironPlate, chestWood, ironPlate],
 			    [null,      ironPlate, null]]);
+
+// reversalHopper Bonus with Iron Plates
+
+val reversalHopper = <DCIronChain:reversalHopper>;
+
+val redstoneTorch = <minecraft:redstone_torch>;
+val dropper = <minecraft:dropper>;
+
+recipes.addShaped(reversalHopper,  [[null, ironPlate,      null], 
+			    [ironPlate, dropper, ironPlate],
+			    [ironPlate,      redstoneTorch, ironPlate]]);
