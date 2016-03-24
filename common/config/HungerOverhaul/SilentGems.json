@@ -3,8 +3,8 @@
         {
             "name": "SilentGems:Food",
             "meta": 4,
-            "hunger": 4,
-            "saturationModifier": 0.9
+            "hunger": 6,
+            "saturationModifier": 0.4
         }
     ]
 }
