@@ -1,5 +1,9 @@
 //IronBackpacks 
 
+import minetweaker.item.IItemStack;
+import minetweaker.item.IIngredient;
+import minetweaker.data.IData;
+
 val basicBackpack = <ironbackpacks:basicBackpack>;
 val ironBackpack = <ironbackpacks:ironBackpack>;
 val goldBackpack = <ironbackpacks:goldBackpack>;
@@ -41,11 +45,36 @@ mods.railcraft.Rolling.addShaped(aluminumRod * 2, [[null, null, ingotAluminum],
 						   [ingotAluminum, null, null]]);
 
 
-//Addtional recipe for iron Blackpack using iron plates
-val plateIron = <Railcraft:part.plate:0>;
-val treatedLeather = <ironbackpacks:treatedLeather>;
+//Alt recipe function
 
-recipes.addShaped(ironBackpack, [[plateIron, plateIron, plateIron], [aluminumRod, basicBackpack, aluminumRod], [aluminumRod, treatedLeather, aluminumRod]]);
+
+
+function altBackpackRecipe(outBackpack as IItemStack, inBackpack as IItemStack, materials as IIngredient[string]) {
+
+  val treatedLeather = <ironbackpacks:treatedLeather>;
+
+  recipes.addShaped(outBackpack, [[materials["top"], materials["levelItem"], materials["top"]],
+				  [materials["rod"], inBackpack.marked("item"), materials["rod"]],
+				  [materials["base"], treatedLeather,           materials["base"]]
+				 ], function (output, inputs, crafting) {
+
+      val tags = inputs.item.tag as IData;
+      return output.updateTag(tags);
+  });
+  
+}
+
+
+//Alt recipes for iron Backpack using iron plates
+
+val plateIron = <Railcraft:part.plate:0>;
+
+
+val ironBackpackMaterials = {"top": plateIron, "levelItem": plateIron, "rod": aluminumRod, "base": aluminumRod } as IIngredient[string];
+
+altBackpackRecipe(ironBackpack, basicBackpack, ironBackpackMaterials);
+
+//recipes.addShaped(ironBackpack, [[plateIron, plateIron, plateIron], [aluminumRod, basicBackpack, aluminumRod], [aluminumRod, treatedLeather, aluminumRod]]);
 
 
 // Done with Custom Parts.
@@ -55,12 +84,16 @@ recipes.addShaped(ironBackpack, [[plateIron, plateIron, plateIron], [aluminumRod
 // Parts 
 
 val goldenSilk = <Mariculture:crafting>;
-val goldenThread = <witchery:ingredient:102>;
+
 
 val wovenSilk = <Forestry:craftingMaterial:3>;
 
-recipes.addShaped(goldBackpack, [[goldenSilk, goldenSilk, goldenSilk], [aluminumRod, ironBackpack, aluminumRod], [wovenSilk, treatedLeather, wovenSilk]]);
-recipes.addShaped(goldBackpack, [[goldenThread, goldenThread, goldenThread], [aluminumRod, ironBackpack, aluminumRod], [wovenSilk, treatedLeather, wovenSilk]]);
+val goldBackpackMaterials = {"top": goldenSilk, "levelItem": goldenSilk, "rod": aluminumRod, "base": wovenSilk } as IIngredient[string];
+
+altBackpackRecipe(goldBackpack, ironBackpack, goldBackpackMaterials);
+
+//recipes.addShaped(goldBackpack, [[goldenSilk, goldenSilk, goldenSilk], [aluminumRod, ironBackpack, aluminumRod], [wovenSilk, treatedLeather, wovenSilk]]);
+//recipes.addShaped(goldBackpack, [[goldenThread, goldenThread, goldenThread], [aluminumRod, ironBackpack, aluminumRod], [wovenSilk, treatedLeather, wovenSilk]]);
 
 //End Of goldBackpack
 
@@ -72,7 +105,11 @@ val diamondGem = <ore:gemDiamond>;
 val magicStick = <magnanimoustools:MagStick>;
 val ingotHSLA = <ore:ingotHSLA>;
 
-recipes.addShaped(diamondBackpack, [[wovenSilk, diamondGem, wovenSilk], [magicStick, goldBackpack, magicStick], [ingotHSLA, treatedLeather, ingotHSLA]]);
+val diamondBackpackMaterials = {"top": wovenSilk, "levelItem": diamondGem, "rod": magicStick, "base": ingotHSLA } as IIngredient[string];
+
+altBackpackRecipe(diamondBackpack, goldBackpack, diamondBackpackMaterials);
+
+//recipes.addShaped(diamondBackpack, [[wovenSilk, diamondGem, wovenSilk], [magicStick, goldBackpack, magicStick], [ingotHSLA, treatedLeather, ingotHSLA]]);
 
 //End Of diamondBackpack
 
@@ -115,5 +152,12 @@ val depthUpgrade = <ironbackpacks:depthUpgrade>;
 val resockUpgrade = <ironbackpacks:hopperUpgrade>;
 val depositUpgrade = <ironbackpacks:quickDepositUpgrade>;
 val advDepositUpgrade = <ironbackpacks:quickDepositPreciseUpgrade>;
+
+
+// Recipe for Adv Upgrade Core
+
+val advUpgradeCore = <customitems:advanced_upgrade_core>;
+
+//recipes.addShaped(outBackpack, [[upgradeCore]],
 
 
