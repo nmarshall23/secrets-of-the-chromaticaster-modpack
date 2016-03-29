@@ -47,6 +47,15 @@
 		"tier":1,
 		"materials":{ "name": "Railcraft:part.plate", "meta": 2}
 	},
+	"Creosote Wood":{
+		"name":"Creosote Wood Frame",
+		"ColorRed":35,
+		"ColorGreen":18,
+		"ColorBlue":0,
+		"FrameType":1,
+		"tier":2,
+		"materials":{ "name": "Railcraft:cube", "meta": 8}
+	},
 	"Iron Plate":{
 		"name":"Iron Plate Frame",
 		"ColorRed":255,
@@ -62,7 +71,7 @@
 		"ColorGreen":224,
 		"ColorBlue":208,
 		"FrameType":0,
-		"tier":3,
+		"tier":2,
 		"materials":"ingotAluminum"
 	},
 	"Bronze":{
@@ -89,7 +98,7 @@
 		"ColorGreen":178,
 		"ColorBlue":201,
 		"FrameType":0,
-		"tier":3,
+		"tier":4,
 		"materials":"ingotSilver"
 	},
 	"Steel":{
@@ -107,7 +116,7 @@
 		"ColorGreen":153,
 		"ColorBlue":255,
 		"FrameType":0,
-		"tier":6,
+		"tier":7,
 		"materials":"ingotPlatinum"
 	},
 	"SkyStone":{
@@ -116,43 +125,7 @@
 		"ColorGreen":59,
 		"ColorBlue":59,
 		"FrameType":2,
-		"tier":5,
+		"tier":6,
 		"materials":{"name":"appliedenergistics2:tile.BlockSkyStone", "meta": 1}
-	},
-	"Alumite":{
-		"name":"frame.ore.alumite",
-		"ColorRed":235,
-		"ColorGreen":140,
-		"ColorBlue":240,
-		"FrameType":0,
-		"tier":5,
-		"materials":"ingotAlumite"
-	},
-	"Cobalt":{
-		"name":"frame.ore.cobalt",
-		"ColorRed":65,
-		"ColorGreen":65,
-		"ColorBlue":255,
-		"FrameType":0,
-		"tier":6,
-		"materials":"ingotCobalt"
-	},
-	"Ardite":{
-		"name":"frame.ore.ardite",
-		"ColorRed":255,
-		"ColorGreen":88,
-		"ColorBlue":0,
-		"FrameType":0,
-		"tier":6,
-		"materials":"ingotArdite"
-	},
-	"Manyullyn":{
-		"name":"frame.ore.manyullyn",
-		"ColorRed":120,
-		"ColorGreen":0,
-		"ColorBlue":235,
-		"FrameType":0,
-		"tier":7,
-		"materials":"ingotManyullyn"
 	}
 }
