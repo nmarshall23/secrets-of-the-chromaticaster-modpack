@@ -45,7 +45,9 @@ recipes.addShapeless(RichMeatlyStewRaw, [potato, carrot, listAllmeatraw, salt, r
 recipes.addShapeless(RichMeatlyStewRaw, [potato, carrot, listAllmeatraw, salt, rice, redMushroom]);
 
 // TODO - Add Seaweed or bamboo shoots
-//recipes.addShapeless(clamRiceRaw, [rice, rice, rawClam]);
+val egg = <ore:foodEgg>;
+
+recipes.addShapeless(clamRiceRaw, [rice, egg, rawClam]);
 recipes.addShapeless(clamRiceRaw, [rice, redMushroom, rawClam]);
 recipes.addShapeless(clamRiceRaw, [rice, brownMushroom, rawClam]);
 
@@ -78,3 +80,23 @@ recipes.remove(ufCarrotSoup);
 NEI.hide(ufFishSoup);
 recipes.remove(ufFishSoup);
 
+
+// Second Level Soups
+
+// TonkotuRamen
+
+val TonkotuRamen = <AMTAddonJP:addonamtjp.bowl_wood:3>;
+
+// Ingredients
+
+val noodle = <AMTAddonJP:addonamtjp.noodle>;
+val TonkotuSoup = <DCsAppleMilk:defeatedcrow.basesoupitem:5>;
+
+val CookedPorkChop = <minecraft:cooked_porkchop>;
+val CookedmysteryMeat = <witchery:ingredient:51>;
+
+recipes.remove(TonkotuRamen);
+recipes.addShapeless(TonkotuRamen * 2, [TonkotuSoup, TonkotuSoup, CookedPorkChop,    noodle, egg, salt]);
+recipes.addShapeless(TonkotuRamen * 2, [TonkotuSoup, TonkotuSoup, CookedmysteryMeat, noodle, egg, salt]);
+
+//
