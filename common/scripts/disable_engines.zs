@@ -28,19 +28,19 @@ val rcEngines = [<Forestry:engine:1>, <Forestry:engine:2>, <Mariculture:machines
 for i, engine in rcEngines {
   recipes.removeShaped(engine);
   NEI.hide(engine);
-  engine.addTooltip(format.yellow("All non-RotaryCraft engines"));
-  engine.addTooltip(format.yellow("have been disabled"));
+  engine.addTooltip(format.yellow("Most of the non-RotaryCraft engines"));
+  engine.addTooltip(format.yellow("have been disabled."));
 }
 
 // 
 
-val frEngines = [<Railcraft:machine.beta:3>, <Railcraft:machine.beta:4>, <Railcraft:machine.beta:5>, <Railcraft:machine.beta:6>,  ] as IItemStack[];
+val frEngines = [<Railcraft:machine.beta:3>, <Railcraft:machine.beta:6>,  ] as IItemStack[];
 
 for i, engine in frEngines {
   recipes.removeShaped(engine);
   //NEI.hide(engine);
-  engine.addTooltip(format.yellow("All non-RotaryCraft engines"));
-  engine.addTooltip(format.yellow("have been disabled"));
+  engine.addTooltip(format.yellow("Most of the non-RotaryCraft engines"));
+  engine.addTooltip(format.yellow("have been disabled."));
 }
 
 // Machines that have been disabled.

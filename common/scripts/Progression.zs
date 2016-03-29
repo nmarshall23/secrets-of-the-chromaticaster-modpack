@@ -6,8 +6,7 @@ import minetweaker.item.IItemStack;
 /* All pickaxes should indicate their harvest level in the tooltip. */
 	/* Pickaxe */
 
-val woodLevelPickAxes =[<minecraft:wooden_pickaxe:*>,
-			<ThermalFoundation:tool.pickaxeElectrum:*>,
+val woodLevelPickAxes =[<minecraft:wooden_pickaxe:*>
 			] as IItemStack[];
 
 for i, pickAxes in woodLevelPickAxes {
@@ -19,6 +18,7 @@ val stoneLevelPickAxes =[<minecraft:stone_pickaxe:*>,
 			<ThermalFoundation:tool.pickaxeCopper:*>,
 			<ThermalFoundation:tool.pickaxeTin:*>,
 			<ThermalFoundation:tool.pickaxeSilver:*>,
+			<ThermalFoundation:tool.pickaxeElectrum:*>,
 			<SilentGems:PickaxeFlint:*>,
 			<hammerz:StoneHammer>,
 			<hammerz:CopperHammer>,

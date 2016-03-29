@@ -21,6 +21,9 @@ NEI.hide(steelPickaxeBugged);
 //Add Recipe for it's replacement
 recipes.addShaped(steelPickaxeFixed, [[steelIngot, steelIngot, steelIngot], [null, stick, null], [null, stick, null]]);
 
+
+steelPickaxeFixed.maxDamage = 700;
+
 // RotaryCraft HSLA Steel hardcodes the maxDamage let's try reseting that.
 <RotaryCraft:rotarycraft_item_steelpick:*>.maxDamage = 900;
 <RotaryCraft:rotarycraft_item_steelaxe>.maxDamage = 900;
