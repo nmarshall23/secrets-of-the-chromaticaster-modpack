@@ -1,13 +1,11 @@
 //
 
 
-// concrete is made with Water and QuickLine 
-
-val concreteCH = <chisel:concrete>;
-
-furnace.remove(concreteCH);
-
-mods.mariculture.Vat.addRecipe(<liquid:water> * 500, <liquid:quicklime> * 50, <minecraft:gravel> , concreteCH, 80); 
+// concrete is made with Water and QuickLine? 
+//  Might be too hard..
+//val concreteCH = <chisel:concrete>;
+//furnace.remove(concreteCH);
+//mods.mariculture.Vat.addRecipe(<liquid:water> * 500, <liquid:quicklime> * 50, <minecraft:gravel> , concreteCH, 80); 
 
 
 // ingotRedAlloy can be made in the vat

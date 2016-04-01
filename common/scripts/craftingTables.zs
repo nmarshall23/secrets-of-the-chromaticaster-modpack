@@ -17,7 +17,9 @@ recipes.addShaped(werkbench, [[ancientTreePlanks, ancientTreePlanks, chest],
                               [ancientTreePlanks, craftingTable,     ancientTreePlanks],
 			      [ancientTreePlanks, chest,             ancientTreePlanks]]);
 
-werkbench.addTooltip("This legendary workbench, uses wood planks of ancient Trees. It is said that with a chest next to it you can craft without end. With a furnce next to it...");
+werkbench.addTooltip("This legendary workbench, uses wood planks of ancient Trees.");
+werkbench.addTooltip("It is said that with a chest next to it you can craft without end.");
+werkbench.addTooltip("And if you place a furnce next to it you can interact with it.");
 
 
 // Enhanced Inventories Worktable Tweaks
