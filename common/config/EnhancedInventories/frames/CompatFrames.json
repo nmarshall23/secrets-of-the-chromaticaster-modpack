@@ -62,7 +62,7 @@
 		"ColorGreen":255,
 		"ColorBlue":255,
 		"FrameType":0,
-		"tier":2,
+		"tier":3,
 		"materials":{ "name": "Railcraft:part.plate", "meta": 0}
 	},
 	"Aluminum":{
@@ -89,7 +89,7 @@
 		"ColorGreen":255,
 		"ColorBlue":255,
 		"FrameType":0,
-		"tier":2,
+		"tier":3,
 		"materials":"ingotNickel"
 	},
 	"Silver":{
@@ -116,7 +116,7 @@
 		"ColorGreen":153,
 		"ColorBlue":255,
 		"FrameType":0,
-		"tier":7,
+		"tier":6,
 		"materials":"ingotPlatinum"
 	},
 	"SkyStone":{
@@ -125,7 +125,7 @@
 		"ColorGreen":59,
 		"ColorBlue":59,
 		"FrameType":2,
-		"tier":6,
+		"tier":5,
 		"materials":{"name":"appliedenergistics2:tile.BlockSkyStone", "meta": 1}
 	}
 }
