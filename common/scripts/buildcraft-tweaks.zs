@@ -79,3 +79,48 @@ recipes.addShaped(buildingLibrary,[[plateIron,     bookshelf, plateIron],
 			     [sheetAluminum, chest,     sheetAluminum]]);
 
 // End Library
+
+// SiliconLaser
+
+val DiamantineElectronTube = <Forestry:thermionicTubes:5>;
+val redstone = <ore:dustRedstone>;
+val enderObsidian = <ExtraUtilities:decorativeBlock1:1>; 
+val prism = <tis3d:prism>;
+
+
+val SiliconLaser = <BuildCraft|Silicon:laserBlock>;
+
+//recipes.remove(SiliconLaser);
+recipes.addShaped(SiliconLaser,[[enderObsidian,          redstone, redstone], 
+			        [DiamantineElectronTube, prism, redstone],
+			        [enderObsidian,          redstone, redstone]]);
+
+
+// Cut energy cost of redstone chipset by haft
+val chipsetRedstone = <BuildCraft|Silicon:redstoneChipset>;
+
+mods.buildcraft.AssemblyTable.remove(chipsetRedstone);
+mods.buildcraft.AssemblyTable.addRecipe(chipsetRedstone, 50000, [redstone]);
+
+// assemblyTable
+val assemblyTable = <BuildCraft|Silicon:laserTableBlock>;
+
+
+val obsidian = <ore:obsidian>;
+val ingotRedAlloy = <ore:ingotRedAlloy>;
+val RCcircuitBoard = <RotaryCraft:rotarycraft_item_borecraft:4>;
+
+recipes.remove(assemblyTable);
+recipes.addShaped(assemblyTable,[[obsidian,      ingotRedAlloy,  obsidian], 
+			         [obsidian,      RCcircuitBoard, obsidian],
+			         [enderObsidian, gearDiamond,    enderObsidian]]);
+
+// integrationTable
+val integrationTable = <BuildCraft|Silicon:laserTableBlock:2>;
+
+recipes.remove(assemblyTable);
+recipes.addShaped(assemblyTable,[[obsidian,      chipsetRedstone,  obsidian], 
+			         [obsidian,      RCcircuitBoard,   obsidian],
+			         [enderObsidian, gearDiamond,      enderObsidian]]);
+
+
