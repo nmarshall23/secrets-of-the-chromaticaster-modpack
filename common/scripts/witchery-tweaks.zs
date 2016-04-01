@@ -12,8 +12,8 @@ val logWoods  = [<minecraft:log:0>, <minecraft:log:1>, <minecraft:log:2>, <minec
 		 <minecraft:log2:0>, <minecraft:log2:1>] as IIngredient[];
 
 
-val postWoods = [<GardenTrees:thin_log:0>, <GardenTrees:thin_log:1>, <GardenTrees:thin_log:2>,
-		 <GardenTrees:thin_log:3>, <GardenTrees:thin_log:4>, <GardenTrees:thin_log:5> ] as IIngredient[];
+val postWoods = [<GardenTrees:thin_log:17>, <GardenTrees:thin_log:4113>, <GardenTrees:thin_log:8209>,
+		 <GardenTrees:thin_log:12305>, <GardenTrees:thin_log:162>, <GardenTrees:thin_log:4258> ] as IIngredient[];
 
 
 for i, stockade in stockades {
