@@ -33,7 +33,9 @@ val tinIngot = <ore:ingotTin>;
 recipes.remove(<ExtraUtilities:watering_can:1>);
 recipes.addShaped(<ExtraUtilities:watering_can:1>, [[tinIngot, <minecraft:dye:15>, null], [tinIngot, <minecraft:bowl>, tinIngot], [null, tinIngot, null]]);
 
+val ingotAluminium = <ore:ingotAluminium>;
 
+recipes.addShaped(<ExtraUtilities:watering_can:1>, [[ingotAluminium, <minecraft:dye:15>, null], [ingotAluminium, <minecraft:bowl>, ingotAluminium], [null, ingotAluminium, null]]);
 
 val stone = <minecraft:stone>;
 
