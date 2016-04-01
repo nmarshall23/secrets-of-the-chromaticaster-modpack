@@ -1,6 +1,9 @@
 // 
 
 import mods.nei.NEI;
+import minetweaker.item.IItemStack;
+import minetweaker.item.IIngredient;
+
 
 //Tools
 val toolGrater = <ore:toolGrater>;
@@ -31,8 +34,11 @@ val RichMeatlyStewRaw = <SilentGems:Food:3>;
 val mincedMushrooms = <DCsAppleMilk:defeatedcrow.mincedFoods>;
 val clamRiceRaw = <AMTAddonJP:addonamtjp.mincedfoods:1>;
 
+
 recipes.addShapeless(mincedMushrooms, [redMushroom, toadStool, toolGrater]);
 recipes.addShapeless(mincedMushrooms, [brownMushroom, toadStool, toolGrater]);
+mods.amt.Processor.addRecipe(mincedMushrooms, [brownMushroom, toadStool], true);
+mods.amt.Processor.addRecipe(mincedMushrooms, [redMushroom, toadStool], true);
 
 recipes.remove(MeatlyStewRaw);
 recipes.addShapeless(MeatlyStewRaw, [potato, carrot, mincedMushrooms, listAllmeatraw]);
@@ -80,6 +86,19 @@ recipes.remove(ufCarrotSoup);
 NEI.hide(ufFishSoup);
 recipes.remove(ufFishSoup);
 
+// Noodle Recipe Fix
+
+val noodle = <AMTAddonJP:addonamtjp.noodle>;
+
+
+val wheat = <minecraft:wheat>;
+val bucketWater = <ore:bucketWater>;
+val emptyBucket = <minecraft:bucket>;
+
+recipes.remove(noodle);
+recipes.addShapeless(noodle * 3, [toolGrater, wheat, wheat, bucketWater, salt]);
+mods.amt.Processor.addRecipe(noodle * 3, null, [wheat, wheat, bucketWater, salt], true, 0.0, true);
+
 
 // Second Level Soups
 
@@ -89,7 +108,7 @@ val TonkotuRamen = <AMTAddonJP:addonamtjp.bowl_wood:3>;
 
 // Ingredients
 
-val noodle = <AMTAddonJP:addonamtjp.noodle>;
+
 val TonkotuSoup = <DCsAppleMilk:defeatedcrow.basesoupitem:5>;
 
 val CookedPorkChop = <minecraft:cooked_porkchop>;
