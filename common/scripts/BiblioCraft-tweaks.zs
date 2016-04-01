@@ -1,5 +1,5 @@
 //
-
+import minetweaker.item.IIngredient;
 
 // ArmorStand should be craftable with aluminum
 val ArmorStand = <BiblioCraft:Armor Stand>;
@@ -19,12 +19,18 @@ val pressChase = <BiblioCraft:item.BiblioChase>;
 val oilOfVitriol = <witchery:ingredient:30>;
 val slabWood = <ore:slabWood>;
 val plateCopper = <Railcraft:part.plate:3>;
+val magicWoodSlabs = <ore:slabMagicWood>;
+magicWoodSlabs.add(<magnanimoustools:MagSlabSingle>);
+magicWoodSlabs.add(<dendrology:sslab0:*>);
+magicWoodSlabs.add(<dendrology:sslab1:*>);
+magicWoodSlabs.add(<witchery:witchwoodslab:*>);
 
 recipes.remove(pressChase);
-recipes.addShaped(pressChase, [[oilOfVitriol, slabWood, oilOfVitriol],
-			       [slabWood, plateCopper, slabWood], 
-			       [null,     slabWood, null]]);
+recipes.addShaped(pressChase, [[oilOfVitriol, magicWoodSlabs, oilOfVitriol],
+			       [magicWoodSlabs, plateCopper, magicWoodSlabs], 
+			       [null,     magicWoodSlabs, null]]);
 
+pressChase.addTooltip("This requires the use of magical woodden slabs.");
 
 // Framed Tool Rack alt recipes using Aluminum
 
