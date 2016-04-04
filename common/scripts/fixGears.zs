@@ -18,7 +18,8 @@ val mithrilGearTF = <ThermalFoundation:material:134>;
 val electrumGearTF = <ThermalFoundation:material:135>;
 val invarGearTF = <ThermalFoundation:material:136>;
 val bronzeGearTF = <ThermalFoundation:material:137>;
-val signalumGearTF = <ThermalFoundation:material:138>;
+// keeping the signalumGearTF found a use for it.
+//val signalumGearTF = <ThermalFoundation:material:138>;
 val lumiumGearTF = <ThermalFoundation:material:139>;
 val enderiumGearTF = <ThermalFoundation:material:140>;
 
@@ -37,7 +38,6 @@ val gearsToRemove =[ironGearTF,
 		electrumGearTF,
 		invarGearTF,
 		bronzeGearTF,
-		signalumGearTF,
 		lumiumGearTF,
 		enderiumGearTF
 		] as IItemStack[];
