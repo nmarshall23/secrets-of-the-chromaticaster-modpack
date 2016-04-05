@@ -19,10 +19,15 @@ steelPickaxeBugged.addTooltip("This Pick feels off. You doubt it will cut diamon
 NEI.hide(steelPickaxeBugged);
 
 //Add Recipe for it's replacement
-recipes.addShaped(steelPickaxeFixed, [[steelIngot, steelIngot, steelIngot], [null, stick, null], [null, stick, null]]);
+recipes.addShaped(steelPickaxeFixed, [[steelIngot, steelIngot, steelIngot], 
+				      [null,       stick,      null],
+				      [null,       stick,      null]], function(output, inputs, crafting) {
+return output.withDamage(0);
+  // to be implemented. inputs.pick now contains the pickaxe used as input
+});
 
 
-steelPickaxeFixed.maxDamage = 700;
+//steelPickaxeFixed.maxDamage = 700;
 
 // RotaryCraft HSLA Steel hardcodes the maxDamage let's try reseting that.
 <RotaryCraft:rotarycraft_item_steelpick:*>.maxDamage = 900;
