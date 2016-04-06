@@ -70,3 +70,10 @@ AddDustRecipes(nuggets, ingots, dusts);
 
 // Making Bronze using dusts
 recipes.removeShapeless(ingotBronze * 4, [ingotCopper, ingotTin, ingotCopper, ingotCopper]);
+
+val oreChaos = <SilentGems:ChaosOre>;
+val gemChaos = <SilentGems:CraftingMaterials:3>;
+mods.amt.Processor.addRecipe(gemChaos * 2, gemChaos, [oreChaos], false, 0.5);
+
+
+

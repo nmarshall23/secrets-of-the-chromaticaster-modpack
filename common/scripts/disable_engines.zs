@@ -34,7 +34,7 @@ for i, engine in rcEngines {
 
 // 
 
-val frEngines = [<Railcraft:machine.beta:3>, <Railcraft:machine.beta:6>,  ] as IItemStack[];
+val frEngines = [<Railcraft:machine.beta:6>,  ] as IItemStack[];
 
 for i, engine in frEngines {
   recipes.removeShaped(engine);
@@ -42,7 +42,7 @@ for i, engine in frEngines {
   engine.addTooltip(format.yellow("Most of the non-RotaryCraft engines"));
   engine.addTooltip(format.yellow("have been disabled."));
 }
-
+ // <Railcraft:machine.beta:3>, 
 // Machines that have been disabled.
 // Forestry Fermenter and Still
 val disabledMachines = [<BuildCraft|Factory:refineryBlock>, <BuildCraft|Builders:machineBlock>, <BuildCraft|Factory:miningWellBlock>, <BuildCraft|Factory:floodGateBlock>, <Forestry:factory:3>, <Forestry:factory:6>, <BuildCraft|Factory:pumpBlock>] as IItemStack[];

@@ -25,4 +25,7 @@ val ectoplasm = <RandomThings:ingredient:3>;
 recipes.remove(spectreIron);
 mods.mariculture.Vat.addRecipe(<liquid:iron.molten> * 144, ectoplasm, spectreIron, 30); 
 
+// Signalum can be made in the Vat
 
+//val dustSignalum = <ore:dustSignalum>;
+//mods.mariculture.Vat.addRecipe(<liquid:iron.molten> * 144, ectoplasm, spectreIron, 30); 
