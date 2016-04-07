@@ -1,8 +1,19 @@
 TODO
 ==== 
 
-Can I change the xp costs in the anvil?
-Fixing tools is very expesive with Metals tools.
+Del SpecialAI configs, remove Fiddling griefing
+maybe test server without SpecialAI, see if that fixes skelitions
+
+SilentGems
+----------
+
+Token's don't work on tools of CoFHCore ItemToolAdv, 
+Would need to change code in:
+https://github.com/SilentChaos512/SilentGems/blob/1.7.10/common/net/silentchaos512/gems/item/EnchantToken.java
+to check for toolClass:
+https://github.com/CoFH/CoFHCore/tree/master/src/main/java/cofh/core/item/tool
+
+
 
 IronChain2
 ----------
@@ -13,10 +24,8 @@ Check if config has option for Work clothes to speed up other ladders.
 
 Tool bag, change to use aluminum?? 
 
-Lumber Axe
-----------
+------------
 
-Check tool tips.
 
 Is Garden Stuff wax is ore dictionary with What?
 
