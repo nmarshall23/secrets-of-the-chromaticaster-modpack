@@ -26,6 +26,16 @@
     "toolClass": "pickaxe"
    },
    {
+    "name":"multidimensionalores:orePlatinumNether",
+    "harvestLevel": 6,
+    "toolClass": "pickaxe"
+   },
+   {
+    "name":"multidimensionalores:orePlatinumEnd",
+    "harvestLevel": 6,
+    "toolClass": "pickaxe"
+   },
+   {
     "name":"SilentGems:ChaosOre",
     "harvestLevel": 6,
     "toolClass": "pickaxe"

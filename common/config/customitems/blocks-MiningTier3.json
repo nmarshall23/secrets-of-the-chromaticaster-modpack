@@ -14,6 +14,16 @@
     "name":"minecraft:diamond_ore",
     "harvestLevel": 3,
     "toolClass": "pickaxe"
+   },
+   {
+    "name":"multidimensionalores:oreDiamondEnd",
+    "harvestLevel": 3,
+    "toolClass": "pickaxe"
+   },
+   {
+    "name":"multidimensionalores:oreDiamondNether",
+    "harvestLevel": 3,
+    "toolClass": "pickaxe"
    }
  ]
 }

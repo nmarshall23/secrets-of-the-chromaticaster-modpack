@@ -9,6 +9,26 @@
     "name":"SilentGems:GemOre",
     "harvestLevel": 2,
     "toolClass": "pickaxe"
+   },
+   {
+    "name":"multidimensionalores:oreIronNether",
+    "harvestLevel": 2,
+    "toolClass": "pickaxe"
+   },
+   {
+    "name":"multidimensionalores:oreIronEnd",
+    "harvestLevel": 2,
+    "toolClass": "pickaxe"
+   },
+   {
+    "name":"multidimensionalores:oreNickelEnd",
+    "harvestLevel": 2,
+    "toolClass": "pickaxe"
+   },
+   {
+    "name":"multidimensionalores:oreNickelNether",
+    "harvestLevel": 2,
+    "toolClass": "pickaxe"
    }
  ]
 }
