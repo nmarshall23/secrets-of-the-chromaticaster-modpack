@@ -13,7 +13,7 @@ val plateIron   = <Railcraft:part.plate:0>;
 val plateSteel  = <Railcraft:part.plate:1>;
 val plateTin    = <Railcraft:part.plate:2>;
 
-
+val diamondElTube = <Forestry:thermionicTubes:5>;
 
 // Hopper
 
@@ -52,7 +52,9 @@ recipes.addShaped(filler,[[yellowDye, landMark, yellowDye],
 val builder = <BuildCraft|Builders:builderBlock>;
 
 // Materials
-val gearDiamond = <ore:gearDiamond>;
+//val gearDiamond = <ore:gearDiamond>;
+val gearDiamond = <RotaryCraft:rotarycraft_item_enginecraft:11>;
+
 val sheetTitanium = <Mariculture:crafting:17>;
 
 recipes.remove(builder);
@@ -97,7 +99,7 @@ recipes.addShaped(SiliconLaser,[[enderObsidian,          redstone, redstone],
 
 
 // Cut energy cost of redstone chipset by haft
-val chipsetRedstone = <BuildCraft|Silicon:redstoneChipset>;
+val chipsetRedstone = <BuildCraft|Silicon:redstoneChipset:0>;
 
 mods.buildcraft.AssemblyTable.remove(chipsetRedstone);
 mods.buildcraft.AssemblyTable.addRecipe(chipsetRedstone, 50000, [redstone]);
@@ -118,9 +120,22 @@ recipes.addShaped(assemblyTable,[[obsidian,      ingotRedAlloy,  obsidian],
 // integrationTable
 val integrationTable = <BuildCraft|Silicon:laserTableBlock:2>;
 
-recipes.remove(assemblyTable);
-recipes.addShaped(assemblyTable,[[obsidian,      chipsetRedstone,  obsidian], 
-			         [obsidian,      RCcircuitBoard,   obsidian],
-			         [enderObsidian, gearDiamond,      enderObsidian]]);
+recipes.remove(integrationTable);
+recipes.addShaped(integrationTable,[[obsidian,      chipsetRedstone,  obsidian], 
+			           [obsidian,      RCcircuitBoard,   obsidian],
+			           [enderObsidian, gearDiamond,      enderObsidian]]);
 
 
+
+// pump, 
+
+val pumpBlock = <BuildCraft|Factory:pumpBlock>;
+
+val tankBlock = <BuildCraft|Factory:tankBlock>;
+val gearSteel = <Railcraft:part.gear:2>;
+val blockSteel = <ore:blockSteel>;
+
+recipes.remove(pumpBlock);
+recipes.addShaped(pumpBlock,[[blockSteel, plateSteel,    blockSteel], 
+			     [blockSteel, diamondElTube, blockSteel],
+			     [gearSteel,  tankBlock,     gearSteel]]);

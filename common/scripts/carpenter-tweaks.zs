@@ -9,4 +9,4 @@ recipes.remove(CarpentersBlocks);
 val stick = <ore:stickWood>;
 val woodPlank = <ore:plankWood>;
 
-mods.forestry.Carpenter.addRecipe(CarpentersBlocks * 6, [[stick, stick, stick], [stick, woodPlank, stick], [stick, stick, stick]], <liquid:creosote> * 500, 45, null);
+mods.forestry.Carpenter.addRecipe(CarpentersBlocks * 6, [[stick, stick, stick], [stick, woodPlank, stick], [stick, stick, stick]], <liquid:creosote> * 500, 60, null);
