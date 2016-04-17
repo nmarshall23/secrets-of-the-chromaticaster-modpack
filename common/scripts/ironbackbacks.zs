@@ -157,6 +157,9 @@ val advDepositUpgrade = <ironbackpacks:quickDepositPreciseUpgrade>;
 // Recipe for Adv Upgrade Core
 
 val advUpgradeCore = <customitems:advanced_upgrade_core>;
+val certusElectTube = <customitems:certus_quartz_electron_tube>;
+
+recipes.addShaped(advUpgradeCore,[[certusElectTube, upgradeCore, certusElectTube]]);
 
 //recipes.addShaped(outBackpack, [[upgradeCore]],
 
