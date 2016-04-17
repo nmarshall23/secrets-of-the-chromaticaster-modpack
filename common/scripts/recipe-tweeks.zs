@@ -93,13 +93,13 @@ recipes.addShaped(vineladder * 2,  [[ladder, vines, ladder]]);
 // Hopper Bonus with Iron Plates
 
 val hopper = <minecraft:hopper>;
-val ironPlate = <Railcraft:part.plate:0>;
-
+val plateIron = <Railcraft:part.plate:0>;
+val ingotIron = <minecraft:iron_ingot>;
 val chestWood = <ore:chestWood>;
 
-recipes.addShaped(hopper,  [[ironPlate, null,      ironPlate], 
-			    [ironPlate, chestWood, ironPlate],
-			    [null,      ironPlate, null]]);
+recipes.addShaped(hopper,  [[plateIron, null,      plateIron], 
+			    [plateIron, chestWood, plateIron],
+			    [null,      plateIron, null]]);
 
 // reversalHopper Bonus with Iron Plates
 
@@ -107,7 +107,15 @@ val reversalHopper = <DCIronChain:reversalHopper>;
 
 val redstoneTorch = <minecraft:redstone_torch>;
 val dropper = <minecraft:dropper>;
+val gearIron = <ore:gearIron>;
+val turbineAluminum = <Mariculture:turbine_aluminum>;
 
-recipes.addShaped(reversalHopper,  [[null, ironPlate,      null], 
-			    [ironPlate, dropper, ironPlate],
-			    [ironPlate,      redstoneTorch, ironPlate]]);
+recipes.removeShaped(reversalHopper);
+
+recipes.addShaped(reversalHopper,  [[null, turbineAluminum,      null], 
+			    [plateIron, dropper, plateIron],
+			    [gearIron, redstoneTorch, gearIron]]);
+
+recipes.addShaped(reversalHopper,  [[null, turbineAluminum,      null], 
+			    [ingotIron, dropper, ingotIron],
+			    [gearIron, redstoneTorch, gearIron]]);

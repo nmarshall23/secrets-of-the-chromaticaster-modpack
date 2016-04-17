@@ -10,13 +10,20 @@ val casing = <tis3d:casing>;
 val ingotAluminum = <ore:ingotAluminum>;
 val blockGlass = <ore:blockGlass>;
 val ingotRedAlloy = <ore:ingotRedAlloy>;
+val plateCopper = <Railcraft:part.plate:3>;
+val ingotCopper = <ore:ingotCopper>;
 
 
 recipes.remove(casing);
 recipes.addShaped(casing * 9,
- [[ingotAluminum, ingotRedAlloy, ingotAluminum],
+ [[ingotCopper, ingotRedAlloy, ingotCopper],
   [ingotRedAlloy, blockGlass, ingotRedAlloy],
-  [ingotAluminum, ingotRedAlloy, ingotAluminum]]);
+  [ingotCopper, ingotRedAlloy, ingotCopper]]);
+
+recipes.addShaped(casing * 9,
+ [[plateCopper, ingotRedAlloy, plateCopper],
+  [ingotRedAlloy, blockGlass, ingotRedAlloy],
+  [plateCopper, ingotRedAlloy, plateCopper]]);
 
 
 // Tis3d Controller
@@ -32,6 +39,7 @@ recipes.addShaped(controller,
 
 val redstone = <minecraft:redstone>;
 val plateIron = <Railcraft:part.plate>;
+
 val paneGlass = <ore:paneGlass>;
 
 val moduleAudio = <tis3d:moduleAudio>;
@@ -59,9 +67,22 @@ val moduleItems = [<minecraft:noteblock>, <minecraft:comparator>, <tis3d:prism>,
 for i, tisModule in tisModules {
     var moduleItem = moduleItems[i];
 
-    recipes.addShaped(tisModule,
+    recipes.addShaped(tisModule * 2,
  		[[paneGlass, paneGlass, paneGlass],
 		 [plateIron, moduleItem, plateIron],
+		 [null, redstone, null],
+		]);
+
+    recipes.addShaped(tisModule * 2,
+ 		[[paneGlass, paneGlass, paneGlass],
+		 [plateCopper, moduleItem, plateCopper],
+		 [null, redstone, null],
+		]);
+
+
+    recipes.addShaped(tisModule * 2,
+ 		[[paneGlass, paneGlass, paneGlass],
+		 [ingotCopper, moduleItem, ingotCopper],
 		 [null, redstone, null],
 		]);
   }

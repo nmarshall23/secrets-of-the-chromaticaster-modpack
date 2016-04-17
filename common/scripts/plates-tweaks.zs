@@ -29,13 +29,14 @@ val ingotIron = <ore:ingotIron>;
 mods.railcraft.Rolling.removeRecipe(plateTin);
 mods.railcraft.Rolling.addShaped(plateTin * 6,[[ingotTin, ingotIron], [ingotIron, ingotTin]]);
 
-// Now to the sheets!
+// New Rolling machine Receipes.
 
-val sheets 	   = [<Mariculture:crafting:7>, <Mariculture:crafting:17>] as IItemStack[];
-val sheetMaterials = [<ore:ingotAluminum>, <ore:ingotTitanium>] as IIngredient[];
+val sheets 	   = [<Mariculture:crafting:7>, <Mariculture:crafting:17>, <customitems:invar_plate>] as IItemStack[];
+val sheetMaterials = [<ore:ingotAluminum>, <ore:ingotTitanium>, <ThermalFoundation:material:72>] as IIngredient[];
 
 for i, sheet in sheets {
   var material = sheetMaterials[i];
-  mods.railcraft.Rolling.addShaped(sheet * 4,[[material, material], [material, material]]);
+  mods.railcraft.Rolling.addShaped(sheet * 6,[[material, material], [material, material]]);
 }
+
 
