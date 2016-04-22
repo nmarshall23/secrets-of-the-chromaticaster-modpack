@@ -5,7 +5,7 @@ import minetweaker.item.IItemStack;
 
 /* All pickaxes should indicate their harvest level in the tooltip. */
 	/* Pickaxe */
-
+/*
 val woodLevelPickAxes =[<minecraft:wooden_pickaxe:*>
 			] as IItemStack[];
 
@@ -95,7 +95,7 @@ for i, pickAxes in diamondPickAxes {
   pickAxes.addTooltip("Harvest Level: " + format.darkPurple("Diamond Level"));
 }
 
-
+*/
 
 //<ChromatiCraft:chromaticraft_item_oresilk:*>;
 //<ChromatiCraft:chromaticraft_item_multitool:*>
@@ -103,13 +103,13 @@ for i, pickAxes in diamondPickAxes {
 /* Axe Lumber Axes */
 
 <SilentGems:AxeFlint:*>.addTooltip(format.green("This is a lumber axe."));
-<ThermalFoundation:tool.axePlatinum:*>.addTooltip(format.green("This is a lumber axe."));
+//<ThermalFoundation:tool.axePlatinum:*>.addTooltip(format.green("This is a lumber axe."));
 <minecraft:diamond_axe:*>.addTooltip(format.green("This is a lumber axe."));
 <RotaryCraft:rotarycraft_item_bedaxe>.addTooltip(format.red("This axe kills forests."));
 
 /* Rename ThermalFoundation Tools*/
-<ThermalFoundation:tool.pickaxeNickel:*>.displayName = "Nickel PickAxe";
-<ThermalFoundation:tool.pickaxePlatinum:*>.displayName = "Platinum PickAxe";
+//<ThermalFoundation:tool.pickaxeNickel:*>.displayName = "Nickel PickAxe";
+//<ThermalFoundation:tool.pickaxePlatinum:*>.displayName = "Platinum PickAxe";
 
 
 
