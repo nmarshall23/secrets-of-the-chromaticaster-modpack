@@ -4,6 +4,8 @@ import minetweaker.item.IItemStack;
 import minetweaker.item.IIngredient;
 import minetweaker.data.IData;
 
+
+
 val basicBackpack = <ironbackpacks:basicBackpack>;
 val ironBackpack = <ironbackpacks:ironBackpack>;
 val goldBackpack = <ironbackpacks:goldBackpack>;
@@ -163,4 +165,16 @@ recipes.addShaped(advUpgradeCore,[[certusElectTube, upgradeCore, certusElectTube
 
 //recipes.addShaped(outBackpack, [[upgradeCore]],
 
+//Alt keepOnDeathUpgrade
+
+val vita = <yegamolchattels:entity_vita:*>;
+val fixationDust = <ChromatiCraft:chromaticraft_item_crafting:27>;
+val voidEssence  = <ChromatiCraft:chromaticraft_item_crafting:30>;
+val poppet = <witchery:poppet:0>;
+val etherBarries = <ChromatiCraft:chromaticraft_item_crafting:29>;
+val enderSand = <ExtraUtilities:decorativeBlock1:13>;
+
+val EternityUpgrade = <ironbackpacks:keepOnDeathUpgrade>;
+
+recipes.addShaped(EternityUpgrade,[[fixationDust, vita, fixationDust], [etherBarries, poppet, etherBarries], [voidEssence, enderSand, voidEssence]]);
 
