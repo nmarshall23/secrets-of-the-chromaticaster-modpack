@@ -16,21 +16,22 @@ val ingotGold =  <ore:ingotGold>;
 
 val wiffOfMagic = <witchery:ingredient:34>;
 
-val auraDust = <ChromatiCraft:chromaticraft_item_tiered:1>;
+
+val voidEssence = <ChromatiCraft:chromaticraft_item_crafting:30>;
 val energeticEssence = <ChromatiCraft:chromaticraft_item_crafting:28>;
 val natureFiber = <ChromatiCraft:chromaticraft_item_crafting:31>;
 
-recipes.addShapedMirrored(tokenBase, [[auraDust,         nuggetElectrum, energeticEssence], 
+recipes.addShapedMirrored(tokenBase, [[voidEssence,      nuggetElectrum, energeticEssence], 
 				      [nuggetElectrum,   wiffOfMagic,    nuggetElectrum],
-				      [energeticEssence, nuggetElectrum, auraDust]]);
+				      [energeticEssence, nuggetElectrum, voidEssence]]);
 
-recipes.addShapedMirrored(tokenBase, [[auraDust,         ingotSilver, energeticEssence],
+recipes.addShapedMirrored(tokenBase, [[voidEssence,      ingotSilver, energeticEssence],
 				      [ingotSilver,      wiffOfMagic, ingotSilver],
-				      [energeticEssence, ingotSilver, auraDust]]);
+				      [energeticEssence, ingotSilver, voidEssence]]);
 
-recipes.addShapedMirrored(tokenBase, [[auraDust,         ingotGold,   energeticEssence], 
+recipes.addShapedMirrored(tokenBase, [[voidEssence,      ingotGold,   energeticEssence], 
 				      [ingotGold, 	 wiffOfMagic, ingotGold],
-				      [energeticEssence, ingotGold,   auraDust]]);
+				      [energeticEssence, ingotGold,   voidEssence]]);
 
 // Level 0 Enchantment Tokens
 
