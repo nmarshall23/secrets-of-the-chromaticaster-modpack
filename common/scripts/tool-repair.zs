@@ -22,6 +22,7 @@ val ingotIron = <ore:ingotIron>;
 
 recipes.addShaped(bAnvil, [[blockIron, blockIron, blockIron], [null, ingotIron, null], [ingotIron, ingotIron, ingotIron]]);
 
+/*
 val rotarycraftEtc = [<RotaryCraft:rotarycraft_item_steelpick>, <RotaryCraft:rotarycraft_item_steelaxe>, <RotaryCraft:rotarycraft_item_steelshovel>, <RotaryCraft:rotarycraft_item_steelhoe>, 
 <RotaryCraft:rotarycraft_item_steelsword>, <RotaryCraft:rotarycraft_item_steelsickle>, 
 <RotaryCraft:rotarycraft_item_steelshears>, <RotaryCraft:rotarycraft_item_steelhelmet>, 
@@ -66,7 +67,7 @@ function RepairRecipeOneItems(items as IItemStack[string], materials as IIngredi
 
     recipes.addShapeless(item, [item.anyDamage().marked("item"), repairItem], function (output, inputs, crafting) {
       val maxDamage = inputs.item.maxDamage as int;
-      val repairAmt = (maxDamage / 1) * 1.1 as int ;
+      val repairAmt = (maxDamage 1) * 1.1 as int ;
       return inputs.item.withDamage(max(0, inputs.item.damage - repairAmt)).updateTag({ench: "None"});
     });
   }
@@ -79,7 +80,7 @@ function RepairRecipeTwoItems(items as IItemStack[string], materials as IIngredi
 
     recipes.addShapeless(item, [item.anyDamage().marked("item"), repairItem], function (output, inputs, crafting) {
       val maxDamage = inputs.item.maxDamage as int;
-      val repairAmt = (maxDamage / 2) * 1.1 as int;
+      val repairAmt = (maxDamage 2) * 1.1 as int;
       return inputs.item.withDamage(max(0, inputs.item.damage - repairAmt)).updateTag({ench: "None"});
     });
   }
@@ -92,7 +93,7 @@ function RepairRecipeThreeItems(items as IItemStack[string], materials as IIngre
 
     recipes.addShapeless(item, [item.anyDamage().marked("item"), repairItem], function (output, inputs, crafting) {
       val maxDamage = inputs.item.maxDamage  as int;
-      val repairAmt = (maxDamage / 3) * 1.1 as int;
+      val repairAmt = (maxDamage 3) * 1.1 as int;
       return inputs.item.withDamage(max(0, inputs.item.damage - repairAmt)).updateTag({ench: "None"});
     });
   }
@@ -105,17 +106,13 @@ function RepairRecipeFourItems(items as IItemStack[string], materials as IIngred
 
     recipes.addShapeless(item, [item.anyDamage().marked("item"), repairItem], function (output, inputs, crafting) {
       val maxDamage = inputs.item.maxDamage as int;
-      val repairAmt = (maxDamage / 4) * 1.1 as int;
+      val repairAmt = (maxDamage 4) * 1.1 as int;
       return inputs.item.withDamage(max(0, inputs.item.damage - repairAmt)).updateTag({ench: "None"});
     });
   }
 }
 
 
-//RepairRecipeThreeItems(rotarycraftThree, itemMaterials);
-//RepairRecipeTwoItems(rotarycraftTwo,   itemMaterials);
-//RepairRecipeOneItems(rotarycraftOne,   itemMaterials);
-
-//RepairRecipeThreeItems(hammerz, blockMaterials);
+*/
 
 
