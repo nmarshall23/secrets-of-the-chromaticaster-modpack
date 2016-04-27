@@ -5,28 +5,28 @@ import minetweaker.item.IIngredient;
 
 
 
-val wands = {"stoneWand": <betterbuilderswands:wandStone>, 
+val wands = {
 	     "ironWand":  <betterbuilderswands:wandIron>, 
 	     "diamondWand": <betterbuilderswands:wandDiamond>
 } as IItemStack[string];
 
-val shafts = {"stoneWand": <RotaryCraft:rotarycraft_item_borecraft:13>, 
-	     "ironWand":  <minecraft:iron_ingot>, 
-	     "diamondWand": <RotaryCraft:rotarycraft_item_borecraft:14>
+val shafts = { 
+	     "ironWand":  <RandomThings:ingredient:1>, 
+	     "diamondWand": <ImmersiveEngineering:material:14>
 } as IItemStack[string];
 
-val binders = {"stoneWand": <witchery:ingredient:69>, 
-	     "ironWand":  <witchery:ingredient:148>, 
-	     "diamondWand": <witchery:ingredient:61>
+val binders = {"ironWand": <witchery:ingredient:69>, 
+	     "diamondWand":  <witchery:ingredient:148>
 } as IItemStack[string];
 
 for wandType, wand in wands {
   var shaft = shafts[wandType];
   var binderA = binders[wandType];
-  val binderB = <ChromatiCraft:chromaticraft_item_crafting:28>;
+  val enerDust   = <ChromatiCraft:chromaticraft_item_crafting:28>;
+  val motiveDust = <ChromatiCraft:chromaticraft_item_crafting:26>;
   val head = <chisel:voidstone>;
   recipes.remove(wand);
-  recipes.addShaped(wand, [[null,  binderA, head], 
-			   [null,  shaft,   binderB],
-			   [shaft, null,    null]]);
+  recipes.addShaped(wand, [[null,  enerDust, head], 
+			   [null,  binderA,  motiveDust],
+			   [shaft, null,     null]]);
 }
