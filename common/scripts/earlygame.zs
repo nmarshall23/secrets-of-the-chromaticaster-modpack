@@ -61,7 +61,9 @@ val blockCloth = <ore:blockCloth>;
 val nuggetTin = <ore:nuggetTin>;
 val treatedLeather = <ironbackpacks:treatedLeather>;
 
-recipes.addShaped(saddle, [[treatedLeather, blockCloth, treatedLeather], [nuggetTin, null, nuggetTin] ]);
+recipes.addShaped(saddle, [[blockCloth, treatedLeather, blockCloth], [nuggetTin, null, nuggetTin] ]);
+
+
 
 // flint from 3 gravel
 
