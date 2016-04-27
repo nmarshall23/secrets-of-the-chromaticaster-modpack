@@ -1,0 +1,13 @@
+{
+   "fluids":[
+       {
+       "name" : "Molten Platinum",
+       "textureName" : "molten_platinum",
+       "luminosity": 0,
+       "density": 300,
+       "temperature": 1000,
+       "viscosity": 1000,
+       "flowLength": 8
+       }
+   ]
+}
