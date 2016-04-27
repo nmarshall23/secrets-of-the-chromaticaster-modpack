@@ -30,6 +30,34 @@ NEI.hide(steelPickaxeBugged);
 //steelPickaxeFixed.maxDamage = 700;
 
 
+//Hammerz not picking up the right maxDamage.
+
+val HammerMult = 6;
+
+val PlatinumMD = 3000  * HammerMult;
+val DiamondMD = 2061 * HammerMult;
+val InvarMD  = 770 * HammerMult;
+val SteelMD  = 800 * HammerMult;
+val HSLAMD   = 850 * HammerMult;
+val IronMD   = 600 * HammerMult;
+val NickelMD = 510 * HammerMult;
+val BronzeMD = 500 * HammerMult;
+val CopperMD = 300 * HammerMult;
+val TinMD    = 340 * HammerMult;
+val StoneMd  = 60 * HammerMult;
+
+
+<hammerz:PlatinumHammer>.maxDamage = PlatinumMD;
+<hammerz:DiamondHammer>.maxDamage = DiamondMD;
+<hammerz:InvarHammer>.maxDamage = InvarMD;
+<hammerz:SteelHammer>.maxDamage = SteelMD;
+<hammerz:HSLA>.maxDamage = HSLAMD;
+<hammerz:IronHammer>.maxDamage = IronMD;
+<hammerz:NickelHammer>.maxDamage = NickelMD;
+<hammerz:BronzeHammer>.maxDamage = BronzeMD;
+<hammerz:CopperHammer>.maxDamage = CopperMD;
+<hammerz:TinHammer>.maxDamage = TinMD;
+<hammerz:StoneHammer>.maxDamage = StoneMd;
 
 // RotaryCraft HSLA Steel hardcodes the maxDamage let's try reseting that.
 <RotaryCraft:rotarycraft_item_steelpick:*>.maxDamage = 850;
@@ -75,38 +103,38 @@ NEI.hide(steelPickaxeBugged);
 
 
 // Tool Tip, move on with tool.
-<ThermalFoundation:tool.axePlatinum>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.pickaxePlatinum>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.shovelPlatinum>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.swordPlatinum>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.axeSilver>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.pickaxeSilver>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.shovelSilver>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.swordSilver>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.axeElectrum>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.pickaxeElectrum>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.shovelElectrum>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.swordElectrum>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.axeInvar>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.pickaxeInvar>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.shovelInvar>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.swordInvar>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.axeNickel>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.pickaxeNickel>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.shovelNickel>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.swordNickel>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.axeBronze>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.pickaxeBronze>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.shovelBronze>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.swordBronze>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.axeCopper>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.pickaxeCopper>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.shovelCopper>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.swordCopper>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.axeTin>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.pickaxeTin>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.shovelTin>.addTooltip("This tool feels weak. Best to replace it soon.");
-<ThermalFoundation:tool.swordTin>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.axePlatinum:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.pickaxePlatinum:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.shovelPlatinum:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.swordPlatinum:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.axeSilver:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.pickaxeSilver:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.shovelSilver:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.swordSilver:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.axeElectrum:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.pickaxeElectrum:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.shovelElectrum:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.swordElectrum:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.axeInvar:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.pickaxeInvar:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.shovelInvar:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.swordInvar:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.axeNickel:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.pickaxeNickel:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.shovelNickel:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.swordNickel:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.axeBronze:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.pickaxeBronze:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.shovelBronze:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.swordBronze:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.axeCopper:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.pickaxeCopper:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.shovelCopper:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.swordCopper:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.axeTin:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.pickaxeTin:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.shovelTin:*>.addTooltip("This tool feels weak. Best to replace it soon.");
+<ThermalFoundation:tool.swordTin:*>.addTooltip("This tool feels weak. Best to replace it soon.");
 
 
 <Railcraft:tool.steel.shovel>.addTooltip("This tool feels weak. Best to replace it soon.");

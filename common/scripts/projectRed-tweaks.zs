@@ -26,9 +26,9 @@ val copperElectTube = <Forestry:thermionicTubes:0>;
 val nuggetGold = <minecraft:gold_nugget>;
 val chipsetRed = <BuildCraft|Silicon:redstoneChipset:0>;
 val chipsetQuartz = <BuildCraft|Silicon:redstoneChipset:5>;
+val certusElectTube = <customitems:certus_quartz_electron_tube>;
 
-
-mods.buildcraft.AssemblyTable.addRecipe(icChip, 90000, [nuggetGold * 6, copperElectTube * 2, transistor * 4, chipsetQuartz, chipsetRed * 2, circuitPlate]);
+mods.buildcraft.AssemblyTable.addRecipe(icChip, 90000, [nuggetGold * 6, certusElectTube, transistor * 2, chipsetQuartz, circuitPlate]);
 
 
 
