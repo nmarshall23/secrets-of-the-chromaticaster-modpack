@@ -30,6 +30,9 @@ recipes.addShaped(linenBall, [[tallgrass, tallgrass, tallgrass], [tallgrass, sti
 
 val aluminumRod = <customitems:aluminum_rod>;
 
+var stickAluminum = <ore:stickAluminum>;
+stickAluminum.add(aluminumRod);
+
 // parts
 
 val oreAluminum = <ElectriCraft:electricraft_block_ore:4>;
@@ -38,13 +41,11 @@ val nuggetAluminum = <Mariculture:materials:34>;
 
 furnace.addRecipe(nuggetAluminum * 3, oreAluminum);
 
-recipes.addShaped(aluminumRod, [[null, null, ingotAluminum],
-			        [null, ingotAluminum, null],
-				[ingotAluminum, null, null]]);
+//recipes.addShaped(aluminumRod, [[null, null, ingotAluminum],
+//			        [null, ingotAluminum, null],
+//				[ingotAluminum, null, null]]);
 
-mods.railcraft.Rolling.addShaped(aluminumRod * 2, [[null, null, ingotAluminum],
-			        		   [null, ingotAluminum, null],
-						   [ingotAluminum, null, null]]);
+
 
 
 //Alt recipe function
@@ -72,11 +73,11 @@ function altBackpackRecipe(outBackpack as IItemStack, inBackpack as IItemStack, 
 val plateIron = <Railcraft:part.plate:0>;
 
 
-val ironBackpackMaterials = {"top": plateIron, "levelItem": plateIron, "rod": aluminumRod, "base": aluminumRod } as IIngredient[string];
+val ironBackpackMaterials = {"top": plateIron, "levelItem": plateIron, "rod": stickAluminum, "base": stickAluminum } as IIngredient[string];
 
 altBackpackRecipe(ironBackpack, basicBackpack, ironBackpackMaterials);
 
-//recipes.addShaped(ironBackpack, [[plateIron, plateIron, plateIron], [aluminumRod, basicBackpack, aluminumRod], [aluminumRod, treatedLeather, aluminumRod]]);
+
 
 
 // Done with Custom Parts.
@@ -90,7 +91,7 @@ val goldenSilk = <Mariculture:crafting>;
 
 val wovenSilk = <Forestry:craftingMaterial:3>;
 
-val goldBackpackMaterials = {"top": goldenSilk, "levelItem": goldenSilk, "rod": aluminumRod, "base": wovenSilk } as IIngredient[string];
+val goldBackpackMaterials = {"top": goldenSilk, "levelItem": goldenSilk, "rod": stickAluminum, "base": wovenSilk } as IIngredient[string];
 
 altBackpackRecipe(goldBackpack, ironBackpack, goldBackpackMaterials);
 
