@@ -1,17 +1,27 @@
 TODO
 ==== 
 
-Del SpecialAI configs, remove Fiddling griefing
-maybe test server without SpecialAI, see if that fixes skelitions
+Add Star Metal - TF mana metal. Alloy of Nether star... and..
 
-SilentGems
-----------
+Gate immersive engineering behind Star Metal.
 
-Token's don't work on tools of CoFHCore ItemToolAdv, 
-Would need to change code in:
-https://github.com/SilentChaos512/SilentGems/blob/1.7.10/common/net/silentchaos512/gems/item/EnchantToken.java
-to check for toolClass:
-https://github.com/CoFH/CoFHCore/tree/master/src/main/java/cofh/core/item/tool
+Iron Plate improved Locker Frame is wronge.
+
+
+Recipe Tweaks
+-------------
+
+
+ * Torch Ban
+
+ * Furnace should use OreDic Cobble
+
+
+Change Pipe sealant 
+ * Grater + clay + Cactus Green
+ * Grater + wax + wax
+
+
 
 
 
@@ -29,16 +39,7 @@ Tool bag, change to use aluminum??
 
 Is Garden Stuff wax is ore dictionary with What?
 
-Recipe Tweaks
--------------
 
-Fix new Garden things logs Recipe
-
-
-
-Change Pipe sealant 
- * Grater + clay + Cactus Green
- * Grater + wax + wax
 
 
 Food Progression
@@ -58,10 +59,7 @@ Tech Progression
 
 
 
-Treecapitator
--------------
 
-Test new settings. Changed maxVerLogBreakDist=-1 to 32. And maxNumberOfBlocksInTree=64 to 48.
 
 Guide
 -----
@@ -207,7 +205,7 @@ Configs changes
 Garden Core Compost bin
 -----------------------
  
- added Rotton Log from Harder Wildlife.
+
  See scripts/CompostBin.zs
 
 
