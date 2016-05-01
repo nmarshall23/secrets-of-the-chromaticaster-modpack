@@ -46,12 +46,13 @@ val hammer = <ImmersiveEngineering:tool:0>;
 val stickWood = <ore:stickWood>;
 val goldenSilk = <Mariculture:crafting:0>;
 val ingotPlatinum = <ore:ingotPlatinum>;
+val blockSteel = <ore:blockSteel>;
 val spiderSilk = <minecraft:string>;
 
 recipes.remove(hammer);
 recipes.addShaped(hammer, [
-	[null,	   ingotPlatinum, spiderSilk],
-	[null,	   stickWood,     ingotPlatinum],
+	[null,	   blockSteel, spiderSilk],
+	[null,	   stickWood,     blockSteel],
 	[stickWood,	null,     null]
 ]);
 
@@ -70,77 +71,13 @@ val plateSteel = <ImmersiveEngineering:metal:38>;
 val plateConstantan = <ImmersiveEngineering:metal:36>;
 
 // Sheet Metal Blocks
-val blockSMIron = <ImmersiveEngineering:metalDecoration:10>;
-val blockSMAluminum = <ImmersiveEngineering:metalDecoration2>;
-val blockSMLead = <ImmersiveEngineering:metalDecoration2:1>;
-val blockSMSteel = <ImmersiveEngineering:metalDecoration2:2>;
-
-recipes.removeShapeless(plateIron, [blockSMIron]);
-
-val ingots = {
-"ingotAluminum" : <ore:ingotAluminum>,
-"ingotCopper": <ore:ingotCopper>, 
-//"ingotTin": <ore:ingotTin>, 
-//"ingotBronze": <ore:ingotBronze>,
-"ingotIron": <ore:ingotIron>,
-//"ingotNickel": <ore:ingotNickel>,
-"ingotInvar": <ore:ingotInvar>, 
-"ingotSteel": <ore:ingotSteel>, 
-//"ingotHSLA": <ore:ingotHSLA>,
-//"gemDiamond": <ore:gemDiamond>,
-//"ingotPlatinum": <ore:ingotPlatinum>
-} as IIngredient[string];
-
-val plates = {
-"ingotSteel": plateSteel,
-"ingotIron":  plateIron,
-"ingotAluminum": plateAluminum,
-"ingotCopper": <Railcraft:part.plate:3>,
-"ingotInvar": <customitems:invar_plate>
 
 
-} as IItemStack[string];
 
 
-val rods = {
-"ingotSteel": <ImmersiveEngineering:material:15>,
-"ingotAluminum": <ImmersiveEngineering:material:16>,
-"ingotIron": <ImmersiveEngineering:material:14>
-} as IItemStack[string];
 
-for material, ingot in ingots {
-  var plate = plates[material];
-  var rod   = rods[material];
 
-  var name = material as string;
-  val rfPerOp = 2400;
-  //print("hi ingots");
- if(plate) {
 
-   recipes.removeShapeless(plate);
-   recipes.addShapeless(plate, [hammer.reuse(), ingot]);
-   print("found Plate: " + plate.displayName );
-   mods.immersiveengineering.MetalPress.removeRecipe(plate);
-   mods.immersiveengineering.MetalPress.addRecipe(plate * 6, ingot, <ImmersiveEngineering:mold:0>, rfPerOp, 4);
- }
-
- if(rod) {
-   recipes.remove(rod);
-   mods.immersiveengineering.MetalPress.removeRecipe(rod);
-   mods.immersiveengineering.MetalPress.addRecipe(rod * 2, ingot, <ImmersiveEngineering:mold:2>, rfPerOp, 3);
-   recipes.addShaped(rod, [
-	[null,  null,  ingot],
-	[null,  ingot, null],
-	[ingot, null,  null]
-   ]);
-
-   mods.railcraft.Rolling.addShaped(rod * 2, [
-	[null,  null,  ingot],
-	[null,  ingot, null],
-	[ingot, null,  null]]);
- }
-
-}
 
 
 

@@ -73,7 +73,7 @@ val stoneButton = <minecraft:stone_button>;
 val whiteLamp = <ProjRed|Illumination:projectred.illumination.lamp:0>;
 
 
-//recipes.remove(builderGuide);
+recipes.remove(builderGuide);
 
 recipes.addShaped(builderGuide, [
 [thickenGlass, Transistor, thickenGlass],
@@ -82,7 +82,8 @@ recipes.addShaped(builderGuide, [
 ]);
 
 val builderGuideAdv = <OpenBlocks:builder_guide>;
-//recipes.remove(builderGuideAdv);
+recipes.remove(builderGuideAdv);
+
 /*
 recipes.addShaped(builderGuideAdv, [
 	[null,		null, 	       null]
@@ -103,7 +104,7 @@ recipes.addShaped(itemDropper, [
 // Luggage
 val luggage = <OpenBlocks:luggage>;
 
-recipes.remove(itemDropper);
+recipes.remove(luggage);
 /*
 recipes.addShaped(itemDropper, [
 	[null,		null, 	       null]
@@ -134,9 +135,13 @@ recipes.addShapedMirrored(goldenEye, [
 
 val sleepingBag = <OpenBlocks:sleepingBag>;
 
+val woolBlue = <ore:blockWoolBlue>;
+val linenBall = <customitems:linen_ball>;
+
 recipes.remove(sleepingBag);
-/*
+
 recipes.addShaped(sleepingBag, [
-	[null,		null, 	       null]
+ [woolBlue, linenBall, woolBlue],
+ [woolBlue, linenBall, woolBlue]
 ]);
-*/
+

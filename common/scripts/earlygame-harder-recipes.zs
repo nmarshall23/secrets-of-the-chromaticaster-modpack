@@ -2,6 +2,18 @@
 // Blocks and Items that are used in Early Game machines.
 
 
+// Why don't bed use the proper colored Wool?
+val bed = <minecraft:bed>;
+val plank = <ore:plankWood>;
+val woolRed = <ore:blockWoolRed>;
+val woolWhite = <ore:blockWoolWhite>;
+
+recipes.remove(bed);
+recipes.addShaped(bed, [
+ [plank, plank, plank],
+ [woolRed, woolRed, woolWhite]
+]);
+
 // thickenGlass is made in a vat of lava
 val thickenGlass = <ExtraUtilities:decorativeBlock2>;
 
@@ -18,7 +30,7 @@ mods.mariculture.Vat.addRecipe(<liquid:lava> * 250 , sandyGlass, thickenGlass,  
 val piston = <minecraft:piston>;
 
 // Materials 
-val plank = <ore:plankWood>;
+
 val cobbleStone = <ore:cobblestone>;
 val ingotAluminum = <ore:ingotAluminum>;
 val redstoneDust = <ore:dustRedstone>;

@@ -122,13 +122,13 @@ recipes.addShaped(fumeFunnel, [[wroughtIronIngot, lavaBucket, wroughtIronIngot],
 val waterTank = <Railcraft:machine.alpha:14>;
 
 // Materials
-val ingotIron = <ore:ingotIron>;
+
 val sealant = <BuildCraft|Transport:pipeWaterproof>;
-val creosoteWood = <Railcraft:cube:8>;
+val plankTreatedWood = <ore:plankTreatedWood>;
 
 recipes.remove(waterTank);
-recipes.addShaped(waterTank * 6, [[plank, plank, plank], [ingotIron, sealant, ingotIron], [plank, plank, plank]]);
+//recipes.addShaped(waterTank * 6, [[plank, plank, plank], [ingotIron, sealant, ingotIron], [plank, plank, plank]]);
 
-recipes.addShaped(waterTank * 6, [[creosoteWood, creosoteWood, creosoteWood],
+recipes.addShaped(waterTank * 6, [[plankTreatedWood, plankTreatedWood, plankTreatedWood],
 				  [ironBars, 	 sealant,      ironBars], 
-				  [creosoteWood, creosoteWood, creosoteWood]]);
+				  [plankTreatedWood, plankTreatedWood, plankTreatedWood]]);
