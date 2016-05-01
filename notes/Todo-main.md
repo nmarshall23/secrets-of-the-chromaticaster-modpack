@@ -1,9 +1,13 @@
 TODO
 ==== 
 
-Add Star Metal - TF mana metal. Alloy of Nether star... and..
 
-Gate immersive engineering behind Star Metal.
+Sulfer needs magical uses.
+Hellhound Head should also have magical uses.
+
+
+
+Check Percentage of Aggro peaceful mobs. 
 
 Iron Plate improved Locker Frame is wronge.
 
