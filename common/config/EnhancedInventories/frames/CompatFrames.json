@@ -47,14 +47,14 @@
 		"tier":1,
 		"materials":{ "name": "Railcraft:part.plate", "meta": 2}
 	},
-	"Creosote Wood":{
-		"name":"Creosote Wood Frame",
-		"ColorRed":63,
-		"ColorGreen":18,
-		"ColorBlue":5,
+	"Treated Wood":{
+		"name":"Treated Wood Frame",
+		"ColorRed":96,
+		"ColorGreen":56,
+		"ColorBlue":38,
 		"FrameType":1,
 		"tier":2,
-		"materials":{ "name": "Railcraft:cube", "meta": 8}
+		"materials":"plankTreatedWood"
 	},
 	"Iron Plate":{
 		"name":"Iron Plate Frame",
