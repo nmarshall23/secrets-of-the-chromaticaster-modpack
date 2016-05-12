@@ -29,11 +29,14 @@ recipes.addShaped(casing * 9,
 // Tis3d Controller
 val controller = <tis3d:controller>;
 val gearSignalum = <ThermalFoundation:material:138>;
-
+val crystalCertusQuartz = <ore:crystalCertusQuartz>;
 
 recipes.remove(controller);
 recipes.addShaped(controller,
  [[gearSignalum, casing, gearSignalum]]);
+
+recipes.addShapedMirrored(controller,
+ [[crystalCertusQuartz, casing, gearSignalum]]);
 
 // Alt Recipes for the modules using Iron Plates
 

@@ -9,7 +9,7 @@ import minetweaker.item.IIngredient;
 // Plates
 
 val plateCopper = <Railcraft:part.plate:3>;
-val plateIron   = <Railcraft:part.plate:0>;
+val plateIron   = <ore:plateIron>;
 val plateSteel  = <Railcraft:part.plate:1>;
 val plateTin    = <Railcraft:part.plate:2>;
 val plateInvar = <customitems:invar_plate>;
@@ -24,13 +24,15 @@ val hopper = <BuildCraft|Factory:blockHopper>;
 // Materials
 val chest = <minecraft:chest>;
 val gearStone = <ore:gearStone>;
+val ingotTin = <ore:ingotTin>;
 val gearIron = <ore:gearIron>;
 
 recipes.remove(hopper);
-recipes.addShaped(hopper,[[plateTin, chest,  plateTin], 
+recipes.addShaped(hopper,[[ingotTin, chest,  ingotTin], 
 			  [null,  gearStone, null]]);
 
-
+recipes.addShaped(hopper,[[plateTin, chest,  plateTin], 
+			  [null,  gearStone, null]]);
 // End Hopper
 
 
@@ -55,11 +57,12 @@ val blackDye = <ore:dyeBlack>;
 val yellowDye = <ore:dyeYellow>;
 val landMark = <BuildCraft|Core:markerBlock>;
 val gearGold = <ore:gearGold>;
+val copperElectTube = <Forestry:thermionicTubes:0>;
 
 recipes.remove(filler);
-recipes.addShaped(filler,[[plateInvar, landMark,         plateInvar], 
-			  [plateInvar, chest,            plateInvar],
-			  [gearGold,   certusElectTube,  gearGold]]);
+recipes.addShaped(filler,[[plateTin, landMark, plateTin], 
+			  [plateTin, chest,    plateTin],
+			  [gearGold, copperElectTube,  gearGold]]);
 
 // End Filler
 

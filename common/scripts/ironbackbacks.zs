@@ -70,7 +70,7 @@ function altBackpackRecipe(outBackpack as IItemStack, inBackpack as IItemStack, 
 
 //Alt recipes for iron Backpack using iron plates
 
-val plateIron = <Railcraft:part.plate:0>;
+val plateIron = <ore:plateIron>;
 
 
 val ironBackpackMaterials = {"top": plateIron, "levelItem": plateIron, "rod": stickAluminum, "base": stickAluminum } as IIngredient[string];

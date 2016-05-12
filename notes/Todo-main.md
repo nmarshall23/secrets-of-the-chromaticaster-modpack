@@ -1,6 +1,11 @@
 TODO
 ==== 
 
+Add Minced Food Items to Food Proccessor
+
+Rutile Ore should be steel level ore. 
+
+Should add Titanume Tools?
 
 Sulfer needs magical uses.
 Hellhound Head should also have magical uses.

@@ -84,6 +84,8 @@ recipes.addShaped(builderGuide, [
 val builderGuideAdv = <OpenBlocks:builder_guide>;
 recipes.remove(builderGuideAdv);
 
+
+
 /*
 recipes.addShaped(builderGuideAdv, [
 	[null,		null, 	       null]
@@ -94,12 +96,19 @@ recipes.addShaped(builderGuideAdv, [
 
 val itemDropper = <OpenBlocks:itemDropper>;
 
+val hopper = <minecraft:hopper>;
+val cobblestone = <ore:cobblestone>;
+val plateIron = <ore:plateIron>;
+val dustRedstone = <ore:dustRedstone>;
+
 //recipes.remove(itemDropper);
-/*
+
 recipes.addShaped(itemDropper, [
-	[null,		null, 	       null]
+[plateIron, cobblestone,  cobblestone],
+[hopper,    dustRedstone, cobblestone],
+[plateIron, cobblestone,  cobblestone]
 ]);
-*/
+
 
 // Luggage
 val luggage = <OpenBlocks:luggage>;

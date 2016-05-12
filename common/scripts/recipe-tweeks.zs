@@ -93,7 +93,8 @@ recipes.addShaped(vineladder * 2,  [[ladder, vines, ladder]]);
 // Hopper Bonus with Iron Plates
 
 val hopper = <minecraft:hopper>;
-val plateIron = <Railcraft:part.plate:0>;
+
+val plateIron = <ore:plateIron>;
 val ingotIron = <minecraft:iron_ingot>;
 val chestWood = <ore:chestWood>;
 
@@ -119,3 +120,17 @@ recipes.addShaped(reversalHopper,  [[null, turbineAluminum,      null],
 recipes.addShaped(reversalHopper,  [[null, turbineAluminum,      null], 
 			    [ingotIron, dropper, ingotIron],
 			    [gearIron, redstoneTorch, gearIron]]);
+
+
+// itemCloth 
+
+val linenCloth = <AMTAddonJP:addonamtjp.linen_cloth:0>;
+recipes.remove(linenCloth);
+
+val linenBall = <customitems:linen_ball>;
+
+recipes.addShaped(linenCloth, [
+	[linenBall, linenBall],
+	[linenBall, linenBall]
+]);
+// customitems:linen_ball

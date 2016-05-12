@@ -19,7 +19,7 @@ val Toolbox = <InventoryTools:toolbox>;
 
 val dyeRed = <ore:dyeRed>;
 val ingotAluminum = <ore:ingotAluminum>;
-val plateIron = <Railcraft:part.plate:0>;
+val plateIron = <ore:plateIron>;
 recipes.remove(Toolbox);
 recipes.addShaped(Toolbox, [[plateIron, aluminumAlloyIngot, plateIron],
 			    [aluminumAlloyIngot, dyeRed, aluminumAlloyIngot], 

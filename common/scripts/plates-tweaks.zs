@@ -38,6 +38,7 @@ val platesToAddToOreDict = {
 } as IItemStack[string];
 
 
+
 val plates = {
 "Copper": <Railcraft:part.plate:3>, 
 "Tin":    <Railcraft:part.plate:2>,
@@ -165,14 +166,17 @@ val wireCoil2Materials = {
 "redstone":  <ore:dustRedstone>
 } as IIngredient[string];
 
+val coilSizeDefinitions = {"lv": "6", "mv": "2", "hv": "4", "steel": "4", "redstone":"4"} as string[string];
+
 for material, coil in wireCoils {
 
    var coil1Material = wireCoil1Materials[material];
    var coil2Material = wireCoil2Materials[material];
+   var outStackSize = coilSizeDefinitions[material] as int;
    recipes.remove(coil);
 
    val stick = <ore:stickWood>;
-   mods.railcraft.Rolling.addShaped(coil * 4, [
+   mods.railcraft.Rolling.addShaped(coil * outStackSize, [
 	[null,          coil1Material, null],
 	[coil2Material, stick,         coil2Material],
 	[null,          coil1Material, null]]);

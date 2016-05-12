@@ -46,13 +46,14 @@ val hammer = <ImmersiveEngineering:tool:0>;
 val stickWood = <ore:stickWood>;
 val goldenSilk = <Mariculture:crafting:0>;
 val ingotPlatinum = <ore:ingotPlatinum>;
-val blockSteel = <ore:blockSteel>;
+val blockIron = <ore:blockIron>;
 val spiderSilk = <minecraft:string>;
+val MagStick = <magnanimoustools:MagStick>;
 
 recipes.remove(hammer);
 recipes.addShaped(hammer, [
-	[null,	   blockSteel, spiderSilk],
-	[null,	   stickWood,     blockSteel],
+	[null,	   blockIron, spiderSilk],
+	[null,	   stickWood,     blockIron],
 	[stickWood,	null,     null]
 ]);
 
@@ -64,11 +65,11 @@ recipes.addShaped(hammer, [
  * 
  */
 
-val plateIron = <ImmersiveEngineering:metal:30>;
-val plateAluminum = <ImmersiveEngineering:metal:32>;
-val plateLead = <ImmersiveEngineering:metal:33>;
-val plateSteel = <ImmersiveEngineering:metal:38>;
-val plateConstantan = <ImmersiveEngineering:metal:36>;
+val plateIron = <ore:plateIron>;
+val plateAluminum = <ore:plateAluminum>;
+val plateLead = <ore:plateLead>;
+val plateSteel = <ore:plateSteel>;
+val plateConstantan = <ore:plateConstantan>;
 
 // Sheet Metal Blocks
 
@@ -106,10 +107,11 @@ val copperWireBlock = <ImmersiveEngineering:storage:8>;
 
 val redStone = <minecraft:redstone>;
 val blockRedstone = <minecraft:redstone_block>;
+val gearNickel = <ore:gearNickel>;
 
 recipes.addShaped(kineticDynamo, [
 	[blockRedstone, copperWireBlock, blockRedstone],
-	[ingotPlatinum,	ingotPlatinum,   ingotPlatinum]
+	[plateSteel,	gearNickel,   plateSteel]
 ]);
 
 // conveyerBelt
@@ -117,11 +119,12 @@ recipes.addShaped(kineticDynamo, [
 val conveyerBelt = <ImmersiveEngineering:metalDevice:11>;
 
 val treatedLeather = <ironbackpacks:treatedLeather>;
+val gearInvar = <ore:gearInvar>;
 
 recipes.remove(conveyerBelt);
 recipes.addShaped(conveyerBelt * 8, [
 	[treatedLeather, treatedLeather, treatedLeather],
-	[ingotPlatinum,	redStone, ingotPlatinum]
+	[plateAluminum,	gearInvar, plateAluminum]
 ]);
 
 // windMill
@@ -159,11 +162,23 @@ recipes.addShaped(jerrycan, [
 
 // IronMechComponent, should cost more
 val ironMechComponent = <ImmersiveEngineering:material:11>;
+val gearCopper = <ore:gearCopper>;
 recipes.remove(ironMechComponent);
+recipes.addShaped(ironMechComponent, [
+	[plateIron, 	null, plateIron],
+	[null,	gearCopper, null],
+	[plateIron,	null, plateIron]
+]);
+
 
 // steelMechComponent, should cost more
 val steelMechComponent = <ImmersiveEngineering:material:12>;
 recipes.remove(steelMechComponent);
+recipes.addShaped(steelMechComponent, [
+	[plateSteel, 	null, plateSteel],
+	[null,	gearCopper, null],
+	[plateSteel,	null, plateSteel]
+]);
 
 // Remove MechComponent's from Loot
 vanilla.loot.removeChestLoot("ieVillageCrates", ironMechComponent);
@@ -186,11 +201,19 @@ recipes.addShaped(fluidPipe * 6, [
 
 // External Heater
 val externalHeater = <ImmersiveEngineering:metalDevice:12>;
+val blockTin = <ore:blockTin>;
+
 recipes.remove(externalHeater);
+recipes.addShaped(externalHeater, [
+	[plateSteel, 	  plateSteel,    plateSteel],
+	[copperWireBlock, blockTin,      copperWireBlock],
+	[plateSteel,	  blockRedstone, plateSteel]
+]);
+
 
 // Fluid Pump
 val fluidPump = <ImmersiveEngineering:metalDevice2:6>;
-recipes.remove(fluidPump);
+//recipes.remove(fluidPump);
 
 // MV Wire Connector
 val MVwireConnector = <ImmersiveEngineering:metalDevice:2>;
@@ -215,18 +238,29 @@ val LVcap = <ImmersiveEngineering:metalDevice:1>;
 val redCrystal = <ElectriCraft:electricraft_item_crystal>;
 val plankTreatedWood = <ore:plankTreatedWood>;
 val copperElcTube = <Forestry:thermionicTubes:0>;
+
 val chargedCertusQuartz = <appliedenergistics2:item.ItemMultiMaterial:1>;
 recipes.remove(LVcap);
 
 recipes.addShaped(LVcap, [
-	[plateAluminum,	   plateAluminum,       plateAluminum],
-	[copperElcTube,    redCrystal,          copperElcTube],
-	[plankTreatedWood, chargedCertusQuartz, plankTreatedWood]
+	[plateAluminum,	   plateAluminum,    plateAluminum],
+	[blockRedstone,    copperElcTube,    blockRedstone   ],
+	[plankTreatedWood, plankTreatedWood, plankTreatedWood]
 ]);
 
 // MV Cap
 val MVcap = <ImmersiveEngineering:metalDevice:3>;
 recipes.remove(MVcap);
+
+val CertusElcTube = <customitems:certus_quartz_electron_tube>;
+
+
+recipes.addShaped(MVcap, [
+	[plateAluminum,	   plateAluminum, plateAluminum],
+	[ingotPlatinum,    CertusElcTube, ingotPlatinum],
+	[plankTreatedWood, LVcap, plankTreatedWood]
+]);
+
 
 // HV Cap
 val HVcap = <ImmersiveEngineering:metalDevice:7>;
@@ -311,3 +345,34 @@ recipes.addShaped(RevolverDrum, [
 	[ingotSteel, gearIron,   ingotSteel],
 	[null,	     ingotSteel, null]
 ]);
+
+// Sky Hook 
+
+val skyHook =<ImmersiveEngineering:skyhook>;
+val grip = <ImmersiveEngineering:material:9>;
+val treatedStick = <ore:treatedStick>;
+
+recipes.remove(skyHook);
+
+recipes.addShaped(skyHook, [
+	[ingotSteel, ingotSteel,   null],
+	[ingotSteel, treatedStick, treatedStick],
+	[null,	     grip, 	   grip]
+]);
+
+// Balloon
+
+val balloon = <ImmersiveEngineering:clothDevice:0>;
+recipes.remove(balloon);
+
+val treatedWoodSlab = <ImmersiveEngineering:woodenDecoration:2>;
+val itemCloth = <ore:itemCloth>;
+
+val torch = <minecraft:torch>;
+
+recipes.addShaped(balloon, [
+	[null,      itemCloth,       null],
+	[itemCloth, torch,           itemCloth],
+	[null,	    treatedWoodSlab, null]
+]); 
+

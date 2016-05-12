@@ -14,6 +14,7 @@ val slimeBall = <minecraft:slime_ball>;
 val copperPlate = <Railcraft:part.plate:3>;
 val treatedStick = <ore:treatedStick>;
 val treatedLeather = <ironbackpacks:treatedLeather>;
+
 val skyStone = <appliedenergistics2:tile.BlockSkyStone:1>;
 
 // longfallboots, 
@@ -22,7 +23,44 @@ val skyStone = <appliedenergistics2:tile.BlockSkyStone:1>;
 recipes.remove(longfallboots);
 recipes.addShaped(longfallboots, [[piston, skyStone, piston], [slimeBall,leather_boots, slimeBall], [wool, chainmail_boots, wool]]);
 
+
 // TorchBandolier, don't see why this should need a gem. 
-recipes.remove(TorchBandolier);
-recipes.addShaped(TorchBandolier, [[treatedLeather, treatedLeather ,treatedLeather], [treatedStick, null, treatedStick], [treatedLeather, treatedLeather, treatedLeather]]);
+
+var stickAluminum = <ore:stickAluminum>;
+
+
+//recipes.remove(TorchBandolier);
+//recipes.addShaped(TorchBandolier, [
+//	[treatedStick,   treatedStick,  treatedLeather],
+//	[treatedStick,   null,		],
+//	[treatedLeather, stickAluminum,          null]
+//]);
+
+
+// Grappling Hook
+val grapplinghook = <grapplemod:grapplinghook>;
+val grip = <ImmersiveEngineering:material:9>;
+val gearIron = <ore:gearIron>;
+
+val dustRedstone = <ore:dustRedstone>;
+val pickaxeIron = <minecraft:iron_pickaxe>;
+val pickaxeTin = <sotc.jmod:toolTinPickaxe>;
+val linenBall = <customitems:linen_ball>;
+
+recipes.remove(grapplinghook);
+recipes.addShaped(grapplinghook, [
+[pickaxeTin],
+[linenBall],
+[linenBall]
+]);
+
+val grapplinghookMotr = <grapplemod:hookshot>;
+val ingotIron = <ore:ingotIron>;
+
+recipes.remove(grapplinghookMotr);
+recipes.remove(grapplinghookMotr);
+recipes.addShaped(grapplinghook, [
+[null, grapplinghook, null],
+[grip, gearIron,  grip]
+]);
 
