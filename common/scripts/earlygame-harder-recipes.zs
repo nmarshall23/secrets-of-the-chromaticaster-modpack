@@ -15,13 +15,14 @@ recipes.addShaped(bed, [
 ]);
 
 // thickenGlass is made in a vat of lava
-val thickenGlass = <ExtraUtilities:decorativeBlock2>;
+val thickenGlass = <ExtraUtilities:decorativeBlock2:0>;
 
 // Materials
 val sandyGlass = <ExtraUtilities:decorativeBlock1:9>;
+val fourPerbucket = 1000 / 8;
 
 furnace.remove(thickenGlass);
-mods.mariculture.Vat.addRecipe(<liquid:lava> * 250 , sandyGlass, thickenGlass,  16);
+mods.mariculture.Vat.addRecipe(<liquid:lava> * fourPerbucket, sandyGlass, thickenGlass,  16);
 
 // End thickenGlass
 

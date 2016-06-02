@@ -44,13 +44,13 @@ val enderDew = <witchery:ingredient:67>;
 
 recipes.remove(elevator);
 
-recipes.addShaped(elevator, [
+recipes.addShaped(elevator * 2, [
 	[woolWhite, etherBarry, woolWhite],
 	[steelRod, enderDew, steelRod],
 	[woolWhite, motiveDust, woolWhite]
 ]);
 
-recipes.addShaped(elevator, [
+recipes.addShaped(elevator * 2, [
 	[woolWhite, etherBarry, woolWhite],
 	[steelRod,  bucketEnder, steelRod],
 	[woolWhite, motiveDust, woolWhite]
@@ -114,6 +114,20 @@ recipes.addShaped(itemDropper, [
 val luggage = <OpenBlocks:luggage>;
 
 recipes.remove(luggage);
+
+val stick = <ore:stickWood>;
+val chestWood = <ore:chestWood>;
+val mandrakeRoot = <witchery:ingredient:22>;
+val vita = <yegamolchattels:entity_vita>;
+val natureFiber = <ChromatiCraft:chromaticraft_item_crafting:31>;
+
+recipes.addShaped(luggage, [
+  [natureFiber,   vita,         natureFiber],
+  [natureFiber,   chestWood,    natureFiber],
+  [mandrakeRoot,  mandrakeRoot, mandrakeRoot]
+]);
+
+
 /*
 recipes.addShaped(itemDropper, [
 	[null,		null, 	       null]

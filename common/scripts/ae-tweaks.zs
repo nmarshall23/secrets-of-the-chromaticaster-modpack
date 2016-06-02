@@ -2,39 +2,62 @@
 
 import minetweaker.item.IItemStack;
 
+// New OreDic EitherFluixCrystal
+val fluixCrystal = <appliedenergistics2:item.ItemMultiMaterial:7>;
+val fluixPureCrystal = <appliedenergistics2:item.ItemMultiMaterial:12>;
+
+val crystalFluixEither = <ore:eitherCrystalFluix>;
+crystalFluixEither.add(fluixCrystal);
+crystalFluixEither.add(fluixPureCrystal);
+
 // Charger
-val BlockCharger = <appliedenergistics2:tile.BlockCharger>;
-
-val fluxCrystal = <ore:crystalFluix>;
-val fluxPureCrystal = <appliedenergistics2:item.ItemMultiMaterial:12>;
-
-val crystalFluixEither = <ore:crystalFluixEither>;
+val blockCharger = <appliedenergistics2:tile.BlockCharger>;
 
 val plateSteel  = <Railcraft:part.plate:1>;
 val chipRed = <BuildCraft|Silicon:redstoneChipset>;
 
 
-recipes.remove(BlockCharger);
-recipes.addShaped(BlockCharger,[[plateSteel, crystalFluixEither ,  plateSteel], 
+recipes.remove(blockCharger);
+recipes.addShaped(blockCharger,[[plateSteel, crystalFluixEither ,  plateSteel], 
 			         [chipRed,      null,   null],
 			         [plateSteel, crystalFluixEither,      plateSteel]]);
 
 // EnergyAcceptor
 
-val EnergyAcceptor = <appliedenergistics2:tile.BlockEnergyAcceptor>;
+val energyAcceptor = <appliedenergistics2:tile.BlockEnergyAcceptor>;
 
-val PowerModule = <RotaryCraft:rotarycraft_item_misccraft:2>;
+val ironMechComponent = <ImmersiveEngineering:material:11>;
+
 val QuartzGlass = <appliedenergistics2:tile.BlockQuartzGlass>;
-val LustrousCrystal = <ElectriCraft:electricraft_item_crystal:1>;
 
-recipes.remove(EnergyAcceptor);
-recipes.addShaped(EnergyAcceptor,[[plateSteel, crystalFluixEither, plateSteel], 
-			         [QuartzGlass, LustrousCrystal,    QuartzGlass],
-			         [plateSteel,  PowerModule,        plateSteel]]);
+recipes.remove(energyAcceptor);
+recipes.addShaped(energyAcceptor,[
+  [ironMechComponent, QuartzGlass,        ironMechComponent], 
+  [QuartzGlass,       crystalFluixEither, QuartzGlass],
+  [ironMechComponent, QuartzGlass,        ironMechComponent]
+]);
 
 
-val BlockQuartzGrowthAccelerator = <appliedenergistics2:tile.BlockQuartzGrowthAccelerator>;
-val BlockController = <appliedenergistics2:tile.BlockController>;
+//val BlockQuartzGrowthAccelerator = <appliedenergistics2:tile.BlockQuartzGrowthAccelerator>;
+
+val blockController = <appliedenergistics2:tile.BlockController>;
+recipes.remove(blockController);
+
+// inscriber
+
+val inscriber = <appliedenergistics2:tile.BlockInscriber>;
+recipes.remove(inscriber);
+
+val piston = <ore:craftingPiston>;
+val lightEngineeringBlock = <ImmersiveEngineering:metalDecoration:7>;
+val certusElectTube = <customitems:certus_quartz_electron_tube>;
+
+recipes.addShaped(inscriber,[
+  [lightEngineeringBlock, piston, lightEngineeringBlock], 
+  [certusElectTube,       null,   certusElectTube],
+  [lightEngineeringBlock, piston, lightEngineeringBlock]
+]);
+
 
 // Processors
 
@@ -61,3 +84,14 @@ function buildProcessor( processor as IItemStack, print as IItemStack) {
 buildProcessor(calcProcessor, calcPrint);
 buildProcessor(logicProcessor, logicPrint);
 buildProcessor(enginProcessor, enginPrint);
+
+// network tool
+
+val networkTool = <appliedenergistics2:item.ToolNetworkTool>;
+
+val wrenchItem = <BuildCraft|Core:wrenchItem>;
+val illuminatedpanel = <appliedenergistics2:item.ItemMultiPart:180>;
+val chest = <ore:chest>;
+
+recipes.addShapeless(networkTool, [wrenchItem, illuminatedpanel, calcProcessor, chest]);
+

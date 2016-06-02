@@ -45,8 +45,8 @@ for i, engine in frEngines {
  // <Railcraft:machine.beta:3>, 
 // Machines that have been disabled.
 // Forestry Fermenter and Still
-val disabledMachines = [<BuildCraft|Factory:refineryBlock>, <BuildCraft|Builders:machineBlock>, <BuildCraft|Factory:miningWellBlock>, <BuildCraft|Factory:floodGateBlock>] as IItemStack[];
-
+val disabledMachines = [<BuildCraft|Factory:refineryBlock>, <BuildCraft|Builders:machineBlock>, <BuildCraft|Factory:miningWellBlock>] as IItemStack[];
+// <BuildCraft|Factory:floodGateBlock> consitering enabling the floodGate..
 // , <Forestry:factory:3>, <Forestry:factory:6>, <BuildCraft|Factory:pumpBlock>
 
 for i, machine in disabledMachines {

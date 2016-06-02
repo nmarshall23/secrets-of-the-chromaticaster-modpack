@@ -8,6 +8,26 @@
 //mods.mariculture.Vat.addRecipe(<liquid:water> * 500, <liquid:quicklime> * 50, <minecraft:gravel> , concreteCH, 80); 
 
 
+// Ender Stone should take less Ender Pearls to make...
+
+//mods.mariculture.Vat.removeRecipe(<liquid:ender>);
+
+
+val twoPerPearl = 250 / 2;
+val cobblestone = <minecraft:cobblestone>;
+val endstone = <minecraft:end_stone>;
+mods.mariculture.Vat.removeRecipe(endstone);
+
+mods.mariculture.Vat.addRecipe(<liquid:ender> * twoPerPearl, cobblestone * 8, endstone, 8); 
+
+val OneAndExtraPerPearl = 200;
+
+val pearl = <Mariculture:pearls:*>;
+val enderPearl = <minecraft:ender_pearl>;
+
+mods.mariculture.Vat.removeRecipe(enderPearl);
+mods.mariculture.Vat.addRecipe(<liquid:ender> * OneAndExtraPerPearl, pearl, enderPearl, 25); 
+
 // ingotRedAlloy can be made in the vat
 
 val redAlloy = <ProjRed|Core:projectred.core.part:10>;
@@ -35,6 +55,7 @@ val dustQuickLime = <witchery:ingredient:16>;
 val bucketWater = 1000;
 val blockLimeStone = 900 / 4;
 mods.mariculture.Vat.addRecipe(<liquid:water> * bucketWater, dustQuickLime, <liquid:quicklime> * blockLimeStone, 4); 
+
 
 // Signalum can be made in the Vat
 

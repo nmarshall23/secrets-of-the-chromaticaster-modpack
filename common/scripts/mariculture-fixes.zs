@@ -31,7 +31,7 @@ recipes.addShaped(divingHelmet, [[ingotCopper, ingotCopper, ingotCopper], [ingot
 
 val boatSpeed = <Mariculture:boat_speed>;
 val turbineTitanium = <Mariculture:turbine_titanium>;
-val sheetAluminium = <Mariculture:crafting:7>;
+val sheetAluminium = <ore:plateAluminum>;
 
 recipes.remove(boatSpeed);
 recipes.addShaped(boatSpeed, [[sheetAluminium, null, turbineTitanium], [sheetAluminium, sheetAluminium, sheetAluminium]]);
@@ -41,3 +41,5 @@ mods.mariculture.Crucible.addRecipe(800, <minecraft:chainmail_boots>, <liquid:ir
 mods.mariculture.Crucible.addRecipe(800, <minecraft:chainmail_chestplate>, <liquid:iron.molten> * 256);
 mods.mariculture.Crucible.addRecipe(800, <minecraft:chainmail_helmet>, <liquid:iron.molten> * 160);
 mods.mariculture.Crucible.addRecipe(800, <minecraft:chainmail_leggings>, <liquid:iron.molten> * 224);
+
+

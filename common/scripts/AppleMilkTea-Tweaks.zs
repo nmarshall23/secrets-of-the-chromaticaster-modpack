@@ -24,9 +24,15 @@ val redPowerCrystal = <ElectriCraft:electricraft_item_crystal>;
 val redGel = <DCsAppleMilk:defeatedcrow.redGel>;
 val glassPane = <minecraft:glass_pane>;
 
-recipes.remove(gelBattery);
-recipes.addShaped(gelBattery, [[redPowerCrystal, glassPane, redPowerCrystal], [glassPane, redGel, glassPane], [redPowerCrystal, glassPane, redPowerCrystal]]);
+//recipes.remove(gelBattery);
+//recipes.addShaped(gelBattery, [[redPowerCrystal, glassPane, redPowerCrystal], [glassPane, redGel, glassPane], [redPowerCrystal, glassPane, redPowerCrystal]]);
 
 
+// Recycling..
+// not working.. Odd
+//val revolverBarrel = <ImmersiveEngineering:material:7>;
+//val ingotSteel = <ore:ingotSteel>;
+//val nuggetTin = <ore:nuggetTin>;
 
-//
+//mods.amt.Processor.addRecipe(ingotSteel * 3, nuggetTin * 1, [revolverBarrel], false, 0.9);
+

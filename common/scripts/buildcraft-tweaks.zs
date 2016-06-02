@@ -60,12 +60,23 @@ val gearGold = <ore:gearGold>;
 val copperElectTube = <Forestry:thermionicTubes:0>;
 
 recipes.remove(filler);
-recipes.addShaped(filler,[[plateTin, landMark, plateTin], 
+recipes.addShaped(filler,[[plateInvar, landMark, plateInvar], 
 			  [plateTin, chest,    plateTin],
 			  [gearGold, copperElectTube,  gearGold]]);
 
 // End Filler
 
+val floodGateBlock = <BuildCraft|Factory:floodGateBlock>;
+val emptyBucket = <minecraft:bucket>;
+val ironBars = <minecraft:iron_bars>;
+val metalBarrel = <ImmersiveEngineering:metalDevice2:7>;
+
+recipes.remove(floodGateBlock);
+recipes.addShaped(floodGateBlock,[
+	[plateInvar, metalBarrel, plateInvar], 
+	[ironBars,   metalBarrel, ironBars],
+	[plateInvar, ironBars,    plateInvar]
+]);
 
 // Builder
 val builder = <BuildCraft|Builders:builderBlock>;
@@ -129,8 +140,8 @@ recipes.addShaped(SiliconLaser,[[enderObsidian,          redstone, redstone],
 // Cut energy cost of redstone chipset by haft
 val chipsetRedstone = <BuildCraft|Silicon:redstoneChipset:0>;
 
-mods.buildcraft.AssemblyTable.remove(chipsetRedstone);
-mods.buildcraft.AssemblyTable.addRecipe(chipsetRedstone, 50000, [redstone]);
+//mods.buildcraft.AssemblyTable.remove(chipsetRedstone);
+//mods.buildcraft.AssemblyTable.addRecipe(chipsetRedstone, 50000, [redstone]);
 
 // assemblyTable
 val assemblyTable = <BuildCraft|Silicon:laserTableBlock>;
@@ -211,23 +222,28 @@ recipes.addShaped(pumpBlock,[[plateInvar, plateInvar,      plateInvar],
 			     [gearSteel,  turbineAluminum, gearSteel]]);
 
 
-
-
-
-
 // Pipe Wire uses Red Alloy
 val redAlloy = <ProjRed|Core:projectred.core.part:10>;
 
 
-// BlockQuartzGlass is made in ThermionicFabricator?
+// BlockQuartzGlass is made in ThermionicFabricator
 
 val heatGlass = <Mariculture:glass>;
-val thickenGlass = <ExtraUtilities:decorativeBlock2>;
+val thickenGlass = <ExtraUtilities:decorativeBlock2:0>;
+val glass = <ore:blockGlass>;
 val BlockQuartzGlass = <appliedenergistics2:tile.BlockQuartzGlass>;
 val dustCertusQuartz = <appliedenergistics2:item.ItemMultiMaterial:2>;
 val dustNetherQuartz = <appliedenergistics2:item.ItemMultiMaterial:3>;
 
 recipes.remove(BlockQuartzGlass);
-mods.forestry.ThermionicFabricator.addCast(BlockQuartzGlass * 4, [[dustCertusQuartz, heatGlass, dustCertusQuartz], [heatGlass, dustCertusQuartz, heatGlass],  [dustCertusQuartz, heatGlass, dustCertusQuartz]], 10);
+mods.forestry.ThermionicFabricator.addCast(BlockQuartzGlass * 6, [[dustCertusQuartz, thickenGlass, dustCertusQuartz], [thickenGlass, dustCertusQuartz, thickenGlass],  [dustCertusQuartz, thickenGlass, dustCertusQuartz]], 75);
 
+mods.forestry.ThermionicFabricator.addCast(BlockQuartzGlass * 6, [[dustNetherQuartz, thickenGlass, dustNetherQuartz], [thickenGlass, dustNetherQuartz, thickenGlass],  [dustNetherQuartz, thickenGlass, dustNetherQuartz]], 75);
 
+// thickened Glass can be made in the ThermionicFabricator
+
+val sandyGlass = <ExtraUtilities:decorativeBlock1:9>;
+val sand = <minecraft:sand>;
+val fourGlass = 1000 * 4;
+
+mods.forestry.ThermionicFabricator.addCast(thickenGlass * 8, [[sand, sand, null], [sand, sand, null],  [null, null, null]], fourGlass);

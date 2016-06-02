@@ -14,20 +14,9 @@ recipes.addShaped(clockworkRF, [[plank, plank, plank], [null, thickenGlass, null
 
 // end clockwork power
 
-// Hobbyst Steam Engine
-
-val hobbyistSteamRF = <Railcraft:machine.beta:7>;
-
-// Materials
 val nuggetSilver = <ore:nuggetSilver>;
 val gearsBronze = <Forestry:gearBronze>;
 val nuggetGold = <ore:nuggetGold>;
-
-recipes.remove(hobbyistSteamRF);
-recipes.addShaped(hobbyistSteamRF, [[nuggetSilver, nuggetSilver, nuggetSilver], [null, thickenGlass, null], [gearsBronze, piston, gearsBronze]]);
-recipes.addShaped(hobbyistSteamRF, [[nuggetGold, nuggetGold, nuggetGold], [null, thickenGlass, null], [gearsBronze, piston, gearsBronze]]);
-
-// End Hobbyst Steam Engine
 
 
 

@@ -20,3 +20,16 @@ val blockGlass = <ore:blockGlass>;
 val chest = <ore:chest>;
 
 recipes.addShaped(beeChest, [[blockGlass], [chest], [wax]]);
+
+val thermionicFabricator = <Forestry:factory2:0>;
+val thickenedGlass = <ExtraUtilities:decorativeBlock2:0>;
+val ironMechComponent = <ImmersiveEngineering:material:11>;
+val ingotGold = <ore:ingotGold>;
+
+recipes.remove(thermionicFabricator);
+
+recipes.addShaped(thermionicFabricator, [
+	[ingotGold,	 thickenedGlass,    ingotGold],
+	[thickenedGlass, ironMechComponent, thickenedGlass],
+	[ingotGold,      chest,             ingotGold]
+]);
