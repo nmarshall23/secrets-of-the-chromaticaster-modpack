@@ -9,9 +9,20 @@ You have been tasked with learning Magics both High and Low. Maybe it's not too 
 Description
 ===========
 
-This is a Minecraft Modpack. There is a light theme, and quest if you choose to enage it. It is still in early Alpha. 
+This is a Minecraft Modpack. There is a light theme, and quest if you choose to enage it. 
 
-This pack is features increased difficulty, with customised progression. 
+It is still in early Alpha. 
+
+Features: 
+
+* An increased difficulty.
+  * Food matters no longer is hunger a mild annoyance.
+  * Mob's have a few new tricks
+* A customised Tool Progression
+* Unified recipes across Mods as much as is practial with respect to the Mod author's vision
+
+
+I took inspration from ModPacks like Regrowth and Material Energy 4.
 
 Licensing
 =========
