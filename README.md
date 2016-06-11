@@ -16,11 +16,15 @@ This pack is features increased difficulty, with customised progression.
 Licensing
 =========
 
-My content is Licensed under MIT License.
+Content I have created is licensed under the MIT License.
+This covers the modtweaker scripts, any lore text, configuration customizations, and Quests.
 
-However that License does give anyone permission to distribute a compete build of the pack.
+However that License does give anyone permission to distribute a compete build of the pack. You will need to check each mod's distribution licensing.
 
-Also the art assets in `/common/resources/customitems/textures/items/` are licensed under. <FIXME> List each file.
+
+Also the art assets in `/common/resources/customitems/textures/items/` and in the `jmod-project/sotc.jmod/assets/sotc.jmod/textures` where copied from included mods. I had to create custom items, often because a mod coded that item in a clever but incompatable way. Or because I needed that item not to be a subtype. 
+
+<FIXME> List each art file, and the licensing that mod uses.
 
 
 Tool Progression
