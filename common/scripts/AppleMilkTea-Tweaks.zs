@@ -36,3 +36,6 @@ val glassPane = <minecraft:glass_pane>;
 
 //mods.amt.Processor.addRecipe(ingotSteel * 3, nuggetTin * 1, [revolverBarrel], false, 0.9);
 
+val Charcoalcontainer = <DCsAppleMilk:defeatedcrow.Charcoalcontainer>;
+
+recipes.remove(Charcoalcontainer);
