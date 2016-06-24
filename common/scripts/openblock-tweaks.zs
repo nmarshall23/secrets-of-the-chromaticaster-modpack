@@ -37,23 +37,24 @@ val elevatorRotating = <OpenBlocks:elevator_rotating>;
 val woolWhite = <minecraft:wool:0>;
 
 val steelRod = <ImmersiveEngineering:material:15>;
-val etherBarry = <ChromatiCraft:chromaticraft_item_crafting:29>;
+val fixationDust = <ChromatiCraft:chromaticraft_item_crafting:27>;
 val motiveDust = <ChromatiCraft:chromaticraft_item_crafting:26>;
+val voidDust = <ChromatiCraft:chromaticraft_item_crafting:30>;
 val bucketEnder = <ThermalFoundation:bucket:2>;
 val enderDew = <witchery:ingredient:67>;
 
 recipes.remove(elevator);
 
-recipes.addShaped(elevator * 2, [
-	[woolWhite, etherBarry, woolWhite],
-	[steelRod, enderDew, steelRod],
-	[woolWhite, motiveDust, woolWhite]
+recipes.addShaped(elevator, [
+	[woolWhite,  voidDust, woolWhite],
+	[motiveDust, enderDew, motiveDust],
+	[woolWhite,   fixationDust, woolWhite]
 ]);
 
-recipes.addShaped(elevator * 2, [
-	[woolWhite, etherBarry, woolWhite],
-	[steelRod,  bucketEnder, steelRod],
-	[woolWhite, motiveDust, woolWhite]
+recipes.addShaped(elevator, [
+	[woolWhite, voidDust, woolWhite],
+	[motiveDust,  bucketEnder, motiveDust],
+	[woolWhite, fixationDust, woolWhite]
 ]);
 
 val flag = <OpenBlocks:flag>;
