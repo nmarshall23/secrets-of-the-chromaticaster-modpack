@@ -1,4 +1,19 @@
-itemGroup.sotc.jmod.general=Secrets of the Chromaticaster
+itemGroup.sotc.jmod.general=Chromaticaster - Common Blocks
+itemGroup.sotc.jmod.tools=Chromaticaster - Tools and Weapons
+itemGroup.sotc.jmod.armor=Chromaticaster - Armor
+
+tile.sotc.jmod.oreTin.name=Tin Ore
+tile.sotc.jmod.oreCopper.name=Copper Ore
+tile.sotc.jmod.oreSilver.name=Silver Ore
+tile.sotc.jmod.oreAluminum.name=Aluminum Ore
+tile.sotc.jmod.oreLead.name=Lead Ore
+tile.sotc.jmod.oreNickel.name=Nickel Ore
+tile.sotc.jmod.orePlatinum.name=Platinum Ore
+
+
+
+item.sotc.jmod.item.stringLinen = Ball of Linen
+item.sotc.jmod.item.backPackAdvCore = Advanced backpack upgrade core
 
 item.sotc.jmod.toolSteelAxe.name=Steel Axe
 item.sotc.jmod.toolSteelPickaxe.name=Steel Pickaxe
@@ -46,6 +61,11 @@ item.sotc.jmod.toolTinShovel.name=Tin Shovel
 item.sotc.jmod.toolTinSword.name=Tin Sword
 
 info.sotc.jmod.armorvalue=Armorvalue: 
+
+
+
+item.sotc.jmod.
+
 
 info.si.core.tooltips.lumberAxe=This is a §2§lLumber Axe§7
 

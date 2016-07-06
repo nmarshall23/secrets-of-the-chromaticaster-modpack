@@ -1,10 +1,13 @@
 {
-  "modid": "sotc.jmod",
-  "name": "Secrets Of the Chromaticaster Jmod",
-  "description" : "This is the jmod of the Secrets Of the Chromaticaster Modpack. It takes care of a multitude of changes to the game.",
-  "version"	:	"1.0.0",
-  "scripts" : ["main.js"],
-  "authors"	: ["nmarshall23"],
-  "credits" : "reteo, Dulciphi, jeffpengMC for their SI modpack"
-
+    "modid": "sotc.jmod",
+    "name": "Secrets Of the Chromaticaster",
+    "description": "This is the jmod of the Secrets Of the Chromaticaster Modpack. It takes care of a multitude of changes to the game.",
+    "version": "2.0.0",
+    "scripts": [
+        "main.js"
+    ],
+    "authors": [
+        "nmarshall23"
+    ],
+    "credits": "reteo, for his SI modpack"
 }

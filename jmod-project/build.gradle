@@ -1,0 +1,51 @@
+import groovy.json.JsonOutput
+
+
+
+task writeModInfo() {
+ doLast{
+
+  def outputFile = new File( "$project.jmodDir/mod.json")
+
+  def json = [
+   modid: project.jmodId,
+   name: project.modName,
+   description: project.description,
+   version: project.version,
+   scripts: ['main.js'],
+   authors: [project.authors],
+   credits: project.credits
+  ]
+
+
+  outputFile.text = JsonOutput.prettyPrint(JsonOutput.toJson(json))
+ }
+
+
+}
+
+
+task zipjmod(type: Zip, dependsOn: writeModInfo) {
+  baseName project.jmodId
+  version project.version
+  appendix minecraftVersion
+  extension "jmod"
+  destinationDir file('./target')
+  from (project.jmodDir)
+}
+
+task copyToCommon(type:Copy, dependsOn: zipjmod) {
+  from "./target/"
+  into "../common/mods/"
+}
+
+task copyToClient(type:Copy, dependsOn: zipjmod) {
+  from "./target/"
+  into "../target/client/mods/"
+}
+
+task clean(type: Delete) {
+ delete './target'
+}
+
+task buildjmod(dependsOn: [clean, copyToCommon, copyToClient] )
