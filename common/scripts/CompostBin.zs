@@ -13,6 +13,13 @@ val wolfsbane = <witchery:ingredient:156>;
 val wormwood = <witchery:ingredient:111>;
 val chromaticCraftDyes = <ChromatiCraft:chromaticraft_item_dye:*>;
 
+
+val leatherHelmet = <minecraft:leather_helmet>;
+val leatherChestplate = <minecraft:leather_chestplate>;
+val leatherLeggings = <minecraft:leather_leggings>;
+val leatherBoots = <minecraft:leather_boots>;
+
+
 CompostBin.add(chromatiBerries, 150);
 CompostBin.add(chromaticCraftDyes, 40);
 CompostBin.add(rottingLog, 60);
@@ -23,4 +30,9 @@ CompostBin.add(mandrake, 150);
 CompostBin.add(waterArtichoke, 150);
 CompostBin.add(wolfsbane, 150);
 CompostBin.add(wormwood, 150);
+
+CompostBin.add(leatherHelmet, 150);
+CompostBin.add(leatherChestplate, 150);
+CompostBin.add(leatherLeggings, 150);
+CompostBin.add(leatherBoots, 150);
 
