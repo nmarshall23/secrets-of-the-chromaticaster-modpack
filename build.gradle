@@ -35,7 +35,7 @@ project('client') {
   delete '../target'
  }
 
- task testSetup(dependsOn: [clean, copyFiles])
+ task testPack(dependsOn: [clean, copyFiles])
 
 }
 

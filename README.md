@@ -38,6 +38,12 @@ Also the art assets in `/common/resources/customitems/textures/items/` and in th
 <FIXME> List each art file, and the licensing that mod uses.
 
 
+Also the art assets in `jmod-project/sotc.jmod/assets/sotc.jmod/textures`.
+
+Textures for tools taken from ThermalFoundation `https://github.com/CoFH/ThermalFoundation`, include the Shears, Invar tools. They are Licenseded under Creative Commons Attribution-ShareAlike 4.0 International Public License.
+
+
+
 Tool Progression
 ================
 

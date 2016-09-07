@@ -1,18 +1,30 @@
 TODO
-==== 
+====
+
+Jmod
+----
+
+ * Is removing items from Loot table working?
+
+Recheck wateringCan
+Does Wooden Grater need nurffing to use copper?
+revisit ExtraUtilities:chandelier
+Bronze shoud be made from dusts
+
+
+
 
 Add Minced Food Items to Food Proccessor
 
-Rutile Ore should be steel level ore. 
+Rutile Ore should be steel level ore.
 
-Should add Titanume Tools?
 
 Sulfer needs magical uses.
 Hellhound Head should also have magical uses.
 
 
 
-Check Percentage of Aggro peaceful mobs. 
+Check Percentage of Aggro peaceful mobs.
 
 Iron Plate improved Locker Frame is wronge.
 
@@ -21,12 +33,7 @@ Recipe Tweaks
 -------------
 
 
- * Torch Ban
-
- * Furnace should use OreDic Cobble
-
-
-Change Pipe sealant 
+Change Pipe sealant
  * Grater + clay + Cactus Green
  * Grater + wax + wax
 
@@ -41,7 +48,7 @@ Maybe add some tool tips.
 
 Check if config has option for Work clothes to speed up other ladders.
 
-Tool bag, change to use aluminum?? 
+Tool bag, change to use aluminum??
 
 ------------
 
@@ -104,13 +111,13 @@ Remove Forestery Gears.
 Food progression
 ----------------
 
- Salt should be a big deal. 
+ Salt should be a big deal.
  Same with Garlic <witchery:garlic>
 
  Wheat should be a big deal.
  Should Wheat -> flour -> bread be the only way to make bread?
 
- Change Stacking for Foods. Some should stack more then others. 
+ Change Stacking for Foods. Some should stack more then others.
 
  Add Multistep food. aka Craft Mix -> Furnace -> Something else..
 
@@ -163,7 +170,7 @@ Check Runic Dungeon loot, might need boosting.
 
 Add Bibliocraft atlas with Eternal Compass.
 
-Add forestry apple oak sapirling to low level loot chest 
+Add forestry apple oak sapirling to low level loot chest
 
 <Forestry:sapling>.withTag({IsAnalyzed: 1 as byte, Genome: {Chromosomes: [{UID1: "forestry.treeOak", UID0: "forestry.treeOak", Slot: 0 as byte}, {UID1: "forestry.growthLightlevel", UID0: "forestry.growthLightlevel", Slot: 1 as byte}, {UID1: "forestry.heightSmall", UID0: "forestry.heightSmall", Slot: 2 as byte}, {UID1: "forestry.saplingsAverage", UID0: "forestry.saplingsAverage", Slot: 3 as byte}, {UID1: "forestry.fruitApple", UID0: "forestry.fruitApple", Slot: 4 as byte}, {UID1: "forestry.yieldLowest", UID0: "forestry.yieldLowest", Slot: 5 as byte}, {UID1: "forestry.plantTypeNone", UID0: "forestry.plantTypeNone", Slot: 6 as byte}, {UID1: "forestry.sappinessLowest", UID0: "forestry.sappinessLowest", Slot: 7 as byte}, {UID1: "forestry.territoryAverage", UID0: "forestry.territoryAverage", Slot: 8 as byte}, {UID1: "forestry.leavesNone", UID0: "forestry.leavesNone", Slot: 9 as byte}, {UID1: "forestry.maturationFaster", UID0: "forestry.maturationFaster", Slot: 10 as byte}, {UID1: "forestry.i1d", UID0: "forestry.i1d", Slot: 11 as byte}, {UID1: "forestry.fireproofFalse", UID0: "forestry.fireproofFalse", Slot: 12 as byte}]}})
 
@@ -182,7 +189,7 @@ https://github.com/Belgabor/AMTweaker/wiki/
 
 
 DONE
-==== 
+====
 
 Gear Balencing
 --------------
@@ -201,8 +208,8 @@ TwilightForest
 
  Creation of portal has been disabled.
 
-Configs changes 
---------------- 
+Configs changes
+---------------
 
  Disabled **Most** RF generators. See how SurvivalIndustry did it.
 
@@ -213,18 +220,18 @@ Configs changes
 
 Garden Core Compost bin
 -----------------------
- 
+
 
  See scripts/CompostBin.zs
 
 
-RailCraft 
+RailCraft
 ---------
 
  disabled World Anchors. FTB Utils make chunckloading easy.
 
 
-AppliedEnergistics 
+AppliedEnergistics
 ------------------
 
  Power? I have changed RF to 0.6
@@ -249,5 +256,3 @@ Have added:
  - Recurrent_Complex
  - Fairy Lights
  - Grave Stone
-
-

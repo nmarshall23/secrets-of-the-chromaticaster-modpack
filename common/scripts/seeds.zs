@@ -6,10 +6,10 @@
  */
 
 
-vanilla.seeds.removeSeed(<witchery:seedsartichoke>);
-vanilla.seeds.removeSeed(<witchery:seedsmandrake>);
-vanilla.seeds.removeSeed(<witchery:seedssnowbell>);
-vanilla.seeds.removeSeed(<witchery:seedswolfsbane>);
+// vanilla.seeds.removeSeed(<witchery:seedsartichoke>);
+// vanilla.seeds.removeSeed(<witchery:seedsmandrake>);
+// vanilla.seeds.removeSeed(<witchery:seedssnowbell>);
+// vanilla.seeds.removeSeed(<witchery:seedswolfsbane>);
 vanilla.seeds.removeSeed(<minecraft:wheat_seeds>);
 
 //val bonemeal = <minecraft:dye:15>;
@@ -18,6 +18,3 @@ vanilla.seeds.removeSeed(<minecraft:wheat_seeds>);
 //vanilla.seeds.addSeed(clay.weight(5));
 //vanilla.seeds.addSeed(bonemeal.weight(30));
 
-val ricePaddy = <Growthcraft|Rice:grc.paddyField>;
-val dirt = <minecraft:dirt>;
-recipes.addShaped(ricePaddy * 2, [[dirt, null, dirt], [dirt, dirt, dirt]]);

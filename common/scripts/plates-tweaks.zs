@@ -2,8 +2,8 @@
  *
  * They are made in the Rolling Machine
  * Plates are used to make items a little cheeper compared to using just ingots
- * 
- * 
+ *
+ *
  */
 
 import minetweaker.item.IItemStack;
@@ -11,10 +11,10 @@ import minetweaker.item.IIngredient;
 
 val ingots = {
 "Aluminum" : <ore:ingotAluminum>,
-"Copper": <ore:ingotCopper>, 
-"Tin": <ore:ingotTin>, 
+"Copper": <ore:ingotCopper>,
+"Tin": <ore:ingotTin>,
 "Iron": <ore:ingotIron>,
-"Invar": <ore:ingotInvar>, 
+"Invar": <ore:ingotInvar>,
 "Steel": <ore:ingotSteel>,
 "Constantan": <ore:ingotConstantan>,
 "Titanium": <ore:ingotTitanium>
@@ -25,7 +25,7 @@ val ingots = {
 } as IIngredient[string];
 
 val hasRailCraftRecipeList =  {
-"Copper": <Railcraft:part.plate:3>, 
+"Copper": <Railcraft:part.plate:3>,
 "Tin":    <Railcraft:part.plate:2>,
 "Iron":   <Railcraft:part.plate:0>,
 "Steel":  <Railcraft:part.plate:1>
@@ -40,19 +40,18 @@ val platesToAddToOreDict = {
 
 
 val plates = {
-"Copper": <Railcraft:part.plate:3>, 
+"Copper": <Railcraft:part.plate:3>,
 "Tin":    <Railcraft:part.plate:2>,
 "Constantan": <ImmersiveEngineering:metal:36>,
 "Aluminum": <ImmersiveEngineering:metal:32>,
 "Iron":   <Railcraft:part.plate:0>,
 "Steel":  <Railcraft:part.plate:1>,
 "Titanium": <Mariculture:crafting:17>,
-"Invar": <customitems:invar_plate>,
 "Lead": <ImmersiveEngineering:metal:33>
 } as IItemStack[string];
 
 val platesOreDicts = {
-"Aluminum" : <ore:plateAluminum>, 
+"Aluminum" : <ore:plateAluminum>,
 "Iron": <ore:plateIron>,
 "Steel": <ore:plateSteel>,
 "Constantan": <ore:plateConstantan>
@@ -104,7 +103,7 @@ for material, ingot in ingots {
 	[null,  null,  null]]);
 
 //   if(sheetMetal) {
-	
+
 //	recipes.addShaped(ingot * 6, [
 //		[sheetMetal, sheetMetal],
 //		[sheetMetal, sheetMetal],
@@ -134,7 +133,7 @@ for material, ingot in ingots {
 	[null,  ingot, null],
 	[null,  ingot, null]]);
  }
- 
+
 }
 
 // Wires
@@ -183,11 +182,10 @@ for material, coil in wireCoils {
 }
 
 
-val oreDictplateAluminum = <ore:plateAluminum>;
-val oreDictplateIron = <ore:plateIron>;
-val oreDictplateSteel = <ore:plateSteel>;
+//val oreDictplateAluminum = <ore:plateAluminum>;
+//val oreDictplateIron = <ore:plateIron>;
+//val oreDictplateSteel = <ore:plateSteel>;
 
-oreDictplateAluminum.add(<Mariculture:crafting:7>);
-oreDictplateIron.add(<Railcraft:part.plate:0>);
-oreDictplateSteel.add(<Railcraft:part.plate:1>);
-
+//oreDictplateAluminum.add(<Mariculture:crafting:7>);
+//oreDictplateIron.add(<Railcraft:part.plate:0>);
+//oreDictplateSteel.add(<Railcraft:part.plate:1>);

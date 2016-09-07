@@ -27,12 +27,9 @@ Simple Ingredients
 
 * Carrots, 1,   0.2
 * Potato,  1.5, 0.6
-* Rice,    2,   0.4
 * Suger,   1.5, 0.2
-* Tomato,  1,   0.5
 * Pumpkin, 1,   0.5
-* Salt,    0.5, 0.9
-* Garlic,  0.5, 0.9
+
 * Mushrooms, 0.5, 0.7
 * Milk bucket, 3, 0.7
 * Egg,         2, 0.8
@@ -40,6 +37,13 @@ Simple Ingredients
 * Beef,        3, 1.1
 * Pork,        3, 1.0
 * Fish,        2, 0.7
+
+* Rice,    2,   0.4
+* Tomato,  1,   0.5
+
+* Salt,    0.5, 0.9
+* Garlic,  0.5, 0.9
+
 
 
 Food Values
@@ -55,6 +59,9 @@ Food Values
     Raw fish, milk bucket, carrots, potatoes
 * Chicken Rice porridge,  4, 0.70 x2
     Rice, chicken, eggs
+* Meaty Stew
+* Flavorful Stew
+
 
 ## Meal Portions
 
