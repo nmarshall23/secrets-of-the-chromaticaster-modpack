@@ -44,12 +44,12 @@ val gearIron = <ore:gearIron>;
 
 val dustRedstone = <ore:dustRedstone>;
 val pickaxeIron = <minecraft:iron_pickaxe>;
-val pickaxeTin = <sotc.jmod:toolTinPickaxe>;
+val pickaxeCopper = <sotc.jmod:toolCopperPickaxe>;
 val linenBall = <customitems:linen_ball>;
 
 recipes.remove(grapplinghook);
 recipes.addShaped(grapplinghook, [
-[pickaxeTin],
+[pickaxeCopper],
 [linenBall],
 [linenBall]
 ]);

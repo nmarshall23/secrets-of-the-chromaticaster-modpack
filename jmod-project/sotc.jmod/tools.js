@@ -1,31 +1,45 @@
-//Because ThermalFoundation made their tools odd. I can't use them.. sigh.
-
-var toolTypes = ["Sword", "Pickaxe","Axe","Shovel"];
-var toolMats = ["Steel", "Platinum", "Silver", "Electrum", "Invar", "Nickel", "Bronze", "Copper", "Tin"];
+var ModDN = "Secrets of the Chromaticaster";
+var ModId = "sotc.jmod";
 
 
-for(var m in toolMats) {
-	for(var n in toolTypes){
-	 var toolName = "tool" + toolMats[m] + toolTypes[n];
-	 var refClass = "Tool" + toolTypes[n];
- 	 var tab = "sotc.jmod.general";
-	
-	 addItem(toolName, refClass, 1, tab).tooldata( ToolData(toolMats[m].toUpperCase()) );
- 	 addShapedStandardRecipe("sotc.jmod:" + toolName, toolTypes[n].toLowerCase(), "ingot"+toolMats[m]);
-	
-	}
-}
 
-var lumberAxeMats = ["Steel", "Platinum", "Invar", "Nickel", "Bronze"];
+// Now, to actually make the tools and armor.
+// First, the tools.
+var toolTypes = ["Sword", "Hoe", "Pickaxe", "Axe", "Shovel", "Shears"];
+var toolMats = ["Flint", "Copper", "Bronze", "Nickel", "Silver", "Platinum",
+  "Electrum"
+];
 var lumberAxes = [];
-for(var n in lumberAxeMats){
- lumberAxes.push("sotc.jmod:tool" + lumberAxeMats[n] + "Axe");
-}
-addToolTip(lumberAxes,["info.si.core.tooltips.lumberAxe"]);
 
-if(isModLoaded("hammerz")) {
- //var refClass = "vapourdrive.hammerz.items.Hammer"
- //addItem("toolHammerzInvar", refClass, 1, "sotc.jmod.general").tooldata(ToolData("INVAR"));
- //addShapedStandardRecipe("sotc.jmod:toolHammerzInvar", "pickaxe", "blockInvar");
+for (var m in toolMats) {
+  for (var n in toolTypes) {
+
+    var refClass = "Tool" + toolTypes[n];
+    var toolName = "tool" + toolMats[m] + toolTypes[n];
+    var tab = ModId + ".tools";
+    var toolModId = ModId + ":" + toolName;
+
+    if (toolMats[m] === "Flint" && toolTypes[n] === "Shears") {
+      continue;
+    }
+
+    addItem(toolName, refClass, 1, tab).tooldata(ToolData(toolMats[m].toUpperCase()));
+    addShapedStandardRecipe(toolModId, toolTypes[n].toLowerCase(), (toolMats[m] !=
+      "Flint" ? "ingot" : "item") + toolMats[m]);
+
+    if (toolTypes[n] === "Axe") {
+      lumberAxes.push(ModId + ":tool" + toolMats[m] + "Axe");
+    }
+  }
 }
 
+addToolTip(lumberAxes, ["info.sotc.jmod.tooltips.lumberAxe"]);
+
+// What's the point of lead if we can't have a lead pipe?  A very nasty weapon, but doesn't last long.
+addItem("toolPipeLead","ToolSword",1, ModId + ".tools").tooldata(ToolData("LEAD"));
+
+// Lead Pipe doesn't have a default recipe.  Let's make one.
+addShapedRecipe(ModId + ":toolPipeLead", [
+  [null, null, "ingotLead"],
+  [null, "ingotLead", null],
+  ["ingotLead", null, null]]);

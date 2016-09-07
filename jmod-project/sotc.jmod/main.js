@@ -1,31 +1,55 @@
+// Anvils repair tools using the tool and its key ingredient.
+// Settings.enhancedAnvilRepair(true);
+// Crafting benches repair tools using the tool and its key ingredient.
+// Settings.craftingGridToolRepair(true);
+// When tools break, they just won't work until they're fixed.
+// Global.preventToolBreaking(true);
 
+// These options show the mining level of tools and blocks in the tooltips.
 Settings.showToolHarvestLevels(true);
+//Settings.showBlockHarvestLevels(true);
+
+// These options show armor values in the tooltip.
 Settings.showArmorValues(true);
-Settings.showBlockHarvestLevels(true);
+
+// We will include RotaryCraft in the progression so its material needs to change, too.
+// RotaryCraft.patchRotarycraftSteelTools(true);
+
+
+//Settings.showToolHarvestLevels(true);
+//Settings.showArmorValues(true);
+//Settings.showBlockHarvestLevels(true);
+
 //Settings.enhancedAnvilRepair(true);
 
 //Settings.craftingGridToolRepair(true);
 //Global.preventToolBreaking(true);
-RotaryCraft.patchRotarycraftSteelTools(true);
+//RotaryCraft.patchRotarycraftSteelTools(true);
 
 
 // Mods the pack depends on: modid, display name
-dependency("RotaryCraft",	"RotaryCraft");
-dependency("ElectriCraft",	"ElectriCraft");
-dependency("CustomOreGen",	"Custom Ore Generation");
-dependency("HungerOverhaul",	"Hunger Overhaul");
-dependency("hammerz",	"Hammerz");
+dependency("RotaryCraft", "RotaryCraft");
+dependency("ElectriCraft", "ElectriCraft");
+dependency("Railcraft", "Railcraft");
+dependency("Thaumcraft", "Thaumcraft");
+dependency("ImmersiveEngineering", "ImmersiveEngineering");
+
+// dependency("CustomOreGen",	"Custom Ore Generation");
+// dependency("HungerOverhaul",	"Hunger Overhaul");
+// dependency("hammerz",	"Hammerz");
 
 var ModDN = "Secrets of the Chromaticaster";
 var ModId = "sotc.jmod";
 
 // Before we begin, it helps to have a creative mode tab.
-addCreativeTab(ModId + ".general", ModDN + ": Ores and Metals",   ModId + ":oreCopper");
-addCreativeTab(ModId + ".tools",   ModDN + ": Tools and Weapons", ModId + ":toolPipeLead");
-addCreativeTab(ModId + ".armor",   ModDN + ": Armor",             ModId + ":armorSilverChestplate");
+
+addCreativeTab(ModId + ".tools", ModDN + ": Tools and Weapons", ModId +
+  ":toolPipeLead");
+addCreativeTab(ModId + ".items", ModDN + ": Crafting Items", ModId +
+  ":item_diamond_lattice");
 
 // First, let's assign colors.
-
+/*
 defineColor("RED", 255, 0, 0);
 defineColor("GREEN", 0, 255, 0);
 defineColor("BLUE", 0, 0,255);
@@ -46,54 +70,70 @@ defineColor("ELECTRUM", 209, 191, 87);
 addBlock("blockMetalGeneric", "MetalBlock", 10.0, 10.0, "pickaxe", 1, "iron", ModId + ".general");
 addItem("ingotGeneric", "IngotGeneric", 64, ModId + ".general");
 
+*/
 
-var harvestLevel = {
- Diamond:6,
- Steel:5,
- Bronze:2,
- Flint:1,
- Wood:0
-};
 
-addToolMaterial( "WOOD",      harvestLevel.Wood,      10,   3.0,  0.0,  15, "plankWood" );
-addToolMaterial( "GOLD",      harvestLevel.Wood,     131,  12.0, 0.0,  25, "ingotGold" );
-addToolMaterial( "STONE",     harvestLevel.Flint,     60,   4.0,  1.0,  5, "cobblestone" );
-addToolMaterial( "IRON",      harvestLevel.Bronze,   600,  6.0,  2.0,  14, "ingotIron" );
-addToolMaterial( "EMERALD",   harvestLevel.Diamond, 2061, 9.0,  3.0,  10, "gemDiamond" );
 
-addToolMaterial( "COPPER",    harvestLevel.Flint,    300,  4.0,  1.0,  16, "ingotCopper" );
-addToolMaterial( "ALUMINUM",  harvestLevel.Flint,   290,  4.5,  2.0,  4, "ingotAluminum" );
+load("cleanup.js");
 
-//addToolMaterial( "TIN",       harvestLevel.Flint,    340,  4.5,  1.0,  7,  "ingotTin" );
 
-addToolMaterial( "BRONZE",    harvestLevel.Bronze,   500,  6.0,  2.0,  15, "ingotBronze" );
-addToolMaterial( "ELECTRUM",  harvestLevel.Bronze,    210,  14.0, 0.5,  30, "ingotElectrum" );
-addToolMaterial( "SILVER",    harvestLevel.Bronze,    275,  6.0,  2.1,  25, "ingotSilver" );
-addToolMaterial( "LEAD",      harvestLevel.Wood,    220,  7.0,  4.0,  0,     "ingotLead" );
+load("oreDict/plantmegapack.js");
+load("oreDict/Railcraft.js");
+load("oreDict/Mariculture.js");
+load("oreDict/vanilla.js");
+load("oreDict/gears.js");
+// load("oreDict/BuildCraft.js");
 
-addToolMaterial( "NICKEL",    harvestLevel.Bronze,   510,  6.5,  2.5,  18, "ingotNickel" );
-addToolMaterial( "INVAR",     harvestLevel.Steel,    770,  7.0,  3.0,  18, "ingotInvar" );
 
-addToolMaterial( "STEEL",     harvestLevel.Steel,    800,  7.0,  4.0,  11, "ingotSteel" );
-addToolMaterial( "RAILCRAFT_STEEL", harvestLevel.Steel, 800,  7.0,  4.0,  11, "ingotSteel" );
+load("removed/ImmersiveEngineering.js");
+load("removed/BuildCraft.js");
+load("removed/Railcraft.js");
+load("removed/vanilla.js");
+load("removed/betterbuilderswands.js");
+load("removed/DCsAppleMilk.js");
 
-addToolMaterial( "PLATINUM",  harvestLevel.Diamond, 3000, 8.5,  4.0,  20, "ingotPlatinum" );
 
-// Then, for armor.
-//addArmorMaterial( "ALUMINUM", 6,2,4,3,1,20,"ingotAluminum" );
-addArmorMaterial( "COPPER",    8,2,5,4,1, 9, "ingotCopper" );
-addArmorMaterial( "TIN",       8,2,4,3,1,15, "ingotTin" );
-addArmorMaterial( "BRONZE",   18,2,6,5,2, 9, "ingotBronze" );
-addArmorMaterial( "NICKEL",   14,2,6,5,2,15, "ingotNickel" );
-addArmorMaterial( "SILVER",    7,2,5,3,1,20, "ingotSilver" );
-addArmorMaterial( "PLATINUM", 28,3,8,6,3,20, "ingotPlatinum" );
-addArmorMaterial( "ELECTRUM",  8,2,5,4,1,28, "ingotElectrum" ); 
-
-//load("cleanup.js");
-
-load("moreGrinder.js");
+load("materials.js");
 load("blockprops.js");
-load("ores.js");
-load("tools_armor.js");
 load("craftingItems.js");
+load("tools.js");
+// load("armor.js");
 
+
+load("tweaks/vanilla.js");
+load("tweaks/AgriCraft.js");
+load("tweaks/AMTAddonJP.js");
+// load("tweaks/appliedenergistics2.js");
+
+load("tweaks/battlegear2.js");
+load("tweaks/betterbuilderswands.js");
+
+load("tweaks/BiblioCraft.js");
+// // load("tweaks/BuildCraft.js");
+load("tweaks/catwalks.js");
+load("tweaks/chisel.js");
+
+load("tweaks/DCsAppleMilk.js");
+load("tweaks/ExtraUtilities.js");
+load("tweaks/Forestry.js");
+load("tweaks/GardenStuff.js");
+load("tweaks/ImmersiveEngineering-earlygame.js");
+// // load("tweaks/ImmersiveEngineering-machines.js");
+
+load("tweaks/InventoryTools.js");
+// // load("tweaks/ironbackpacks.js");
+load("tweaks/LLadders.js");
+load("tweaks/magTools.js");
+load("tweaks/Mariculture.js");
+load("tweaks/OpenBlocks.js");
+load("tweaks/Railcraft.js");
+load("tweaks/SimilsaxTranstructors.js");
+load("tweaks/Thaumcraft.js");
+load("tweaks/tis3d.js");
+load("tweaks/witchery.js");
+load("tweaks/yegamolchattels.js");
+
+
+
+load("loot/additions.js");
+load("loot/removals.js");

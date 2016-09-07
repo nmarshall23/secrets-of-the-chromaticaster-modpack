@@ -5,7 +5,7 @@ var ModId = "sotc.jmod";
 // Now, to actually make the tools and armor.
 // First, the tools.
 var toolTypes = ["Sword","Hoe","Pickaxe","Axe","Shovel"];
-var toolMats = ["Copper","Bronze","Nickel","Silver","Platinum","Electrum"];
+var toolMats = ["Copper","Bronze","Nickel","Silver","Platinum","Electrum", "Steel"];
 
 for(var m in toolMats) {
  for(var n in toolTypes){
@@ -49,8 +49,11 @@ for(var m in armorMats) {
 
 // Add Tooltip to lumberAxes
 var lumberAxeMats = ["Steel", "Platinum", "Invar", "Nickel", "Bronze"];
+
 var lumberAxes = [];
+
 for(var n in lumberAxeMats){
  lumberAxes.push("sotc.jmod:tool" + lumberAxeMats[n] + "Axe");
 }
+
 addToolTip(lumberAxes,["info.si.core.tooltips.lumberAxe"]);
