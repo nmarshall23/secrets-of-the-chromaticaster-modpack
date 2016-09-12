@@ -1,6 +1,43 @@
 TODO
 ====
 
+Remove Chisel concrete from smelting gravel. Add ReactorCraft Concrete to oredic, and Chisel group.
+
+
+Change to use just ElectriCraft ores.
+Check on NEI ores resource.
+
+Change oreCadmium HarvestLevel.Steel
+
+RF Machines Tiers:
+ * By gears, Copper, Bronze, Iron, Steel, Diamond
+ * By plates, Copper or Tin, Iron, Steel
+ * By component, Silicon, Transistor, Chip,
+
+Silicon is from ground endstone.
+
+OpenComputer chips should use Buildcraft chipsets.
+
+Questing
+--------
+
+ Add Ore location hints to Quests.
+ After Quest of crafting a Pickaxe. Add Quest for Ores that can be Harvested.
+
+
+Food
+----
+
+  Simple stew,
+    made from Carrots and Potatoes, with Grater.
+    Is small improvement over baked Potato. But give more saturation.
+  Meaty Stew,
+    made from Carrots, Potatoes, Meat, plus garlic or salt, or..
+    Small improvement over Simple stew, gives more saturation.
+
+
+
+
 Jmod
 ----
 
@@ -9,7 +46,6 @@ Jmod
 Recheck wateringCan
 Does Wooden Grater need nurffing to use copper?
 revisit ExtraUtilities:chandelier
-Bronze shoud be made from dusts
 
 
 
