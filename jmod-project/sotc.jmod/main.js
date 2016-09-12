@@ -7,13 +7,13 @@
 
 // These options show the mining level of tools and blocks in the tooltips.
 Settings.showToolHarvestLevels(true);
-//Settings.showBlockHarvestLevels(true);
+Settings.showBlockHarvestLevels(true);
 
 // These options show armor values in the tooltip.
 Settings.showArmorValues(true);
 
 // We will include RotaryCraft in the progression so its material needs to change, too.
-// RotaryCraft.patchRotarycraftSteelTools(true);
+RotaryCraft.patchRotarycraftSteelTools(true);
 
 
 //Settings.showToolHarvestLevels(true);
@@ -45,8 +45,8 @@ var ModId = "sotc.jmod";
 
 addCreativeTab(ModId + ".tools", ModDN + ": Tools and Weapons", ModId +
   ":toolPipeLead");
-addCreativeTab(ModId + ".items", ModDN + ": Crafting Items", ModId +
-  ":item_diamond_lattice");
+// addCreativeTab(ModId + ".items", ModDN + ": Crafting Items", ModId +
+//  ":item_diamond_lattice");
 
 // First, let's assign colors.
 /*
@@ -64,24 +64,32 @@ defineColor("LEAD", 119, 119, 158);
 defineColor("SILVER", 192, 192, 192);
 defineColor("PLATINUM", 102, 210, 243);
 defineColor("ELECTRUM", 209, 191, 87);
+*/
 
 // Now for some generic stuff to build from.
 // NOTE: These are REQUIRED for addMetalBlock() and addMetalIngot() to work!
-addBlock("blockMetalGeneric", "MetalBlock", 10.0, 10.0, "pickaxe", 1, "iron", ModId + ".general");
-addItem("ingotGeneric", "IngotGeneric", 64, ModId + ".general");
-
-*/
+//addBlock("blockMetalGeneric", "MetalBlock", 10.0, 10.0, "pickaxe", 1, "iron", ModId + ".general");
+//addItem("ingotGeneric", "IngotGeneric", 64, ModId + ".general");
 
 
 
 load("cleanup.js");
 
 
+// addOreDict("Thaumcraft:ItemBaubleBlanks:2", "beltBauble");
+
 load("oreDict/plantmegapack.js");
 load("oreDict/Railcraft.js");
 load("oreDict/Mariculture.js");
 load("oreDict/vanilla.js");
 load("oreDict/gears.js");
+load("oreDict/AMTAddonJP.js");
+load("oreDict/witchery.js");
+load("oreDict/TwilightForest.js");
+load("oreDict/HarderWildlife.js");
+load("oreDict/RotaryCraft.js");
+
+
 // load("oreDict/BuildCraft.js");
 
 
@@ -91,11 +99,14 @@ load("removed/Railcraft.js");
 load("removed/vanilla.js");
 load("removed/betterbuilderswands.js");
 load("removed/DCsAppleMilk.js");
+load("removed/RotaryCraft.js");
 
 
 load("materials.js");
 load("blockprops.js");
 load("craftingItems.js");
+load("foods.js");
+load("newItemsBlocks.js");
 load("tools.js");
 // load("armor.js");
 
@@ -118,7 +129,7 @@ load("tweaks/ExtraUtilities.js");
 load("tweaks/Forestry.js");
 load("tweaks/GardenStuff.js");
 load("tweaks/ImmersiveEngineering-earlygame.js");
-// // load("tweaks/ImmersiveEngineering-machines.js");
+load("tweaks/ImmersiveEngineering-RF.js");
 
 load("tweaks/InventoryTools.js");
 // // load("tweaks/ironbackpacks.js");
@@ -134,6 +145,6 @@ load("tweaks/witchery.js");
 load("tweaks/yegamolchattels.js");
 
 
-
-load("loot/additions.js");
 load("loot/removals.js");
+
+// load("loot/additions.js");

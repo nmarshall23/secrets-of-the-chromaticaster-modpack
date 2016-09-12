@@ -47,13 +47,19 @@ var blocks = [
   ["NetherOres:tile.netherores.ore.0:8", HarvestLevel.Steel, 8], // Emerald
 
   ["Thaumcraft:blockCustomOre", HarvestLevel.Steel],
+  ["ReactorCraft:reactorcraft_block_ore:2", HarvestLevel.Steel, 2], // Cadmium
+
   ["minecraft:obsidian", HarvestLevel.Steel],
+  ["Thaumcraft:blockCosmeticSolid:1", HarvestLevel.Diamond, 1], // obsidian Tile
+
 
   ["ElectriCraft:electricraft_block_ore", HarvestLevel.Diamond, 5], // Platinum
   ["NetherOres:tile.netherores.ore.1:0", HarvestLevel.Diamond, 0], // Platinum
   ["NetherOres:tile.netherores.ore.0:1", HarvestLevel.Diamond, 1], // Diamond
   ["appliedenergistics2:tile.BlockSkyStone", HarvestLevel.Diamond],
-  ["appliedenergistics2:tile.BlockSkyChest", HarvestLevel.Diamond]
+  ["appliedenergistics2:tile.BlockSkyChest", HarvestLevel.Diamond],
+  ["Thaumcraft:blockCosmeticSolid:8", HarvestLevel.Diamond, 8], // obsidian Totem Charged
+  ["Thaumcraft:blockCosmeticSolid:0", HarvestLevel.Diamond, 0] // obsidian Totem
 ];
 
 

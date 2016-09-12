@@ -103,7 +103,54 @@ function addCraftingItem(item) {
     addShapedRecipe(itemModNameCraftingOut, item.recipe);
   }
 
+
+  if ("shapelessRecipes" in item) {
+    for (var i in item.shapelessRecipes) {
+      addShapelessRecipe(itemModNameCraftingOut, item.shapelessRecipes[i]);
+    }
+  }
+
   if ("shapelessRecipe" in item) {
     addShapelessRecipe(itemModNameCraftingOut, item.shapelessRecipe);
   }
+}
+
+/**
+ * item.name
+ */
+function addCustomBlock(item) {
+  if (!"name" in item) {
+    return;
+  }
+
+  if (!"oreDict" in item) {
+    return;
+  }
+
+  if (!"subItem" in item) {
+    return;
+  }
+
+  var hardness = item.hardness || 10.0;
+  var blastresistance = item.blastresistance || 10.0;
+  var tool = item.tool || "pickaxe";
+  var harvestlevel = item.harvestlevel || 0;
+  var material = item.material || "iron";
+  var itemModName = ModId + ":" + item.name;
+
+  addBlock(item.name, "CoreBlock", hardness, blastresistance,
+    tool, harvestlevel, material, ModId + ".general");
+
+  addOreDict(itemModName, item.oreDict);
+
+  var subItemOreDic = item.subItemOreDic || item.subItem;
+  var subItem = item.subItem;
+
+  addShapedRecipe(itemModName, [
+    [subItemOreDic, subItemOreDic, subItemOreDic],
+    [subItemOreDic, subItemOreDic, subItemOreDic],
+    [subItemOreDic, subItemOreDic, subItemOreDic]
+  ]);
+
+  addShapelessRecipe(subItem + "@9", [item.oreDict]);
 }

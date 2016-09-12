@@ -2,80 +2,144 @@ load("functions.js");
 
 log('Loaded ImmersiveEngineering RF Tweaks');
 
-// kineticDynamo
-var kineticDynamo = "ImmersiveEngineering:metalDevice:9";
-removeRecipes(kineticDynamo);
-
 var copperWireBlock = "ImmersiveEngineering:storage:8";
-
 var redStone = "minecraft:redstone";
 var blockRedstone = "minecraft:redstone_block";
 var gearGold = "gearGold";
 var magnetite = "gemMagnetite";
+var plateIron = "plateIron";
+var hardenedClay = "minecraft:hardened_clay";
+var stickIron = "stickIron";
+var plankTreatedWood = "plankTreatedWood";
+var blockLead = "blockLead";
+var ingotCopper = "ingotCopper";
+var blockPlatinum = "blockPlatinum";
+var blockElectrum = "blockElectrum";
+var ingotCadmium = "ingotCadmium";
+var plateSteel = "plateSteel";
+var stickAluminum = "stickAluminum";
 
-addShapedRecipe(kineticDynamo, [
-	[blockRedstone, copperWireBlock, blockRedstone],
-	[magnetite,	gearGold,   magnetite]
-]);
+// kineticDynamo
 
+var kineticDynamo = {
+	name: "ImmersiveEngineering:metalDevice:9",
+	recipes: [
+		[
+			[plateIron, copperWireBlock, plateIron],
+			[magnetite, gearGold, magnetite],
+			[plateIron, blockRedstone, plateIron]
+		]
+	]
+};
+
+updateShappedRecipe(kineticDynamo);
 
 // windMill
-
-var windMill = "ImmersiveEngineering:woodenDevice:2";
-
 var windMillBlade = "ImmersiveEngineering:material:2";
 var stickAluminum = "stickAluminum";
 
-removeRecipes(windMill);
-addShapedRecipe(windMill, [
-	[null, 		windMillBlade, null],
-	[windMillBlade,	stickAluminum,  windMillBlade],
-	[null,		windMillBlade, null]
-]);
+var windMill = {
+	name: "ImmersiveEngineering:woodenDevice:2",
+	recipes: [
+		[
+			[null, windMillBlade, null],
+			[windMillBlade, stickAluminum, windMillBlade],
+			[null, windMillBlade, null]
+		]
+	],
+	uncrafting: { // windMill disasembly
+		num: 4,
+		item: windMillBlade
+	}
+};
 
-// windMill disasembly
+updateShappedRecipe(windMill);
 
-addShapelessRecipe(windMillBlade + "@4", [windMill]);
+// LVcapacitor
 
+
+var LVcapacitor = {
+	name: "ImmersiveEngineering:metalDevice:1",
+	recipes: [
+		[
+			[plateSteel, plateSteel, plateSteel],
+			[ingotCopper, blockLead, ingotCopper],
+			[plankTreatedWood, blockRedstone, plankTreatedWood]
+		]
+	]
+};
+
+updateShappedRecipe(LVcapacitor);
+
+var MVcapacitor = {
+	name: "ImmersiveEngineering:metalDevice:3",
+	recipes: [
+		[
+			[plateSteel, plateSteel, plateSteel],
+			[ingotCadmium, blockElectrum, ingotCadmium],
+			[plankTreatedWood, LVcapacitor.name, plankTreatedWood]
+		]
+	]
+};
+
+updateShappedRecipe(MVcapacitor);
+
+var HVcapacitor = {
+	name: "ImmersiveEngineering:metalDevice:7",
+	recipes: [
+		[
+			[plateSteel, plateSteel, plateSteel],
+			[ingotCadmium, blockPlatinum, ingotCadmium],
+			[plankTreatedWood, MVcapacitor.name, plankTreatedWood]
+		]
+	]
+};
+
+updateShappedRecipe(HVcapacitor);
+
+
+// Wire Connectors
 
 // MV Wire Connector
-var MVwireConnector = "ImmersiveEngineering:metalDevice:2";
-removeRecipes(MVwireConnector);
+var MVwireConnector = {
+	name: "ImmersiveEngineering:metalDevice:2",
+	recipes: [
+		[
+			[hardenedClay, stickIron, hardenedClay],
+			[null, stickIron, null],
+			[hardenedClay, stickIron, hardenedClay]
+		]
+	]
+};
 
-var hardenedClay = "minecraft:hardened_clay";
-var stickIron = "stickIron";
+updateShappedRecipe(MVwireConnector);
 
-addShapedRecipe(MVwireConnector + "@8", [
-	[hardenedClay, 	stickIron, hardenedClay],
-	[null,          stickIron, null],
-	[hardenedClay,	stickIron, hardenedClay]
-]);
+var HVwireConnector = {
+	name: "ImmersiveEngineering:metalDevice:6",
+	recipes: [
+		[
+			[hardenedClay, stickAluminum, hardenedClay],
+			[hardenedClay, stickAluminum, hardenedClay],
+			[hardenedClay, stickAluminum, hardenedClay]
+		]
+	]
+};
 
-
-// HV Wire Connector
-var HVwireConnector = "ImmersiveEngineering:metalDevice:6";
-removeRecipes(HVwireConnector);
-
-var stickAluminum = "stickAluminum";
-
-addShapedRecipe(HVwireConnector + "@8", [
-	[hardenedClay, 	stickAluminum, hardenedClay],
-	[hardenedClay,  stickAluminum, hardenedClay],
-	[hardenedClay,	stickAluminum, hardenedClay]
-]);
+updateShappedRecipe(HVwireConnector);
 
 
-
-
-// InsulatingGlass
-var insulatingGlass = "ImmersiveEngineering:stoneDevice:4";
-removeRecipes(insulatingGlass);
-
-var dustIron = "dustIron";
-var dyeGreen = "dyeGreen";
-
-addShapedRecipe(insulatingGlass + "@2", [
-	[null,     thickenGlass, null],
-	[dustIron, dyeGreen,     dustIron],
-	[null,     thickenGlass, null]
-]);
+//
+//
+//
+// // InsulatingGlass
+// var insulatingGlass = "ImmersiveEngineering:stoneDevice:4";
+// removeRecipes(insulatingGlass);
+//
+// var dustIron = "dustIron";
+// var dyeGreen = "dyeGreen";
+//
+// addShapedRecipe(insulatingGlass + "@2", [
+// 	[null, thickenGlass, null],
+// 	[dustIron, dyeGreen, dustIron],
+// 	[null, thickenGlass, null]
+// ]);

@@ -26,4 +26,4 @@ for (var n in removedGears) {
   removeOreDict(removedGears[n][0], removedGears[n][1]);
 }
 
-// addToolTip(removedRF ,["info.sotc.jmod.tooltips.removed.generator"]);
+ addToolTip(removedGears ,["info.sotc.jmod.tooltips.removed.item"]);

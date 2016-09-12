@@ -123,7 +123,7 @@ for (var i in removals) {
 
 
   if (targets === null) {
-    removeChestLoot(item);
+    //    removeChestLoot(item);
   } else {
     removeChestLoot(item, targets);
   }

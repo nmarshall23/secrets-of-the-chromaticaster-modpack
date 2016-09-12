@@ -20,7 +20,7 @@ var blockTable = {
 updateShappedRecipe(blockTable);
 
 
-var ingotCopper = "ingotCopper";
+var ingotBronze = "ingotBronze";
 var leather = "minecraft:leather";
 
 var belt = {
@@ -29,7 +29,7 @@ var belt = {
     [
       [null, leather, null],
       [leather, null, leather],
-      [null, ingotCopper, null]
+      [null, ingotBronze, null]
     ]
   ]
 };

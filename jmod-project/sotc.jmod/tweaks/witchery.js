@@ -57,9 +57,9 @@ var witchesOven = {
   name: "witchery:witchesovenidle",
   recipes: [
     [
-      [null, tinIngot, null],
-      [null, furnace, null],
-      [null, brickConstruction, null]
+      [null, null, null],
+      [tinIngot, tinIngot, tinIngot],
+      [tinIngot, furnace, tinIngot]
     ]
   ]
 };

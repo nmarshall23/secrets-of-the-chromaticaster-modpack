@@ -16,3 +16,4 @@ removeRecipes("minecraft:string");
 
 // Remove bread crafting, is made on the iron or in furnace.
 removeRecipes("minecraft:bread");
+removeSmeltingRecipes("minecraft:bread");

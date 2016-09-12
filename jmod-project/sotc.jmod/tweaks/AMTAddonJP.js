@@ -8,18 +8,18 @@ var ingotCopper = "ingotCopper";
 var stick = "stickWood"; // "minecraft:stick";
 
 
-var woodenGrater = {
-  name: "AMTAddonJP:addonamtjp.grater_wooden",
-  recipes: [
-    [
-      [null, stick, null],
-      [stick, ingotCopper, stick],
-      [stick, ingotCopper, stick]
-    ]
-  ]
-};
-
-updateShappedRecipe(woodenGrater);
+// var woodenGrater = {
+//   name: "AMTAddonJP:addonamtjp.grater_wooden",
+//   recipes: [
+//     [
+//       [null, stick, null],
+//       [stick, ingotCopper, stick],
+//       [stick, ingotCopper, stick]
+//     ]
+//   ]
+// };
+//
+// updateShappedRecipe(woodenGrater);
 
 // cotton ball
 var hempFiber = "ImmersiveEngineering:material:3";

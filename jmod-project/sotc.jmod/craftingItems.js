@@ -42,6 +42,12 @@ var brynetinerePaste = {
   name: "item_paste_bryntenere",
   oreDict: "pasteBryntenere",
   stackSize: 32,
+  num: 3,
+  shapelessRecipe: [
+    "minecraft:water_bucket", "dustSulfur",
+    "witchery:ingredient:18", "witchery:ingredient:18",
+    "sand", "dustRedstone"
+  ]
 };
 
 addCraftingItem(brynetinerePaste);
@@ -87,13 +93,13 @@ var obsidianShard = {
 
 addCraftingItem(obsidianShard);
 
-var plateInvar = {
-  name: "item_plate_invar",
-  stackSize: 32,
-  oreDict: "plateInvar"
-};
-
-addCraftingItem(plateInvar);
+// var plateInvar = {
+//   name: "item_plate_invar",
+//   stackSize: 32,
+//   oreDict: "plateInvar"
+// };
+//
+// addCraftingItem(plateInvar);
 
 var plateElectrum = {
   name: "item_plate_electrum",
@@ -125,56 +131,3 @@ var fluxcore = {
 };
 
 addCraftingItem(fluxcore);
-
-// var simpleStew = {
-//   name: "food_stew_simple",
-//   foodData: {
-//     hunger: 2,
-//     saturation: 1.0,
-//     wolffood: false,
-//     alwaysEdible: false
-//   }
-// };
-//
-// addCraftingItem(simpleStew);
-//
-//
-var meatyStew = {
-  name: "food_stew_meaty",
-  foodData: {
-    hunger: 4,
-    saturation: 1.0,
-    wolffood: false,
-    alwaysEdible: false
-  }
-};
-
-addCraftingItem(meatyStew);
-
-//addItem("food_stew_meaty", "CoreFood", 64, ModId + ".general"); //.fooddata(
-//  FoodData(3, 0.5, false, false));
-
-var mincedCarrotPotatos = {
-  name: "minced_carrot_potatos",
-  shapelessRecipe: [
-    "toolGrater",
-    "cropCarrot",
-    "cropPotato",
-    "cropCarrot",
-    "cropPotato"
-  ]
-};
-
-addCraftingItem(mincedCarrotPotatos);
-
-var mincedMeatVegys = {
-  name: "minced_meat_vegies",
-  shapelessRecipe: [
-    "toolGrater",
-    "cropCarrot",
-    "cropPotato",
-    "cropCarrot"
-  ]
-};
-
-addCraftingItem(mincedMeatVegys);

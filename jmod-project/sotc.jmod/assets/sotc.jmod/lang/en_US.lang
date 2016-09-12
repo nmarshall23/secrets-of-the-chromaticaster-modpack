@@ -2,38 +2,27 @@ itemGroup.sotc.jmod.general=Chromaticaster - Common Blocks
 itemGroup.sotc.jmod.tools=Chromaticaster - Tools and Weapons
 itemGroup.sotc.jmod.armor=Chromaticaster - Armor
 
-tile.sotc.jmod.oreTin.name=Tin Ore
-tile.sotc.jmod.oreCopper.name=Copper Ore
-tile.sotc.jmod.oreSilver.name=Silver Ore
-tile.sotc.jmod.oreAluminum.name=Aluminum Ore
-tile.sotc.jmod.oreLead.name=Lead Ore
-tile.sotc.jmod.oreNickel.name=Nickel Ore
-tile.sotc.jmod.orePlatinum.name=Platinum Ore
 
-tile.sotc.jmod.blockAluminum.name=Aluminum Block
-tile.sotc.jmod.blockCopper.name=Copper Block
-tile.sotc.jmod.blockTin.name=Tin Block
-tile.sotc.jmod.blockBronze.name=Bronze Block
-tile.sotc.jmod.blockNickel.name=Nickel Block
-tile.sotc.jmod.blockInvar.name=Invar Block
-tile.sotc.jmod.blockLead.name=Lead Block
-tile.sotc.jmod.blockSilver.name=Silver Block
-tile.sotc.jmod.blockPlatinum.name=Platinum Block
-tile.sotc.jmod.blockElectrum.name=Electrum Block
+item.sotc.jmod.item_dust_bronze.name=Bronze Dust
+item.sotc.jmod.item_paste_bryntenere.name=Bryntenere Paste
+item.sotc.jmod.item_diamond_clay_mold.name=Clay Mold of Diamond Lattice
+item.sotc.jmod.item_diamond_lattice.name=Diamond Lattice
+item.sotc.jmod.item_backpack_advcore.name=Advanced backpack upgrade core
+item.sotc.jmod.item_shard_obsidian.name=Obsidian Shard
+item.sotc.jmod.item_plate_electrum.name=Electrum Plate
+item.sotc.jmod.item_plate_bronze.name=Bronze Plate
+item.sotc.jmod.item_fluxcore.name=Flux core
 
-item.sotc.jmod.ingotAluminum.name=Aluminum Ingot
-item.sotc.jmod.ingotCopper.name=Copper Ingot
-item.sotc.jmod.ingotTin.name=Tin Ingot
-item.sotc.jmod.ingotBronze.name=Bronze Ingot
-item.sotc.jmod.ingotNickel.name=Nickel Ingot
-item.sotc.jmod.ingotInvar.name=Invar Ingot
-item.sotc.jmod.ingotLead.name=Lead Ingot
-item.sotc.jmod.ingotSilver.name=Silver Ingot
-item.sotc.jmod.ingotPlatinum.name=Platinum Ingot
-item.sotc.jmod.ingotElectrum.name=Electrum Ingot
+item.sotc.jmod.food_stew_simple.name=Simple Stew
+item.sotc.jmod.food_stew_meaty.name=Meaty Stew
+item.sotc.jmod.minced_carrot_potatos.name=Minced Carrots and Potatoes
+item.sotc.jmod.minced_meat_vegies.name=Minced Ingredients for Meaty Stew
+item.sotc.jmod.minced_beef_meal.name=Minced Ingredients for Beef Meal
+item.sotc.jmod.minced_chicken_meal.name=Minced Ingredients for Chicken Meal
+item.sotc.jmod.minced_pork_meal.name=Minced Ingredients for Pork Meal
 
-item.sotc.jmod.item.stringLinen = Ball of Linen
-item.sotc.jmod.item.backPackAdvCore = Advanced backpack upgrade core
+
+
 
 item.sotc.jmod.toolPipeLead.name=Lead Pipe
 
@@ -160,4 +149,4 @@ wailaharvestability.harvestlevel4=Iron
 wailaharvestability.harvestlevel5=Steel
 wailaharvestability.harvestlevel6=Steel
 wailaharvestability.harvestlevel7=Diamond
-wailaharvestability.harvestlevel=Harvest Level: 
+wailaharvestability.harvestlevel=Harvest Level:

@@ -1,16 +1,6 @@
 /* Here we try to tie up some loose ends left over by some mods */
 
-if(!isModLoaded("tconstruct") && isModLoaded("RotaryCraft")){
 
-	/* If we don't have TCon anymore, we surely don't need RoCs items and OreDict entries to integrate it, right? */
-
-	removeOreDict("RotaryCraft:rotarycraft_item_modingots:47","ingotSteel");
-	hideFromNEI("RotaryCraft:rotarycraft_item_modinterface:2");
-	hideFromNEI("RotaryCraft:rotarycraft_item_modinterface:3");
-	hideFromNEI("RotaryCraft:rotarycraft_item_modinterface:4");
-	hideFromNEI("RotaryCraft:rotarycraft_item_modinterface:5");
-	hideFromNEI("RotaryCraft:rotarycraft_item_modinterface:6");
-}
 
 
 if(!isModLoaded("NetherOres") && isModLoaded("RotaryCraft")){
@@ -28,20 +18,20 @@ if(isModLoaded("GeoStrata")){
   hideFromNEI("GeoStrata:geostrata_block_oretile:*");
 }
 
-var unUsedOres = [
- ["ImmersiveEngineering:ore:0", "ImmersiveEngineering"], // Copper
- ["ImmersiveEngineering:ore:3", "ImmersiveEngineering"],    // Silver
- ["ImmersiveEngineering:ore:4", "ImmersiveEngineering"], // Nickel
- ["ElectriCraft:electricraft_block_ore:4", "ElectriCraft"], // Aluminum
- ["ElectriCraft:electricraft_block_ore:1", "ElectriCraft"], // Tin
- ["ReactorCraft:reactorcraft_block_ore:4", "ReactorCraft"], // Silver
- ["Mariculture:rocks:1", "Mariculture"], // Copper
- ["Mariculture:rocks:2", "Mariculture"] // Aluminum
- 
-];
-
-for (var ore in unUsedOres) {
- if ((unUsedOres[ore][1] == null) || isModLoaded(unUsedOres[ore][1])) {
-   hideFromNEI(unUsedOres[ore][0]);
- }
-}
+// var unUsedOres = [
+//  ["ImmersiveEngineering:ore:0", "ImmersiveEngineering"], // Copper
+//  ["ImmersiveEngineering:ore:3", "ImmersiveEngineering"],    // Silver
+//  ["ImmersiveEngineering:ore:4", "ImmersiveEngineering"], // Nickel
+//  ["ElectriCraft:electricraft_block_ore:4", "ElectriCraft"], // Aluminum
+//  ["ElectriCraft:electricraft_block_ore:1", "ElectriCraft"], // Tin
+//  ["ReactorCraft:reactorcraft_block_ore:4", "ReactorCraft"], // Silver
+//  ["Mariculture:rocks:1", "Mariculture"], // Copper
+//  ["Mariculture:rocks:2", "Mariculture"] // Aluminum
+//
+// ];
+//
+// for (var ore in unUsedOres) {
+//  if ((unUsedOres[ore][1] == null) || isModLoaded(unUsedOres[ore][1])) {
+//    hideFromNEI(unUsedOres[ore][0]);
+//  }
+// }
