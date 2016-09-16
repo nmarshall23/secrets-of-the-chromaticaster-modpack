@@ -50,6 +50,7 @@ var blocks = [
   ["ReactorCraft:reactorcraft_block_ore:2", HarvestLevel.Steel, 2], // Cadmium
 
   ["minecraft:obsidian", HarvestLevel.Steel],
+
   ["Thaumcraft:blockCosmeticSolid:1", HarvestLevel.Diamond, 1], // obsidian Tile
 
 
@@ -62,6 +63,13 @@ var blocks = [
   ["Thaumcraft:blockCosmeticSolid:0", HarvestLevel.Diamond, 0] // obsidian Totem
 ];
 
+// Set harvestlevel for Chisel'd obsidian
+var chiselObsidian = ["chisel:obsidian", HarvestLevel.Steel, 1];
+
+while (chiselObsidian[2] <= 15) {
+  blocks.push([chiselObsidian[0], chiselObsidian[1], chiselObsidian[2]]);
+  chiselObsidian[2]++;
+}
 
 
 for (var m in blocks) {

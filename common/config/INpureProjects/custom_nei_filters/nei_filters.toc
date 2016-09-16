@@ -4,7 +4,6 @@
 ## Bootstrap: Bootstrap.js
 ## Saved Variables: vanilla_enabled, ThermalExpansion_enabled, Mekanism_enabled, ForgeMicroblock_enabled, ExtraUtilities_enabled, BuildCraft_enabled, Bibliocraft_enabled, AE2_enabled, MFR_enabled
 vanilla.js
-ThermalExpansion.js
 ForgeMicroblock.js
 ExtraUtilities.js
 BuildCraft.js
