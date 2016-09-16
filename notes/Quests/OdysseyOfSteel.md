@@ -1,43 +1,79 @@
 Odyssey of Steel
 ================
 For you to survive you are going to need stronger tools.
-However this might take you to depths you never imangned.
-
-
-Collect gravel
---------------
-
-Flint Pick Axe
--------------
-
-Tin
----
-
-Tin, Motherlodes with groups of long narrow veins found around height 60.
-
-
-
-Copper
-------
-
-Copper, Motherlodes with groups of long narrow veins found around height 48.
-
-
-Aluminum
---------
-
-Aluminum Ore, Medium motherlodes with 2-4 horizontal veins each. Found around height 94.
-
+However this might take you to depths you never imagined.
 
 A Furnace to Smelt with
 -----------------------
 
+Tasks:
+ 1. Collect Cobblestone
+ 2. Craft 4 Compressed Cobblestone
+ 3. Craft a Furnace
+
+
 Hammer Time
 -----------
+Stone hammers are the first in a long line of Mining Hammers. Hammers will break a 3 by 3 group of blocks. They also place a torch from anywhere in your inventory, when you right click.
+
+Tasks:
+ 1. Craft a Stone Hammer
+
+
+Collect gravel
+--------------
+Wood will spinter and break, Stone heavy and slow. Flint is a superior material to make tools from.
+You can find Flint in gravel. Or you can craft three gavel into one flint.
+
+Tasks:
+ 1. Collect 27 Gravel
+ 2. Have 9 Flint
+
+
+Flint Tools
+-----------
+Flint can harvest more items then wood. You will need it to harvest Tin and Copper.
+
+Tasks:
+ 1. Craft Flint tools.
+
+
+Tin
+---
+Tin is most used as a component of machines.  
+Tin can be found around height 60, in long narrow veins, centered around a Motherlode of ore.
+
+Tasks:
+ 1. Collect 3 Tin Ore.
+
+
+Copper
+------
+Copper can be used to craft tools that will last much longer then Flint tools.
+
+Copper, Motherlodes with groups of long narrow veins found around height 48.
+
+Tasks:
+ 1. Collect 9 Copper ore.
+
+
+Aluminum
+--------
+Aluminum is another metal used mostly in building machines. The stone furnace does a poor job of smelting Aluminum. Other means of extracting this ore will yield more ingots.
+
+Aluminum Ore, Medium motherlodes with 2-4 horizontal veins each. Found around height 94.
+
+Tasks:
+ 1. Collect 3 Aluminum ore.
+
+
+
 
 
 Engineering your Future
 -----------------------
+
+
 
 Tasks:
  1. Craft an Engineer's Hammer
@@ -50,9 +86,11 @@ Time to use that education ( making bronze)
 --------------------------
 
 
-Bronze Pick Axe
----------------
+Bronze Tools
+------------
 
+Tasks:
+ 1. Craft Bronze Pickaxe
 
 Gold
 ----

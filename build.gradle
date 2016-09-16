@@ -8,7 +8,11 @@ project('client') {
     into "../target/$packType"
  }
 
- task buildPack(type: Zip, dependsOn: copyFiles) {
+ task clean(type: Delete) {
+  delete '../target'
+ }
+
+ task buildPack(type: Zip, dependsOn: [clean, copyFiles]) {
   baseName project.parent.name
   version project.version
   appendix minecraftVersion
@@ -31,11 +35,12 @@ project('client') {
 
  task sync(dependsOn: [syncCommonScript, syncCommonConfig])
  
- task clean(type: Delete) {
-  delete '../target'
- }
 
- task testPack(dependsOn: [clean, copyFiles])
+
+ task testPack(type:Copy, dependsOn: [clean, copyFiles]) {
+    from '../packtesting'
+    into "../target/$packType"
+ }
 
 }
 
