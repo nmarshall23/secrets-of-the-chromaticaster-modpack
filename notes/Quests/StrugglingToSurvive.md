@@ -31,8 +31,8 @@ Text:
   2. Away from water sources, Use a Flint Hoe on grass. This may uncover seeds.
   Collect Potato, Carrot, Hemp
 
-  I hope you like Stew | Clay Pan
-  -------------------------------
+I hope you like Stew | Clay Pan
+-------------------------------
 
   To make a meal you are going to have to cook those raw crops.
 
@@ -52,6 +52,24 @@ Text:
     Next right click the clay pan with the Minced Potatoes and Carrots.
     Lastly right click the clay pan with a bowl to get a servings of the stew.
     Place the stew in the world and use Chip Sticks to eat it. Or hold shift while eating.
+
+Mind your table manners | Chopsticks Holder
+-----------------------
+A cultured person like yourself uses Chopsticks.
+
+
+Less is Grater then More |Grater
+-------------------------
+A food grater is used to Mince ingredients to prepare then to be cooked.
+
+
+Barbecue on a open flame
+------------------------
+
+Cooking an Hearty Steak Dinner
+------------------------------
+
+
 
   Growing Crops|Watering Can
   --------------------------
