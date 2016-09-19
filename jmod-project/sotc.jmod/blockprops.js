@@ -3,9 +3,9 @@ load("harvestLevels.js");
 // Now, we'll set the harvest levels for various blocks to more appropriate values.
 // Legend: blockID, Harvest level
 var blocks = [
-  ["Forestry:resources:1", HarvestLevel.Flint],
-  ["Forestry:resources:2", HarvestLevel.Flint],
-
+  ["ElectriCraft:electricraft_block_ore:1", HarvestLevel.Flint, 1], // Tin
+  ["ElectriCraft:electricraft_block_ore:0", HarvestLevel.Flint, 0], // Copper
+  ["ElectriCraft:electricraft_block_ore:4", HarvestLevel.Flint, 4], // Aluminum
   ["minecraft:iron_ore", HarvestLevel.Bronze],
 
   ["GeoStrata:geostrata_rock_onyx_smooth", HarvestLevel.Bronze],
@@ -22,7 +22,6 @@ var blocks = [
   ["ImmersiveEngineering:ore:2", HarvestLevel.Iron, 2], // lead
   ["minecraft:quartz_ore", HarvestLevel.Iron],
   ["Railcraft:cube:6", HarvestLevel.Iron, 6], // Abyssal Stone
-  ["deepresonance:oreResonating", HarvestLevel.Iron],
   ["GeoStrata:geostrata_rock_granite_smooth", HarvestLevel.Iron],
   ["GeoStrata:geostrata_rock_hornfel_smooth", HarvestLevel.Iron],
   ["ElectriCraft:electricraft_block_ore:3", HarvestLevel.Iron, 3], // Nickel

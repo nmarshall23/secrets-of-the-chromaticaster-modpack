@@ -68,10 +68,24 @@ addCraftingItem(mincedMeatVegys);
 
 var mincedBeefMeal = {
   name: "minced_beef_meal",
-  shapelessRecipe: [
-    "toolGrater",
-    "minecraft:beef",
-    "cropPotato"
+  num: 4,
+  shapelessRecipes: [
+    [
+      "toolGrater",
+      "minecraft:beef",
+      "cropPotato",
+      "cropCarrot",
+      "foodSalt",
+      "cropOnion",
+    ],
+    [
+      "toolGrater",
+      "minecraft:beef",
+      "cropPotato",
+      "cropCarrot",
+      "foodSalt",
+      "cropGarlic",
+    ]
   ]
 };
 
@@ -79,10 +93,24 @@ addCraftingItem(mincedBeefMeal);
 
 var mincedChickenMeal = {
   name: "minced_chicken_meal",
-  shapelessRecipe: [
-    "toolGrater",
-    "minecraft:chicken",
-    "cropPotato"
+  num: 4,
+  shapelessRecipes: [
+    [
+      "toolGrater",
+      "minecraft:chicken",
+      "cropPotato",
+      "cropCarrot",
+      "foodSalt",
+      "cropOnion",
+    ],
+    [
+      "toolGrater",
+      "minecraft:chicken",
+      "cropPotato",
+      "cropCarrot",
+      "foodSalt",
+      "cropGarlic",
+    ]
   ]
 };
 
@@ -90,10 +118,24 @@ addCraftingItem(mincedChickenMeal);
 
 var mincedPorkMeal = {
   name: "minced_pork_meal",
-  shapelessRecipe: [
-    "toolGrater",
-    "minecraft:porkchop",
-    "cropPotato"
+  num: 4,
+  shapelessRecipes: [
+    [
+      "toolGrater",
+      "minecraft:porkchop",
+      "cropPotato",
+      "cropCarrot",
+      "foodSalt",
+      "cropOnion",
+    ],
+    [
+      "toolGrater",
+      "minecraft:porkchop",
+      "cropPotato",
+      "cropCarrot",
+      "foodSalt",
+      "cropGarlic",
+    ]
   ]
 };
 

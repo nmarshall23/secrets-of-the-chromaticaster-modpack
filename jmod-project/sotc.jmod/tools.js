@@ -33,13 +33,15 @@ for (var m in toolMats) {
   }
 }
 
-addToolTip(lumberAxes, ["info.sotc.jmod.tooltips.lumberAxe"]);
+// addToolTip(lumberAxes, ["info.sotc.jmod.tooltips.lumberAxe"]);
 
 // What's the point of lead if we can't have a lead pipe?  A very nasty weapon, but doesn't last long.
-addItem("toolPipeLead","ToolSword",1, ModId + ".tools").tooldata(ToolData("LEAD"));
+addItem("toolPipeLead", "ToolSword", 1, ModId + ".tools").tooldata(ToolData(
+  "LEAD"));
 
 // Lead Pipe doesn't have a default recipe.  Let's make one.
 addShapedRecipe(ModId + ":toolPipeLead", [
   [null, null, "ingotLead"],
   [null, "ingotLead", null],
-  ["ingotLead", null, null]]);
+  ["ingotLead", null, null]
+]);

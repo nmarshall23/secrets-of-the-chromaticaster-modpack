@@ -12,6 +12,14 @@ val stewIngredients = <sotc.jmod:minced_carrot_potatos>;
 val stewMeaty = <sotc.jmod:food_stew_meaty>;
 val stewMeatyIngredients = <sotc.jmod:minced_meat_vegies>;
 
+val beefMealMinced = <sotc.jmod:minced_beef_meal>;
+val porkMealMinced = <sotc.jmod:minced_pork_meal>;
+val chickenMealMinced = <sotc.jmod:minced_chicken_meal>;
+
+
+val beefMeal = <DCsAppleMilk:defeatedcrow.foodPlate:0>;
+val porkMeal = <DCsAppleMilk:defeatedcrow.foodPlate:1>;
+val chickenMeal = <DCsAppleMilk:defeatedcrow.foodPlate:2>;
 
 
 // remove flesh to leather
@@ -36,3 +44,7 @@ mods.amt.Pan.addRecipe(stewMeaty, stewMeatyIngredients, "orange", "Favorful Stew
 // Bread is made on the plate.
 mods.amt.Plate.addRecipe(bread,    flourAE,    120, true);
 mods.amt.Plate.addRecipe(bread,    flourRC,    120, true);
+
+mods.amt.Plate.addRecipe(beefMeal,    beefMealMinced,    80, false);
+mods.amt.Plate.addRecipe(porkMeal,    porkMealMinced,    80, false);
+mods.amt.Plate.addRecipe(chickenMeal, chickenMealMinced, 80, true);

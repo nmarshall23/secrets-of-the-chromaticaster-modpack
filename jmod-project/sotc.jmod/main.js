@@ -76,31 +76,27 @@ defineColor("ELECTRUM", 209, 191, 87);
 load("cleanup.js");
 
 
-// addOreDict("Thaumcraft:ItemBaubleBlanks:2", "beltBauble");
 
+load("oreDict/AMTAddonJP.js");
+load("oreDict/gears.js");
+load("oreDict/HarderWildlife.js");
+load("oreDict/Mariculture.js");
 load("oreDict/plantmegapack.js");
 load("oreDict/Railcraft.js");
-load("oreDict/Mariculture.js");
-load("oreDict/vanilla.js");
-load("oreDict/gears.js");
-load("oreDict/AMTAddonJP.js");
-load("oreDict/witchery.js");
-load("oreDict/TwilightForest.js");
-load("oreDict/HarderWildlife.js");
 load("oreDict/RotaryCraft.js");
+load("oreDict/TwilightForest.js");
+load("oreDict/vanilla.js");
+load("oreDict/witchery.js");
 
-
-// load("oreDict/BuildCraft.js");
-
-
-load("removed/ImmersiveEngineering.js");
-load("removed/BuildCraft.js");
-load("removed/Railcraft.js");
-load("removed/vanilla.js");
 load("removed/betterbuilderswands.js");
+load("removed/BuildCraft.js");
 load("removed/DCsAppleMilk.js");
+load("removed/ImmersiveEngineering.js");
+load("removed/Railcraft.js");
 load("removed/RotaryCraft.js");
+load("removed/vanilla.js");
 
+load("loot/removals.js");
 
 load("materials.js");
 load("blockprops.js");
@@ -145,6 +141,5 @@ load("tweaks/witchery.js");
 load("tweaks/yegamolchattels.js");
 
 
-load("loot/removals.js");
 
 // load("loot/additions.js");
