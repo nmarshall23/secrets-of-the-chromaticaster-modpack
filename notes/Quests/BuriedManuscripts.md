@@ -14,7 +14,7 @@ Tasks:
 
 
 
-Your eyesight will never be the same
+Hit the Books
 ------------------------------------
 As your expected Thaumaturgy requires a lot of reading and research. This should occupy you during those long Red Nights.
 

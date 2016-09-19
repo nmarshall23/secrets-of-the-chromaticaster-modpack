@@ -6,6 +6,8 @@ However this might take you to depths you never imagined.
 A Furnace to Smelt with
 -----------------------
 
+Collect plenty of stones to craft 4 compressed cobblestone. Then craft a Furnace.
+
 Tasks:
  1. Collect Cobblestone
  2. Craft 4 Compressed Cobblestone
@@ -22,8 +24,10 @@ Tasks:
 
 Collect gravel
 --------------
-Wood will spinter and break, Stone heavy and slow. Flint is a superior material to make tools from.
+Wood will splinter, and Stone is heavy. Flint is a superior material to make tools from.
 You can find Flint in gravel. Or you can craft three gavel into one flint.
+
+
 
 Tasks:
  1. Collect 27 Gravel
@@ -40,8 +44,7 @@ Tasks:
 
 Tin
 ---
-Tin is most used as a component of machines.  
-Tin can be found around height 60, in long narrow veins, centered around a Motherlode of ore.
+Tin is most used as a component of machines. Tin can be found around height 60, ±12 meters, in long narrow veins, centered around a Mother lode of ore.
 
 Tasks:
  1. Collect 3 Tin Ore.
@@ -49,19 +52,16 @@ Tasks:
 
 Copper
 ------
-Copper can be used to craft tools that will last much longer then Flint tools.
-
-Copper, Motherlodes with groups of long narrow veins found around height 48.
+Copper can be used to craft tools that will last much longer then Flint tools. Copper Ore is found around height 48  ±16 meters, in long narrow veins, centered around a Mother lode of ore.
 
 Tasks:
  1. Collect 9 Copper ore.
 
 
-Aluminum
---------
-Aluminum is another metal used mostly in building machines. The stone furnace does a poor job of smelting Aluminum. Other means of extracting this ore will yield more ingots.
+Aluminum Ore
+------------
 
-Aluminum Ore, Medium motherlodes with 2-4 horizontal veins each. Found around height 94.
+Aluminum is another metal used mostly in building machines. The stone furnace does a poor job of smelting Aluminum. Other means of extracting this ore will yield more ingots. You will find Aluminum Ore around height 94, ±34 meters. Medium mother lodes with 2-4 horizontal veins.
 
 Tasks:
  1. Collect 3 Aluminum ore.
@@ -73,6 +73,7 @@ Tasks:
 Engineering your Future
 -----------------------
 
+An Engineer's Hammer is used to crush ores into dust. It is also used to complete some multiblock structures. Perhaps you should consult the manual.
 
 
 Tasks:
@@ -112,6 +113,11 @@ Iron, Motherlodes with groups of long narrow veins found around height 43.
 
 
 
+
+Diving into the Abyss
+---------------------
+
+To make bricks that can withstand intense heat. You will need to dive the the bottom the an ocean. There you will find round geodes of dark stone.
 
 
 

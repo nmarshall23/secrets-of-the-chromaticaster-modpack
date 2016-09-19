@@ -34,14 +34,15 @@ Text:
  1. Energetic Essence is dropped by some kind of Clover.
  2. Motive Dust is dropped by a flower favored by Ender Men.
 
-Seeds of Magic
---------------
+Witch's Seeds
+-------------
+
 
 Tasks:
  1. Collect these magic seeds
 
 Text:
- 1. Mandrake Seeds, Belladonna Seeds, Snowbell Seeds and Water Artichoke Seeds
+ 1. Hoe dirt till you find Mandrake Seeds, Belladonna Seeds, Snowbell Seeds and Water Artichoke Seeds.
 
 
 Magic Trees
