@@ -9,14 +9,37 @@ Check on NEI ores resource.
 
 Change oreCadmium HarvestLevel.Steel
 
+Silicon is from ground endstone.
+
+OpenComputer chips should use Buildcraft chipsets.
+
 RF Machines Tiers:
  * By gears, Copper, Bronze, Iron, Steel, Diamond
  * By plates, Copper or Tin, Iron, Steel
  * By component, Silicon, Transistor, Chip,
 
-Silicon is from ground endstone.
+Buildcraft machines:
+ * Pump, Diamond, Wet, Mechanical, Cool Tank
+ * Filler: Copper, Mechanical, Builds Block
+ * Builder: Iron, Mechanical, Builds Block
+ * Architect: Iron, Mechanical
+ * Architect Libary, Iron
+ * Assembly Table, 
+ * Laser, 
+ * Integration Table, 
+ * Flood Gate: Diamond, Wet, Mechanical
 
-OpenComputer chips should use Buildcraft chipsets.
+Railcraft machines:
+ * Rolling Machine: Bronze, Mechanical
+ * Rock Crusher: Iron, Mechanical, Pressure
+
+Forestry machines:
+ * Carpenter: Bronze, Mechanical
+ * Thermionic Fabricator: Bronze?, Heat, Hot Tank
+ * Moistener: Bronze, Wet
+ * Squeezer: Bronze, Mechanical, Pressure
+
+
 
 Questing
 --------
