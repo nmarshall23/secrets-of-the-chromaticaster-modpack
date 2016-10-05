@@ -80,6 +80,8 @@ function addCraftingItem(item) {
     var i = item.foodData;
     addItem(item.name, "CoreFood", stackSize, generalTab).fooddata(
       FoodData(i.hunger, i.saturation, i.wolffood, i.alwaysEdible));
+
+    Applecore.modifyFoodValue(itemModName, i.hunger, i.saturation);
   } else {
     addItem(item.name, refClass, stackSize, generalTab);
   }
