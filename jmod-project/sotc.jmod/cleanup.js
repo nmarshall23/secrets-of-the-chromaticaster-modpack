@@ -44,8 +44,8 @@ var unUsedOres = [
 	["Forestry:resources:1", "Forestry"], // Copper
 	["Forestry:resources:2", "Forestry"], // Tin
 	["ReactorCraft:reactorcraft_block_ore:4", "ReactorCraft"], // Silver
-	["Mariculture:rocks:1", "Mariculture"], // Copper
-	["Mariculture:rocks:2", "Mariculture"], // Aluminum
+	// ["Mariculture:rocks:1", "Mariculture"], // Copper
+	// ["Mariculture:rocks:2", "Mariculture"], // Aluminum
 
 ];
 

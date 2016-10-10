@@ -34,7 +34,6 @@ val hasRailCraftRecipeList =  {
 val platesToAddToOreDict = {
 "Iron":   <Railcraft:part.plate:0>,
 "Steel":  <Railcraft:part.plate:1>,
-"Aluminum": <Mariculture:crafting:7>
 } as IItemStack[string];
 
 
@@ -46,7 +45,6 @@ val plates = {
 "Aluminum": <ImmersiveEngineering:metal:32>,
 "Iron":   <Railcraft:part.plate:0>,
 "Steel":  <Railcraft:part.plate:1>,
-"Titanium": <Mariculture:crafting:17>,
 "Lead": <ImmersiveEngineering:metal:33>
 } as IItemStack[string];
 
@@ -180,12 +178,3 @@ for material, coil in wireCoils {
 	[coil2Material, stick,         coil2Material],
 	[null,          coil1Material, null]]);
 }
-
-
-//val oreDictplateAluminum = <ore:plateAluminum>;
-//val oreDictplateIron = <ore:plateIron>;
-//val oreDictplateSteel = <ore:plateSteel>;
-
-//oreDictplateAluminum.add(<Mariculture:crafting:7>);
-//oreDictplateIron.add(<Railcraft:part.plate:0>);
-//oreDictplateSteel.add(<Railcraft:part.plate:1>);

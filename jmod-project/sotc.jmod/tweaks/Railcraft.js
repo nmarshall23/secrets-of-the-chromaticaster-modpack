@@ -6,7 +6,6 @@ var plateAluminum = "plateAluminum";
 var plateConstantan = "plateConstantan";
 var plateElectrum = "plateElectrum";
 var craftingTable = "minecraft:crafting_table";
-var brickConstruction = "Mariculture:rocks:4";
 var redstoneDust = "dustRedstone";
 var piston = "minecraft:piston";
 // var gearTin = "gearTin";
@@ -16,7 +15,6 @@ var gearSteel = "gearSteel";
 var gearBronze = "gearBronze";
 
 var piston = "minecraft:piston";
-var batteryCopper = "Mariculture:battery_copper";
 
 var ingotGold = "ingotGold";
 var ingotElectrum = "ingotElectrum";

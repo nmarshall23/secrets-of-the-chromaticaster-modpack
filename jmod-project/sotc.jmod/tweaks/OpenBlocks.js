@@ -4,22 +4,22 @@ load("functions.js");
 // XP Drain
 // Materials
 
-var barsIron = "minecraft:iron_bars";
-var pearl = "Mariculture:pearls:*";
-var blockLapis = "blockLapis";
-
-var xpdrain = {
-  name: "OpenBlocks:xpdrain",
-  recipes: [
-    [
-      [barsIron, pearl, barsIron],
-      [pearl, blockLapis, pearl],
-      [barsIron, pearl, barsIron]
-    ]
-  ]
-};
-
-updateShappedRecipe(xpdrain);
+// var barsIron = "minecraft:iron_bars";
+// var pearl = "Mariculture:pearls:*";
+// var blockLapis = "blockLapis";
+//
+// var xpdrain = {
+//   name: "OpenBlocks:xpdrain",
+//   recipes: [
+//     [
+//       [barsIron, pearl, barsIron],
+//       [pearl, blockLapis, pearl],
+//       [barsIron, pearl, barsIron]
+//     ]
+//   ]
+// };
+//
+// updateShappedRecipe(xpdrain);
 
 // XP Shower
 
@@ -145,24 +145,24 @@ updateShappedRecipe(luggage);
 
 // goldenEye
 
-var eyeEnder = "minecraft:ender_eye";
-var ravenFeather = "TwilightForest:item.tfFeather";
-var foulFume = "witchery:ingredient:28";
-var energeticEssence = "ChromatiCraft:chromaticraft_item_crafting:28";
-var goldenPearl = "Mariculture:pearls:5";
-
-var goldenEye = {
-  name: "OpenBlocks:goldenEye:100",
-  recipes: [
-    [
-      [ravenFeather, goldenPearl, energeticEssence],
-      [goldenPearl, eyeEnder, goldenPearl],
-      [energeticEssence, goldenPearl, foulFume]
-    ]
-  ]
-};
-
-updateShappedRecipe(goldenEye);
+// var eyeEnder = "minecraft:ender_eye";
+// var ravenFeather = "TwilightForest:item.tfFeather";
+// var foulFume = "witchery:ingredient:28";
+// var energeticEssence = "ChromatiCraft:chromaticraft_item_crafting:28";
+// var goldenPearl = "Mariculture:pearls:5";
+//
+// var goldenEye = {
+//   name: "OpenBlocks:goldenEye:100",
+//   recipes: [
+//     [
+//       [ravenFeather, goldenPearl, energeticEssence],
+//       [goldenPearl, eyeEnder, goldenPearl],
+//       [energeticEssence, goldenPearl, foulFume]
+//     ]
+//   ]
+// };
+//
+// updateShappedRecipe(goldenEye);
 
 // sleepingBag
 var woolBlue = "minecraft:wool:11";

@@ -63,12 +63,12 @@ var stickAluminum = <ore:stickAluminum>;
 // altBackpackRecipe(ironBackpack, basicBackpack, ironBackpackMaterials);
 
 
-val goldenSilk = <Mariculture:crafting>;
+// val goldenSilk = <Mariculture:crafting>;
 
 
 val wovenSilk = <Forestry:craftingMaterial:3>;
 
-val goldBackpackMaterials = {"top": goldenSilk, "levelItem": goldenSilk, "rod": stickAluminum, "base": wovenSilk } as IIngredient[string];
+// val goldBackpackMaterials = {"top": goldenSilk, "levelItem": goldenSilk, "rod": stickAluminum, "base": wovenSilk } as IIngredient[string];
 
 // altBackpackRecipe(goldBackpack, ironBackpack, goldBackpackMaterials);
 

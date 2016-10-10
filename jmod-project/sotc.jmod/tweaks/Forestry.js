@@ -10,7 +10,6 @@ addShapelessRecipe("minecraft:string", [
 
 // Materials
 var piston = "minecraft:piston";
-var batteryCopper = "Mariculture:battery_copper";
 var cobblestoneCompressed = "compressedCobblestone1x";
 var furnace = "minecraft:furnace";
 var gearCopper = "gearCopper";

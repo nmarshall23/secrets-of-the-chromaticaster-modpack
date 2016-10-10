@@ -43,12 +43,10 @@ var tinIngot = "ingotTin";
 
 var lavaBucket = "minecraft:lava_bucket";
 var soulSand = "minecraft:soul_sand";
-var brickConstruction = "Mariculture:rocks:4";
 var wroughtIronBlock = "GardenStuff:metal_block";
 var wroughtIronIngot = "ingotWroughtiron";
 var vishroom = "Thaumcraft:blockCustomPlant:5";
 var quicksilver = "quicksilver";
-// var burntBrick = "Mariculture:crafting:14";
 var furnace = "minecraft:furnace";
 var brick = "ingotBrick";
 // var plateLead = "plateLead";

@@ -21,6 +21,5 @@ val plates = {
 "Aluminum": <ImmersiveEngineering:metal:32>,
 "Iron":   <Railcraft:part.plate:0>,
 "Steel":  <Railcraft:part.plate:1>,
-"Titanium": <Mariculture:crafting:17>,
 "Lead": <ImmersiveEngineering:metal:33>
 } as IItemStack[string];

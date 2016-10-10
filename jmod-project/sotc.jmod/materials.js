@@ -6,33 +6,33 @@ var toolmat = [
   ["WOOD", HarvestLevel.Wood, 10, 3.5, 0.0, 10, "plankWood", null],
   ["GOLD", HarvestLevel.Wood, 131, 12.0, 0.0, 25, "ingotGold", null],
   ["FLINT", HarvestLevel.Flint, 90, 4.0, 1.5, 5, "itemFlint", null],
-  ["STONE", HarvestLevel.Flint, 60, 4.0, 1.0, 5, "cobblestone", null],
-  ["COPPER", HarvestLevel.Flint, 300, 4.0, 1.5, 16, "ingotCopper", null],
+  ["STONE", HarvestLevel.Flint,     60, 4.0, 1.0, 5, "cobblestone", null],
+  ["COPPER", HarvestLevel.Flint,   300, 4.0, 1.5, 16, "ingotCopper", null],
   ["ALUMINUM", HarvestLevel.Flint, 290, 4.5, 2.0, 4, "ingotAluminum", null],
-  ["LEAD", HarvestLevel.Flint, 220, 7.0, 4.0, 0, "ingotLead", null],
+  ["LEAD", HarvestLevel.Flint,     320, 3.0, 4.1, 0, "ingotLead", null],
   ["OBSIDIAN", HarvestLevel.Flint, 110, 3.4, 2.5, 2, "blockObsidian", null],
   ["CHALCEDONY", HarvestLevel.Flint, 128, 5.0, 2.0, 16, "blockChalcedony",
     null
   ],
 
 
-  ["BRONZE", HarvestLevel.Bronze, 500, 6.0, 2.0, 16, "ingotBronze", null],
+  ["BRONZE", HarvestLevel.Bronze, 480, 6.0, 2.0, 16, "ingotBronze", null],
   ["ELECTRUM", HarvestLevel.Bronze, 210, 14.0, 0.5, 30, "ingotElectrum", null],
   ["SILVER", HarvestLevel.Bronze, 275, 6.0, 2.1, 25, "ingotSilver", null],
 
-  ["NICKEL", HarvestLevel.Iron, 510, 6.5, 2.5, 18, "ingotNickel", null],
+  ["NICKEL", HarvestLevel.Iron, 560, 6.75, 2.5, 18, "ingotNickel", null],
   ["IRON", HarvestLevel.Iron, 600, 6.0, 2.25, 14, "ingotIron", null],
   ["THAUMIUM", HarvestLevel.Iron, 750, 7.0, 3.25, 22, "ingotThaumium",
     "Thaumcraft"
   ],
 
   // ["INVAR", HarvestLevel.Steel, 770, 7.0, 3.0, 18, "ingotInvar", null],
-  ["STEEL", HarvestLevel.Steel, 800, 7.0, 4.0, 11, "ingotSteel", null],
-  ["RAILCRAFT_STEEL", HarvestLevel.Steel, 800, 7.0, 4.0, 11, "ingotSteel",
+  ["STEEL", HarvestLevel.Steel, 800, 6.0, 4.0, 11, "ingotSteel", null],
+  ["RAILCRAFT_STEEL", HarvestLevel.Steel, 800, 6.0, 4.0, 11, "ingotSteel",
     "Railcraft"
   ],
 
-  ["THAUMIUM_ELEMENTAL", HarvestLevel.Diamond, 1500, 10.0, 3.5, 22,
+  ["THAUMIUM_ELEMENTAL", HarvestLevel.Diamond, 2061, 10.0, 3.5, 22,
     "ingotThaumium", "Thaumcraft"
   ],
   ["VOID", HarvestLevel.Diamond, 150, 8.0, 5.5, 10, "ingotVoid", "Thaumcraft"],

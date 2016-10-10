@@ -30,7 +30,7 @@
   },
   "login": {
     "motd": [
-      "Welcome to the Nick\u0027s Server!"
+      "Read your quest book to learn how to survive.."
     ],
     "starting_items": [
       "minecraft:apple 16 0",
@@ -81,7 +81,7 @@
     "max_claims": 100,
     "max_homes": 1,
     "max_loaded_chunks": 50,
-    "offline_chunkloader_timer": 24.0,
+    "offline_chunkloader_timer": 10.0,
     "show_rank": true
   },
   "tops": {

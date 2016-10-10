@@ -52,7 +52,6 @@ var brick = "minecraft:brick";
 var blazePowder = "minecraft:blaze_powder";
 var dustSulfur = "dustSulfur";
 var pasteBryntenere = "pasteBryntenere";
-// var burntBrick = "Mariculture:crafting:14";
 
 
 var blastBrick = {

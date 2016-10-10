@@ -10,8 +10,8 @@ mods.chisel.Groups.addVariation("emerald_block",  <GeoStrata:geostrata_block_dec
 
 
 //Remove GeoStrata cobble from cobblestone group.
-mods.chisel.Groups.removeGroup("cobblestone"); 
-mods.chisel.Groups.addGroup("NM_cobblestone"); 
+mods.chisel.Groups.removeGroup("cobblestone");
+mods.chisel.Groups.addGroup("NM_cobblestone");
 
 mods.chisel.Groups.addVariation("NM_cobblestone", <minecraft:cobblestone:0>);
 mods.chisel.Groups.addVariation("NM_cobblestone", <chisel:cobblestone:1>);
@@ -37,8 +37,8 @@ mods.chisel.Groups.addVariation("NM_cobblestone", <chisel:cobblestone:15>);
 
 //Granite
 
-mods.chisel.Groups.removeGroup("GeoStrata_Granite"); 
-mods.chisel.Groups.addGroup("GS_Granite"); 
+mods.chisel.Groups.removeGroup("GeoStrata_Granite");
+mods.chisel.Groups.addGroup("GS_Granite");
 
 mods.chisel.Groups.addVariation("GS_Granite", <GeoStrata:geostrata_rock_granite_cobble:3>);
 mods.chisel.Groups.addVariation("GS_Granite", <GeoStrata:geostrata_rock_granite_smooth:0>);
@@ -59,8 +59,8 @@ mods.chisel.Groups.addVariation("GS_Granite", <GeoStrata:geostrata_rock_granite_
 
 //Basalt
 
-mods.chisel.Groups.removeGroup("GeoStrata_Basalt"); 
-mods.chisel.Groups.addGroup("GS_Basalt"); 
+mods.chisel.Groups.removeGroup("GeoStrata_Basalt");
+mods.chisel.Groups.addGroup("GS_Basalt");
 
 mods.chisel.Groups.addVariation("GS_Basalt", <GeoStrata:geostrata_rock_basalt_cobble:3>);
 mods.chisel.Groups.addVariation("GS_Basalt", <GeoStrata:geostrata_rock_basalt_smooth:0>);
@@ -81,8 +81,8 @@ mods.chisel.Groups.addVariation("GS_Basalt", <GeoStrata:geostrata_rock_basalt_co
 
 //Gneiss
 
-mods.chisel.Groups.removeGroup("GeoStrata_Gneiss"); 
-mods.chisel.Groups.addGroup("GS_Gneiss"); 
+mods.chisel.Groups.removeGroup("GeoStrata_Gneiss");
+mods.chisel.Groups.addGroup("GS_Gneiss");
 
 mods.chisel.Groups.addVariation("GS_Gneiss", <GeoStrata:geostrata_rock_gneiss_cobble:3>);
 mods.chisel.Groups.addVariation("GS_Gneiss", <GeoStrata:geostrata_rock_gneiss_smooth:0>);
@@ -103,8 +103,8 @@ mods.chisel.Groups.addVariation("GS_Gneiss", <GeoStrata:geostrata_rock_gneiss_co
 
 //Granulite
 
-mods.chisel.Groups.removeGroup("GeoStrata_Granulite"); 
-mods.chisel.Groups.addGroup("GS_Granulite"); 
+mods.chisel.Groups.removeGroup("GeoStrata_Granulite");
+mods.chisel.Groups.addGroup("GS_Granulite");
 
 mods.chisel.Groups.addVariation("GS_Granulite", <GeoStrata:geostrata_rock_granulite_cobble:3>);
 mods.chisel.Groups.addVariation("GS_Granulite", <GeoStrata:geostrata_rock_granulite_smooth:0>);
@@ -125,8 +125,8 @@ mods.chisel.Groups.addVariation("GS_Granulite", <GeoStrata:geostrata_rock_granul
 
 //Hornfel
 
-mods.chisel.Groups.removeGroup("GeoStrata_Hornfel"); 
-mods.chisel.Groups.addGroup("GS_Hornfel"); 
+mods.chisel.Groups.removeGroup("GeoStrata_Hornfel");
+mods.chisel.Groups.addGroup("GS_Hornfel");
 
 mods.chisel.Groups.addVariation("GS_Hornfel", <GeoStrata:geostrata_rock_hornfel_cobble:3>);
 mods.chisel.Groups.addVariation("GS_Hornfel", <GeoStrata:geostrata_rock_hornfel_smooth:0>);
@@ -167,15 +167,6 @@ mods.chisel.Groups.addVariation("limestone", <GeoStrata:geostrata_rock_limestone
 mods.chisel.Groups.addVariation("limestone", <GeoStrata:geostrata_rock_limestone_cobble:10>);
 
 
-// limestone
-mods.chisel.Groups.addVariation("limestone", <Mariculture:limestone:1>);
-mods.chisel.Groups.addVariation("limestone", <Mariculture:limestone:2>);
-mods.chisel.Groups.addVariation("limestone", <Mariculture:limestone:3>);
-mods.chisel.Groups.addVariation("limestone", <Mariculture:limestone:4>);
-mods.chisel.Groups.addVariation("limestone", <Mariculture:limestone:5>);
-mods.chisel.Groups.addVariation("limestone", <Mariculture:limestone:6>);
-mods.chisel.Groups.addVariation("limestone", <Mariculture:limestone:7>);
-mods.chisel.Groups.addVariation("limestone", <Mariculture:limestone:10>);
 
 //Marble
 
@@ -199,8 +190,8 @@ mods.chisel.Groups.addVariation("marble", <GeoStrata:geostrata_rock_marble_cobbl
 
 //Migmatite
 
-mods.chisel.Groups.removeGroup("GeoStrata_Migmatite"); 
-mods.chisel.Groups.addGroup("GS_Migmatite"); 
+mods.chisel.Groups.removeGroup("GeoStrata_Migmatite");
+mods.chisel.Groups.addGroup("GS_Migmatite");
 
 mods.chisel.Groups.addVariation("GS_Migmatite", <GeoStrata:geostrata_rock_migmatite_cobble:3>);
 mods.chisel.Groups.addVariation("GS_Migmatite", <GeoStrata:geostrata_rock_migmatite_smooth:0>);
@@ -222,8 +213,8 @@ mods.chisel.Groups.addVariation("GS_Migmatite", <GeoStrata:geostrata_rock_migmat
 
 //Onyx
 
-mods.chisel.Groups.removeGroup("GeoStrata_Onyx"); 
-mods.chisel.Groups.addGroup("GS_Onyx"); 
+mods.chisel.Groups.removeGroup("GeoStrata_Onyx");
+mods.chisel.Groups.addGroup("GS_Onyx");
 
 mods.chisel.Groups.addVariation("GS_Onyx", <GeoStrata:geostrata_rock_onyx_cobble:3>);
 mods.chisel.Groups.addVariation("GS_Onyx", <GeoStrata:geostrata_rock_onyx_smooth:0>);
@@ -244,8 +235,8 @@ mods.chisel.Groups.addVariation("GS_Onyx", <GeoStrata:geostrata_rock_onyx_cobble
 
 //Opal
 
-mods.chisel.Groups.removeGroup("GeoStrata_Opal"); 
-mods.chisel.Groups.addGroup("GS_Opal"); 
+mods.chisel.Groups.removeGroup("GeoStrata_Opal");
+mods.chisel.Groups.addGroup("GS_Opal");
 
 mods.chisel.Groups.addVariation("GS_Opal", <GeoStrata:geostrata_rock_opal_cobble:3>);
 mods.chisel.Groups.addVariation("GS_Opal", <GeoStrata:geostrata_rock_opal_smooth:0>);
@@ -266,8 +257,8 @@ mods.chisel.Groups.addVariation("GS_Opal", <GeoStrata:geostrata_rock_opal_cobble
 
 //Peridotite
 
-mods.chisel.Groups.removeGroup("GeoStrata_Peridotite"); 
-mods.chisel.Groups.addGroup("GS_Peridotite"); 
+mods.chisel.Groups.removeGroup("GeoStrata_Peridotite");
+mods.chisel.Groups.addGroup("GS_Peridotite");
 
 mods.chisel.Groups.addVariation("GS_Peridotite", <GeoStrata:geostrata_rock_peridotite_cobble:3>);
 mods.chisel.Groups.addVariation("GS_Peridotite", <GeoStrata:geostrata_rock_peridotite_smooth:0>);
@@ -289,8 +280,8 @@ mods.chisel.Groups.addVariation("GS_Peridotite", <GeoStrata:geostrata_rock_perid
 
 //Pumice
 
-mods.chisel.Groups.removeGroup("GeoStrata_Pumice"); 
-mods.chisel.Groups.addGroup("GS_Pumice"); 
+mods.chisel.Groups.removeGroup("GeoStrata_Pumice");
+mods.chisel.Groups.addGroup("GS_Pumice");
 
 mods.chisel.Groups.addVariation("GS_Pumice", <GeoStrata:geostrata_rock_pumice_cobble:3>);
 mods.chisel.Groups.addVariation("GS_Pumice", <GeoStrata:geostrata_rock_pumice_smooth:0>);
@@ -311,16 +302,16 @@ mods.chisel.Groups.addVariation("GS_Pumice", <GeoStrata:geostrata_rock_pumice_co
 
 //Fix for Vanilla Quartz
 
-mods.chisel.Groups.removeGroup("quartz"); 
-mods.chisel.Groups.addGroup("quartz"); 
+mods.chisel.Groups.removeGroup("quartz");
+mods.chisel.Groups.addGroup("quartz");
 mods.chisel.Groups.addVariation("quartz", <minecraft:quartz_block:1>);
 mods.chisel.Groups.addVariation("quartz", <minecraft:quartz_block:2>);
 mods.chisel.Groups.addVariation("quartz", <minecraft:quartz_block:0>);
 
 //GeoStrata Quartz
 
-mods.chisel.Groups.removeGroup("GeoStrata_Quartz"); 
-mods.chisel.Groups.addGroup("GS_Quartz"); 
+mods.chisel.Groups.removeGroup("GeoStrata_Quartz");
+mods.chisel.Groups.addGroup("GS_Quartz");
 
 mods.chisel.Groups.addVariation("GS_Quartz", <GeoStrata:geostrata_rock_quartz_cobble:3>);
 mods.chisel.Groups.addVariation("GS_Quartz", <GeoStrata:geostrata_rock_quartz_smooth:0>);
@@ -341,8 +332,8 @@ mods.chisel.Groups.addVariation("GS_Quartz", <GeoStrata:geostrata_rock_quartz_co
 
 //Sandstone
 
-mods.chisel.Groups.removeGroup("GeoStrata_Sandstone"); 
-mods.chisel.Groups.addGroup("GS_Sandstone"); 
+mods.chisel.Groups.removeGroup("GeoStrata_Sandstone");
+mods.chisel.Groups.addGroup("GS_Sandstone");
 
 mods.chisel.Groups.addVariation("GS_Sandstone", <GeoStrata:geostrata_rock_sandstone_cobble:3>);
 mods.chisel.Groups.addVariation("GS_Sandstone", <GeoStrata:geostrata_rock_sandstone_smooth:0>);
@@ -363,8 +354,8 @@ mods.chisel.Groups.addVariation("GS_Sandstone", <GeoStrata:geostrata_rock_sandst
 
 //Schist
 
-mods.chisel.Groups.removeGroup("GeoStrata_Schist"); 
-mods.chisel.Groups.addGroup("GS_Schist"); 
+mods.chisel.Groups.removeGroup("GeoStrata_Schist");
+mods.chisel.Groups.addGroup("GS_Schist");
 
 mods.chisel.Groups.addVariation("GS_Schist", <GeoStrata:geostrata_rock_schist_cobble:3>);
 mods.chisel.Groups.addVariation("GS_Schist", <GeoStrata:geostrata_rock_schist_smooth:0>);
@@ -385,8 +376,8 @@ mods.chisel.Groups.addVariation("GS_Schist", <GeoStrata:geostrata_rock_schist_co
 
 //Shale
 
-mods.chisel.Groups.removeGroup("GeoStrata_Shale"); 
-mods.chisel.Groups.addGroup("GS_Shale"); 
+mods.chisel.Groups.removeGroup("GeoStrata_Shale");
+mods.chisel.Groups.addGroup("GS_Shale");
 
 mods.chisel.Groups.addVariation("GS_Shale", <GeoStrata:geostrata_rock_shale_cobble:3>);
 mods.chisel.Groups.addVariation("GS_Shale", <GeoStrata:geostrata_rock_shale_smooth:0>);
@@ -407,8 +398,8 @@ mods.chisel.Groups.addVariation("GS_Shale", <GeoStrata:geostrata_rock_shale_cobb
 
 //Slate
 
-mods.chisel.Groups.removeGroup("GeoStrata_Slate"); 
-mods.chisel.Groups.addGroup("GS_Slate"); 
+mods.chisel.Groups.removeGroup("GeoStrata_Slate");
+mods.chisel.Groups.addGroup("GS_Slate");
 
 mods.chisel.Groups.addVariation("GS_Slate", <GeoStrata:geostrata_rock_slate_cobble:3>);
 mods.chisel.Groups.addVariation("GS_Slate", <GeoStrata:geostrata_rock_slate_smooth:0>);
