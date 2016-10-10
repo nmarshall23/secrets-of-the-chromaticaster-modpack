@@ -31,6 +31,15 @@ Text:
   2. Away from water sources, Use a Flint Hoe on grass. This may uncover seeds.
   Collect Potato, Carrot, Hemp
 
+
+Irrigation for your farm
+------------------------
+Sprinklers will speed up the growth of your crops.
+You will need to connect them to a Wooden Water Tank with wooden irrigation channels.
+The Water Tank blocks will connect forming a multiblock.
+Wooden Water Tanks will fill with water when it is raining.
+
+
 I hope you like Stew | Clay Pan
 -------------------------------
 
@@ -108,3 +117,86 @@ Empty mug
 
   Text:
    1. You will need to fill the Watering Can with water by right click it on water.
+
+
+
+Rawhide
+-------
+Animals will drop their Rawhide, you will have to treat it to make leather.
+
+Task:
+ 1. Detection Task
+
+Tanning Rack
+------------
+A Tanning Rack is a simple machine. Place rawhide on each side and wait. There is no way of speeding up this process.
+However with some ingenuity you could automate the process of placing rawhide, and removing leather.
+
+Task:
+ 1. Detection Task
+
+
+Leather Tunic
+-------------
+Armor is the key to survival. You will need better armor, but this will do.
+
+
+Linen String
+------------
+Often you can use Linen String as an replacement for Spider String.
+
+Task:
+ 1. Collect Grass
+ 2. Craft Linen String
+
+Basic Back Pack
+---------------
+A backpack to hold all your stuff.
+
+Task:
+ 1. Collect the materials
+ 2. Craft a Basic Back Pack
+
+
+Iron Back Pack
+--------------
+A bigger backpack! Your Iron Back Pack will keep the upgrades from the basic backpack.
+
+Task:
+1. Collect the materials
+2. Craft an Iron Back Pack
+
+Gold Back Pack
+--------------
+To make your backpack even bigger is going to require some magical help.
+
+Task:
+ 1. Craft Gold Back Pack
+
+
+Diamond Back Pack
+-----------------
+
+
+Task:
+ 1. Craft Diamond Back Pack
+
+Backpack Upgrades
+-----------------
+Your backpack can be upgraded with more functionality.
+To apply a backpack upgrade place the upgrade with the backpack in a crafting grid.
+
+Task:
+ 1. Craft Upgrade Cores
+ 2. Crafting task
+
+Text:
+ 1. n/a
+ 2. Hold shift to learn more about these backpack upgrades.
+
+
+Improved Anvil
+--------------
+This anvil is far more useful then others you may have seen. First renaming things is free.
+It only costs XP When repairing Enchanted tools.
+Also the amount repaired is proportional to the enchantability of the material and the number of enchantments.

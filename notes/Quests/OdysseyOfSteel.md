@@ -3,6 +3,8 @@ Odyssey of Steel
 For you to survive you are going to need stronger tools.
 However this might take you to depths you never imagined.
 
+
+
 A Furnace to Smelt with
 -----------------------
 
@@ -20,6 +22,32 @@ Stone hammers are the first in a long line of Mining Hammers. Hammers will break
 
 Tasks:
  1. Craft a Stone Hammer
+
+Bronze Hammer
+-------------
+This Bronze hammer will serve you well. It is far stronger then Stone.
+
+Iron Hammer
+-----------
+An Iron Hammer is even stronger then Bronze. While Bronze is more receptive to enchantments.
+
+Nickel Hammer
+-------------
+Nickel is less durable then Iron but far more then Bronze.
+It's enchantability exceeds Bronze and Iron, but is less then Gold, Platinum and magically enhanced materials.
+
+
+Steel Hammer
+------------
+Steel has excellent durability. Only Platinum and Tools fortified with Diamond exceeds it.
+However Steel has poor receptivity to enchantments.
+
+
+HSLA Steel Hammer
+-----------------
+HSLA Steel is a strengthened variant of Steel. However it does less damage then steel.
+
+
 
 
 Collect gravel
@@ -52,7 +80,7 @@ Tasks:
 
 Copper
 ------
-Copper can be used to craft tools that will last much longer then Flint tools. Copper Ore is found around height 48  ±16 meters, in long narrow veins, centered around a Mother lode of ore.
+Copper can be used to craft tools that will last much longer then Flint tools. Copper Ore is found around height 48, ±16 meters, in long narrow veins, centered around a Mother lode of ore.
 
 Tasks:
  1. Collect 9 Copper ore.
@@ -82,6 +110,13 @@ Tasks:
 
 Coke Oven
 ---------
+A Coke oven is used to make Coal Coke, and Creosote Oil. Coal Coke will burn for twice as long as Coal. Creosote Oil is used to treat wood.
+
+To Build the Coke Oven, place 27 of the Coke Bricks in a 3x3x4 cube then right-click one of the sides' center block with an Engineer's Hammer. Refer to the Engineer's Manual for more information.  
+
+Tasks:
+ 1. Craft Coke Bricks
+
 
 Time to use that education ( making bronze)
 --------------------------
@@ -89,29 +124,34 @@ Time to use that education ( making bronze)
 
 Bronze Tools
 ------------
+Bronze Tools far more durable then Flint and Stone Tools. They have the same enchantability as Copper Tools, but are faster and deal more damage.
 
 Tasks:
  1. Craft Bronze Pickaxe
 
 Gold
 ----
-
-Gold Ore, Motherlodes with groups of long narrow veins found around height 20. Rarer and shorter than iron veins.
-3x more common in temperate hardwood Forest biomes (Forest, Forest Hills, Birch Forest*, Autumn Woods*, Forested Island*, Forested Hills*, Rainforest*, and Woodlands*).
+You will find Gold Ore around height 16, ±16 meters. Small mother lodes with 2-4 long narrow horizontal veins. Rarer and shorter than iron veins.
 
 Redstone
 --------
-RedStone Ore, Isolated veins (no motherlodes) starting at height 64-70 and running straight downward for about 35 blocks. Fairly common, but challenging to mine because the player must tunnel vertically.
-3x more common in Deserts, Desert Hills, and Mountainous Desert*.
+You will find RedStone Ore in Isolated vertical veins, starting at height 64-70 and running straight downward for about 35 blocks. Fairly common, 3x more common in Deserts Biomes.
 
 Iron
 ----
-
-Iron, Motherlodes with groups of long narrow veins found around height 43.
-3x more common in cold biomes (Taigas, Taiga Hills, Ice Plains, Ice Mountains, Alpine*, Glacier*, Ice Wasteland*, Mountain Taiga*, Snow Forest*, and Tundra*).
+You will find Iron Ore around height 32, ±32 meters. Large mother lodes with 2-4 long narrow horizontal veins.
 
 
 
+Magnetite Ore
+-------------
+Lodestone are found by mining Magnetite Ore. Lodestones have a weak magnetic field.
+Then are used to craft Redstone Flux generators and other machines.
+
+
+Iron Tools
+----------
+Iron Tools are more durable then Bronze. While Bronze is more receptive to enchantments.
 
 
 Diving into the Abyss
@@ -120,19 +160,25 @@ Diving into the Abyss
 To make bricks that can withstand intense heat. You will need to dive the the bottom the an ocean. There you will find round geodes of dark stone.
 
 
-
-
-
-To make bronze you will need to first craft an Engineer's Hammer.
-
-To make dusts, place an Ore Block with your Engineer's Hammer in the crafting grid.
-
-Bronze dust is made from 3 copper dust and 1 tin dust.
-
-
 Mortar for the bricks
 ---------------------
 
 Tasks:
  1. Mine sulfer
  2. Mix Bryntienere Morter
+
+
+Crude Blast Furnace
+-------------------
+The Crude Blast Furnace is used to make steel.
+To form a Blast Furnace arrange 27 Blast Bricks in a 3x3x3 cube, and right-click one of the side's center blocks with the Engineer's Hammer. Refer to the Engineer's Manual for more information.
+
+
+Steel Tools
+-----------
+Steel has excellent durability. Only Platinum and Tools fortified with Diamond exceeds it.
+However Steel has poor receptivity to enchantments.
+
+
+Platinum Tools
+--------------
