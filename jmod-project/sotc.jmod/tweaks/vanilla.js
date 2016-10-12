@@ -67,13 +67,14 @@ updateShappedRecipe(bed);
 var blockCloth = "blockCloth";
 var nuggetTin = "nuggetTin";
 var treatedLeather = "ironbackpacks:treatedLeather";
+var leather = "minecraft:leather";
 
 var saddle = {
   name: "minecraft:saddle",
   recipes: [
     [
-      [blockCloth, treatedLeather, blockCloth],
-      [nuggetTin, null, nuggetTin]
+      [leather, blockCloth, leather],
+      [leather, null, leather]
     ]
   ]
 };
@@ -105,3 +106,24 @@ var betterAnvil = {
 
 //removeRecipes("minecraft:anvil");
 updateShappedRecipe(betterAnvil);
+
+// Lead
+
+var lead = {
+  name: "minecraft:lead",
+  num: 2,
+  recipes: [
+    [
+      ["itemString", "itemString", null],
+      ["itemString", "itemString", null],
+      [null, null, "itemString"]
+    ],
+    [
+      ["minecraft:string", "minecraft:string", null],
+      ["minecraft:string", "minecraft:string", null],
+      [null, null, "minecraft:string"]
+    ]
+  ]
+};
+
+updateShappedRecipe(lead);
