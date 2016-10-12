@@ -12,9 +12,7 @@ val steel_axe = <Railcraft:tool.steel.axe>;
 val steel_shears = <Railcraft:tool.steel.shears>;
 val steel_ingot = <Railcraft:ingot>;
 val steel_block = <Railcraft:cube:2>;
-val hsla_ingot = <RotaryCraft:rotarycraft_item_shaftcraft:1>;
-val iron_scraps = <RotaryCraft:rotarycraft_item_shaftcraft:10>;
-val hsla_scraps = <RotaryCraft:rotarycraft_item_shaftcraft:9>;
+
 
 val diamond = <minecraft:diamond>;
 
@@ -30,7 +28,7 @@ val paper = <minecraft:paper>;
 val map = <minecraft:map>;
 val compass = <minecraft:compass>;
 
-val rotarycraftMeter = <RotaryCraft:rotarycraft_item_meter>;
+
 val thaumium = <Thaumcraft:ItemResource:2>;
 val gemCuter = <WitchingGadgets:item.WG_Material:8>;
 val apple = <minecraft:apple>;
@@ -43,11 +41,9 @@ val baubleRing = <Thaumcraft:ItemBaubleBlanks:1>;
 val String = <minecraft:string>;
 val dbattery = <DCsAppleMilk:defeatedcrow.battery>;
 val wheat = <minecraft:wheat>;
-val hslaShaft = <RotaryCraft:rotarycraft_item_shaftcraft:2>;
-val hslaGear = <RotaryCraft:rotarycraft_item_shaftcraft:4>;
+
 
 val amber = <Thaumcraft:ItemResource:6>;
-val canolaSeeds = <RotaryCraft:rotarycraft_item_canola>;
 val baubleAmulet = <Thaumcraft:ItemBaubleBlanks>;
 val bones = <minecraft:bone>;
 val rottenFlesh = <minecraft:rotten_flesh>;
@@ -66,15 +62,16 @@ val largePaperBox = <DCsAppleMilk:defeatedcrow.wipeBox2>;
 vanilla.loot.addChestLoot("strongholdLibrary", chromaticraftNotes.weight(90), 4, 16);
 vanilla.loot.addChestLoot("strongholdLibrary", largePaperBox.weight(100));
 
+
 val ironSteelLoot = [iron_ingot, iron_pickaxe, steel_pickaxe,
-iron_scraps, hsla_ingot, steel_ingot, steel_block, thaumium, hsla_scraps, bucket] as IItemStack[];
+steel_ingot, steel_block, thaumium, bucket] as IItemStack[];
 
 val villageBlacksmithBoringLoot = [gemCuter, apple, saddle, oakSapling, bread, diamond, obsidian, saddle] as IItemStack[];
 val dungeonChestBoringLoot = [bread, baubleRing, baubleAmulet, String, apple,
-dbattery, wheat, amber, canolaSeeds, saddle, bones, rottenFlesh, hslaShaft, hslaGear,
+dbattery, wheat, amber, saddle, bones, rottenFlesh, 
 mintSeed, tinGearBushing, tntMineCart, mineCart] as IItemStack[];
 
-val strongholdBoringLoot = [iron_scraps, redstone, amtLicor] as IItemStack[];
+val strongholdBoringLoot = [redstone, amtLicor] as IItemStack[];
 
 
 // Remove Iron and Steel from Common Loot chest
