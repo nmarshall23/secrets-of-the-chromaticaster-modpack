@@ -19,17 +19,7 @@ Text:
 However there are some crops there just will not grow in garden soil.
 
 
-Seeds of your growth | Flint Hoe
---------------------------------
-Clearly you need seeds to make a farm.
 
-Tasks:
-  1. Craft a Flint Hoe, Hidden.
-  2. Collect seeds
-
-Text:
-  2. Away from water sources, Use a Flint Hoe on grass. This may uncover seeds.
-  Collect Potato, Carrot, Hemp
 
 
 Irrigation for your farm
@@ -38,46 +28,6 @@ Sprinklers will speed up the growth of your crops.
 You will need to connect them to a Wooden Water Tank with wooden irrigation channels.
 The Water Tank blocks will connect forming a multiblock.
 Wooden Water Tanks will fill with water when it is raining.
-
-
-I hope you like Stew | Clay Pan
--------------------------------
-
-  To make a meal you are going to have to cook those raw crops. Once you have crafted a Clay Pan, place it on top of a furnace, or open flame.
-
-
-  Tasks:
-    1. Craft a clay pan.
-
-
-  Text:
-    1. You will need harden clay, and bricks. First craft a medium clay flower pot. Then use one to craft a clay pan.
-
-
-
-Mind your table manners | Chopsticks Holder
------------------------
-A cultured person like yourself uses Chopsticks.
-After you place the Chopsticks Holder, you can right click it to take a pair of Chop Sticks out of it.
-To eat foods from the Mod Apple Milk and Tea, you will need to place the food item in the world. And using a chip stick, click on it. Having a beverage to drink will complete your meal.
-
-Tasks:
- 1. Craft Chopsticks Holder.
-
-
-Less is Grater then More |Grater
--------------------------
-A food grater is used to Mince ingredients to prepare then to be cooked.
-
-tasks:
- 1. Craft wooden grater.
- 2. Craft Simple Stew ingredients.
- 3. Cooking a Stew.
-
-
-text:
- 2. Simple Stew is made by placing a grater in the crafting grid with 2 Potatoes and 2 Carrots. You will get ingredients for a simple stew, and the Grater back.
- 3. Right click on the Clay Pan with ingredients in hand. Next use bowls on the Clay Pan to get a serving of stew.
 
 
 
@@ -200,3 +150,23 @@ Improved Anvil
 This anvil is far more useful then others you may have seen. First renaming things is free.
 It only costs XP When repairing Enchanted tools.
 Also the amount repaired is proportional to the enchantability of the material and the number of enchantments.
+
+Task:
+ 1. Craft an Anvil.
+
+Reward:
+ 1.
+
+Saddle your exptations
+----------------------
+Walking around is slow and tiresome, you should craft a Saddle and find yourself a horse.
+
+Task:
+ 1. Craft a Saddle
+ 2. Craft some leads
+
+Text:
+ 1. A Saddle is made from leather and Wool or Cloth.
+ 2. Leads are made from just String.
+
+ 

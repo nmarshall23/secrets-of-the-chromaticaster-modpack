@@ -1,31 +1,13 @@
 Odyssey of Steel
 ================
-For you to survive you are going to need stronger tools.
-However this might take you to depths you never imagined.
+With your rediscovery of steel, it's time to expand your industry, and automation.
+Using Steel tools you can how harvest most blocks.
 
 
 
-A Furnace to Smelt with
------------------------
-
-Collect plenty of stones to craft 4 compressed cobblestone. Then craft a Furnace.
-
-Tasks:
- 1. Collect Cobblestone
- 2. Craft 4 Compressed Cobblestone
- 3. Craft a Furnace
 
 
-Hammer Time
------------
-Stone hammers are the first in a long line of Mining Hammers. Hammers will break a 3 by 3 group of blocks. They also place a torch from anywhere in your inventory, when you right click.
 
-Tasks:
- 1. Craft a Stone Hammer
-
-Bronze Hammer
--------------
-This Bronze hammer will serve you well. It is far stronger then Stone.
 
 Iron Hammer
 -----------
@@ -50,49 +32,8 @@ HSLA Steel is a strengthened variant of Steel. However it does less damage then 
 
 
 
-Collect gravel
---------------
-Wood will splinter, and Stone is heavy. Flint is a superior material to make tools from.
-You can find Flint in gravel. Or you can craft three gavel into one flint.
 
 
-
-Tasks:
- 1. Collect 27 Gravel
- 2. Have 9 Flint
-
-
-Flint Tools
------------
-Flint can harvest more items then wood. You will need it to harvest Tin and Copper.
-
-Tasks:
- 1. Craft Flint tools.
-
-
-Tin
----
-Tin is most used as a component of machines. Tin can be found around height 60, ±12 meters, in long narrow veins, centered around a Mother lode of ore.
-
-Tasks:
- 1. Collect 3 Tin Ore.
-
-
-Copper
-------
-Copper can be used to craft tools that will last much longer then Flint tools. Copper Ore is found around height 48, ±16 meters, in long narrow veins, centered around a Mother lode of ore.
-
-Tasks:
- 1. Collect 9 Copper ore.
-
-
-Aluminum Ore
-------------
-
-Aluminum is another metal used mostly in building machines. The stone furnace does a poor job of smelting Aluminum. Other means of extracting this ore will yield more ingots. You will find Aluminum Ore around height 94, ±34 meters. Medium mother lodes with 2-4 horizontal veins.
-
-Tasks:
- 1. Collect 3 Aluminum ore.
 
 
 
@@ -121,32 +62,6 @@ Tasks:
 Time to use that education ( making bronze)
 --------------------------
 
-
-Bronze Tools
-------------
-Bronze Tools far more durable then Flint and Stone Tools. They have the same enchantability as Copper Tools, but are faster and deal more damage.
-
-Tasks:
- 1. Craft Bronze Pickaxe
-
-Gold
-----
-You will find Gold Ore around height 16, ±16 meters. Small mother lodes with 2-4 long narrow horizontal veins. Rarer and shorter than iron veins.
-
-Redstone
---------
-You will find RedStone Ore in Isolated vertical veins, starting at height 64-70 and running straight downward for about 35 blocks. Fairly common, 3x more common in Deserts Biomes.
-
-Iron
-----
-You will find Iron Ore around height 32, ±32 meters. Large mother lodes with 2-4 long narrow horizontal veins.
-
-
-
-Magnetite Ore
--------------
-Lodestone are found by mining Magnetite Ore. Lodestones have a weak magnetic field.
-Then are used to craft Redstone Flux generators and other machines.
 
 
 Iron Tools
