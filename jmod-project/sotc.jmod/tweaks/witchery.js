@@ -78,3 +78,22 @@ var fumeFunnel = {
 updateShappedRecipe(fumeFunnel);
 
 // End Witchs Oven
+
+// attunedStone
+var magnanimousGem = "magnanimoustools:MagnanimousGem";
+var shardThaum = "Thaumcraft:ItemShard:*";
+var shardCrystal = "shardCrystal";
+var whiffOfMagic = "witchery:ingredient:34";
+
+var attunedStone = {
+  name: "witchery:ingredient:10",
+  recipes: [
+    [
+      [null, whiffOfMagic, null],
+      [shardThaum, magnanimousGem, shardCrystal],
+      [null, lavaBucket, null]
+    ]
+  ]
+};
+
+updateShappedRecipe(attunedStone);

@@ -127,3 +127,22 @@ var lead = {
 };
 
 updateShappedRecipe(lead);
+
+// Enchanting Table
+var blockEnderObsidian = "blockEnderObsidian";
+var redCarpet = "minecraft:carpet:14";
+var book = "minecraft:book";
+var attunedStone = "witchery:ingredient:10";
+
+var enchantingTable = {
+  name: "minecraft:enchanting_table",
+  recipes: [
+    [
+      [null, book, null],
+      [attunedStone, redCarpet, attunedStone],
+      [blockEnderObsidian, blockEnderObsidian, blockEnderObsidian]
+    ]
+  ]
+};
+
+updateShappedRecipe(enchantingTable);

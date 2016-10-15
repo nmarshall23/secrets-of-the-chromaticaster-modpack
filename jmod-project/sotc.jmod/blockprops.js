@@ -18,19 +18,19 @@ var blocks = [
   ["minecraft:gold_ore", HarvestLevel.Bronze],
   ["minecraft:redstone_ore", HarvestLevel.Bronze],
   ["minecraft:lit_redstone_ore", HarvestLevel.Bronze],
+  ["minecraft:lapis_ore", HarvestLevel.Bronze],
 
   ["ImmersiveEngineering:ore:2", HarvestLevel.Iron, 2], // lead
-  ["minecraft:quartz_ore", HarvestLevel.Iron],
   ["Railcraft:cube:6", HarvestLevel.Iron, 6], // Abyssal Stone
   ["GeoStrata:geostrata_rock_granite_smooth", HarvestLevel.Iron],
   ["GeoStrata:geostrata_rock_hornfel_smooth", HarvestLevel.Iron],
   ["ElectriCraft:electricraft_block_ore:3", HarvestLevel.Iron, 3], // Nickel
+  ["minecraft:obsidian", HarvestLevel.Iron],
 
   ["minecraft:glowstone", HarvestLevel.Steel],
+  ["minecraft:quartz_ore", HarvestLevel.Steel],
+  //  ["minecraft:soul_sand", HarvestLevel.Steel],
 
-  ["appliedenergistics2:tile.OreQuartz", HarvestLevel.Steel], // certusQuartz
-  ["appliedenergistics2:tile.OreQuartzCharged", HarvestLevel.Steel],
-  ["minecraft:lapis_ore", HarvestLevel.Steel],
   ["minecraft:diamond_ore", HarvestLevel.Steel],
   ["minecraft:emerald_ore", HarvestLevel.Steel],
   ["Railcraft:ore:2", HarvestLevel.Steel, 2], // Dark Diamond
@@ -46,20 +46,18 @@ var blocks = [
   ["NetherOres:tile.netherores.ore.0:8", HarvestLevel.Steel, 8], // Emerald
 
   ["Thaumcraft:blockCustomOre", HarvestLevel.Steel],
-  ["ReactorCraft:reactorcraft_block_ore:2", HarvestLevel.Steel, 2], // Cadmium
+  ["Thaumcraft:blockCosmeticSolid:1", HarvestLevel.Steel, 1], // obsidian Tile
+  ["Thaumcraft:blockCosmeticSolid:8", HarvestLevel.Steel, 8], // obsidian Totem Charged
+  ["Thaumcraft:blockCosmeticSolid:0", HarvestLevel.Steel, 0], // obsidian Totem
 
-  ["minecraft:obsidian", HarvestLevel.Steel],
-
-  ["Thaumcraft:blockCosmeticSolid:1", HarvestLevel.Diamond, 1], // obsidian Tile
-
-
+  ["appliedenergistics2:tile.OreQuartz", HarvestLevel.Steel], // certusQuartz
+  ["appliedenergistics2:tile.OreQuartzCharged", HarvestLevel.Steel],
+  ["ReactorCraft:reactorcraft_block_ore:2", HarvestLevel.Diamond, 2], // Cadmium
   ["ElectriCraft:electricraft_block_ore", HarvestLevel.Diamond, 5], // Platinum
   ["NetherOres:tile.netherores.ore.1:0", HarvestLevel.Diamond, 0], // Platinum
   ["NetherOres:tile.netherores.ore.0:1", HarvestLevel.Diamond, 1], // Diamond
   ["appliedenergistics2:tile.BlockSkyStone", HarvestLevel.Diamond],
-  ["appliedenergistics2:tile.BlockSkyChest", HarvestLevel.Diamond],
-  ["Thaumcraft:blockCosmeticSolid:8", HarvestLevel.Diamond, 8], // obsidian Totem Charged
-  ["Thaumcraft:blockCosmeticSolid:0", HarvestLevel.Diamond, 0] // obsidian Totem
+  ["appliedenergistics2:tile.BlockSkyChest", HarvestLevel.Diamond]
 ];
 
 // Set harvestlevel for Chisel'd obsidian

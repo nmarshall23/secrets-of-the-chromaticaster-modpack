@@ -68,11 +68,6 @@ var ironCookingPlate = {
       [wroughtIronIngot, wroughtIronIngot, wroughtIronIngot],
       [plateCopper, plateCopper, plateCopper],
       [brick, brick, brick]
-    ],
-    [
-      [wroughtIronIngot, wroughtIronIngot, wroughtIronIngot],
-      [ingotCopper, ingotCopper, ingotCopper],
-      [brick, brick, brick]
     ]
   ]
 };
@@ -82,18 +77,18 @@ updateShappedRecipe(ironCookingPlate);
 // foodProcessor
 
 // Materials
-var ingotTin = "ingotTin";
+var plateTin = "plateTin";
 var chalcedonyKnife = "DCsAppleMilk:defeatedcrow.chalcedonyKnife";
-var gearWood = "gearWood";
-var thickenGlass = "ExtraUtilities:decorativeBlock2";
+var gearBronze = "gearBronze";
+var blockGlass = "blockGlass";
 
 var foodProcessor = {
   name: "DCsAppleMilk:defeatedcrow.processor",
   recipes: [
     [
-      [thickenGlass, thickenGlass, thickenGlass],
-      [ingotTin, chalcedonyKnife, ingotTin],
-      [ingotTin, gearWood, ingotTin]
+      [blockGlass, blockGlass, blockGlass],
+      [plateTin, chalcedonyKnife, plateTin],
+      [plateTin, gearBronze, plateTin]
     ]
   ]
 };
@@ -104,10 +99,7 @@ updateShappedRecipe(foodProcessor);
 
 // Materials
 var redClayBlock = "minecraft:stained_hardened_clay:14";
-var gearIron = "gearIron";
-var plateTin = "plateTin";
-var ingotTin = "ingotTin";
-var ingotAluminum = "ingotAluminum";
+
 
 
 var crusher = {
@@ -115,13 +107,8 @@ var crusher = {
   recipes: [
     [
       [redClayBlock, redClayBlock, redClayBlock],
-      [redClayBlock, ingotAluminum, gearIron],
-      [ingotTin, gearIron, ingotTin]
-    ],
-    [
-      [redClayBlock, redClayBlock, redClayBlock],
-      [redClayBlock, ingotAluminum, gearIron],
-      [plateTin, gearIron, plateTin]
+      [redClayBlock, foodProcessor.name, gearBronze],
+      [plateTin, gearBronze, plateTin]
     ]
   ]
 };

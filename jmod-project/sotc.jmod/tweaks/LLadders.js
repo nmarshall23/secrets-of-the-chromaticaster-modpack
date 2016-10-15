@@ -1,4 +1,3 @@
-
 load("functions.js");
 
 log('Loaded LLadders Tweaks');
@@ -9,18 +8,14 @@ var stickyPiston = "minecraft:sticky_piston";
 var dispenser = "minecraft:dispenser";
 var ingotTin = "ingotTin";
 var plateTin = "plateTin";
+var gemMagnetite = "gemMagnetite";
 
 var bridgebuilder = {
   name: "LLadders:tile.lladders.block.bridgebuilder",
   recipes: [
     [
-      [ingotTin,  ingotTin,     ingotTin],
-      [dispenser, stickyPiston, ingotTin],
-      [ingotTin, dustRedstone, ingotTin]
-    ],
-    [
       [plateTin, plateTin, plateTin],
-      [dispenser, stickyPiston, plateTin],
+      [dispenser, gemMagnetite, stickyPiston],
       [plateTin, dustRedstone, plateTin]
     ]
   ]
@@ -32,13 +27,8 @@ var ladderdispenser = {
   name: "LLadders:tile.lladders.block.ladderdispenser",
   recipes: [
     [
-      [ingotTin, dispenser, ingotTin],
-      [ingotTin, stickyPiston, ingotTin],
-      [ingotTin, dustRedstone, ingotTin]
-    ],
-    [
       [plateTin, dispenser, plateTin],
-      [plateTin, stickyPiston, plateTin],
+      [plateTin, gemMagnetite, stickyPiston],
       [plateTin, dustRedstone, plateTin]
     ]
   ]
