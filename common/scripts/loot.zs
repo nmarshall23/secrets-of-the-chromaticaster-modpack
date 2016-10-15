@@ -28,7 +28,7 @@ val paper = <minecraft:paper>;
 val map = <minecraft:map>;
 val compass = <minecraft:compass>;
 
-val rotarycraftMeter = <RotaryCraft:rotarycraft_item_meter>;
+
 val thaumium = <Thaumcraft:ItemResource:2>;
 val gemCuter = <WitchingGadgets:item.WG_Material:8>;
 val apple = <minecraft:apple>;
@@ -41,11 +41,9 @@ val baubleRing = <Thaumcraft:ItemBaubleBlanks:1>;
 val String = <minecraft:string>;
 val dbattery = <DCsAppleMilk:defeatedcrow.battery>;
 val wheat = <minecraft:wheat>;
-val hslaShaft = <RotaryCraft:rotarycraft_item_shaftcraft:2>;
-val hslaGear = <RotaryCraft:rotarycraft_item_shaftcraft:4>;
+
 
 val amber = <Thaumcraft:ItemResource:6>;
-val canolaSeeds = <RotaryCraft:rotarycraft_item_canola>;
 val baubleAmulet = <Thaumcraft:ItemBaubleBlanks>;
 val bones = <minecraft:bone>;
 val rottenFlesh = <minecraft:rotten_flesh>;
@@ -69,7 +67,7 @@ val ironSteelLoot = [iron_ingot, iron_pickaxe, steel_pickaxe, steel_shears,
 
 val villageBlacksmithBoringLoot = [gemCuter, apple, saddle, oakSapling, bread, diamond, obsidian, saddle] as IItemStack[];
 val dungeonChestBoringLoot = [bread, baubleRing, baubleAmulet, String, apple,
-dbattery, wheat, amber, canolaSeeds, saddle, bones, rottenFlesh, hslaShaft, hslaGear,
+dbattery, wheat, amber, saddle, bones, rottenFlesh, 
 mintSeed, tinGearBushing, tntMineCart, mineCart] as IItemStack[];
 
 val strongholdBoringLoot = [redstone, amtLicor] as IItemStack[];
