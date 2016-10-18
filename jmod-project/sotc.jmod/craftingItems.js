@@ -24,6 +24,19 @@ var stick = "minecraft:stick";
 // };
 //
 // addCraftingItem(linenString);
+var attunedStone = "witchery:ingredient:10";
+var fixationDust = "ChromatiCraft:chromaticraft_item_crafting:27";
+var motiveDust = "ChromatiCraft:chromaticraft_item_crafting:26";
+
+var alluringStone = {
+  name: "item_stoneAlluring",
+  shapelessRecipe: [
+    attunedStone, fixationDust, motiveDust
+  ]
+};
+
+addCraftingItem(bronzeDust);
+
 
 var bronzeDust = {
   name: "item_dust_bronze",
