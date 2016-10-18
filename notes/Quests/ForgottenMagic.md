@@ -95,17 +95,28 @@ Text:
  2. Motive Dust is dropped by a flower favored by Ender Men.
 
 
+Berries So high
+----------------
+Found atop of the Jungle Canopy these berries give off an odd aura.
+
+Task:
+ 1. Collect Ether Berries
+
+Reeds of the Void
+-----------------
+Found in eerie and damp places.
+
+Task:
+ 1. Collect
+
+Frozen flowers
+--------------
+Found in cold empty places.
 
 
-Magic Trees
------------
-
-
-Tasks:
- 1. Collect a Great Wood Tree Sapling
- 2. Collect a Silver Wood Tree Sapling
-
-
+Crazy Ivy
+---------
+Found on cliff faces.
 
 
 Trees of Every Color
@@ -120,50 +131,10 @@ Tasks:
 
 
 
-Witches' Cauldron
------------------
-A Witches' Cauldron, is used for brewing interesting potions and spells.
 
-Tasks:
- 1. Craft Anointing Paste
- 2. Have a Cauldron.
-
-Text:
- 1. Anointing Paste is made in a Crafting Bench using Mandrake Seeds, Belladonna Seeds, Snowbell Seeds and Water Artichoke Seeds.
- 2. Place the Cauldron in the world, and then use the Anointing Paste on it to convert it into a Witches' Cauldron.
-
-
-Making Mutandis
----------------
-Mutandis is a mutagen that is used by witches and warlocks to mutate plants into other species. Simply use Mutandis on small plants, grass, flowers, saplings, etc. and it will be randomly converted to another plant.
-
-Tasks:
- 1. Brew Mutandis
-
-Text:
- 1. Make sure your Witches' Cauldron is full of water and has a heat source under it. Then toss in Mandrake Root, Exhale of the Horned One and an Egg.
-
-
-Witch Trees?
-------------
-There are magic trees that do not grew wild in the Overworld. You need to use Mutandis to converted other plants into Rowan, Hawthorn and Alder saplings.
-
-Tasks:
- 1. Collect Rowan, Hawthorn and Alder saplings
-
-
-So Toasty
----------
-A witches oven is able to capture the by-products produced in the cooking process. It can not smelt ores. But does cook food faster.
-
-
-
-
-
-
- Folly of the Thaumaturgist
- --------------------------
- Unlike intuitive magic like Chromatrcraft. Thaumaturgy requires, you to scan items to learn their magic properties.
+Folly of the Thaumaturgist
+--------------------------
+Unlike intuitive magic like chromaticraft. Thaumaturgy requires, you to scan items to learn their magic properties.
 
  Tasks:
   1. Craft a..
@@ -171,24 +142,59 @@ A witches oven is able to capture the by-products produced in the cooking proces
 
 Portal of the Twilight Forest
 -----------------------------
-There is a realm bathed in Twilight, that suffers from an ancient curse. To remove it will require careful study and heroism.
-It is said that the Chromaticaster left many clues to his art, here. This portal is not far from where you have entered the Overworld. To unlock it, you must pay the toll.
-
+There is a mound not far from where you entered the Overworld, under this is a portal to a realm bathed in Twilight.
+It is said that the Chromaticaster left many clues to his art in that realm.
+To unlock it, you must pay the toll.
 
 Tasks:
- 1. Pay Toll in Gold Coins.
- 2. Collect Offerings
+ 1. Pay Toll in Gold Coins
+ 2. Making an Offering
+ 3. Down the Rabbit Hole
 
 Text:
  1. You will find Gold Coins in bags carried by knights and clerics of the Crimson Cult.
  2. These items of Magic will unlock the portal.
+ 3. Jump in the portal
+
+Rules of the Forest
+-------------------
+A curse have been placed on this land. Straying outside of the forest without out a protective charm will cause negative effects. Kill a Naga to progress to the next area.
+
+Tasks:
+ 2. Kill the Naga
+
+Text:
+ 2. The Naga is a large snake-like creature, it can be found in the Naga Courtyard. If it is not attacked for a while it will begin to heal itself.
 
 
+Twilight Hunter and Explorer
+----------------------------
+To find your way around the Twilight Forest, you will need a magical map.
+
+
+Tasks:
+ 1. To Kill a Raven
+ 2. Craft a Map
+
+Text:
+ 1. Jump in the portal
+ 2. You will need a Raven's feather and a Torchberry to make a Magic Map Focus.
+ Torchberries are fairly commonly found underground in the Twilight Forest.
+
+
+Twilight Lich
+-------------
+As you Explorer the Forest you will find towers guarded by magical field. Once you have defeated a Naga you can enter.
+At the very top of this tower is the Twilight Lich. You must defeat him to enter the swamp.
+
+
+Tasks:
+ 1. Kill Twilight Lich
 
 Enchanting Table
 ----------------
 
-Dischanting Table
+Disenchanting Table
 -----------------
 
 
@@ -209,6 +215,15 @@ Basic Similsax Transtructor
 Advanced Similsax Transtructor
 ------------------------------
 
+Magical Trees
+-------------
+Magic manifests in nature in a multitudinous of forms.
+Collect samples from these trees.
+
+Tasks:
+ 1. Collect Berries
+ 2. Collect Logs
+
 
 Magnanimous Trees
 -----------------
@@ -218,7 +233,5 @@ A very rare Tree. In their core a gem of great power grows.
 Magnanimous Tools
 -----------------
 Magnanimous Tools are superior to Steel tools, with very good enchantability.
-
-
-Enchanting Table
-----------------
+To make them first craft a tool head, and a hardened Handle, then combine them in an anvil.
+This will require some XP. Oddly these tools can not be repaired on an anvil.

@@ -1,6 +1,6 @@
 Prelude
 =======
-You must learn how to survive in the Over World. You can't harvest everything you must have to proper tools. You will need a farm, and learn how to cook. 
+You must learn how to survive in the Over World. You can't harvest everything you must have to proper tools. You will need a farm, and learn how to cook.
 
 
 Witch's Seeds
@@ -12,6 +12,12 @@ Tasks:
 Text:
  1. Hoe dirt till you find Mandrake Seeds, Belladonna Seeds, Snowbell Seeds and Water Artichoke Seeds.
 
+A Bed don't look under it.
+---------------------------------
+Odd how sleeping keeps monsters from appearing.
+
+Tasks:
+ 1. Craft a bed
 
 
 Collect gravel
@@ -97,7 +103,7 @@ Mushroom Soup
 Simple Stew
 -----------
 
-Meatly Stew
+Meaty Stew
 -----------
 
 
@@ -176,32 +182,43 @@ Place to keep your Armor
 This armor stand store your armor, just right click to swap a piece. If it powered redstone is placed under it, it will swap all of your armor when you right click.
 
 
+New Ladders
+-----------
+Ever wish you could place ladders to go up or down? Well now you can! After you have placed one sturdy ladder left click it with a sturdy ladder in hand, will place it on top of the stack of ladders. The rope ladder works the same way but only placing ladders down.
+
+
 Engineer's Manual
 -----------------
 
+Chute
+-----
+Chutes are like simple hoppers. They just place what's inside them into an inventory below them.
 
 Work Table
 ----------
-
+An Upgrade to your basic crafting table which remembers the last nine used recipes. Left click one of the recipes shown in the right-hand side to automatically fill in the crafting grid. Right-click to lock a memorized recipe and prevent a newer recipe from bumping it off. Resources need to go into the internal inventory.
 
 Shelves
 -------
-
+The shelf can hold up to 4 different stacks of items and can be used without a GUI. Right-clicking the Shelf with any Block or Item will put it on the shelf. Right clicking an item or block that is on the Shelf will cause that item or block to pop off.
 
 Storage Drawers
 ---------------
-
+Put your most frequently used items within convenient reach. Right-Click: Insert full stack in hand into drawer. Double-Right-Click: Insert all compatible stacks in inventory into drawer. Left-Click: Remove a single item from the drawer.
+Shift+Left-Click: Remove a full stack from the drawer.
+Shift+Right-Click with empty hand: Open a UI to see exact item counts and manage applied upgrades.
 
 Locker Mk I
 ----------
+It's like a chest that forms a locker when two are stacked vertically. This will only happen if both are made from the same materials.
 
 Improved Chest Mk I
 -------------------
-
+These chests will only form a double chest when both are made from the same materials. They can also be Upgraded.
 
 Size Upgrade Mk II
 ------------------
-
+Improved Chests and Lockers can be upgraded in place. Craft an size upgrade and right click using the upgrade on the Improved Chest or Locker.
 
 Treated Wood Planks
 -------------------

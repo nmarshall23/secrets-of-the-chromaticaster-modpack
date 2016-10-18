@@ -56,10 +56,11 @@ Entropy Infused Stone is more common in Swamp and Wasteland.
 
 Bridge Builder
 -------------
-
+Given a redstone signal the Bridge Builder will place up to 16 blocks in it's inventory in the world. If the redstone signal is turned off, it will pick up those blocks.
 
 Ladder Dispenser
 ----------------
+Given a redstone signal the Ladder Dispenser will place ether Sturdy Ladders or Rope Ladders.
 
 
 Redstone Engine
@@ -72,6 +73,9 @@ Automatic Crafting Table
 
 Piping Item around
 ------------------
+
+Fluid Pipes
+-----------
 
 
 Kinesis Pipes
@@ -106,18 +110,44 @@ Grafter
 -------
 The grafter will significantly increase your chance at a sapling drop when used on leaves. However it has very low durablity; there must be means of fixing that.
 
+
+Bee Frames
+----------
+Frame are used to modify the behavior of your bee's living in an apiary.
+
+Text:
+ 1. Untreated Frame are cheep to make. Production is increases by 20% but has poor durability.
+ 2. Impregnated Frame increases production by 20% and has average durability.
+ 3. The Chocolate Frame increases production by 15% at the expense of lifespan - it is very useful to speed up generational turnover of hives while perfecting a lineage.
+ 4. Healing Frames prolong lifespan +50% and reduce mutation rate at the expense of production x0.75.
+
+Apiary
+------
+The Apiary is the second tier of shelter for your bees. It has space for three frames.
+
+
 Lumber Mill
 -----------
+The Lumbermill is a machines that when given water, and Logs will cut those into 6 planks. Sometimes Saw Dust will also be created.
+
+Distillery
+----------
+
+
+Woodworker
+----------
 
 
 Carpenter
 ---------
-
+The Carpenter is a machine that combines items with a liquid to craft it.
+For example seed oil and logs makes Impregnated Sticks. Those are used in some recipes related to bees.
+Another is water and Saw Dust makes paper.
 
 
 Carpenter's Blocks
 ------------------
-Creosote Oil
+These are made in the Carpenter with Creosote Oil.
 
 Chalcedony
 ----------
