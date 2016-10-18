@@ -53,10 +53,43 @@ Attuned stones can be used to link non-magical devices to the magical currents p
 
 Distillery
 ----------
-A distillery used by a witch is a construct used for distilling magical ingredients. It is unlike a normal distillery, because it heats itself using energy obtained from a nearby altar, the distillery must be within about 14 (to 16) blocks of an altar to draw power from it.
+A distillery used by a witch is a construct used for distilling magical ingredients. It is unlike a normal distillery, because it heats itself using energy obtained from a nearby altar, the distillery must be within 14 meters of an altar to draw power from it.
 
-Kettle
-------
+Tasks:
+ 1. Craft a Distillery
+ 2. Craft a book
+
+Text:
+ 1. All of the distillery recipes can be found in the book, Witchcraft: Distilling.
+
+
+Circle of power
+---------------
+Powerful magic have be cast using a circle of Ritual Chalk.
+
+Tasks:
+ 1. Craft Ritual chalk
+ 2. make Golden chalk
+ 3. Craft a book
+
+Text:
+ 2. Golden chalk made in a witches' cauldron using mandrake root, a gold nugget and ritual chalk. Golden chalk is used to draw the heart glyph at the center of a ritual circle. It has no other uses. Use the chalk on the ground to draw the glyph.
+ 1. The book, Witchcraft: Circle Magic, describes all of the rites that may be performed by a witch using magic circles. Each page in the book describes the rite, the foci items, power and circles that are needed.
+
+Kettle bubbling trouble
+-----------------------
+To be a proper Witch you are going to need a Kettle to brew in. A kettle must be placed with in 14 meters of an Altar for it to receive natures power.
+
+Tasks:
+ 1. Craft a Kettle
+ 2. Craft a book
+
+Text:
+ 1. To use your kettle, it must be set up in the correct way. Firstly, a fire must be set under the it. Next the kettle must be filled with water. A bucket will do. Thirdly, the ingredients for the brew must be thrown into the kettle (the liquid will change color according to the recipe being used). Finally, a glass bottle must be used on the kettle to bottle the resulting brew. It is important to keep the fire going constantly while the recipe is being prepared, otherwise it will be ruined.
+ 2. The book Witchcraft: Brews & Infusions, describes all of the recipes that may be created by a witch using a kettle. Each page in the book describes the brew or infusion, the recipe and power that are needed.
+
+
+
 
 Like a vertical escalator
 -------------------------

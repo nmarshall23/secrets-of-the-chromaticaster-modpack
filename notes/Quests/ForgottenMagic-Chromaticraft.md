@@ -1,0 +1,38 @@
+Forgotten Magic - Chromaticraft
+===============================
+Discover the foundations of magic
+
+
+Chromatic Notes| Info Fragment
+------------------------------
+
+Fragments of Chromaticraft Research notes have been scattered in Dungeon Chests.
+
+Task:
+ 1. Find an Info Fragment
+
+Text:
+ 1. Once found to read the Info Fragment, you need to place it in your Chromatic Lexicon.
+ Shift Right click the Chromatic Lexicon to open the Info Fragment inventory.
+ Place your newly found Fragment inside.
+
+
+Casting Table
+-------------
+
+
+Crystalline Stone
+-----------------
+Crystalline Stone is made on the Cating Table. You will need a great amount to fix broken Pylons.
+
+
+Repair Crystal Pylons
+-----------------------
+To wield the power of the Chromaticaster you will need to repair the broken Crystal Pylons.
+Replace any missing Crystalline Stone blocks.
+After you have restored a pylon you will need to examine the ball of glowing power on top of it.
+
+
+Loot Chest
+----------
+Loot Chests like these are found in hidden structures.
