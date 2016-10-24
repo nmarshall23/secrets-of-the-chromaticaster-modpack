@@ -74,37 +74,30 @@ item.sotc.jmod.armorCopperHelmet.name=Copper Helmet
 item.sotc.jmod.armorCopperChestplate.name=Copper Chestplate
 item.sotc.jmod.armorCopperLeggings.name=Copper Leggings
 item.sotc.jmod.armorCopperBoots.name=Copper Boots
-item.sotc.jmod.armorTinHelmet.name=Tin Helmet
-item.sotc.jmod.armorTinChestplate.name=Tin Chestplate
-item.sotc.jmod.armorTinLeggings.name=Tin Leggings
-item.sotc.jmod.armorTinBoots.name=Tin Boots
+
 item.sotc.jmod.armorBronzeHelmet.name=Bronze Helmet
 item.sotc.jmod.armorBronzeChestplate.name=Bronze Chestplate
 item.sotc.jmod.armorBronzeLeggings.name=Bronze Leggings
 item.sotc.jmod.armorBronzeBoots.name=Bronze Boots
+
 item.sotc.jmod.armorNickelHelmet.name=Nickel Helmet
 item.sotc.jmod.armorNickelChestplate.name=Nickel Chestplate
 item.sotc.jmod.armorNickelLeggings.name=Nickel Leggings
 item.sotc.jmod.armorNickelBoots.name=Nickel Boots
-item.sotc.jmod.armorSilverHelmet.name=Silver Helmet
-item.sotc.jmod.armorSilverChestplate.name=Silver Chestplate
-item.sotc.jmod.armorSilverLeggings.name=Silver Leggings
-item.sotc.jmod.armorSilverBoots.name=Silver Boots
+
 item.sotc.jmod.armorPlatinumHelmet.name=Platinum Helmet
 item.sotc.jmod.armorPlatinumChestplate.name=Platinum Chestplate
 item.sotc.jmod.armorPlatinumLeggings.name=Platinum Leggings
 item.sotc.jmod.armorPlatinumBoots.name=Platinum Boots
+
 item.sotc.jmod.armorElectrumHelmet.name=Electrum Helmet
 item.sotc.jmod.armorElectrumChestplate.name=Electrum Chestplate
 item.sotc.jmod.armorElectrumLeggings.name=Electrum Leggings
 item.sotc.jmod.armorElectrumBoots.name=Electrum Boots
-item.sotc.jmod.armorInvarHelmet.name=Invar Helmet
-item.sotc.jmod.armorInvarChestplate.name=Invar Chestplate
-item.sotc.jmod.armorInvarLeggings.name=Invar Leggings
-item.sotc.jmod.armorInvarBoots.name=Invar Boots
 
 
-info.sotc.jmod.armorvalue=Armorvalue:
+
+info.sotc.jmod.armorvalue=Armorvalue: 
 
 
 
@@ -115,18 +108,9 @@ info.sotc.jmod.tooltips.lumberAxe=This is a §2§lLumber Axe§7
 info.sotc.jmod.tooltips.pressChase=Must be made from wood of Ancient Trees
 
 
-
-tile.fluid.molten.ferrous.name=Molten Nickel
-LiquidMetal.Ferrous.name=Molten Nickel
-fluid.nickel.molten=Molten Nickel
-
-
-
-
-tile.fluid.molten.shiny.name=Molten Platinum
-LiquidMetal.Shiny.name=Molten Platinum
-fluid.platinum.molten=Molten Platinum
-
+item.betterbuilderswands:wandAdvanced.name=Builder's Basic Wand
+item.betterbuilderswands:wandUnrestricted.name=Builder's Lesser Wand
+item.betterbuilderswands:wandUnbreakable.name=Enhanced Builder's Wand
 
 info.sotc.jmod.tntsafe=TNT can not break this
 
@@ -149,4 +133,4 @@ wailaharvestability.harvestlevel4=Iron
 wailaharvestability.harvestlevel5=Steel
 wailaharvestability.harvestlevel6=Steel
 wailaharvestability.harvestlevel7=Diamond
-wailaharvestability.harvestlevel=Harvest Level:
+wailaharvestability.harvestlevel=Harvest Level: 
