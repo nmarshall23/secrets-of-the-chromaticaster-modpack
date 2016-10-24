@@ -1,0 +1,79 @@
+
+{
+  "ID": 179,
+  "Name": "Mountain of Madness",
+  "Class": "fox.spiteful.ridiculous.biomes.BiomeGenMadness",
+  "Color": 952155,
+  "Root Height": 1.5,
+  "Height Variation": 0.025,
+  "Top Block": "minecraft:packed_ice",
+  "Filler Block": "minecraft:packed_ice",
+  "Grass Color": "Not set. Check in-game.",
+  "Foliage Color": "Not set. Check in-game.",
+  "Water Color": "18951",
+  "Temperature": -0.05,
+  "Humidity": 0.5,
+  "Water Tint": 18951,
+  "Enable Rain": true,
+  "Enable Snow": false,
+  "Dictionary Types": [
+    "COLD",
+    "DEAD",
+    "MOUNTAIN",
+    "SNOWY"
+  ],
+  "BiomeManager Entries": {
+    "COOL Weights": [
+      5
+    ],
+    "ICY Weights": [
+      5,
+      5
+    ]
+  },
+  "Spawnable Creatures": [],
+  "Spawnable Monsters": [
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntityZombie",
+      "Weight": 100,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntitySkeleton",
+      "Weight": 100,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "fox.spiteful.ridiculous.entities.EntityShoggoth",
+      "Weight": 90,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntityEnderman",
+      "Weight": 30,
+      "Min Group Count": 1,
+      "Max Group Count": 4
+    }
+  ],
+  "Spawnable Water Creatures": [
+    {
+      "Entity Class": "net.minecraft.entity.passive.EntitySquid",
+      "Weight": 10,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    }
+  ],
+  "Spawnable Cave Creatures": [
+    {
+      "Entity Class": "net.minecraft.entity.passive.EntityBat",
+      "Weight": 10,
+      "Min Group Count": 8,
+      "Max Group Count": 8
+    }
+  ],
+  "Spawn Biome": false,
+  "Tweaked": true
+}

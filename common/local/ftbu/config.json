@@ -38,7 +38,8 @@
       "minecraft:wooden_pickaxe 1 0",
       "minecraft:wooden_shovel 1 0",
       "minecraft:torch 32 0",
-      "battlegear2:dagger.iron 1 0"
+      "battlegear2:dagger.iron 1 0",
+      "HardcoreQuesting:quest_book"
     ]
   },
   "permissions_admin": {

@@ -28,8 +28,9 @@ val paper = <minecraft:paper>;
 val map = <minecraft:map>;
 val compass = <minecraft:compass>;
 
-
+val ingotSteel = <ImmersiveEngineering:metal:8>;
 val thaumium = <Thaumcraft:ItemResource:2>;
+val pickaxeThaumium = <Thaumcraft:ItemPickThaumium>;
 val gemCuter = <WitchingGadgets:item.WG_Material:8>;
 val apple = <minecraft:apple>;
 val saddle = <minecraft:saddle>;
@@ -54,6 +55,8 @@ val tntMineCart = <minecraft:tnt_minecart>;
 val mineCart = <minecraft:minecart>;
 val redstone = <minecraft:redstone>;
 val amtLicor = <DCsAppleMilk:defeatedcrow.itemBottle:*>;
+val lexicon =  <ChromatiCraft:chromaticraft_item_help>;
+
 
 
 val chromaticraftNotes = <ChromatiCraft:chromaticraft_item_fragment>;
@@ -63,14 +66,19 @@ vanilla.loot.addChestLoot("strongholdLibrary", chromaticraftNotes.weight(90), 4,
 vanilla.loot.addChestLoot("strongholdLibrary", largePaperBox.weight(100));
 
 val ironSteelLoot = [iron_ingot, iron_pickaxe, steel_pickaxe, steel_shears,
- steel_ingot, steel_block, thaumium, bucket] as IItemStack[];
+ steel_ingot, steel_block, thaumium, pickaxeThaumium, bucket, ingotSteel] as IItemStack[];
 
 val villageBlacksmithBoringLoot = [gemCuter, apple, saddle, oakSapling, bread, diamond, obsidian, saddle] as IItemStack[];
 val dungeonChestBoringLoot = [bread, baubleRing, baubleAmulet, String, apple,
-dbattery, wheat, amber, saddle, bones, rottenFlesh, 
-mintSeed, tinGearBushing, tntMineCart, mineCart] as IItemStack[];
+dbattery, wheat, amber, saddle, bones, rottenFlesh,
+mintSeed, tinGearBushing, tntMineCart, mineCart, lexicon] as IItemStack[];
 
-val strongholdBoringLoot = [redstone, amtLicor] as IItemStack[];
+val strongholdBoringLoot = [redstone, amtLicor, <plantmegapack:wrapFish>,
+<plantmegapack:wrapBeef>, <plantmegapack:wrapChicken>, <plantmegapack:wrapPork>,
+<plantmegapack:wrapRice>, <plantmegapack:wrapCornBeef>, <plantmegapack:wrapCornChicken>,
+<plantmegapack:wrapCornFish>, <plantmegapack:wrapCornPork>, <plantmegapack:wrapCornRice>,
+<witchery:stew>, <TwilightForest:item.hydraChop>,
+<Thaumcraft:ItemThaumonomicon>, <Thaumcraft:ItemHoeThaumium>] as IItemStack[];
 
 
 // Remove Iron and Steel from Common Loot chest
@@ -81,6 +89,7 @@ for loot in ironSteelLoot {
     vanilla.loot.removeChestLoot("mineshaftCorridor", loot);
     vanilla.loot.removeChestLoot("pyramidDesertyChest", loot);
     vanilla.loot.removeChestLoot("pyramidJungleChest", loot);
+    vanilla.loot.removeChestLoot("ieVillageCrates", loot);
 }
 
 for loot in villageBlacksmithBoringLoot {
@@ -97,4 +106,6 @@ for loot in dungeonChestBoringLoot {
 
 for loot in strongholdBoringLoot {
     vanilla.loot.removeChestLoot("strongholdCorridor", loot);
+    vanilla.loot.removeChestLoot("pyramidDesertyChest", loot);
+    vanilla.loot.removeChestLoot("pyramidJungleChest", loot);
 }

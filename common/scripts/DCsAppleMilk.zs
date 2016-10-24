@@ -33,9 +33,31 @@ val clayBall = <minecraft:clay_ball>;
 
 mods.amt.Processor.removeRecipe(clayBall);
 
+// Add missing ores to JawCrusher
+
+
+val oreAluminum = <ElectriCraft:electricraft_block_ore:4>;
+val dustAluminum = <ore:dustAluminum>;
+val nuggetAluminum = <ore:nuggetAluminum>;
+
+val oreAmber = <Thaumcraft:blockCustomOre:7>;
+val gemAmber = <ore:gemAmber>;
+
+val oreCinnabar = <Thaumcraft:blockCustomOre>;
+val itemQuicksilver = <ore:itemQuicksilver>;
+
+// mods.amt.Processor.addRecipe(dustAluminum * 2, nuggetAluminum, [oreAluminum], false, 0.1, false, 1);
+// mods.amt.Processor.addRecipe(gemAmber * 2, gemAmber, [oreAmber], false, 0.1, false, 1);
+// mods.amt.Processor.addRecipe(itemQuicksilver * 2, itemQuicksilver, [oreCinnabar], false, 0.1, false, 1);
+
 
 // remove String from grater
 recipes.removeShapeless(<minecraft:string>, [<ore:toolGrater>, <minecraft:wool:*>]);
+
+// glue to plate
+val glue = <DCsAppleMilk:defeatedcrow.condensedMilk:1>;
+val treatedLeather = <ironbackpacks:treatedLeather>;
+mods.amt.Plate.addRecipe(glue, treatedLeather, 200, false);
 
 // early game stews
 mods.amt.Pan.addRecipe(stewSimple, stewIngredients, "orange", "Favorful Stew..");

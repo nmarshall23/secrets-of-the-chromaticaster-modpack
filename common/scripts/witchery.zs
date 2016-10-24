@@ -52,4 +52,3 @@ SeedMutation.add(seedWormwood, seedSnowbell, seedWheat);
 BaseBlock.set(seedWormwood, wispyCotton, 2, false);
 //garlic
 SeedMutation.add(seedGarlic, seedSnowbell, seedArtichoke);
-

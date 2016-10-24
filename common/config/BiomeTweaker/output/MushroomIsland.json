@@ -1,0 +1,79 @@
+
+{
+  "ID": 14,
+  "Name": "MushroomIsland",
+  "Class": "net.minecraft.world.biome.BiomeGenMushroomIsland",
+  "Color": 16711935,
+  "Root Height": 0.2,
+  "Height Variation": 0.3,
+  "Top Block": "minecraft:mycelium",
+  "Filler Block": "minecraft:dirt",
+  "Grass Color": "Not set. Check in-game.",
+  "Foliage Color": "Not set. Check in-game.",
+  "Water Color": "16777215",
+  "Temperature": 0.7,
+  "Humidity": 1.0,
+  "Water Tint": 16777215,
+  "Enable Rain": true,
+  "Enable Snow": false,
+  "Dictionary Types": [
+    "MUSHROOM"
+  ],
+  "BiomeManager Entries": {
+    "WARM Weights": [
+      1
+    ]
+  },
+  "Spawnable Creatures": [
+    {
+      "Entity Class": "net.minecraft.entity.passive.EntityMooshroom",
+      "Weight": 8,
+      "Min Group Count": 4,
+      "Max Group Count": 8
+    },
+    {
+      "Entity Class": "ivorius.yegamolchattels.entities.EntityGhost",
+      "Weight": 1,
+      "Min Group Count": 1,
+      "Max Group Count": 4
+    }
+  ],
+  "Spawnable Monsters": [
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntityEye",
+      "Weight": 6,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntityEnderEye",
+      "Weight": 2,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntitySkeletonWarrior",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 4
+    }
+  ],
+  "Spawnable Water Creatures": [
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntityFish",
+      "Weight": 1000,
+      "Min Group Count": 7,
+      "Max Group Count": 20
+    }
+  ],
+  "Spawnable Cave Creatures": [
+    {
+      "Entity Class": "net.minecraft.entity.passive.EntityBat",
+      "Weight": 10,
+      "Min Group Count": 8,
+      "Max Group Count": 8
+    }
+  ],
+  "Spawn Biome": false,
+  "Tweaked": true
+}

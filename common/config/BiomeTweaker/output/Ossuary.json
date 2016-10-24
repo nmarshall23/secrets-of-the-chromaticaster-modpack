@@ -1,0 +1,63 @@
+
+{
+  "ID": 176,
+  "Name": "Ossuary",
+  "Class": "fox.spiteful.ridiculous.biomes.BiomeGenOssuary",
+  "Color": 16053734,
+  "Root Height": 0.125,
+  "Height Variation": 0.05,
+  "Top Block": "RidiculousWorld:BoneDust",
+  "Filler Block": "RidiculousWorld:BoneDust",
+  "Grass Color": "Not set. Check in-game.",
+  "Foliage Color": "Not set. Check in-game.",
+  "Water Color": "1399296",
+  "Temperature": 0.8,
+  "Humidity": 0.0,
+  "Water Tint": 1399296,
+  "Enable Rain": false,
+  "Enable Snow": false,
+  "Dictionary Types": [
+    "HOT",
+    "DRY",
+    "SPOOKY",
+    "DEAD",
+    "WASTELAND"
+  ],
+  "BiomeManager Entries": {
+    "DESERT Weights": [
+      5,
+      5
+    ]
+  },
+  "Spawnable Creatures": [],
+  "Spawnable Monsters": [
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntitySkeleton",
+      "Weight": 100,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "fox.spiteful.ridiculous.entities.EntityDaySkeleton",
+      "Weight": 100,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntityZombie",
+      "Weight": 100,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "fox.spiteful.ridiculous.entities.EntityDayZombie",
+      "Weight": 100,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    }
+  ],
+  "Spawnable Water Creatures": [],
+  "Spawnable Cave Creatures": [],
+  "Spawn Biome": false,
+  "Tweaked": true
+}

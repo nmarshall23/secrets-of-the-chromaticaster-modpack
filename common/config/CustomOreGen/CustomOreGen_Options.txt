@@ -1,5 +1,5 @@
 #Custom Ore Generation 1.2.24 Config Options
-#Fri Sep 16 15:18:06 EDT 2016
+#Tue Oct 18 10:50:51 EDT 2016
 oreFreq=1.0
 oreSize=1.2
 debugMode=false
@@ -36,7 +36,7 @@ vnlaNetherQuartzDist=LayeredVeins
 vnlaNetherQuartzFreq=1.9
 vnlaNetherQuartzSize=1.0
 enableAppliedEnergistics=true
-apenCertusQuartzDist=SparseVeins
+apenCertusQuartzDist=none
 apenCertusQuartzFreq=0.7
 apenCertusQuartzSize=1.3
 enableDenseOres=true
@@ -45,7 +45,7 @@ dnsoIronFreq=1.5
 dnsoIronSize=1.3
 dnsoGoldDist=LayeredVeins
 dnsoGoldFreq=1.0
-dnsoGoldSize=1.0/
+dnsoGoldSize=1.0
 dnsoLapisDist=none
 dnsoLapisFreq=0.25
 dnsoLapisSize=1.0

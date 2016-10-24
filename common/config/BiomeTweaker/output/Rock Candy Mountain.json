@@ -1,0 +1,112 @@
+
+{
+  "ID": 177,
+  "Name": "Rock Candy Mountain",
+  "Class": "fox.spiteful.ridiculous.biomes.BiomeGenCandy",
+  "Color": 9109488,
+  "Root Height": 1.5,
+  "Height Variation": 0.5,
+  "Top Block": "minecraft:grass",
+  "Filler Block": "minecraft:dirt",
+  "Grass Color": "Not set. Check in-game.",
+  "Foliage Color": "Not set. Check in-game.",
+  "Water Color": "9018623",
+  "Temperature": 0.5,
+  "Humidity": 0.5,
+  "Water Tint": 9018623,
+  "Enable Rain": false,
+  "Enable Snow": false,
+  "Dictionary Types": [
+    "LUSH",
+    "MAGICAL",
+    "MOUNTAIN"
+  ],
+  "BiomeManager Entries": {
+    "WARM Weights": [
+      5,
+      5
+    ]
+  },
+  "Spawnable Creatures": [
+    {
+      "Entity Class": "fox.spiteful.ridiculous.entities.EntityPeep",
+      "Weight": 10,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "fox.spiteful.ridiculous.entities.EntityUnicorn",
+      "Weight": 10,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "fox.spiteful.ridiculous.entities.EntityCandySheep",
+      "Weight": 10,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    }
+  ],
+  "Spawnable Monsters": [
+    {
+      "Entity Class": "fox.spiteful.ridiculous.entities.EntityCalavera",
+      "Weight": 100,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntityZombie",
+      "Weight": 100,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "fox.spiteful.ridiculous.entities.EntityGingerbread",
+      "Weight": 100,
+      "Min Group Count": 4,
+      "Max Group Count": 6
+    },
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntityCreeper",
+      "Weight": 100,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntitySpider",
+      "Weight": 100,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "net.minecraft.entity.monster.EntityWitch",
+      "Weight": 10,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "thaumcraft.common.entities.monster.EntityPech",
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    }
+  ],
+  "Spawnable Water Creatures": [
+    {
+      "Entity Class": "net.minecraft.entity.passive.EntitySquid",
+      "Weight": 10,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    }
+  ],
+  "Spawnable Cave Creatures": [
+    {
+      "Entity Class": "net.minecraft.entity.passive.EntityBat",
+      "Weight": 10,
+      "Min Group Count": 8,
+      "Max Group Count": 8
+    }
+  ],
+  "Spawn Biome": false,
+  "Tweaked": true
+}

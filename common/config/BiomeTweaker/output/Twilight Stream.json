@@ -1,0 +1,84 @@
+
+{
+  "ID": 84,
+  "Name": "Twilight Stream",
+  "Class": "twilightforest.biomes.TFBiomeStream",
+  "Color": 3298231,
+  "Root Height": -0.5,
+  "Height Variation": 0.0,
+  "Top Block": "minecraft:grass",
+  "Filler Block": "minecraft:dirt",
+  "Grass Color": "Not set. Check in-game.",
+  "Foliage Color": "Not set. Check in-game.",
+  "Water Color": "16777215",
+  "Temperature": 0.3,
+  "Humidity": 1.0,
+  "Water Tint": 16777215,
+  "Enable Rain": true,
+  "Enable Snow": false,
+  "Dictionary Types": [
+    "DENSE",
+    "WET",
+    "RIVER",
+    "SWAMP"
+  ],
+  "BiomeManager Entries": {},
+  "Spawnable Creatures": [
+    {
+      "Entity Class": "com.emoniph.witchery.entity.EntityGoblin",
+      "Weight": 3,
+      "Min Group Count": 1,
+      "Max Group Count": 2
+    }
+  ],
+  "Spawnable Monsters": [
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntityEye",
+      "Weight": 6,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntityEnderEye",
+      "Weight": 2,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntitySkeletonWarrior",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 4
+    }
+  ],
+  "Spawnable Water Creatures": [
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntityFish",
+      "Weight": 1000,
+      "Min Group Count": 7,
+      "Max Group Count": 20
+    }
+  ],
+  "Spawnable Cave Creatures": [
+    {
+      "Entity Class": "net.minecraft.entity.passive.EntityBat",
+      "Weight": 10,
+      "Min Group Count": 8,
+      "Max Group Count": 8
+    },
+    {
+      "Entity Class": "twilightforest.entity.passive.EntityTFMobileFirefly",
+      "Weight": 10,
+      "Min Group Count": 8,
+      "Max Group Count": 8
+    },
+    {
+      "Entity Class": "com.emoniph.witchery.entity.EntitySpirit",
+      "Weight": 1,
+      "Min Group Count": 2,
+      "Max Group Count": 5
+    }
+  ],
+  "Spawn Biome": false,
+  "Tweaked": true
+}

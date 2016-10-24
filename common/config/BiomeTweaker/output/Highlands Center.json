@@ -1,0 +1,91 @@
+
+{
+  "ID": 78,
+  "Name": "Highlands Center",
+  "Class": "twilightforest.biomes.TFBiomeFinalPlateau",
+  "Color": 3359778,
+  "Root Height": 10.5,
+  "Height Variation": 0.025,
+  "Top Block": "TwilightForest:tile.TFDeadrock",
+  "Filler Block": "TwilightForest:tile.TFDeadrock",
+  "Grass Color": "Not set. Check in-game.",
+  "Foliage Color": "Not set. Check in-game.",
+  "Water Color": "16777215",
+  "Temperature": 0.10000001,
+  "Humidity": 0.2,
+  "Water Tint": 16777215,
+  "Enable Rain": true,
+  "Enable Snow": false,
+  "Dictionary Types": [
+    "DRY",
+    "DEAD",
+    "MESA",
+    "PLAINS",
+    "WASTELAND"
+  ],
+  "BiomeManager Entries": {},
+  "Spawnable Creatures": [
+    {
+      "Entity Class": "twilightforest.entity.passive.EntityTFRaven",
+      "Weight": 10,
+      "Min Group Count": 4,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "com.emoniph.witchery.entity.EntityGoblin",
+      "Weight": 2,
+      "Min Group Count": 1,
+      "Max Group Count": 2
+    }
+  ],
+  "Spawnable Monsters": [
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntityEye",
+      "Weight": 6,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntityEnderEye",
+      "Weight": 2,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntitySkeletonWarrior",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 4
+    }
+  ],
+  "Spawnable Water Creatures": [
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntityFish",
+      "Weight": 1000,
+      "Min Group Count": 7,
+      "Max Group Count": 20
+    }
+  ],
+  "Spawnable Cave Creatures": [
+    {
+      "Entity Class": "net.minecraft.entity.passive.EntityBat",
+      "Weight": 10,
+      "Min Group Count": 8,
+      "Max Group Count": 8
+    },
+    {
+      "Entity Class": "twilightforest.entity.passive.EntityTFMobileFirefly",
+      "Weight": 10,
+      "Min Group Count": 8,
+      "Max Group Count": 8
+    },
+    {
+      "Entity Class": "com.emoniph.witchery.entity.EntitySpirit",
+      "Weight": 1,
+      "Min Group Count": 2,
+      "Max Group Count": 5
+    }
+  ],
+  "Spawn Biome": false,
+  "Tweaked": true
+}
