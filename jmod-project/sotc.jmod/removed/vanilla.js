@@ -15,6 +15,13 @@ addToolTip(removed, ["info.sotc.jmod.tooltips.removed.item"]);
 // Remove string crafting recipes, will reset them myself.
 removeRecipes("minecraft:string");
 
-// Remove bread crafting, is made on the iron or in furnace.
+// Remove these food items, will add recipes to iron plate
 removeRecipes("minecraft:bread");
+removeRecipes("minecraft:cookie");
+removeRecipes("minecraft:pumpkin_pie");
+removeRecipes("minecraft:cake");
+
+// No need for vanilla mushroom stew
+removeRecipes("minecraft:mushroom_stew");
+
 removeSmeltingRecipes("minecraft:bread");
