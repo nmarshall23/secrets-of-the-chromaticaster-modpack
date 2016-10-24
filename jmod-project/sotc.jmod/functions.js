@@ -7,13 +7,22 @@ function updateShappedRecipe(item) {
   var outNum = item.num || 1;
   var itemOutName = item.name + "@" + outNum;
 
+
+
   log('updateShappedRecipe - item: ' + itemOutName);
 
   if ("recipes" in item) {
     removeRecipes(item.name);
     // log('updateShappedRecipe - item: ' + item.name + " " + itemOutName +
     //   " recipes[0].length: " + item.recipes[0].length);
+    var recipesHaveDiffOutputs = Array.isArray(item.num) &&
+      item.num.length === item.recipes.length;
+
     for (var i in item.recipes) {
+      if (recipesHaveDiffOutputs) {
+        itemOutName = item.name + "@" + item.num[i];
+      }
+
       addShapedRecipe(itemOutName, item.recipes[i]);
     }
   } else if ("recipe" in item) {
@@ -21,6 +30,20 @@ function updateShappedRecipe(item) {
     addShapedRecipe(itemOutName, item.recipe);
   } else {
     log('updateShappedRecipe - no recipe updated for: ' + item.name);
+  }
+
+  if ("shapelessRecipes" in item) {
+    removeRecipes(item.name);
+    var recipesHaveDiffOutputs = Array.isArray(item.num) &&
+      item.num.length === item.shapelessRecipes.length;
+
+    for (var i in item.shapelessRecipes) {
+      if (recipesHaveDiffOutputs) {
+        itemOutName = item.name + "@" + item.num[i];
+      }
+
+      addShapelessRecipe(itemOutName, item.shapelessRecipes[i]);
+    }
   }
 
   if ("uncrafting" in item && "num" in item.uncrafting && "item" in item.uncrafting) {

@@ -130,18 +130,7 @@ var mandrakeRoot = "witchery:ingredient:22";
 var vita = "yegamolchattels:entity_vita";
 var natureFiber = "ChromatiCraft:chromaticraft_item_crafting:31";
 
-var luggage = {
-  name: "OpenBlocks:luggage",
-  recipes: [
-    [
-      [natureFiber, vita, natureFiber],
-      [natureFiber, chestWood, natureFiber],
-      [mandrakeRoot, mandrakeRoot, mandrakeRoot]
-    ]
-  ]
-};
 
-updateShappedRecipe(luggage);
 
 // goldenEye
 
@@ -167,13 +156,15 @@ updateShappedRecipe(luggage);
 // sleepingBag
 var woolBlue = "minecraft:wool:11";
 var itemCloth = "itemCloth";
+var nuggetIron = "nuggetIron";
 
 var sleepingBag = {
   name: "OpenBlocks:sleepingBag",
   recipes: [
     [
-      [woolBlue, itemCloth, woolBlue],
-      [woolBlue, itemCloth, woolBlue]
+      [itemCloth, nuggetIron, itemCloth],
+      [itemCloth, woolBlue, itemCloth],
+      [itemCloth, woolBlue, itemCloth]
     ]
   ]
 };

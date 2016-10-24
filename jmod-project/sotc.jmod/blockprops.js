@@ -25,12 +25,8 @@ var blocks = [
   ["GeoStrata:geostrata_rock_granite_smooth", HarvestLevel.Iron],
   ["GeoStrata:geostrata_rock_hornfel_smooth", HarvestLevel.Iron],
   ["ElectriCraft:electricraft_block_ore:3", HarvestLevel.Iron, 3], // Nickel
-  ["minecraft:obsidian", HarvestLevel.Iron],
 
-  ["minecraft:glowstone", HarvestLevel.Steel],
-  ["minecraft:quartz_ore", HarvestLevel.Steel],
-  //  ["minecraft:soul_sand", HarvestLevel.Steel],
-
+  ["minecraft:obsidian", HarvestLevel.Steel],
   ["minecraft:diamond_ore", HarvestLevel.Steel],
   ["minecraft:emerald_ore", HarvestLevel.Steel],
   ["Railcraft:ore:2", HarvestLevel.Steel, 2], // Dark Diamond

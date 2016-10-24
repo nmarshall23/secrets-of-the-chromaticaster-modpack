@@ -34,9 +34,7 @@ dependency("Railcraft", "Railcraft");
 dependency("Thaumcraft", "Thaumcraft");
 dependency("ImmersiveEngineering", "ImmersiveEngineering");
 
-// dependency("CustomOreGen",	"Custom Ore Generation");
-// dependency("HungerOverhaul",	"Hunger Overhaul");
-// dependency("hammerz",	"Hammerz");
+
 
 var ModDN = "Secrets of the Chromaticaster";
 var ModId = "sotc.jmod";
@@ -45,31 +43,6 @@ var ModId = "sotc.jmod";
 
 addCreativeTab(ModId + ".tools", ModDN + ": Tools and Weapons", ModId +
   ":toolPipeLead");
-// addCreativeTab(ModId + ".items", ModDN + ": Crafting Items", ModId +
-//  ":item_diamond_lattice");
-
-// First, let's assign colors.
-/*
-defineColor("RED", 255, 0, 0);
-defineColor("GREEN", 0, 255, 0);
-defineColor("BLUE", 0, 0,255);
-
-defineColor("ALUMINUM", 220, 240, 138);
-defineColor("COPPER", 219, 118, 29);
-defineColor("TIN", 116, 146, 169);
-defineColor("BRONZE", 223, 129, 31);
-defineColor("NICKEL", 171, 178, 162);
-defineColor("LEAD", 119, 119, 158);
-
-defineColor("SILVER", 192, 192, 192);
-defineColor("PLATINUM", 102, 210, 243);
-defineColor("ELECTRUM", 209, 191, 87);
-*/
-
-// Now for some generic stuff to build from.
-// NOTE: These are REQUIRED for addMetalBlock() and addMetalIngot() to work!
-//addBlock("blockMetalGeneric", "MetalBlock", 10.0, 10.0, "pickaxe", 1, "iron", ModId + ".general");
-//addItem("ingotGeneric", "IngotGeneric", 64, ModId + ".general");
 
 
 
@@ -80,7 +53,7 @@ load("cleanup.js");
 load("oreDict/AMTAddonJP.js");
 load("oreDict/gears.js");
 load("oreDict/HarderWildlife.js");
-// load("oreDict/Mariculture.js");
+load("oreDict/magnanimoustools.js");
 load("oreDict/plantmegapack.js");
 load("oreDict/Railcraft.js");
 load("oreDict/RotaryCraft.js");
@@ -116,11 +89,12 @@ load("tweaks/battlegear2.js");
 load("tweaks/betterbuilderswands.js");
 
 load("tweaks/BiblioCraft.js");
-// // load("tweaks/BuildCraft.js");
+load("tweaks/BuildCraft.js");
 load("tweaks/catwalks.js");
 load("tweaks/chisel.js");
 
 load("tweaks/DCsAppleMilk.js");
+load("tweaks/ExtraTrees.js");
 load("tweaks/ExtraUtilities.js");
 load("tweaks/Forestry.js");
 load("tweaks/GardenStuff.js");
@@ -136,6 +110,8 @@ load("tweaks/OpenBlocks.js");
 load("tweaks/Railcraft.js");
 load("tweaks/SimilsaxTranstructors.js");
 load("tweaks/Thaumcraft.js");
+load("tweaks/TwilightForest.js");
+
 load("tweaks/tis3d.js");
 load("tweaks/witchery.js");
 load("tweaks/yegamolchattels.js");

@@ -28,15 +28,20 @@ var attunedStone = "witchery:ingredient:10";
 var fixationDust = "ChromatiCraft:chromaticraft_item_crafting:27";
 var motiveDust = "ChromatiCraft:chromaticraft_item_crafting:26";
 
-var alluringStone = {
-  name: "item_stoneAlluring",
+var fascinatingStone = {
+  name: "item_stoneFascinating",
   shapelessRecipe: [
     attunedStone, fixationDust, motiveDust
   ]
 };
 
-addCraftingItem(bronzeDust);
+addCraftingItem(fascinatingStone);
 
+var portalStone = {
+  name: "item_portalStone"
+};
+
+addCraftingItem(portalStone);
 
 var bronzeDust = {
   name: "item_dust_bronze",

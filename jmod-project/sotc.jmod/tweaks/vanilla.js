@@ -2,6 +2,21 @@ load("functions.js");
 
 log('Loaded Vanilla Tweaks');
 
+var chestWood = "minecraft:chest";
+var plateIron = "plateIron";
+
+var plank = "plankWood";
+var woolRed = "minecraft:wool:14";
+var woolWhite = "minecraft:wool:0";
+
+var blockEnderObsidian = "blockEnderObsidian";
+var redCarpet = "minecraft:carpet:14";
+var book = "minecraft:book";
+var attunedStone = "witchery:ingredient:10";
+
+var dustRedstone = "dustRedstone";
+var ingotIron = "ingotIron";
+var ingotAluminum = "ingotAluminum";
 
 // Hardcore Furnace
 
@@ -28,9 +43,7 @@ updateShappedRecipe(furnace);
  * Hopper uses Iron Plates
  */
 
-var ingotIron = "ingotIron";
-var chestWood = "minecraft:chest";
-var plateIron = "plateIron";
+
 
 var hopper = {
   name: "minecraft:hopper",
@@ -45,10 +58,9 @@ var hopper = {
 
 updateShappedRecipe(hopper);
 
+
 // Why don't bed use the proper colored Wool?
-var plank = "plankWood";
-var woolRed = "minecraft:wool:14";
-var woolWhite = "minecraft:wool:0";
+
 
 var bed = {
   name: "minecraft:bed",
@@ -129,10 +141,7 @@ var lead = {
 updateShappedRecipe(lead);
 
 // Enchanting Table
-var blockEnderObsidian = "blockEnderObsidian";
-var redCarpet = "minecraft:carpet:14";
-var book = "minecraft:book";
-var attunedStone = "witchery:ingredient:10";
+
 
 var enchantingTable = {
   name: "minecraft:enchanting_table",
@@ -146,3 +155,22 @@ var enchantingTable = {
 };
 
 updateShappedRecipe(enchantingTable);
+
+
+var piston = {
+  name: "minecraft:piston",
+  recipes: [
+    [
+      [plank, plank, plank],
+      [cobblestone, ingotIron, cobblestone],
+      [cobblestone, dustRedstone, cobblestone]
+    ],
+    [
+      [plank, plank, plank],
+      [cobblestone, ingotAluminum, cobblestone],
+      [cobblestone, dustRedstone, cobblestone]
+    ]
+  ]
+};
+
+updateShappedRecipe(piston);

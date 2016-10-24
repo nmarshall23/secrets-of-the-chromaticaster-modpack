@@ -13,6 +13,7 @@ var mediumPot2 = "GardenContainers:medium_pot_colored:*";
 //}
 
 
+
 var brick = "minecraft:brick";
 
 var clayPan = {
@@ -114,3 +115,23 @@ var crusher = {
 };
 
 updateShappedRecipe(crusher);
+
+
+// Onyx Lamp
+var onyxGlowBlock = "DCsAppleMilk:defeatedcrow.chalcedonyLamp:3";
+var ingotWroughtIron = "ingotWroughtIron";
+var wroughtIronFence = "GardenStuff:fence";
+
+var onyxLamp = {
+  name: "DCsAppleMilk:defeatedcrow.chalcedonyLamp:11",
+  num: 2,
+  recipes: [
+    [
+      [null, ingotWroughtIron, null],
+      [wroughtIronFence, onyxGlowBlock, wroughtIronFence],
+      [null, ingotWroughtIron, null]
+    ]
+  ]
+};
+
+updateShappedRecipe(onyxLamp);

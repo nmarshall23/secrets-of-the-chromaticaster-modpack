@@ -1,7 +1,8 @@
 var removed = [
   "minecraft:anvil:0",
   "minecraft:anvil:1",
-  "minecraft:anvil:2"
+  "minecraft:anvil:2",
+  "minecraft:mushroom_stew"
 ]
 
 for (var n in removed) {

@@ -48,16 +48,16 @@ var toolmat = [
   ["EMERALD", HarvestLevel.Diamond, 2061, 9.0, 3.0, 10, "gemDiamond", null],
 
 
-  ["IRONWOOD", HarvestLevel.Iron, 700, 6.5, 3.5, 25, "ironwood",
+  ["IRONWOOD", HarvestLevel.Iron, 750, 7.0, 3.5, 20, "ironwood",
     "TwilightForest"
   ],
-  ["STEELLEAF", HarvestLevel.Steel, 900, 7.75, 4.25, 12, "steeleaf",
+  ["STEELLEAF", HarvestLevel.Iron, 900, 7.75, 4.0, 18, "steeleaf",
     "TwilightForest"
   ],
-  ["FIERY", HarvestLevel.Diamond, 6000, 9.0, 4.75, 18, "fieryIngot",
+  ["FIERY", HarvestLevel.Diamond, 6000, 9.0, 4.75, 25, "fieryIngot",
     "TwilightForest"
   ],
-  ["KNIGHTMETAL", HarvestLevel.Diamond, 20000, 9.0, 5.0, 16, "knightmetal",
+  ["KNIGHTMETAL", HarvestLevel.Diamond, 20000, 12.0, 5.0, 16, "knightmetal",
     "TwilightForest"
   ]
 ];

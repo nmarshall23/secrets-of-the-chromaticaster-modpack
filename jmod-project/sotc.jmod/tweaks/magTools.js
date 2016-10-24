@@ -4,14 +4,14 @@ log('Loaded magnanimoustools Tweaks');
 
 var magStick = "magnanimoustools:MagStick";
 var magicWood = "ExtraUtilities:decorativeBlock1:8";
-var gemQuartz = "gemQuartz";
+var ingotElectrum = "ingotElectrum";
 
 var hardenedHandle = {
   name: "magnanimoustools:HardenedHandle",
   recipes: [
     [
       [null, null, magStick],
-      [null, gemQuartz, null],
+      [null, ingotElectrum, null],
       [magStick, null, null]
     ]
   ]

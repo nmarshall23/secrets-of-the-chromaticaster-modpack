@@ -11,3 +11,5 @@ removeOreDict(removedItem[n], "gearIron");
 
 
 addToolTip(removedItem, ["info.sotc.jmod.tooltips.removed.item"]);
+
+removeRecipes("DCsAppleMilk:defeatedcrow.condensedMilk:1");
