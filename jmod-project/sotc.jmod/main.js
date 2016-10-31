@@ -98,6 +98,9 @@ load("tweaks/ExtraTrees.js");
 load("tweaks/ExtraUtilities.js");
 load("tweaks/Forestry.js");
 load("tweaks/GardenStuff.js");
+
+load("tweaks/HardcoreQuesting.js");
+
 load("tweaks/ImmersiveEngineering-earlygame.js");
 load("tweaks/ImmersiveEngineering-RF.js");
 
@@ -105,7 +108,6 @@ load("tweaks/InventoryTools.js");
 // // load("tweaks/ironbackpacks.js");
 load("tweaks/LLadders.js");
 load("tweaks/magTools.js");
-// load("tweaks/Mariculture.js");
 load("tweaks/OpenBlocks.js");
 load("tweaks/Railcraft.js");
 load("tweaks/SimilsaxTranstructors.js");

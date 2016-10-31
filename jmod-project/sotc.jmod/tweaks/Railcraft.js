@@ -18,6 +18,7 @@ var piston = "minecraft:piston";
 
 var ingotGold = "ingotGold";
 var ingotElectrum = "ingotElectrum";
+var ingotRedAlloy = "ingotRedAlloy";
 
 var gearBushingTin = "Railcraft:part.gear:3";
 var sealant = "BuildCraft|Transport:pipeWaterproof";
@@ -25,6 +26,9 @@ var plankTreatedWood = "plankTreatedWood";
 var slabTreatedWood = "slabTreatedWood";
 var nuggetCopper = "nuggetCopper";
 var fluxcore = "fluxcore";
+
+var blockMagnetite = "sotc.jmod:blockMagnetite";
+
 
 var rollingMachine = {
   name: "Railcraft:machine.alpha:8",
@@ -115,3 +119,31 @@ var industrialSteamEngine = {
 };
 
 updateShappedRecipe(industrialSteamEngine);
+
+
+// crushed Obsidian
+var crushedObsidian = {
+  name: "Railcraft:cube:4",
+  recipes: [
+    [
+      ["dustObsidian", "dustObsidian", null],
+      ["dustObsidian", "dustObsidian", null]
+    ]
+  ]
+};
+
+updateShappedRecipe(crushedObsidian);
+
+// Flux Transformer
+var fluxTransformer = {
+  name: "Railcraft:machine.epsilon:4",
+  recipes: [
+    [
+      [plateConstantan, ingotRedAlloy, plateConstantan],
+      [ingotElectrum, blockMagnetite, ingotElectrum],
+      [plateConstantan, ingotRedAlloy, plateConstantan]
+    ]
+  ]
+};
+
+updateShappedRecipe(fluxTransformer);

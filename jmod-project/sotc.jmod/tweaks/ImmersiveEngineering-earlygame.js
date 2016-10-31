@@ -67,3 +67,37 @@ var blastBrick = {
 };
 
 updateShappedRecipe(blastBrick);
+
+
+var hempFiber = "ImmersiveEngineering:material:3";
+var itemCloth = "itemCloth";
+
+var hempFabric = {
+	name: "ImmersiveEngineering:material:4",
+	recipes: [
+		[
+			[hempFiber, hempFiber, hempFiber],
+			[hempFiber, itemCloth, hempFiber],
+			[hempFiber, hempFiber, hempFiber]
+		]
+	]
+};
+
+updateShappedRecipe(hempFabric);
+
+var waxCandle = "GardenStuff:candle";
+var slabTreatedWood = "slabTreatedWood";
+var itemString = "itemString";
+
+var balloon = {
+	name: "ImmersiveEngineering:clothDevice",
+	recipes: [
+		[
+			[null, itemCloth, null],
+			[itemString, waxCandle, itemString],
+			[null, slabTreatedWood, null]
+		]
+	]
+};
+
+updateShappedRecipe(balloon);

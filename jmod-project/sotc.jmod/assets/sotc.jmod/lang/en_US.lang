@@ -97,8 +97,9 @@ item.sotc.jmod.armorElectrumBoots.name=Electrum Boots
 
 
 
-info.sotc.jmod.armorvalue=Armorvalue: 
+info.sotc.jmod.armorvalue=Armorvalue:
 
+tile.sotc.jmod.blockMagnetite.name=Magnetite Block
 
 
 info.sotc.jmod.tooltips.removed.item=This item was removed by the ModPack

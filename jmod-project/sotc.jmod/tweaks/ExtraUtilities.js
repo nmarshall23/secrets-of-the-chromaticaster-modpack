@@ -40,6 +40,24 @@ var wateringCan = {
 
 updateShappedRecipe(wateringCan);
 
+// Portal to the Deep Dark
+
+var cyrstalStone = "ChromatiCraft:chromaticraft_block_pylonstruct";
+var chalkOtherWhere = "witchery:chalkotherwhere";
+var primalCharm = "Thaumcraft:ItemResource:15";
+
+var portalDeepDark = {
+  name: "ExtraUtilities:dark_portal",
+  recipes: [
+    [
+      [cyrstalStone, cyrstalStone, cyrstalStone],
+      [chalkOtherWhere, primalCharm, chalkOtherWhere],
+      [cyrstalStone, cyrstalStone, cyrstalStone]
+    ]
+  ]
+};
+
+updateShappedRecipe(portalDeepDark);
 
 // chandelier
 

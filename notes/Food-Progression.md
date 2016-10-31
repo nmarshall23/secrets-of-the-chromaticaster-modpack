@@ -16,12 +16,10 @@ Cooks Apples and Potatos. Cooking meat will give you scorched Meat. ( Need ot re
 Clay Pot
 --------
 
-Cooks light meals. 
+Cooks light meals.
 
 
 Iron Cooking Plate
 ------------------
 
 Can cook meals.
-
-
