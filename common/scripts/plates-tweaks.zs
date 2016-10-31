@@ -31,10 +31,7 @@ val hasRailCraftRecipeList =  {
 "Steel":  <Railcraft:part.plate:1>
 } as IItemStack[string];
 
-val platesToAddToOreDict = {
-"Iron":   <Railcraft:part.plate:0>,
-"Steel":  <Railcraft:part.plate:1>,
-} as IItemStack[string];
+
 
 
 
@@ -47,13 +44,6 @@ val plates = {
 "Steel":  <Railcraft:part.plate:1>,
 "Lead": <ImmersiveEngineering:metal:33>
 } as IItemStack[string];
-
-val platesOreDicts = {
-"Aluminum" : <ore:plateAluminum>,
-"Iron": <ore:plateIron>,
-"Steel": <ore:plateSteel>,
-"Constantan": <ore:plateConstantan>
-} as IIngredient[string];
 
 
 val sheetMetalBlocks = {
@@ -75,8 +65,8 @@ for material, ingot in ingots {
   var plate = plates[material];
   var rod   = rods[material];
   var sheetMetal = sheetMetalBlocks[material];
-  var RCPlate = platesToAddToOreDict[material];
-  var platesOreDict = platesOreDicts[material];
+
+
   var hasRailCraftRecipe = hasRailCraftRecipeList[material];
 
   var name = material as string;
@@ -109,11 +99,6 @@ for material, ingot in ingots {
 //	]);
 //   }
 
-//   if(RCPlate) {
-//      if(platesOreDict) {
-//	platesOreDict.add(RCPlate);
-//      }
-//   }
  }
 
  if(rod) {

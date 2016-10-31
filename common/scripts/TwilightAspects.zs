@@ -248,9 +248,8 @@ Aspects.set(<TwilightForest:item.magicMapFocus>, "sensus 2, praecantatio 4");
 
 Aspects.set(<TwilightForest:item.mazeMapFocus>, "sensus 2, praecantatio 4, ordo 4");
 
-Aspects.set(<TwilightForest:item.liveRoot>, "arbor 2, victus 2, praecantatio 1");
-
-Aspects.set(<TwilightForest:item.ironwoodRaw>, "metallum 5, arbor 2, victus 2, praecantatio 1");
+// Aspects.set(<TwilightForest:item.liveRoot>, "arbor 2, victus 2, praecantatio 1");
+// Aspects.set(<TwilightForest:item.ironwoodRaw>, "metallum 5, arbor 2, victus 2, praecantatio 1");
 
 Aspects.set(<TwilightForest:item.ironwoodIngot>, "metallum 4, praecantatio 1, fabrico 2, arbor 1");
 

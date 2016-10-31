@@ -23,7 +23,9 @@
   ],
   "BiomeManager Entries": {
     "WARM Weights": [
-      5,
+      5
+    ],
+    "COOL Weights": [
       5
     ]
   },
