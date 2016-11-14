@@ -49,8 +49,14 @@ function updateShappedRecipe(item) {
   if ("uncrafting" in item && "num" in item.uncrafting && "item" in item.uncrafting) {
     addShapelessRecipe(item.uncrafting.item + "@" + item.uncrafting.num, [item.name]);
   }
-
+  
+  if ("foodItemData" in item) {
+    var i = item.foodItemData;
+    Applecore.modifyFoodValue(item.name, i.hunger, i.saturation);
+  }
 }
+
+
 
 function additionalRecipe(item) {
   if (!"name" in item) {
@@ -58,12 +64,23 @@ function additionalRecipe(item) {
     return;
   }
 
-  var outNum = item.num || 1;
-  var itemOutName = item.name + "@" + outNum;
+//  var outNum = item.num || 1;
+//  var itemOutName = item.name + "@" + outNum;
 
-  log('additionalRecipe - item: ' + itemOutName);
+  log('additionalRecipe - item: ' + item.name);
 
   if ("recipes" in item) {
+    handleRecipeUpdates("shapedRecipes", item);
+  }
+  if ("shapelessRecipes" in item) {
+    handleRecipeUpdates("shapelessRecipes", item);
+  }
+  if ("uncrafting" in item && "num" in item.uncrafting && "item" in item.uncrafting) {
+    handleRecipeUpdates("uncrafting", item);
+  }
+  
+
+/*  if ("recipes" in item) {
     // log('updateShappedRecipe - item: ' + item.name + " " + itemOutName +
     //   " recipes[0].length: " + item.recipes[0].length);
     for (var i in item.recipes) {
@@ -78,7 +95,47 @@ function additionalRecipe(item) {
   if ("uncrafting" in item && "num" in item.uncrafting && "item" in item.uncrafting) {
     addShapelessRecipe(item.uncrafting.item + "@" + item.uncrafting.num, [item.name]);
   }
+*/
+}
 
+
+function handleRecipeUpdates(recipeType, item) {
+ var outNum = item.num || 1;
+ var itemOutName = item.name + "@" + outNum;
+ 
+ switch(recipeType) {
+   case 'shapelessRecipes':
+    var recipesHaveDiffOutputs = Array.isArray(item.num) &&
+      item.num.length === item.shapelessRecipes.length;
+
+    for (var i in item.shapelessRecipes) {
+      if (recipesHaveDiffOutputs) {
+        itemOutName = item.name + "@" + item.num[i];
+      }
+
+      addShapelessRecipe(itemOutName, item.shapelessRecipes[i]);
+    }
+    break;
+
+   case 'shapedRecipes':
+    var recipesHaveDiffOutputs = Array.isArray(item.num) &&
+      item.num.length === item.recipes.length;
+
+    for (var i in item.recipes) {
+      if (recipesHaveDiffOutputs) {
+        itemOutName = item.name + "@" + item.num[i];
+      }
+
+      addShapedRecipe(itemOutName, item.recipes[i]);
+    }
+    break;
+   case 'shapedRecipe':
+    addShapedRecipe(itemOutName, item.recipe);
+    break;
+   case 'uncrafting':
+    addShapelessRecipe(item.uncrafting.item + "@" + item.uncrafting.num, [item.name]);
+    break;
+ } 
 }
 
 var ModId = "sotc.jmod";
@@ -99,17 +156,24 @@ function addCraftingItem(item) {
   var itemModNameCraftingOut = itemModName + "@" + outNum;
 
   // Item is food..
-  if ("foodData" in item) {
-    var i = item.foodData;
+  if ("foodItemData" in item) {
+    var i = item.foodItemData;
     addItem(item.name, "CoreFood", stackSize, generalTab).fooddata(
       FoodData(i.hunger, i.saturation, i.wolffood, i.alwaysEdible));
+
+    Applecore.modifyFoodValue(itemModName, i.hunger, i.saturation);
+
+    // Item is Stew give back bowl
+  } else if ("foodStewData" in item) {
+    var i = item.foodStewData;
+    var foodData = FoodData(i.hunger, i.saturation, i.wolffood, i.alwaysEdible)
+      .bowlContainer();
+    addItem(item.name, "CoreFood", stackSize, generalTab).fooddata(foodData);
 
     Applecore.modifyFoodValue(itemModName, i.hunger, i.saturation);
   } else {
     addItem(item.name, refClass, stackSize, generalTab);
   }
-
-
 
   if ("smelting" in item && "inputItem" in item.smelting) {
     if (!"num" in item.smelting) {

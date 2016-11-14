@@ -1,4 +1,4 @@
-load("functions.js");
+loadjs("functions.js");
 
 log('Loaded TwilightForest Tweaks');
 
@@ -15,6 +15,13 @@ var ingotPlatinum = "ingotPlatinum";
 var nuggetGold = "nuggetGold";
 
 
+var torchberries = "TwilightForest:item.torchberries";
+var ravenFeather = "TwilightForest:item.tfFeather";
+var energeticEssence = "ChromatiCraft:chromaticraft_item_crafting:28";
+var fixationDust = "ChromatiCraft:chromaticraft_item_crafting:27";
+var natureFiber = "ChromatiCraft:chromaticraft_item_crafting:31";
+
+// Fiery Ingot
 var fieryIngot = {
   name: "TwilightForest:item.fieryIngot",
   shapelessRecipes: [
@@ -33,3 +40,17 @@ var ironwoodRaw = {
 };
 
 updateShappedRecipe(ironwoodRaw);
+
+
+//Magic Map Focus
+
+var magicMapFocus = {
+  name: "TwilightForest:item.magicMapFocus",
+  shapelessRecipes: [
+    [ravenFeather, torchberries, natureFiber, fixationDust,
+      energeticEssence
+    ]
+  ]
+};
+
+updateShappedRecipe(magicMapFocus);

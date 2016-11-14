@@ -1,4 +1,4 @@
-load("functions.js");
+loadjs("functions.js");
 
 log('Loaded ImmersiveEngineering EarlyGame Tweaks');
 
@@ -101,3 +101,42 @@ var balloon = {
 };
 
 updateShappedRecipe(balloon);
+
+
+// Lanterns
+
+var paneGlass = "paneGlass";
+var glowstone = "glowstone";
+var plateTin = "plateTin";
+var prism = "tis3d:prism";
+var jarOderOfPurity = "witchery:ingredient:36";
+var natureFiber = "ChromatiCraft:chromaticraft_item_crafting:31";
+var primalCharm = "Thaumcraft:ItemResource:15";
+
+var baselantern = {
+	name: "ImmersiveEngineering:metalDecoration:2",
+	num: 4,
+	recipes: [
+		[
+			[null, plateTin, null],
+			[paneGlass, glowstone, paneGlass],
+			[null, plateTin, null]
+		]
+	]
+};
+
+updateShappedRecipe(baselantern);
+
+
+var poweredlantern = {
+	name: "ImmersiveEngineering:metalDevice2:3",
+	recipes: [
+		[
+			[natureFiber, prism, natureFiber],
+			[jarOderOfPurity, baselantern.name, jarOderOfPurity],
+			[natureFiber, primalCharm, natureFiber]
+		]
+	]
+};
+
+updateShappedRecipe(poweredlantern);

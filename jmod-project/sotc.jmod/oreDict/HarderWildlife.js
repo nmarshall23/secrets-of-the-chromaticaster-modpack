@@ -1,2 +1,2 @@
 addOreDict("HarderWildlife:chevonRaw", "listAllmeatraw");
-addOreDict("HarderWildlife:chevonCooked", "listAllmeatcooked"); 
+addOreDict("HarderWildlife:chevonCooked", "listAllmeatcooked");

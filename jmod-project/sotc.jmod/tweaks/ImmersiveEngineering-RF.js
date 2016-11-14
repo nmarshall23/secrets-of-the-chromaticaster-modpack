@@ -1,22 +1,26 @@
-load("functions.js");
+loadjs("functions.js");
 
 log('Loaded ImmersiveEngineering RF Tweaks');
 
 var copperWireBlock = "ImmersiveEngineering:storage:8";
 var redStone = "minecraft:redstone";
 var blockRedstone = "minecraft:redstone_block";
+var blockPlatinum = "blockPlatinum";
+var blockElectrum = "blockElectrum";
+var blockLead = "blockLead";
+
 var gearGold = "gearGold";
 var magnetite = "gemMagnetite";
+var ingotCopper = "ingotCopper";
+var ingotCadmium = "ingotCadmium";
+
 var plateIron = "plateIron";
+var plateSteel = "plateSteel";
 var hardenedClay = "minecraft:hardened_clay";
 var stickIron = "stickIron";
 var plankTreatedWood = "plankTreatedWood";
-var blockLead = "blockLead";
-var ingotCopper = "ingotCopper";
-var blockPlatinum = "blockPlatinum";
-var blockElectrum = "blockElectrum";
-var ingotCadmium = "ingotCadmium";
-var plateSteel = "plateSteel";
+
+
 var stickAluminum = "stickAluminum";
 
 // kineticDynamo
@@ -55,10 +59,8 @@ var windMill = {
 
 updateShappedRecipe(windMill);
 
-// LVcapacitor
-
-
-var LVcapacitor = {
+// LV capacitor
+var capacitorLV = {
 	name: "ImmersiveEngineering:metalDevice:1",
 	recipes: [
 		[
@@ -69,33 +71,34 @@ var LVcapacitor = {
 	]
 };
 
-updateShappedRecipe(LVcapacitor);
+updateShappedRecipe(capacitorLV);
 
-var MVcapacitor = {
+//MV Capacitor
+var capacitorMV = {
 	name: "ImmersiveEngineering:metalDevice:3",
 	recipes: [
 		[
 			[plateSteel, plateSteel, plateSteel],
 			[ingotCadmium, blockElectrum, ingotCadmium],
-			[plankTreatedWood, LVcapacitor.name, plankTreatedWood]
+			[plankTreatedWood, capacitorLV.name, plankTreatedWood]
 		]
 	]
 };
 
-updateShappedRecipe(MVcapacitor);
+updateShappedRecipe(capacitorMV);
 
-var HVcapacitor = {
+var capacitorHV = {
 	name: "ImmersiveEngineering:metalDevice:7",
 	recipes: [
 		[
 			[plateSteel, plateSteel, plateSteel],
 			[ingotCadmium, blockPlatinum, ingotCadmium],
-			[plankTreatedWood, MVcapacitor.name, plankTreatedWood]
+			[plankTreatedWood, capacitorMV.name, plankTreatedWood]
 		]
 	]
 };
 
-updateShappedRecipe(HVcapacitor);
+updateShappedRecipe(capacitorHV);
 
 
 // Wire Connectors

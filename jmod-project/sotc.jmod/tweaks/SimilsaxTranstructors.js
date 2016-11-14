@@ -1,5 +1,5 @@
 // In light of Durablty boost these need to be a little more costly
-load("functions.js");
+loadjs("functions.js");
 
 var stickIron = "stickIron";
 var stickWood = "stickWood";

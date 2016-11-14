@@ -1,4 +1,4 @@
-load("harvestLevels.js");
+loadjs("harvestLevels.js");
 
 //Tool Materials
 // Legend: name, mininglevel, durability, efficiency(speed), damage vs entities, enchantability, repairmaterial (must be an Ore Dictionary entry)

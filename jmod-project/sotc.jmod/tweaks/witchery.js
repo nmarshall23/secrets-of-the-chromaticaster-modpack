@@ -1,4 +1,4 @@
-load("functions.js");
+loadjs("functions.js");
 
 log('Loaded witchery Tweaks');
 
@@ -97,3 +97,8 @@ var attunedStone = {
 };
 
 updateShappedRecipe(attunedStone);
+
+
+// Made on the Clay Pot <witchery:stew> <witchery:stewraw>
+removeSmeltingRecipes("witchery:stew");
+removeRecipes("witchery:stewraw");

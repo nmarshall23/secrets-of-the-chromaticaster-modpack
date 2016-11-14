@@ -1,4 +1,4 @@
-load("harvestLevels.js");
+loadjs("harvestLevels.js");
 
 // Now, we'll set the harvest levels for various blocks to more appropriate values.
 // Legend: blockID, Harvest level
@@ -19,6 +19,7 @@ var blocks = [
   ["minecraft:redstone_ore", HarvestLevel.Bronze],
   ["minecraft:lit_redstone_ore", HarvestLevel.Bronze],
   ["minecraft:lapis_ore", HarvestLevel.Bronze],
+
 
   ["ImmersiveEngineering:ore:2", HarvestLevel.Iron, 2], // lead
   ["Railcraft:cube:6", HarvestLevel.Iron, 6], // Abyssal Stone
@@ -78,6 +79,4 @@ for (var m in blocks) {
     log("Block: " + blockName + ", Harvest Level: " + hl);
     setBlockProperties(blockName).harvestlevel(hl);
   }
-
-
 }

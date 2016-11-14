@@ -1,4 +1,4 @@
-load("functions.js");
+loadjs("functions.js");
 
 log('Loaded AMTAddonJP Tweaks');
 
@@ -23,6 +23,7 @@ var stick = "stickWood"; // "minecraft:stick";
 
 // cotton ball
 var hempFiber = "ImmersiveEngineering:material:3";
+var flaxFiber = "yegamolchattels:flax_fiber";
 
 var cottonball = {
   name: "AMTAddonJP:addonamtjp.linen_ball:1",
@@ -31,6 +32,11 @@ var cottonball = {
       [hempFiber, hempFiber, hempFiber],
       [hempFiber, stick, hempFiber],
       [hempFiber, hempFiber, hempFiber]
+    ],
+    [
+      [flaxFiber, flaxFiber, flaxFiber],
+      [flaxFiber, stick, flaxFiber],
+      [flaxFiber, flaxFiber, flaxFiber]
     ]
   ]
 };

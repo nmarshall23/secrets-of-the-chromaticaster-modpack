@@ -100,6 +100,7 @@ item.sotc.jmod.armorElectrumBoots.name=Electrum Boots
 info.sotc.jmod.armorvalue=Armorvalue:
 
 tile.sotc.jmod.blockMagnetite.name=Magnetite Block
+tile.sotc.jmod.blockPlatinum.name=Platinum Block
 
 
 info.sotc.jmod.tooltips.removed.item=This item was removed by the ModPack
@@ -108,6 +109,9 @@ info.sotc.jmod.tooltips.removed.generator=This Generator was removed by the ModP
 info.sotc.jmod.tooltips.lumberAxe=This is a §2§lLumber Axe§7
 info.sotc.jmod.tooltips.pressChase=Must be made from wood of Ancient Trees
 
+item.sotc.jmod.itemWoodenBucket.empty.name=Wooden Bucket
+item.sotc.jmod.itemWoodenBucket.water.name=Wooden Water Bucket
+item.sotc.jmod.itemWoodenBucket.milk.name=Wooden Milk Bucket
 
 item.betterbuilderswands:wandAdvanced.name=Builder's Basic Wand
 item.betterbuilderswands:wandUnrestricted.name=Builder's Lesser Wand
@@ -134,4 +138,4 @@ wailaharvestability.harvestlevel4=Iron
 wailaharvestability.harvestlevel5=Steel
 wailaharvestability.harvestlevel6=Steel
 wailaharvestability.harvestlevel7=Diamond
-wailaharvestability.harvestlevel=Harvest Level: 
+wailaharvestability.harvestlevel=Harvest Level:

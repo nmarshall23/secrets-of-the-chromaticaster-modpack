@@ -1,4 +1,4 @@
-load("functions.js");
+loadjs("functions.js");
 
 
 var blockMagnetite = {
@@ -9,3 +9,12 @@ var blockMagnetite = {
 };
 
 addCustomBlock(blockMagnetite);
+
+var blockPlatinum = {
+  name: "blockPlatinum",
+  oreDict: "blockPlatinum",
+  subItem: "ElectriCraft:electricraft_item_ingots:5",
+  subItemOreDic: "ingotPlatinum"
+};
+
+addCustomBlock(blockPlatinum);

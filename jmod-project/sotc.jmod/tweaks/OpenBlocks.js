@@ -1,4 +1,4 @@
-load("functions.js");
+loadjs("functions.js");
 
 
 // XP Drain

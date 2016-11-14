@@ -46,78 +46,82 @@ addCreativeTab(ModId + ".tools", ModDN + ": Tools and Weapons", ModId +
 
 
 
-load("cleanup.js");
+loadjs("cleanup.js");
 
 
 
-load("oreDict/AMTAddonJP.js");
-load("oreDict/gears.js");
-load("oreDict/HarderWildlife.js");
-load("oreDict/magnanimoustools.js");
-load("oreDict/plantmegapack.js");
-load("oreDict/Railcraft.js");
-load("oreDict/RotaryCraft.js");
-load("oreDict/TwilightForest.js");
-load("oreDict/vanilla.js");
-load("oreDict/witchery.js");
+loadjs("oreDict/AMTAddonJP.js");
+loadjs("oreDict/ChromatiCraft.js");
+loadjs("oreDict/gears.js");
+loadjs("oreDict/HarderWildlife.js");
+loadjs("oreDict/magnanimoustools.js");
+loadjs("oreDict/plantmegapack.js");
+loadjs("oreDict/Railcraft.js");
+loadjs("oreDict/RotaryCraft.js");
+loadjs("oreDict/TwilightForest.js");
+loadjs("oreDict/vanilla.js");
+loadjs("oreDict/witchery.js");
 
-load("removed/betterbuilderswands.js");
-load("removed/BuildCraft.js");
-load("removed/DCsAppleMilk.js");
-load("removed/ImmersiveEngineering.js");
-load("removed/Railcraft.js");
-load("removed/RotaryCraft.js");
-load("removed/vanilla.js");
+loadjs("removed/betterbuilderswands.js");
+loadjs("removed/BuildCraft.js");
+loadjs("removed/DCsAppleMilk.js");
+loadjs("removed/ImmersiveEngineering.js");
+loadjs("removed/Railcraft.js");
+loadjs("removed/RotaryCraft.js");
+loadjs("removed/vanilla.js");
 
-load("loot/removals.js");
+loadjs("loot/removals.js");
 
-load("materials.js");
-load("blockprops.js");
-load("craftingItems.js");
-load("foods.js");
-load("newItemsBlocks.js");
-load("tools.js");
-// load("armor.js");
-
-
-load("tweaks/vanilla.js");
-load("tweaks/AgriCraft.js");
-load("tweaks/AMTAddonJP.js");
-// load("tweaks/appliedenergistics2.js");
-
-load("tweaks/battlegear2.js");
-load("tweaks/betterbuilderswands.js");
-
-load("tweaks/BiblioCraft.js");
-load("tweaks/BuildCraft.js");
-load("tweaks/catwalks.js");
-load("tweaks/chisel.js");
-
-load("tweaks/DCsAppleMilk.js");
-load("tweaks/ExtraTrees.js");
-load("tweaks/ExtraUtilities.js");
-load("tweaks/Forestry.js");
-load("tweaks/GardenStuff.js");
-
-load("tweaks/HardcoreQuesting.js");
-
-load("tweaks/ImmersiveEngineering-earlygame.js");
-load("tweaks/ImmersiveEngineering-RF.js");
-
-load("tweaks/InventoryTools.js");
-// // load("tweaks/ironbackpacks.js");
-load("tweaks/LLadders.js");
-load("tweaks/magTools.js");
-load("tweaks/OpenBlocks.js");
-load("tweaks/Railcraft.js");
-load("tweaks/SimilsaxTranstructors.js");
-load("tweaks/Thaumcraft.js");
-load("tweaks/TwilightForest.js");
-
-load("tweaks/tis3d.js");
-load("tweaks/witchery.js");
-load("tweaks/yegamolchattels.js");
+loadjs("materials.js");
+loadjs("blockprops.js");
+loadjs("craftingItems.js");
+loadjs("foods.js");
+loadjs("newItemsBlocks.js");
+loadjs("tools.js");
+// loadjs("armor.js");
 
 
+loadjs("tweaks/vanilla.js");
+loadjs("tweaks/AgriCraft.js");
+loadjs("tweaks/AMTAddonJP.js");
+// loadjs("tweaks/appliedenergistics2.js");
 
-// load("loot/additions.js");
+loadjs("tweaks/battlegear2.js");
+loadjs("tweaks/betterbuilderswands.js");
+
+loadjs("tweaks/BiblioCraft.js");
+loadjs("tweaks/BuildCraft.js");
+loadjs("tweaks/catwalks.js");
+loadjs("tweaks/chisel.js");
+
+loadjs("tweaks/DCsAppleMilk.js");
+loadjs("tweaks/ExtraTrees.js");
+loadjs("tweaks/ExtraUtilities.js");
+loadjs("tweaks/Forestry.js");
+loadjs("tweaks/GardenStuff.js");
+
+loadjs("tweaks/HardcoreQuesting.js");
+
+loadjs("tweaks/ImmersiveEngineering-earlygame.js");
+loadjs("tweaks/ImmersiveEngineering-RF.js");
+loadjs("tweaks/ImmersiveEngineering-devices.js");
+
+
+loadjs("tweaks/InventoryTools.js");
+loadjs("tweaks/ironbackpacks.js");
+loadjs("tweaks/LLadders.js");
+loadjs("tweaks/magTools.js");
+loadjs("tweaks/plantmegapack.js");
+loadjs("tweaks/OpenBlocks.js");
+loadjs("tweaks/Railcraft.js");
+loadjs("tweaks/SimilsaxTranstructors.js");
+loadjs("tweaks/Thaumcraft.js");
+loadjs("tweaks/TwilightForest.js");
+
+loadjs("tweaks/tis3d.js");
+loadjs("tweaks/witchery.js");
+loadjs("tweaks/yegamolchattels.js");
+
+
+
+// loadjs("loot/additions.js");

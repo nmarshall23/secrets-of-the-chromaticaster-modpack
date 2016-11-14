@@ -14,6 +14,7 @@ addToolTip(removed, ["info.sotc.jmod.tooltips.removed.item"]);
 
 // Remove string crafting recipes, will reset them myself.
 removeRecipes("minecraft:string");
+removeRecipes("minecraft:wool");
 
 // Remove these food items, will add recipes to iron plate
 removeRecipes("minecraft:bread");

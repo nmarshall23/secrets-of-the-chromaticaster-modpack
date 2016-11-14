@@ -1,4 +1,4 @@
-load("functions.js");
+loadjs("functions.js");
 
 log('Loaded DCsAppleMilk Tweaks');
 
@@ -135,3 +135,13 @@ var onyxLamp = {
 };
 
 updateShappedRecipe(onyxLamp);
+
+
+var washedRice = {
+  name: "DCsAppleMilk:defeatedcrow.mincedFoods:3",
+  shapelessRecipes: [
+    ["toolGrater", "itemRice", "itemRice", "itemRice"]
+  ]
+};
+
+additionalRecipe(washedRice);

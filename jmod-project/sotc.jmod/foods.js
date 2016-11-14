@@ -1,10 +1,10 @@
-load("functions.js");
+loadjs("functions.js");
 
 var simpleStew = {
   name: "food_stew_simple",
-  foodData: {
-    hunger: 2,
-    saturation: 1.0,
+  foodStewData: {
+    hunger: 3,
+    saturation: 0.6,
     wolffood: false,
     alwaysEdible: false
   }
@@ -15,9 +15,9 @@ addCraftingItem(simpleStew);
 
 var meatyStew = {
   name: "food_stew_meaty",
-  foodData: {
-    hunger: 4,
-    saturation: 1.0,
+  foodStewData: {
+    hunger: 5,
+    saturation: 1.4,
     wolffood: false,
     alwaysEdible: false
   }
@@ -28,12 +28,20 @@ addCraftingItem(meatyStew);
 
 var mincedCarrotPotatos = {
   name: "minced_carrot_potatos",
-  shapelessRecipe: [
-    "toolGrater",
-    "cropCarrot",
-    "cropPotato",
-    "cropCarrot",
-    "cropPotato"
+  shapelessRecipes: [
+    [
+      "toolGrater",
+      "cropCarrot",
+      "cropPotato",
+      "cropCarrot",
+      "cropPotato"
+    ],
+    [
+      "toolGrater",
+      "cropCarrot",
+      "cropPotato",
+      "vegetableZesty"
+    ]
   ]
 };
 
@@ -59,6 +67,15 @@ var mincedMeatVegys = {
       "cropPotato",
       "cropOnion",
       "listAllmeatraw"
+    ],
+    [
+      "toolGrater",
+      "vegetableZesty",
+      "vegetableZesty",
+      "vegetableZesty",
+      "cropPotato",
+      "cropCarrot",
+      "listAllmeatraw"
     ]
   ]
 };
@@ -75,6 +92,7 @@ var mincedBeefMeal = {
       "minecraft:beef",
       "cropPotato",
       "cropCarrot",
+      "vegetableZesty",
       "foodSalt",
       "cropOnion",
     ],
@@ -83,6 +101,7 @@ var mincedBeefMeal = {
       "minecraft:beef",
       "cropPotato",
       "cropCarrot",
+      "vegetableZesty",
       "foodSalt",
       "cropGarlic",
     ]
@@ -100,6 +119,7 @@ var mincedChickenMeal = {
       "minecraft:chicken",
       "cropPotato",
       "cropCarrot",
+      "vegetableZesty",
       "foodSalt",
       "cropOnion",
     ],
@@ -108,6 +128,7 @@ var mincedChickenMeal = {
       "minecraft:chicken",
       "cropPotato",
       "cropCarrot",
+      "vegetableZesty",
       "foodSalt",
       "cropGarlic",
     ]
@@ -125,6 +146,7 @@ var mincedPorkMeal = {
       "minecraft:porkchop",
       "cropPotato",
       "cropCarrot",
+      "vegetableZesty",
       "foodSalt",
       "cropOnion",
     ],
@@ -133,6 +155,7 @@ var mincedPorkMeal = {
       "minecraft:porkchop",
       "cropPotato",
       "cropCarrot",
+      "vegetableZesty",
       "foodSalt",
       "cropGarlic",
     ]
@@ -140,3 +163,15 @@ var mincedPorkMeal = {
 };
 
 addCraftingItem(mincedPorkMeal);
+
+
+var foodWheat = "minecraft:wheat";
+
+var foodRCFlour = {
+  name: "RotaryCraft:rotarycraft_item_powders:9",
+  shapelessRecipes: [
+    [ "toolGrater", foodWheat, foodWheat, foodWheat]
+  ]
+};
+
+additionalRecipe(foodRCFlour);

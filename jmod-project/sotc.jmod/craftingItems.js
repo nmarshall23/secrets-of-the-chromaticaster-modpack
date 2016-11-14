@@ -1,4 +1,4 @@
-load("functions.js");
+loadjs("functions.js");
 
 var ModDN = "Secrets of the Chromaticaster";
 var ModId = "sotc.jmod";
@@ -7,26 +7,23 @@ addCreativeTab(ModId + ".general", ModDN + ": Custom Items", ModId +
   ":item_shard_obsidian");
 
 
+// Create the bucket.
+addItem("itemWoodenBucket", "ItemWoodenBucket", 8, ModId+ ".general");
 
-// Custom Items
-var tallgrass = "minecraft:tallgrass:1";
-var stick = "minecraft:stick";
+// Make the recipe for the bucket.  Uses the Ore Dictionary.
+addShapedRecipe(ModId+ ":itemWoodenBucket", [
+  [null,        "plankTreatedWood",    null ],
+  ["plankTreatedWood", null,           "plankTreatedWood" ],
+  [null,        "plankTreatedWood",    null ]]);
 
-// var linenString = {
-//   name: "item_string_linen",
-//   stackSize: 32,
-//   oreDict: "itemString",
-//   recipe: [
-//     [tallgrass, tallgrass, tallgrass],
-//     [tallgrass, stick, tallgrass],
-//     [tallgrass, tallgrass, tallgrass]
-//   ]
-// };
-//
-// addCraftingItem(linenString);
+
+
+// Materials
+
 var attunedStone = "witchery:ingredient:10";
 var fixationDust = "ChromatiCraft:chromaticraft_item_crafting:27";
 var motiveDust = "ChromatiCraft:chromaticraft_item_crafting:26";
+
 
 var fascinatingStone = {
   name: "item_stoneFascinating",
@@ -142,9 +139,9 @@ var fluxcore = {
   name: "item_fluxcore",
   oreDict: "fluxcore",
   recipe: [
-    [dustRedstone, gemMagnetite, dustRedstone],
-    [gemMagnetite, gemMagnetite, gemMagnetite],
-    [dustRedstone, gemMagnetite, dustRedstone]
+    [null, gemMagnetite, null],
+    [dustRedstone, dustRedstone, dustRedstone],
+    [null, gemMagnetite, null]
   ]
 };
 

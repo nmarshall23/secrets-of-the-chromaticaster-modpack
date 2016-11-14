@@ -1,4 +1,4 @@
-load("functions.js");
+loadjs("functions.js");
 
 var aluminumAlloyIngot = "RotaryCraft:rotarycraft_item_compacts:11";
 var chestWood = "chestWood";

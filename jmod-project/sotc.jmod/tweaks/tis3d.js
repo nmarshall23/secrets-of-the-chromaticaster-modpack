@@ -1,4 +1,4 @@
-load("functions.js");
+loadjs("functions.js");
 
 // Too much diamond love.. let's deversivy
 // tis3d is an Iron HarvestLevel machine

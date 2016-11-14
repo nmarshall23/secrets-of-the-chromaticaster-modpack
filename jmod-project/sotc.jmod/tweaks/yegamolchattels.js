@@ -1,5 +1,5 @@
 // Gongs are made of bronze
-load("functions.js");
+loadjs("functions.js");
 
 log('Loaded yegamolchattels Tweaks');
 

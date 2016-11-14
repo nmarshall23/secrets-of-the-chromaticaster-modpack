@@ -1,4 +1,4 @@
-load("functions.js");
+loadjs("functions.js");
 log('Loaded catwalks Tweaks');
 
 // CatWalk Steel Grate should use steel
