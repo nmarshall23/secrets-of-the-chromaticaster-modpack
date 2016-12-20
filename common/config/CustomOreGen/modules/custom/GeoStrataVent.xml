@@ -1,0 +1,158 @@
+<!-- =================================================================
+     Custom Ore Generation "GeoStrataVent" Module: This configuration
+     covers vent.
+     ================================================================= -->
+
+
+<!-- A mod focused on adding multiple types of stone to the game, with
+     varying strengths.  Configuration by Reteo. -->
+
+
+
+
+<!-- Is the "GeoStrataVent" mod on the system?  Let's find out! -->
+<IfModInstalled name="GeoStrata">
+
+  <!-- Starting Configuration for Custom Ore Generation. -->
+  <ConfigSection>
+
+
+
+
+
+    <!-- Setup Screen Configuration -->
+    <ConfigSection>
+      <OptionDisplayGroup name='groupGeoStrataVent' displayName='GeoStrataVent' displayState='shown'>
+        <Description>
+          Distribution options for GeoStrataVent Ores.
+        </Description>
+      </OptionDisplayGroup>
+      <OptionChoice name='enableGeoStrataVent' displayName='Handle GeoStrataVent Setup?' default='true' displayState='shown_dynamic' displayGroup='groupGeoStrataVent'>
+        <Description> Should Custom Ore Generation handle GeoStrataVent ore generation? </Description>
+        <Choice value=':= ?true' displayValue='Yes' description='Use Custom Ore Generation to handle GeoStrataVent ores.'/>
+        <Choice value=':= ?false' displayValue='No' description='GeoStrataVent ores will be handled by Minecraft directly.'/>
+      </OptionChoice>
+      <OptionChoice name='cleanUpGeoStrataVent' displayName='Use GeoStrataVent Cleanup?' default='true' displayState='shown_dynamic' displayGroup='groupGeoStrataVent'>
+        <Description> Should Custom Ore Generation use the Substitution Pass to remove all instances of GeoStrataVent ore from the world?  If the mod's oregen can be turned off in its configuration, then it's recommended to do so, as the substitution pass can slow the game significantly.  If this option is disabled without disabling the mod's own ore generation, you'll end up with two oregens working at once, flooding the world with ore.  Enabled by default to ensure the ores are completely removed. </Description>
+        <Choice value=':= ?true' displayValue='Yes' description='Use the substitution pass to clean up GeoStrataVent ores.'/>
+        <Choice value=':= ?false' displayValue='No' description='GeoStrataVent ores do not need to be cleaned up by a substitution pass.'/>
+      </OptionChoice>
+
+      <!-- Vent Configuration UI Starting -->
+      <ConfigSection>
+        <OptionChoice name='gstaVtsVentDist'  displayState=':= if(?enableGeoStrataVent, "shown", "hidden")' displayGroup='groupGeoStrataVent'>
+          <Description> Controls how Vent is generated </Description>
+          <DisplayName>GeoStrataVent Vent</DisplayName>
+          <IfCondition condition=':= (?blockExists("GeoStrata:geostrata_block_vent")  &amp; ?blockExists("GeoStrata:geostrata_block_vent:1")  &amp; ?blockExists("GeoStrata:geostrata_block_vent:2")  &amp; ?blockExists("GeoStrata:geostrata_block_vent:3")  &amp; ?blockExists("GeoStrata:geostrata_block_vent:4")  &amp; ?blockExists("GeoStrata:geostrata_block_vent:5")) '>
+
+          <Choice value='Substitution' displayValue='Substitution'>
+            <Description>
+              Universal Block Replacement.
+            </Description>
+          </Choice>
+          </IfCondition>
+
+          <Choice value='none' displayValue='None' description='Vent is not generated in the world.'/>
+        </OptionChoice>
+        <OptionNumeric name='gstaVtsVentFreq' default='1'  min='0' max='5' displayState=':= if(?enableGeoStrataVent, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupGeoStrataVent'>
+          <Description> Frequency multiplier for GeoStrataVent Vent distributions </Description>
+          <DisplayName>GeoStrataVent Vent Freq.</DisplayName>
+        </OptionNumeric>
+        <OptionNumeric name='gstaVtsVentSize' default='1'  min='0' max='5' displayState=':= if(?enableGeoStrataVent, if(?advOptions, "shown", "hidden"), "hidden")' displayGroup='groupGeoStrataVent'>
+          <Description> Size multiplier for GeoStrataVent Vent distributions </Description>
+          <DisplayName>GeoStrataVent Vent Size</DisplayName>
+        </OptionNumeric>
+      </ConfigSection>
+      <!-- Vent Configuration UI Complete -->
+
+    </ConfigSection>
+    <!-- Setup Screen Complete -->
+
+    <IfCondition condition=':= ?enableGeoStrataVent'>
+
+
+
+
+      <!-- Overworld Setup Beginning -->
+
+      <IfCondition condition=':= ?COGActive'>
+
+        <!-- Starting Original "Overworld" Block Removal -->
+
+
+
+
+        <IfCondition condition=':= ?cleanUpGeoStrataVent'>
+          <IfCondition condition=':= ?blockExists("minecraft:stone")'>
+            <Substitute name='gstaVtsOverworldBlockSubstitute0' block='minecraft:stone'>
+              <Description>
+                Replace vanilla-generated ore clusters.
+              </Description>
+              <Comment>
+                The global option  deferredPopulationRange must be
+                large enough to catch all ore  clusters (>= 32).
+              </Comment>
+              <Replaces block='GeoStrata:geostrata_block_vent' weight='1.0' />
+              <Replaces block='GeoStrata:geostrata_block_vent:1' weight='1.0' />
+              <Replaces block='GeoStrata:geostrata_block_vent:2' weight='1.0' />
+              <Replaces block='GeoStrata:geostrata_block_vent:3' weight='1.0' />
+              <Replaces block='GeoStrata:geostrata_block_vent:4' weight='1.0' />
+              <Replaces block='GeoStrata:geostrata_block_vent:5' weight='1.0' />
+            </Substitute>
+          </IfCondition>
+        </IfCondition>
+
+        <!-- Original "Overworld" Block Removal Complete -->
+
+        <!-- Adding blocks -->
+
+        <!-- Begin Vent Generation -->
+
+        <!-- Starting Substitution Preset for Vent. -->
+        <ConfigSection>
+          <IfCondition condition=':= gstaVtsVentDist = "Substitution"'>
+            <Substitute name='gstaVtsVentSubstitute' >
+              <Description>
+                This is a global replacement of  one block with
+                another.  Height  clamping is needed to keep the
+                substitution from being  universal.
+              </Description>
+              <OreBlock block='GeoStrata:geostrata_block_vent' weight='0.166666666667' />
+              <OreBlock block='GeoStrata:geostrata_block_vent:1' weight='0.166666666667' />
+              <OreBlock block='GeoStrata:geostrata_block_vent:2' weight='0.166666666667' />
+              <OreBlock block='GeoStrata:geostrata_block_vent:3' weight='0.166666666667' />
+              <OreBlock block='GeoStrata:geostrata_block_vent:4' weight='0.166666666667' />
+              <OreBlock block='GeoStrata:geostrata_block_vent:5' weight='0.166666666667' />
+              <ReplacesOre block='stone' weight='1.0' />
+              <Biome name='.*'  />
+            </Substitute>
+          </IfCondition>
+        </ConfigSection>
+        <!-- Substitution Preset for Vent is complete. -->
+
+        <!-- End Vent Generation -->
+
+        <!-- Finished adding blocks -->
+
+      </IfCondition>
+      <!-- Overworld Setup Complete -->
+
+    </IfCondition>
+
+  </ConfigSection>
+  <!-- Configuration for Custom Ore Generation Complete! -->
+
+</IfModInstalled>
+<!-- The "GeoStrataVent" mod is now configured. -->
+
+
+
+
+
+<!-- =================================================================
+     This file was made using the Sprocket Advanced Configuration
+     Generator.  If you wish to make your own configurations for a mod
+     not currently supported by Custom Ore Generation, and you don't
+     want the hassle of writing XML, you can find the generator script
+     at its GitHub page: http://https://github.com/reteo/Sprocket
+     ================================================================= -->
