@@ -44,7 +44,6 @@ var slabMag = "magnanimoustools:MagSlabSingle";
 var slabAncentT1 = "dendrology:sslab0:*";
 var slabAncentT2 = "dendrology:sslab1:*";
 var witchwoodslab = "witchery:witchwoodslab:*";
-var slabGreatWood = "Thaumcraft:blockCosmeticSlabWood:0";
 var oilOfVitriol = "witchery:ingredient:30";
 
 var pressChase = {
@@ -69,11 +68,6 @@ var pressChase = {
 		// 	[oilOfVitriol, witchwoodslab, null],
 		// 	[witchwoodslab, plateCopper, witchwoodslab],
 		// 	[null, witchwoodslab, null]
-		// ],
-		// [
-		// 	[oilOfVitriol, slabGreatWood, null],
-		// 	[slabGreatWood, plateCopper, slabGreatWood],
-		// 	[null, slabGreatWood, null]
 		// ]
 	]
 };

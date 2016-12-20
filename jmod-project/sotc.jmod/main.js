@@ -31,7 +31,6 @@ RotaryCraft.patchRotarycraftSteelTools(true);
 dependency("RotaryCraft", "RotaryCraft");
 dependency("ElectriCraft", "ElectriCraft");
 dependency("Railcraft", "Railcraft");
-dependency("Thaumcraft", "Thaumcraft");
 dependency("ImmersiveEngineering", "ImmersiveEngineering");
 
 
@@ -65,6 +64,10 @@ loadjs("oreDict/witchery.js");
 loadjs("removed/betterbuilderswands.js");
 loadjs("removed/BuildCraft.js");
 loadjs("removed/DCsAppleMilk.js");
+loadjs("removed/plantmegapack.js");
+
+loadjs("removed/forestrybackpacks.js");
+
 loadjs("removed/ImmersiveEngineering.js");
 loadjs("removed/Railcraft.js");
 loadjs("removed/RotaryCraft.js");
@@ -86,15 +89,18 @@ loadjs("tweaks/AgriCraft.js");
 loadjs("tweaks/AMTAddonJP.js");
 // loadjs("tweaks/appliedenergistics2.js");
 
-loadjs("tweaks/battlegear2.js");
+// loadjs("tweaks/battlegear2.js");
 loadjs("tweaks/betterbuilderswands.js");
 
 loadjs("tweaks/BiblioCraft.js");
+loadjs("tweaks/Botania.js");
 loadjs("tweaks/BuildCraft.js");
-loadjs("tweaks/catwalks.js");
+// loadjs("tweaks/catwalks.js");
 loadjs("tweaks/chisel.js");
 
 loadjs("tweaks/DCsAppleMilk.js");
+loadjs("tweaks/DCsAppleMilk-foods.js");
+
 loadjs("tweaks/ExtraTrees.js");
 loadjs("tweaks/ExtraUtilities.js");
 loadjs("tweaks/Forestry.js");
@@ -115,12 +121,11 @@ loadjs("tweaks/plantmegapack.js");
 loadjs("tweaks/OpenBlocks.js");
 loadjs("tweaks/Railcraft.js");
 loadjs("tweaks/SimilsaxTranstructors.js");
-loadjs("tweaks/Thaumcraft.js");
 loadjs("tweaks/TwilightForest.js");
 
 loadjs("tweaks/tis3d.js");
 loadjs("tweaks/witchery.js");
-loadjs("tweaks/yegamolchattels.js");
+// loadjs("tweaks/yegamolchattels.js");
 
 
 

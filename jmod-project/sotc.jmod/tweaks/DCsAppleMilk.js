@@ -137,11 +137,16 @@ var onyxLamp = {
 updateShappedRecipe(onyxLamp);
 
 
-var washedRice = {
-  name: "DCsAppleMilk:defeatedcrow.mincedFoods:3",
-  shapelessRecipes: [
-    ["toolGrater", "itemRice", "itemRice", "itemRice"]
+var slotPanel = {
+  name: "DCsAppleMilk:defeatedcrow.slotPanel",
+  num: 4,
+  recipes: [
+    [
+      ["blockChalcedony", null, "blockChalcedony"],
+      [null, "ingotTin", null],
+      ["blockChalcedony", null, "blockChalcedony"]
+    ]
   ]
 };
 
-additionalRecipe(washedRice);
+updateShappedRecipe(slotPanel);

@@ -6,17 +6,17 @@ var stickWood = "stickWood";
 var enderPearl = "minecraft:ender_pearl";
 var motiveDust = "ChromatiCraft:chromaticraft_item_crafting:26";
 var gemDiamond = "gemDiamond";
-var wandRod = "Thaumcraft:WandRod:0";
-var primalCharm = "Thaumcraft:ItemResource:15";
+var magnanimousStick = "magnanimoustools:MagStick";
 // basic
 
+/*
 var transtructorBasic = {
   name: "SimilsaxTranstructors:similsaxTranstructorBasic",
   recipes: [
     [
       [stickIron, null, stickIron],
       [motiveDust, enderPearl, motiveDust],
-      [null, wandRod, null]
+      [null, stickWood, null]
     ]
   ]
 };
@@ -31,9 +31,11 @@ var transtructorAdvanced = {
     [
       [stickIron, null, stickIron],
       [enderPearl, primalCharm, enderPearl],
-      [null, wandRod, null]
+      [null, magnanimousStick, null]
     ]
   ]
 };
 
 updateShappedRecipe(transtructorAdvanced);
+
+*/

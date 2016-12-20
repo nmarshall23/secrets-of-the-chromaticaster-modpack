@@ -3,37 +3,37 @@ loadjs("functions.js");
 log('Loaded betterbuilderswands Tweaks');
 
 
-var enerDust = "ChromatiCraft:chromaticraft_item_crafting:28";
+var enderDust = "ChromatiCraft:chromaticraft_item_crafting:28";
 var motiveDust = "ChromatiCraft:chromaticraft_item_crafting:26";
-var head = "gemAmber"; //"chisel:voidstone";
+var quartzMana = "quartzMana";
+var unstableCube = "Botania:unstableBlock:*";
 
 var a = "witchery:ingredient:69";
 var koboldDust = "witchery:ingredient:148";
 var shaft = "stickWood";
-var silverWoodRod = "Thaumcraft:WandRod:2";
 
-var ironWand = {
+var basicWand = {
   name: "betterbuilderswands:wandIron",
   recipes: [
     [
-      [null, enerDust, head],
-      [null, a, motiveDust],
+      [null, motiveDust, quartzMana],
+      [null, a, "dustStabilizedMagic"],
       [shaft, null, null]
     ]
   ]
 };
 
-updateShappedRecipe(ironWand);
+updateShappedRecipe(basicWand);
 
-var diamondWand = {
+var lesserWand = {
   name: "betterbuilderswands:wandDiamond",
   recipes: [
     [
-      [null, enerDust, head],
-      [null, koboldDust, motiveDust],
-      [silverWoodRod, null, null]
+      [null, motiveDust, unstableCube],
+      [null, koboldDust, "dustStabilizedMagic"],
+      [basicWand.name, null, null]
     ]
   ]
 };
 
-updateShappedRecipe(diamondWand);
+updateShappedRecipe(lesserWand);

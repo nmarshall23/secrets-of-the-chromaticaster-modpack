@@ -44,18 +44,18 @@ updateShappedRecipe(wateringCan);
 
 var cyrstalStone = "ChromatiCraft:chromaticraft_block_pylonstruct";
 var chalkOtherWhere = "witchery:chalkotherwhere";
-var primalCharm = "Thaumcraft:ItemResource:15";
+var blazeBlock = "Botania:blazeBlock";
 
 var portalDeepDark = {
-  name: "ExtraUtilities:dark_portal",
-  recipes: [
-    [
-      [cyrstalStone, cyrstalStone, cyrstalStone],
-      [chalkOtherWhere, primalCharm, chalkOtherWhere],
-      [cyrstalStone, cyrstalStone, cyrstalStone]
-    ]
-  ]
-};
+   name: "ExtraUtilities:dark_portal",
+   recipes: [
+     [
+       [cyrstalStone, cyrstalStone, cyrstalStone],
+       [chalkOtherWhere, blazeBlock, chalkOtherWhere],
+       [cyrstalStone, cyrstalStone, cyrstalStone]
+     ]
+   ]
+ };
 
 updateShappedRecipe(portalDeepDark);
 

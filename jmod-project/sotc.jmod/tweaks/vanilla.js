@@ -95,8 +95,8 @@ updateShappedRecipe(saddle);
 
 var gravel = "gravel"; // "minecraft:gravel";
 
-// flint from 3 gravel
-addShapelessRecipe("minecraft:flint", [
+// 2 flint from 3 gravel
+addShapelessRecipe("minecraft:flint@2", [
   gravel,
   gravel,
   gravel

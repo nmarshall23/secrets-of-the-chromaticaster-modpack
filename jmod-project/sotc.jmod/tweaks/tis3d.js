@@ -56,7 +56,7 @@ updateShappedRecipe(controller);
 // Alt Recipes for the modules using Iron Plates
 
 var redstone = "minecraft:redstone";
-var plateIron = "Railcraft:part.plate";
+var plateIron = "plateIron";
 
 var paneGlass = "paneGlassColorless";
 var ingotLead = "ingotLead";

@@ -16,8 +16,8 @@ addCraftingItem(simpleStew);
 var meatyStew = {
   name: "food_stew_meaty",
   foodStewData: {
-    hunger: 5,
-    saturation: 1.4,
+    hunger: 6,
+    saturation: 1.0,
     wolffood: false,
     alwaysEdible: false
   }
@@ -52,29 +52,12 @@ var mincedMeatVegys = {
   shapelessRecipes: [
     [
       "toolGrater",
-      "cropCarrot",
-      "cropPotato",
-      "cropCarrot",
-      "cropPotato",
-      "cropGarlic",
-      "listAllmeatraw"
-    ],
-    [
-      "toolGrater",
-      "cropCarrot",
-      "cropPotato",
+      "vegetableZesty",
+      "vegetableZesty",
       "cropCarrot",
       "cropPotato",
       "cropOnion",
-      "listAllmeatraw"
-    ],
-    [
-      "toolGrater",
-      "vegetableZesty",
-      "vegetableZesty",
-      "vegetableZesty",
-      "cropPotato",
-      "cropCarrot",
+      "cropGarlic",
       "listAllmeatraw"
     ]
   ]
@@ -170,7 +153,7 @@ var foodWheat = "minecraft:wheat";
 var foodRCFlour = {
   name: "RotaryCraft:rotarycraft_item_powders:9",
   shapelessRecipes: [
-    [ "toolGrater", foodWheat, foodWheat, foodWheat]
+    ["toolGrater", foodWheat, foodWheat, foodWheat]
   ]
 };
 

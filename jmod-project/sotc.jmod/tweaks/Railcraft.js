@@ -3,8 +3,13 @@ loadjs("functions.js");
 
 // Materials
 var plateAluminum = "plateAluminum";
+var plateTin = "plateTin";
+
 var plateConstantan = "plateConstantan";
 var plateElectrum = "plateElectrum";
+var plateIron = "plateIron";
+var plateSteel = "plateSteel";
+
 var craftingTable = "minecraft:crafting_table";
 var redstoneDust = "dustRedstone";
 var piston = "minecraft:piston";
@@ -14,7 +19,10 @@ var gearIron = "gearIron";
 var gearSteel = "gearSteel";
 var gearBronze = "gearBronze";
 
+var barsIron = "minecraft:iron_bars";
+var lever = "minecraft:lever";
 var piston = "minecraft:piston";
+var paneGlass = "paneGlass";
 
 var ingotGold = "ingotGold";
 var ingotElectrum = "ingotElectrum";
@@ -28,14 +36,14 @@ var nuggetCopper = "nuggetCopper";
 var fluxcore = "fluxcore";
 
 var blockMagnetite = "sotc.jmod:blockMagnetite";
-
+var ironMachComp = "ImmersiveEngineering:material:11";
 
 var rollingMachine = {
   name: "Railcraft:machine.alpha:8",
   recipes: [
     [
       [plateAluminum, craftingTable, plateAluminum],
-      [piston, redstoneDust, piston],
+      [piston, ironMachComp, piston],
       [plateAluminum, gearCopper, plateAluminum]
     ]
   ]
@@ -82,7 +90,7 @@ var hobbyistSteamEngine = {
   name: "Railcraft:machine.beta:7",
   recipes: [
     [
-      [plateAluminum, plateAluminum, plateAluminum],
+      [plateTin, plateTin, plateTin],
       [null, fluxcore, null],
       [gearBronze, piston, gearBronze]
     ]
@@ -147,3 +155,99 @@ var fluxTransformer = {
 };
 
 updateShappedRecipe(fluxTransformer);
+
+
+
+// Tanks
+
+var tankWallIron = {
+  name: "Railcraft:machine.beta",
+  num: 8,
+  recipes: [
+    [
+      [plateIron, plateIron, null],
+      [plateIron, plateIron, null],
+      [null, null, null]
+    ]
+  ]
+};
+
+updateShappedRecipe(tankWallIron);
+
+
+var tankValveIron = {
+  name: "Railcraft:machine.beta:2",
+  num: 8,
+  recipes: [
+    [
+      [plateIron, barsIron, plateIron],
+      [barsIron, lever, barsIron],
+      [plateIron, barsIron, plateIron]
+    ]
+  ]
+};
+
+updateShappedRecipe(tankValveIron);
+
+
+var tankGaugeIron = {
+  name: "Railcraft:machine.beta:1",
+  num: 8,
+  recipes: [
+    [
+      [paneGlass, plateIron, paneGlass],
+      [plateIron, paneGlass, plateIron],
+      [paneGlass, plateIron, paneGlass]
+    ]
+  ]
+};
+
+updateShappedRecipe(tankGaugeIron);
+
+
+// Steel Tanks
+
+var tankWallSteel = {
+  name: "Railcraft:machine.beta:13",
+  num: 8,
+  recipes: [
+    [
+      [plateSteel, plateSteel, null],
+      [plateSteel, plateSteel, null],
+      [null, null, null]
+    ]
+  ]
+};
+
+updateShappedRecipe(tankWallSteel);
+
+
+var tankValveSteel = {
+  name: "Railcraft:machine.beta:15",
+  num: 8,
+  recipes: [
+    [
+      [plateSteel, barsIron, plateSteel],
+      [barsIron, lever, barsIron],
+      [plateSteel, barsIron, plateSteel]
+    ]
+  ]
+};
+
+updateShappedRecipe(tankValveSteel);
+
+
+var tankGaugeSteel = {
+  name: "Railcraft:machine.beta:14",
+  num: 8,
+  recipes: [
+    [
+      [paneGlass, plateSteel, paneGlass],
+      [plateSteel, paneGlass, plateSteel],
+      [paneGlass, plateSteel, paneGlass]
+    ]
+  ]
+};
+
+updateShappedRecipe(tankGaugeSteel);
+

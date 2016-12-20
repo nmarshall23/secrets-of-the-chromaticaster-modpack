@@ -20,3 +20,6 @@ var lumberMill = {
 };
 
 updateShappedRecipe(lumberMill);
+
+
+hideFromNEI("Genetics:serumArray");

@@ -59,9 +59,9 @@ var blastBrick = {
 	num: 2,
 	recipes: [
 		[
-			[abyssalBlock, brick, abyssalBlock],
+			[null, brick, null],
 			[brick, pasteBryntenere, brick],
-			[abyssalBlock, brick, abyssalBlock]
+			[null, brick, null]
 		]
 	]
 };
@@ -76,9 +76,9 @@ var hempFabric = {
 	name: "ImmersiveEngineering:material:4",
 	recipes: [
 		[
-			[hempFiber, hempFiber, hempFiber],
 			[hempFiber, itemCloth, hempFiber],
-			[hempFiber, hempFiber, hempFiber]
+			[itemCloth, itemCloth, itemCloth],
+			[hempFiber, itemCloth, hempFiber]
 		]
 	]
 };
@@ -111,7 +111,7 @@ var plateTin = "plateTin";
 var prism = "tis3d:prism";
 var jarOderOfPurity = "witchery:ingredient:36";
 var natureFiber = "ChromatiCraft:chromaticraft_item_crafting:31";
-var primalCharm = "Thaumcraft:ItemResource:15";
+
 
 var baselantern = {
 	name: "ImmersiveEngineering:metalDecoration:2",
@@ -128,15 +128,33 @@ var baselantern = {
 updateShappedRecipe(baselantern);
 
 
-var poweredlantern = {
-	name: "ImmersiveEngineering:metalDevice2:3",
-	recipes: [
-		[
-			[natureFiber, prism, natureFiber],
-			[jarOderOfPurity, baselantern.name, jarOderOfPurity],
-			[natureFiber, primalCharm, natureFiber]
-		]
+// var poweredlantern = {
+// 	name: "ImmersiveEngineering:metalDevice2:3",
+// 	recipes: [
+// 		[
+// 			[natureFiber, prism, natureFiber],
+// 			[jarOderOfPurity, baselantern.name, jarOderOfPurity],
+// 			[natureFiber, jarOderOfPurity, natureFiber]
+// 		]
+// 	]
+// };
+//
+// updateShappedRecipe(poweredlantern);
+
+var ingotCopper = "ingotCopper";
+var stickCarbon = "stickCarbon";
+var hardenedClay = "hardenedClay";
+
+var wireConnectLV = {
+  name: "ImmersiveEngineering:metalDevice:0",
+  num: 8,
+  recipes: [
+	[
+	 [hardenedClay, ingotCopper, hardenedClay],
+	 [null, 	stickCarbon, null],
+	 [hardenedClay, ingotCopper, hardenedClay]
 	]
+  ]
 };
 
-updateShappedRecipe(poweredlantern);
+updateShappedRecipe(wireConnectLV);

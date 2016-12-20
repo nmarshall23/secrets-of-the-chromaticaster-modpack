@@ -21,6 +21,8 @@ loadjs("functions.js");
 //
 // updateShappedRecipe(xpdrain);
 
+
+
 // XP Shower
 
 var xpShower = "OpenBlocks:xpshower";
@@ -49,19 +51,21 @@ var motiveDust = "ChromatiCraft:chromaticraft_item_crafting:26";
 var voidDust = "ChromatiCraft:chromaticraft_item_crafting:30";
 var bucketEnder = "ChromatiCraft:chromaticraft_item_bucket:1";
 var enderDew = "witchery:ingredient:67";
+var wiffOfMagic = "witchery:ingredient:34";
+
 
 var elevator = {
   name: "OpenBlocks:elevator",
   recipes: [
     [
       [woolWhite, voidDust, woolWhite],
-      [motiveDust, enderDew, motiveDust],
-      [woolWhite, fixationDust, woolWhite]
+      ["dustStabilizedMagic", enderDew, "dustStabilizedMagic"],
+      [woolWhite, wiffOfMagic, woolWhite]
     ],
     [
       [woolWhite, voidDust, woolWhite],
-      [motiveDust, bucketEnder, motiveDust],
-      [woolWhite, fixationDust, woolWhite]
+      ["dustStabilizedMagic", bucketEnder, "dustStabilizedMagic"],
+      [woolWhite, wiffOfMagic, woolWhite]
     ]
   ]
 };

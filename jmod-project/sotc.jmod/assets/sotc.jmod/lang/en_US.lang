@@ -102,6 +102,7 @@ info.sotc.jmod.armorvalue=Armorvalue:
 tile.sotc.jmod.blockMagnetite.name=Magnetite Block
 tile.sotc.jmod.blockPlatinum.name=Platinum Block
 
+info.sotc.jmod.tooltips.banned.item=Please distroy this Item. Not doing so may cause save corruptions, when it is removed in future versions of this ModPack.
 
 info.sotc.jmod.tooltips.removed.item=This item was removed by the ModPack
 info.sotc.jmod.tooltips.removed.generator=This Generator was removed by the ModPack
@@ -113,9 +114,16 @@ item.sotc.jmod.itemWoodenBucket.empty.name=Wooden Bucket
 item.sotc.jmod.itemWoodenBucket.water.name=Wooden Water Bucket
 item.sotc.jmod.itemWoodenBucket.milk.name=Wooden Milk Bucket
 
+item.sotc.jmod.item_powder_magic.name=Stabilized Magic Powder
+
 item.betterbuilderswands:wandAdvanced.name=Builder's Basic Wand
 item.betterbuilderswands:wandUnrestricted.name=Builder's Lesser Wand
 item.betterbuilderswands:wandUnbreakable.name=Enhanced Builder's Wand
+
+enchantment.treecapitating=Lumber Axe 
+
+
+
 
 info.sotc.jmod.tntsafe=TNT can not break this
 

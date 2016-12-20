@@ -1,5 +1,11 @@
 // Removal List
 
+var lootToRemove = [
+  ["Botania:manaResource", "Botania", ["dungeonChest"]],
+  ["Botania:manaBottle", "Botania", ["dungeonChest"]],
+  ["Botania:lexicon", "Botania", ["dungeonChest"]]
+];
+
 var removals = [
   ["ingot", "minecraft:iron_ingot", null],
   ["pickaxe", "minecraft:iron_pickaxe", null],
@@ -51,7 +57,7 @@ var removals = [
   ["boring", "DCsAppleMilk:defeatedcrow.leafTea:1", null], // Mint Leaf
   ["boring", "DCsAppleMilk:defeatedcrow.saplingTea", null],
   ["boring", "dendrology:parcel", null],
-  ["ingot", "Thaumcraft:ItemResource:2", null],
+  ["ingot", ":ItemResource:2", null],
   ["ingot", "RotaryCraft:rotarycraft_item_shaftcraft:1", null],
   ["iron scraps", "RotaryCraft:rotarycraft_item_shaftcraft:10", null],
   ["HSLA scraps", "RotaryCraft:rotarycraft_item_shaftcraft:9", null],
@@ -62,13 +68,7 @@ var removals = [
   ["boring", "minecraft:book", ["strongholdLibrary"]],
   ["boring", "minecraft:compass", ["strongholdLibrary"]],
   ["op", "minecraft:diamond", ["villageBlacksmith"]],
-  ["spectreIron", "RandomThings:ingredient:4", ["villageBlacksmith"]],
-  ["boring", "Thaumcraft:ItemThaumonomicon", null],
-  ["HarvestLevel", "Thaumcraft:ItemSwordThaumium", null],
-  ["HarvestLevel", "Thaumcraft:ItemPickThaumium", null],
-  ["HarvestLevel", "Thaumcraft:ItemAxeThaumium", null],
-  ["HarvestLevel", "Thaumcraft:ItemHoeThaumium", null],
-  ["boring", "WitchingGadgets:item.WG_Material:8", null],
+
 
   ["boring", "minecraft:saddle", null],
   ["boring", "minecraft:wheat", null],
@@ -79,10 +79,7 @@ var removals = [
 
   ["boring", "minecraft:apple", ["strongholdCrossing"]],
 
-  ["Mundane Belt", "Thaumcraft:ItemBaubleBlanks:2", null],
-  ["Mundane Ring", "Thaumcraft:ItemBaubleBlanks:1", null],
-  ["Mundane Amulet", "Thaumcraft:ItemBaubleBlanks:0", null],
-  ["Amber", "Thaumcraft:ItemResource:6", null],
+
 
   ["Floppy Disk", "OpenComputers:item:4", null],
 

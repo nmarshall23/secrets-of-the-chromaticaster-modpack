@@ -47,9 +47,7 @@ updateShappedRecipe(ironwoodRaw);
 var magicMapFocus = {
   name: "TwilightForest:item.magicMapFocus",
   shapelessRecipes: [
-    [ravenFeather, torchberries, natureFiber, fixationDust,
-      energeticEssence
-    ]
+    [ravenFeather, torchberries, natureFiber, "dustStabilizedMagic"]
   ]
 };
 

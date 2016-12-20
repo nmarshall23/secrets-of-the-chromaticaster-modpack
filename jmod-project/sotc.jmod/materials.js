@@ -18,25 +18,25 @@ var toolmat = [
 
   ["BRONZE", HarvestLevel.Bronze, 480, 6.0, 2.0, 16, "ingotBronze", null],
 
-  ["ELECTRUM", HarvestLevel.Iron, 210, 14.0, 3.5, 30, "ingotElectrum", null],
+  ["ELECTRUM", HarvestLevel.Iron, 210, 14.0, 3.0, 30, "ingotElectrum", null],
   ["SILVER", HarvestLevel.Iron, 275, 6.0, 2.1, 25, "ingotSilver", null],
 
   ["NICKEL", HarvestLevel.Iron, 560, 6.75, 2.5, 18, "ingotNickel", null],
   ["IRON", HarvestLevel.Iron, 600, 6.0, 2.25, 14, "ingotIron", null],
-  ["THAUMIUM", HarvestLevel.Iron, 750, 7.0, 3.25, 22, "ingotThaumium",
-    "Thaumcraft"
-  ],
+
+
 
   // ["INVAR", HarvestLevel.Steel, 770, 7.0, 3.0, 18, "ingotInvar", null],
-  ["STEEL", HarvestLevel.Steel, 800, 6.0, 4.0, 11, "ingotSteel", null],
-  ["RAILCRAFT_STEEL", HarvestLevel.Steel, 800, 6.0, 4.0, 11, "ingotSteel",
+  ["STEEL", HarvestLevel.Steel, 800, 6.0, 3.5, 11, "ingotSteel", null],
+  ["RAILCRAFT_STEEL", HarvestLevel.Steel, 800, 6.0, 3.5, 11, "ingotSteel",
     "Railcraft"
   ],
 
-  ["THAUMIUM_ELEMENTAL", HarvestLevel.Diamond, 2061, 10.0, 3.5, 22,
-    "ingotThaumium", "Thaumcraft"
-  ],
-  ["VOID", HarvestLevel.Diamond, 150, 8.0, 5.5, 10, "ingotVoid", "Thaumcraft"],
+  ["MANASTEEL", HarvestLevel.Steel, 200, 7.0, 2.5, 25, "ingotManasteel", "Botania"],
+  ["B_ELEMENTIUM", HarvestLevel.Steel, 500, 7.5, 3.2, 30, "ingotManasteel", "Botania"],
+  ["TERRASTEEL", HarvestLevel.Diamond, 2300, 9.0, 4.0, 28, "ingotManasteel", "Botania"],
+
+
   ["PLATINUM", HarvestLevel.Diamond, 3000, 8.5, 4.0, 20, "ingotPlatinum",
     null
   ],

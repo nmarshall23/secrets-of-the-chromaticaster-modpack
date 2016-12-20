@@ -8,13 +8,14 @@ addCreativeTab(ModId + ".general", ModDN + ": Custom Items", ModId +
 
 
 // Create the bucket.
-addItem("itemWoodenBucket", "ItemWoodenBucket", 8, ModId+ ".general");
+addItem("itemWoodenBucket", "ItemWoodenBucket", 8, ModId + ".general");
 
 // Make the recipe for the bucket.  Uses the Ore Dictionary.
-addShapedRecipe(ModId+ ":itemWoodenBucket", [
-  [null,        "plankTreatedWood",    null ],
-  ["plankTreatedWood", null,           "plankTreatedWood" ],
-  [null,        "plankTreatedWood",    null ]]);
+addShapedRecipe(ModId + ":itemWoodenBucket", [
+  [null, "plankTreatedWood", null],
+  ["plankTreatedWood", null, "plankTreatedWood"],
+  [null, "plankTreatedWood", null]
+]);
 
 
 
@@ -23,7 +24,8 @@ addShapedRecipe(ModId+ ":itemWoodenBucket", [
 var attunedStone = "witchery:ingredient:10";
 var fixationDust = "ChromatiCraft:chromaticraft_item_crafting:27";
 var motiveDust = "ChromatiCraft:chromaticraft_item_crafting:26";
-
+var dustSkyStone = "appliedenergistics2:item.ItemMultiMaterial:45";
+var energeticDust = "ChromatiCraft:chromaticraft_item_crafting:28";
 
 var fascinatingStone = {
   name: "item_stoneFascinating",
@@ -56,12 +58,12 @@ addSmeltingRecipe("Forestry:ingotBronze", ModId + ":item_dust_bronze");
 var brynetinerePaste = {
   name: "item_paste_bryntenere",
   oreDict: "pasteBryntenere",
-  stackSize: 32,
-  num: 3,
+  stackSize: 64,
+  num: 2,
   shapelessRecipe: [
-    "minecraft:water_bucket", "dustSulfur",
-    "witchery:ingredient:18", "witchery:ingredient:18",
-    "sand", "dustRedstone"
+    "minecraft:water_bucket", "sand", "sand",
+    "dustSulfur", "dustSulfur", "dustWood", 
+    "stickCarbon", dustSkyStone, dustSkyStone
   ]
 };
 
@@ -88,6 +90,17 @@ var diamondLattice = {
 };
 
 addCraftingItem(diamondLattice);
+
+
+var powderMagic = {
+  name: "item_powder_magic",
+    oreDict: "dustStabilizedMagic",
+  shapelessRecipe: [
+    "minecraft:paper", "magicBerry", energeticDust, fixationDust, "pestleAndMortar"
+  ]
+};
+
+addCraftingItem(powderMagic);
 
 var steelMechComponent = "ImmersiveEngineering:material:12";
 

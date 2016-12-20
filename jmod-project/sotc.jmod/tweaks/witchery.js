@@ -45,7 +45,7 @@ var lavaBucket = "minecraft:lava_bucket";
 var soulSand = "minecraft:soul_sand";
 var wroughtIronBlock = "GardenStuff:metal_block";
 var wroughtIronIngot = "ingotWroughtiron";
-var vishroom = "Thaumcraft:blockCustomPlant:5";
+
 var quicksilver = "quicksilver";
 var furnace = "minecraft:furnace";
 var brick = "ingotBrick";
@@ -68,7 +68,7 @@ var fumeFunnel = {
   name: "witchery:fumefunnel",
   recipes: [
     [
-      [lavaBucket, vishroom, lavaBucket],
+      [lavaBucket, null, lavaBucket], //XXX Add something
       [wroughtIronIngot, quicksilver, wroughtIronIngot],
       [wroughtIronBlock, soulSand, wroughtIronBlock]
     ]
@@ -81,22 +81,22 @@ updateShappedRecipe(fumeFunnel);
 
 // attunedStone
 var magnanimousGem = "magnanimoustools:MagnanimousGem";
-var shardThaum = "Thaumcraft:ItemShard:*";
+
 var shardCrystal = "shardCrystal";
 var whiffOfMagic = "witchery:ingredient:34";
 
-var attunedStone = {
-  name: "witchery:ingredient:10",
-  recipes: [
-    [
-      [null, whiffOfMagic, null],
-      [shardThaum, magnanimousGem, shardCrystal],
-      [null, lavaBucket, null]
-    ]
-  ]
-};
-
-updateShappedRecipe(attunedStone);
+// var attunedStone = {
+//   name: "witchery:ingredient:10",
+//   recipes: [
+//     [
+//       [null, whiffOfMagic, null],
+//       [shardThaum, magnanimousGem, shardCrystal],
+//       [null, lavaBucket, null]
+//     ]
+//   ]
+// };
+//
+// updateShappedRecipe(attunedStone);
 
 
 // Made on the Clay Pot <witchery:stew> <witchery:stewraw>
