@@ -33,18 +33,6 @@
       "Weight": 10,
       "Min Group Count": 4,
       "Max Group Count": 4
-    },
-    {
-      "Entity Class": "com.rwtema.menagerie.entities.Ents.EntityRat",
-      "Weight": 6,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "com.rwtema.menagerie.entities.Ents.EntityOliphant",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
     }
   ],
   "Spawnable Monsters": [
@@ -103,12 +91,6 @@
       "Max Group Count": 4
     },
     {
-      "Entity Class": "thaumcraft.common.entities.monster.EntityPech",
-      "Weight": 10,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
       "Entity Class": "com.rwtema.menagerie.entities.Ents.EntityGhost",
       "Weight": 5,
       "Min Group Count": 4,
@@ -121,16 +103,22 @@
       "Max Group Count": 1
     },
     {
-      "Entity Class": "com.rwtema.menagerie.entities.Ents.EntityInfestedVillager",
-      "Weight": 10,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
       "Entity Class": "com.rwtema.menagerie.entities.Ents.EntityLivingArmor",
       "Weight": 5,
       "Min Group Count": 3,
       "Max Group Count": 5
+    },
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntityEye",
+      "Weight": 50,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntityEnderEye",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 1
     }
   ],
   "Spawnable Water Creatures": [

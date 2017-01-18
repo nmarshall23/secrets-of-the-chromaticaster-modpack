@@ -1,3 +1,5 @@
+(function() {
+
 loadjs("functions.js");
 
 var ModDN = "Secrets of the Chromaticaster";
@@ -62,7 +64,7 @@ var brynetinerePaste = {
   num: 2,
   shapelessRecipe: [
     "minecraft:water_bucket", "sand", "sand",
-    "dustSulfur", "dustSulfur", "dustWood", 
+    "dustSulfur", "dustSulfur", "dustWood",
     "stickCarbon", dustSkyStone, dustSkyStone
   ]
 };
@@ -159,3 +161,6 @@ var fluxcore = {
 };
 
 addCraftingItem(fluxcore);
+
+
+})();

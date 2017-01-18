@@ -11,7 +11,7 @@
   },
   "activate_player_render_hook": {
     "version": 0,
-    "value": "true",
+    "value": "false",
     "comment": [
       "Purpose: add hook to player rendering code",
       "Modified class: net.minecraft.client.renderer.entity.RenderPlayer",

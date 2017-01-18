@@ -1,4 +1,15 @@
-loadjs("harvestLevels.js");
+// loadjs("harvestLevels.js");
+
+(function() {
+
+var HarvestLevel = {
+   Diamond:6,
+   Steel:5,
+   Iron:3,
+   Bronze:2,
+   Flint:1,
+   Wood:0
+};
 
 //Tool Materials
 // Legend: name, mininglevel, durability, efficiency(speed), damage vs entities, enchantability, repairmaterial (must be an Ore Dictionary entry)
@@ -92,3 +103,5 @@ addArmorMaterial("NICKEL", 14, 2, 6, 5, 2, 15, "ingotNickel");
 addArmorMaterial("SILVER", 7, 2, 5, 3, 1, 20, "ingotSilver");
 addArmorMaterial("PLATINUM", 28, 3, 8, 6, 3, 20, "ingotPlatinum");
 addArmorMaterial("ELECTRUM", 8, 2, 5, 4, 1, 28, "ingotElectrum");
+
+})();

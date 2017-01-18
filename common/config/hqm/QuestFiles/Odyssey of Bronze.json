@@ -1,0 +1,1606 @@
+{
+  "name": "Odyssey of Bronze",
+  "description": "You have passed the first test, making bronze. Greater challenges are ahead. You will need to start building machines generating Redsone Flux power.  ",
+  "quests": [
+    {
+      "name": "Bronze Pickaxe",
+      "description": "Bronze is far more durable then Flint and Stone. Tools made from bronze have the same enchantability as Copper Tools, but are faster and deal more damage.",
+      "x": 130,
+      "y": 27,
+      "icon": {
+        "id": "sotc.jmod:toolBronzePickaxe"
+      },
+      "prerequisites": [
+        "{Prelude}[Smelted Bronze]"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:toolBronzePickaxe"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Iron Ore",
+      "description": "You will find Iron Ore around height 32, ±32 meters. Large mother lodes with 2-4 long narrow horizontal veins.",
+      "x": 129,
+      "y": 61,
+      "icon": {
+        "id": "minecraft:iron_ore"
+      },
+      "prerequisites": [
+        "Bronze Pickaxe"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:iron_ore"
+              },
+              "required": 10
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:iron_pickaxe"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "sotc.jmod:toolBronzeAxe",
+          "nbt": "{ench:[0:{lvl:1s,id:187s}],display:{Name:\"Bronze Axe of Tree Felling\"}}"
+        },
+        {
+          "id": "sotc.jmod:toolBronzePickaxe",
+          "nbt": "{ench:[0:{lvl:2s,id:34s},1:{lvl:1s,id:35s}],display:{Name:\"Lucky Bronze Pickaxe\"},ToolUtilities:PLACE:1b}"
+        }
+      ]
+    },
+    {
+      "name": "Redstone Ore",
+      "description": "You will find RedStone Ore in Isolated vertical veins, starting at height 64-70 and running straight downward for about 35 blocks. Fairly common, 3x more common in Deserts Biomes.",
+      "x": 103,
+      "y": 61,
+      "icon": {
+        "id": "minecraft:redstone_ore"
+      },
+      "prerequisites": [
+        "Bronze Pickaxe"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:redstone"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Gold Ore",
+      "description": "You will find Gold Ore around height 16, ±16 meters. Small mother lodes with 2-4 long narrow horizontal veins. Rarer and shorter than iron veins.",
+      "x": 98,
+      "y": 27,
+      "icon": {
+        "id": "minecraft:gold_ore"
+      },
+      "prerequisites": [
+        "Bronze Pickaxe"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:gold_ore"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Magnetite Ore",
+      "description": "Lodestone are found by mining Magnetite Ore. Lodestones have a weak magnetic field. Then are used to craft Redstone Flux generators and other machines.",
+      "x": 154,
+      "y": 61,
+      "icon": {
+        "id": "ReactorCraft:reactorcraft_block_ore",
+        "damage": 8
+      },
+      "prerequisites": [
+        "Bronze Pickaxe"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ReactorCraft:reactorcraft_item_raw",
+                "damage": 6
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Bronze Hammer",
+      "description": "This Bronze hammer will serve you well. It is far stronger then Stone.",
+      "x": 43,
+      "y": 12,
+      "icon": {
+        "id": "hammerz:BronzeHammer"
+      },
+      "prerequisites": [
+        "{Prelude}[Smelted Bronze]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "hammerz:BronzeHammer"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "hammerz:BronzeHammer",
+          "nbt": "{ench:[0:{lvl:2s,id:35s},1:{lvl:1s,id:32s}],display:{Name:\"Lucky Bronze Hammer\"}}"
+        },
+        {
+          "id": "hammerz:BronzeHammer",
+          "nbt": "{ench:[0:{lvl:2s,id:34s}],display:{Name:\"Hardened Bronze Hammer\"}}"
+        }
+      ]
+    },
+    {
+      "name": "Bronze Axe",
+      "x": 26,
+      "y": 35,
+      "icon": {
+        "id": "sotc.jmod:toolBronzeAxe"
+      },
+      "prerequisites": [
+        "{Prelude}[Smelted Bronze]"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:toolBronzeAxe"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:toolBronzeAxe"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:bedrock",
+                "damage": 5
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "minecraft:bedrock",
+                "damage": 3
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "sotc.jmod:toolBronzeAxe",
+          "nbt": "{ench:[0:{lvl:1s,id:187s}]}"
+        }
+      ]
+    },
+    {
+      "name": "Carpenter",
+      "description": "The Carpenter is a machine that combines items with a liquid to craft it. For example seed oil and logs makes Impregnated Sticks. Those are used in some recipes related to bees. Another is water and Saw Dust makes paper.",
+      "x": 167,
+      "y": 134,
+      "icon": {
+        "id": "Forestry:factory",
+        "damage": 1
+      },
+      "prerequisites": [
+        "My Steamy Hobby"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Forestry:factory",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Squeezer",
+      "description": "The Squeezer is a machine that is tasked with squeezing liquids from items. For example, you can squeeze Honey Drops into Liquid Honey.",
+      "x": 230,
+      "y": 124,
+      "icon": {
+        "id": "Forestry:factory",
+        "damage": 5
+      },
+      "prerequisites": [
+        "Carpenter"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Forestry:factory",
+                "damage": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lumber Mill",
+      "description": "The Lumbermill is a machines that when given water, and Logs will cut those into 6 planks. Sometimes Saw Dust will also be created.",
+      "x": 173,
+      "y": 98,
+      "icon": {
+        "id": "ExtraTrees:machine"
+      },
+      "prerequisites": [
+        "My Steamy Hobby"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraTrees:machine"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "My Steamy Hobby",
+      "description": "Converting potential power of Coal into RedStone Flux lets you control exactly how that power Is used.     The Hobbiest Steam Engine burns solid fuels to make RedStone Flux. At It\u0027s top speed it outputs 16 RF/t. ",
+      "x": 130,
+      "y": 105,
+      "icon": {
+        "id": "Railcraft:machine.beta",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Magnetite Ore",
+        "Iron Ore",
+        "Pistons"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:piston"
+              }
+            },
+            {
+              "item": {
+                "id": "ReactorCraft:reactorcraft_item_raw",
+                "damage": 6
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "minecraft:redstone"
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "Railcraft:part.plate",
+                "damage": 2
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "Forestry:ingotBronze"
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "minecraft:stone"
+              },
+              "required": 5
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "RotaryCraft:rotarycraft_item_enginecraft",
+                "damage": 10
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "Forestry:gearBronze"
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "sotc.jmod:item_fluxcore"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:machine.beta",
+                "damage": 7
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Jaw Crusher",
+      "description": "Ores Procced by the Jaw Crusher will give double the output. ",
+      "x": 130,
+      "y": 166,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.advProcessor"
+      },
+      "prerequisites": [
+        "Food Processer"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:stained_hardened_clay",
+                "damage": 14
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "Railcraft:part.plate",
+                "damage": 2
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "Forestry:gearBronze"
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.processor"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:cobblestone"
+              },
+              "required": 3
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.advProcessor"
+              }
+            },
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.jawPlate",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Redstone Engine",
+      "description": "Redstone engines are used to give weak charge to buildcraft autocrafters and wooden pipes. Like the other engines, the redstone engine can be turned on and off using a redstone signal, and requires an active signal in order to activate.",
+      "x": 66,
+      "y": 92,
+      "icon": {
+        "id": "BuildCraft|Core:engineBlock"
+      },
+      "prerequisites": [
+        "Pistons"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "BuildCraft|Core:engineBlock"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "BuildCraft|Core:engineBlock"
+        }
+      ]
+    },
+    {
+      "name": "Piping Item around",
+      "x": 35,
+      "y": 100,
+      "icon": {
+        "id": "BuildCraft|Transport:item.buildcraftPipe.pipeitemswood"
+      },
+      "prerequisites": [
+        "Redstone Engine"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "BuildCraft|Transport:item.buildcraftPipe.pipeitemswood"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsstone"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "BuildCraft|Transport:item.buildcraftPipe.pipeitemsclay"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kinesis Pipes",
+      "x": 31,
+      "y": 134,
+      "icon": {
+        "id": "BuildCraft|Transport:item.buildcraftPipe.pipepowersandstone"
+      },
+      "prerequisites": [
+        "Piping Item around"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "BuildCraft|Transport:item.buildcraftPipe.pipepowerwood"
+              }
+            },
+            {
+              "item": {
+                "id": "BuildCraft|Transport:item.buildcraftPipe.pipepowersandstone"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "BuildCraft|Transport:item.buildcraftPipe.pipepowerstone"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Carpenter\u0027s Blocks",
+      "x": 181,
+      "y": 167,
+      "icon": {
+        "id": "CarpentersBlocks:blockCarpentersBlock"
+      },
+      "prerequisites": [
+        "{Prelude}[Build a Coal Coak Oven]",
+        "Carpenter"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "CarpentersBlocks:blockCarpentersBlock"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "CarpentersBlocks:blockCarpentersBlock",
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "name": "Food Processer",
+      "description": "Food processor replaces the grater. ",
+      "x": 130,
+      "y": 135,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.processor"
+      },
+      "prerequisites": [
+        "My Steamy Hobby"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Forestry:gearBronze"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:glass"
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "Railcraft:part.plate",
+                "damage": 2
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.chalcedony"
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "minecraft:stick"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.chalcedonyKnife"
+              }
+            },
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.processor"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Slot Panel",
+      "description": "Slot Panels are used to fill the empty slots of the jaw crusher, or Food Proccesser. This assists with automating those matchines. ",
+      "x": 155,
+      "y": 160,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.slotPanel"
+      },
+      "prerequisites": [
+        "Food Processer"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.slotPanel"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Bee House",
+      "description": "The Bee House is the “basic” tier of shelter for your bees. It has several limitations, including not accepting any frames and not being able to connect to any kind of pipes or similar. It is also impossible for bees to mutate to new species in it. It will however elongate the lifespan of your bees and increase their pollination speeds quite drastically.",
+      "x": 273,
+      "y": 70,
+      "icon": {
+        "id": "Forestry:apiculture",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Scoop",
+        "Centrifuge"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Forestry:apiculture",
+                "damage": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Forestry:honeyDrop"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Forestry:apiculture",
+          "damage": 2,
+          "amount": 2
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "Forestry:beePrincessGE",
+          "nbt": "{MaxH:20,Health:20,IsAnalyzed:1b,Genome:{Chromosomes:[0:{UID1:\"forestry.speciesMeadows\",UID0:\"forestry.speciesMeadows\",Slot:0b},1:{UID1:\"forestry.speedSlowest\",UID0:\"forestry.speedSlowest\",Slot:1b},2:{UID1:\"forestry.lifespanShorter\",UID0:\"forestry.lifespanShorter\",Slot:2b},3:{UID1:\"forestry.fertilityNormal\",UID0:\"forestry.fertilityNormal\",Slot:3b},4:{UID1:\"forestry.toleranceNone\",UID0:\"forestry.toleranceNone\",Slot:4b},5:{UID1:\"forestry.boolFalse\",UID0:\"forestry.boolFalse\",Slot:5b},6:{UID1:\"forestry.toleranceNone\",UID0:\"forestry.toleranceNone\",Slot:7b},7:{UID1:\"forestry.boolFalse\",UID0:\"forestry.boolFalse\",Slot:8b},8:{UID1:\"forestry.boolFalse\",UID0:\"forestry.boolFalse\",Slot:9b},9:{UID1:\"forestry.flowersVanilla\",UID0:\"forestry.flowersVanilla\",Slot:10b},10:{UID1:\"forestry.floweringSlower\",UID0:\"forestry.floweringSlower\",Slot:11b},11:{UID1:\"forestry.territoryAverage\",UID0:\"forestry.territoryAverage\",Slot:12b},12:{UID1:\"forestry.effectNone\",UID0:\"forestry.effectNone\",Slot:13b}]}}"
+        },
+        {
+          "id": "Forestry:beePrincessGE",
+          "nbt": "{MaxH:30,Health:30,IsAnalyzed:1b,Genome:{Chromosomes:[0:{UID1:\"forestry.speciesModest\",UID0:\"forestry.speciesModest\",Slot:0b},1:{UID1:\"forestry.speedSlower\",UID0:\"forestry.speedSlower\",Slot:1b},2:{UID1:\"forestry.lifespanShort\",UID0:\"forestry.lifespanShort\",Slot:2b},3:{UID1:\"forestry.fertilityNormal\",UID0:\"forestry.fertilityNormal\",Slot:3b},4:{UID1:\"forestry.toleranceBoth1\",UID0:\"forestry.toleranceBoth1\",Slot:4b},5:{UID1:\"forestry.boolTrue\",UID0:\"forestry.boolTrue\",Slot:5b},6:{UID1:\"forestry.toleranceDown1\",UID0:\"forestry.toleranceDown1\",Slot:7b},7:{UID1:\"forestry.boolFalse\",UID0:\"forestry.boolFalse\",Slot:8b},8:{UID1:\"forestry.boolFalse\",UID0:\"forestry.boolFalse\",Slot:9b},9:{UID1:\"forestry.flowersCacti\",UID0:\"forestry.flowersCacti\",Slot:10b},10:{UID1:\"forestry.floweringSlowest\",UID0:\"forestry.floweringSlowest\",Slot:11b},11:{UID1:\"forestry.territoryAverage\",UID0:\"forestry.territoryAverage\",Slot:12b},12:{UID1:\"forestry.effectNone\",UID0:\"forestry.effectNone\",Slot:13b}]}}"
+        },
+        {
+          "id": "Forestry:beePrincessGE",
+          "nbt": "{MaxH:20,Health:20,IsAnalyzed:1b,Genome:{Chromosomes:[0:{UID1:\"extrabees.species.river\",UID0:\"extrabees.species.river\",Slot:0b},1:{UID1:\"forestry.speedSlowest\",UID0:\"forestry.speedSlowest\",Slot:1b},2:{UID1:\"forestry.lifespanShorter\",UID0:\"forestry.lifespanShorter\",Slot:2b},3:{UID1:\"forestry.fertilityHigh\",UID0:\"forestry.fertilityHigh\",Slot:3b},4:{UID1:\"forestry.toleranceNone\",UID0:\"forestry.toleranceNone\",Slot:4b},5:{UID1:\"forestry.boolFalse\",UID0:\"forestry.boolFalse\",Slot:5b},6:{UID1:\"forestry.toleranceBoth1\",UID0:\"forestry.toleranceBoth1\",Slot:7b},7:{UID1:\"forestry.boolTrue\",UID0:\"forestry.boolTrue\",Slot:8b},8:{UID1:\"forestry.boolFalse\",UID0:\"forestry.boolFalse\",Slot:9b},9:{UID1:\"extrabees.flower.water\",UID0:\"extrabees.flower.water\",Slot:10b},10:{UID1:\"forestry.floweringSlow\",UID0:\"forestry.floweringSlow\",Slot:11b},11:{UID1:\"forestry.territoryAverage\",UID0:\"forestry.territoryAverage\",Slot:12b},12:{UID1:\"extrabees.effect.water\",UID0:\"extrabees.effect.water\",Slot:13b}]}}"
+        },
+        {
+          "id": "Forestry:beePrincessGE",
+          "nbt": "{MaxH:40,Health:40,IsAnalyzed:1b,Genome:{Chromosomes:[0:{UID1:\"magicbees.speciesWindy\",UID0:\"magicbees.speciesWindy\",Slot:0b},1:{UID1:\"forestry.speedFaster\",UID0:\"forestry.speedFaster\",Slot:1b},2:{UID1:\"forestry.lifespanNormal\",UID0:\"forestry.lifespanNormal\",Slot:2b},3:{UID1:\"forestry.fertilityNormal\",UID0:\"forestry.fertilityNormal\",Slot:3b},4:{UID1:\"forestry.toleranceBoth2\",UID0:\"forestry.toleranceBoth2\",Slot:4b},5:{UID1:\"forestry.boolFalse\",UID0:\"forestry.boolFalse\",Slot:5b},6:{UID1:\"forestry.toleranceNone\",UID0:\"forestry.toleranceNone\",Slot:7b},7:{UID1:\"forestry.boolFalse\",UID0:\"forestry.boolFalse\",Slot:8b},8:{UID1:\"forestry.boolFalse\",UID0:\"forestry.boolFalse\",Slot:9b},9:{UID1:\"forestry.flowersVanilla\",UID0:\"forestry.flowersVanilla\",Slot:10b},10:{UID1:\"forestry.floweringFaster\",UID0:\"forestry.floweringFaster\",Slot:11b},11:{UID1:\"forestry.territoryAverage\",UID0:\"forestry.territoryAverage\",Slot:12b},12:{UID1:\"forestry.effectNone\",UID0:\"forestry.effectNone\",Slot:13b}]}}"
+        }
+      ]
+    },
+    {
+      "name": "Scoop",
+      "description": "Once you have found a hive in the world, you will require a Scoop to collect any bees that may live within. Any other tool will cause the bees to escape, and you will be left honeyless. ",
+      "x": 228,
+      "y": 93,
+      "icon": {
+        "id": "Forestry:scoop"
+      },
+      "prerequisites": [
+        "Carpenter"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Forestry:scoop"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Forestry:scoop"
+        }
+      ]
+    },
+    {
+      "name": "Centrifuge",
+      "description": "A Centrifuge is a machine that is tasked with the extraction of bee products from their honey combs.",
+      "x": 243,
+      "y": 60,
+      "icon": {
+        "id": "Forestry:factory",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Scoop"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Forestry:factory",
+                "damage": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Forestry:beeCombs"
+              },
+              "required": 2,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grafter",
+      "description": "The grafter will significantly increase your chance at a sapling drop when used on leaves. However it has very low durablity; there must be means of fixing that.",
+      "x": 301,
+      "y": 70,
+      "icon": {
+        "id": "Forestry:grafter"
+      },
+      "prerequisites": [
+        "Bee House"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Forestry:grafter"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Forestry:grafter",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Automatic Crafting Table",
+      "x": 28,
+      "y": 69,
+      "icon": {
+        "id": "BuildCraft|Factory:autoWorkbenchBlock"
+      },
+      "prerequisites": [
+        "Redstone Engine"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "BuildCraft|Factory:autoWorkbenchBlock"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "BuildCraft|Factory:autoWorkbenchBlock"
+        },
+        {
+          "id": "BuildCraft|Core:engineBlock",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Filler Machine",
+      "x": 184,
+      "y": 71,
+      "icon": {
+        "id": "BuildCraft|Builders:fillerBlock"
+      },
+      "prerequisites": [
+        "My Steamy Hobby"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "BuildCraft|Builders:fillerBlock"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "BuildCraft|Core:markerBlock",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "Builder\u0027s Basic Wand",
+      "x": 175,
+      "y": 15,
+      "icon": {
+        "id": "betterbuilderswands:wandIron"
+      },
+      "prerequisites": [
+        "{Forgotten Magic}[Ender Forest]",
+        "{Forgotten Magic}[Witch\u0027s Seeds]",
+        "Bronze Pickaxe"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "betterbuilderswands:wandIron"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Builder\u0027s Lesser Wand",
+      "x": 208,
+      "y": 14,
+      "icon": {
+        "id": "betterbuilderswands:wandDiamond"
+      },
+      "prerequisites": [
+        "Builder\u0027s Basic Wand"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "betterbuilderswands:wandDiamond"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Bridge Builder",
+      "description": "Given a redstone signal the Bridge Builder will place up to 16 blocks in it\u0027s inventory in the world. If the redstone signal is turned off, it will pick up those blocks.",
+      "x": 182,
+      "y": 39,
+      "icon": {
+        "id": "LLadders:tile.lladders.block.bridgebuilder"
+      },
+      "prerequisites": [
+        "Magnetite Ore"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "LLadders:tile.lladders.block.bridgebuilder"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "LLadders:tile.lladders.block.bridgebuilder",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Ladder Dispenser",
+      "description": "Given a redstone signal the Ladder Dispenser will place ether Sturdy Ladders or Rope Ladders. ",
+      "x": 211,
+      "y": 39,
+      "icon": {
+        "id": "LLadders:tile.lladders.block.ladderdispenser"
+      },
+      "prerequisites": [
+        "Bridge Builder"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "LLadders:tile.lladders.block.ladderdispenser"
+              }
+            },
+            {
+              "item": {
+                "id": "LLadders:tile.lladders.block.sturdyladder"
+              },
+              "required": 16
+            },
+            {
+              "item": {
+                "id": "LLadders:tile.lladders.block.ropeladder"
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "LLadders:tile.lladders.block.ladderdispenser"
+        },
+        {
+          "id": "LLadders:tile.lladders.block.ropeladder",
+          "amount": 32
+        },
+        {
+          "id": "LLadders:tile.lladders.block.sturdyladder",
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "name": "Apiary",
+      "description": "The Apiary is the second tier of shelter for your bees. It has space for three frames. ",
+      "x": 261,
+      "y": 135,
+      "icon": {
+        "id": "Forestry:apiculture"
+      },
+      "prerequisites": [
+        "Bee Frames"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Forestry:apiculture"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Forestry:apiculture"
+        }
+      ]
+    },
+    {
+      "name": "Fluid Pipes",
+      "description": "Do you want to have to manually keep the steam engine filled with water? Word of advice never add water to an empty boiler. You should connect Fluid Pipes to a Wooden Barrel full of water.",
+      "x": 104,
+      "y": 138,
+      "icon": {
+        "id": "BuildCraft|Transport:item.buildcraftPipe.pipefluidswood"
+      },
+      "prerequisites": [
+        "My Steamy Hobby"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "BuildCraft|Transport:pipeWaterproof"
+              },
+              "required": 4
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "longDescription": "IE Wooden Barrels do not need a wooden extraction pipe. Liquids flow out the bottom of them. Other machines will need one to pull liquids out.",
+          "items": [
+            {
+              "item": {
+                "id": "BuildCraft|Transport:item.buildcraftPipe.pipefluidswood"
+              }
+            },
+            {
+              "item": {
+                "id": "BuildCraft|Transport:item.buildcraftPipe.pipefluidsstone"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Bee Frames",
+      "description": "Frame are used to modify the behavior of your bee\u0027s living in an apiary. ",
+      "x": 260,
+      "y": 107,
+      "icon": {
+        "id": "Forestry:frameImpregnated"
+      },
+      "prerequisites": [
+        "Squeezer",
+        "Scoop"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "longDescription": "Untreated Frame are cheep to make. Output is increases by 20% but has poor durability.",
+          "items": [
+            {
+              "item": {
+                "id": "Forestry:frameUntreated"
+              },
+              "required": 3
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "longDescription": "Impregnated Frame increases output by 20% and has average durability.",
+          "items": [
+            {
+              "item": {
+                "id": "Forestry:frameImpregnated"
+              },
+              "required": 3
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "longDescription": "The Chocolate Frame increases production by 15% at the expense of lifespan - it is very useful to speed up generational turnover of hives while perfecting a lineage.",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraBees:hiveFrame.cocoa"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "longDescription": "Healing Frames prolong lifespan +50% and reduce mutation rate at the expense of production x0.75. ",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraBees:hiveFrame.clay"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Forestry:frameImpregnated",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "Moving Day",
+      "x": 71,
+      "y": 27,
+      "icon": {
+        "id": "InventoryTools:itemDolly"
+      },
+      "prerequisites": [
+        "Gold Ore"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "InventoryTools:itemDolly"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Smelt Iron Ingots",
+      "description": "Now that you have basic machines you can move on to greater challenges. ",
+      "x": 130,
+      "y": 196,
+      "icon": {
+        "id": "minecraft:iron_ingot"
+      },
+      "prerequisites": [
+        "Jaw Crusher"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:iron_ingot"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Wire the Posts",
+      "description": "You can use LV Wire to move RF to the machines that need it. Simply place a connector on the generator and one of the machine. Then connect the wire by click each with a LV Wire Coiil. LV Wires maximum length of 16m and do loose a very little RF charge each meter traveled.",
+      "x": 81,
+      "y": 120,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDevice"
+      },
+      "prerequisites": [
+        "My Steamy Hobby"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.stickCarbon"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:hardened_clay"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metal"
+              },
+              "required": 10
+            },
+            {
+              "item": {
+                "id": "ImmersiveEngineering:material"
+              },
+              "required": 2
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDevice"
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "ImmersiveEngineering:coil"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Pistons",
+      "description": "Pistons are commonly used in machine recipes. You can use aluminum in place of iron to build them.",
+      "x": 103,
+      "y": 92,
+      "icon": {
+        "id": "minecraft:piston"
+      },
+      "prerequisites": [
+        "Redstone Ore"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:redstone"
+              }
+            },
+            {
+              "item": {
+                "id": "ElectriCraft:electricraft_item_ingots",
+                "damage": 4
+              },
+              "precision": "ORE_DICTIONARY"
+            },
+            {
+              "item": {
+                "id": "minecraft:cobblestone"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "minecraft:planks",
+                "damage": 3
+              },
+              "required": 3
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:piston"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Torch Challenge",
+      "description": "Challenges are not part of the progression. However they do offer great rewards.     For this Challenge you need a full wooden barrel of Creosote Oil. You are going to make torches in the Carpendar.",
+      "x": 211,
+      "y": 152,
+      "icon": {
+        "id": "minecraft:torch"
+      },
+      "prerequisites": [
+        "Carpenter"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:woodenDevice",
+                "damage": 6,
+                "nbt": "{tank:{FluidName:\"creosote\",Amount:12000}}"
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "minecraft:stick"
+              },
+              "required": 24
+            },
+            {
+              "item": {
+                "id": "minecraft:wool"
+              },
+              "required": 24
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:torch"
+              },
+              "required": 144
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Power Adapter",
+      "description": "Buildcraft Extraction Pipes need a RF charge to extract items from an inventory, the more RF given the faster they work. A power adaptor will let wire connectors power the extractor pipe. Note that this is a constant drain, even when there is no items.",
+      "x": 65,
+      "y": 139,
+      "icon": {
+        "id": "BuildCraft|Transport:pipePowerAdapter"
+      },
+      "prerequisites": [
+        "Fluid Pipes",
+        "Piping Item around"
+      ],
+      "parentrequirement": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:gold_ingot"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:redstone"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:cobblestone"
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "minecraft:gravel"
+              }
+            },
+            {
+              "item": {
+                "id": "RotaryCraft:rotarycraft_item_enginecraft",
+                "damage": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "BuildCraft|Transport:item.buildcraftPipe.pipestructurecobblestone"
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "BuildCraft|Transport:pipePowerAdapter"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

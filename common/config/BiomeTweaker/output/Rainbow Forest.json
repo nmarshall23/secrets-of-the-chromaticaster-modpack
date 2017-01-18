@@ -31,12 +31,6 @@
   },
   "Spawnable Creatures": [
     {
-      "Entity Class": "net.minecraft.entity.passive.EntityWolf",
-      "Weight": 3,
-      "Min Group Count": 4,
-      "Max Group Count": 4
-    },
-    {
       "Entity Class": "net.minecraft.entity.passive.EntitySheep",
       "Weight": 6,
       "Min Group Count": 4,
@@ -113,24 +107,6 @@
     {
       "Entity Class": "Reika.ChromatiCraft.Entity.EntityBallLightning",
       "Weight": 5,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "thaumcraft.common.entities.monster.EntityWisp",
-      "Weight": 5,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "thaumcraft.common.entities.monster.EntityBrainyZombie",
-      "Weight": 10,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "thaumcraft.common.entities.monster.EntityPech",
-      "Weight": 10,
       "Min Group Count": 1,
       "Max Group Count": 1
     }

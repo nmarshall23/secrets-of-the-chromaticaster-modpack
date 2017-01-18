@@ -53,6 +53,7 @@ var vegGroupZesty = [
 for (var n in vegGroupZesty) {
   addOreDict(vegGroupZesty[n], "vegetableZesty");
 }
+(function() {
 
 var breads = [
   "minecraft:bread",
@@ -84,3 +85,5 @@ addOreDict("plantmegapack:foodCornFlour", "dustCornFlour");
 
 
 addOreDict("plantmegapack:berriesStraw", "cropStrawberry");
+
+})();

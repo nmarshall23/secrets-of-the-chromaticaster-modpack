@@ -13,3 +13,14 @@ mods.forestry.Carpenter.addRecipe(CarpentersBlocks * 6, [
   [stick, woodPlank, stick],
   [stick, stick, stick]
 ], <liquid:creosote> * 500, 60, null);
+
+
+
+//OutputStack, InputFluid
+mods.forestry.Carpenter.removeRecipe(<minecraft:torch>, <liquid:creosote>);
+
+//OutputStack, InputArray, InputFluid, Time in Ticks, BoxStack
+mods.forestry.Carpenter.addRecipe(<minecraft:torch> * 6, [
+  [<minecraft:wool:*>],
+  [<minecraft:stick>]
+], <liquid:creosote> * 500, 30, null);

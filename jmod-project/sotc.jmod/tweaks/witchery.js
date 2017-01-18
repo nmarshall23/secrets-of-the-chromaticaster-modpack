@@ -44,11 +44,13 @@ var tinIngot = "ingotTin";
 var lavaBucket = "minecraft:lava_bucket";
 var soulSand = "minecraft:soul_sand";
 var wroughtIronBlock = "GardenStuff:metal_block";
-var wroughtIronIngot = "ingotWroughtiron";
+var wroughtIronIngot = "GardenStuff:wrought_iron_ingot"; //"ingotWroughtiron";
 
-var quicksilver = "quicksilver";
+var glowstone = "minecraft:glowstone";
 var furnace = "minecraft:furnace";
 var brick = "ingotBrick";
+var ironBars = "minecraft:iron_bars";
+var gemFluorite = "ReactorCraft:reactorcraft_item_fluorite:*"; // "gemFluorite";
 // var plateLead = "plateLead";
 
 var witchesOven = {
@@ -68,9 +70,9 @@ var fumeFunnel = {
   name: "witchery:fumefunnel",
   recipes: [
     [
-      [lavaBucket, null, lavaBucket], //XXX Add something
-      [wroughtIronIngot, quicksilver, wroughtIronIngot],
-      [wroughtIronBlock, soulSand, wroughtIronBlock]
+      [wroughtIronIngot, gemFluorite, wroughtIronIngot],
+      [wroughtIronIngot, soulSand, wroughtIronIngot],
+      [wroughtIronBlock, ironBars, wroughtIronBlock]
     ]
   ]
 };
@@ -84,19 +86,27 @@ var magnanimousGem = "magnanimoustools:MagnanimousGem";
 
 var shardCrystal = "shardCrystal";
 var whiffOfMagic = "witchery:ingredient:34";
+var gemQuartz = "gemQuartz";
+var crystalCertusQuartz = "crystalCertusQuartz";
+var dustStabilizedMagic = "dustStabilizedMagic";
 
-// var attunedStone = {
-//   name: "witchery:ingredient:10",
-//   recipes: [
-//     [
-//       [null, whiffOfMagic, null],
-//       [shardThaum, magnanimousGem, shardCrystal],
-//       [null, lavaBucket, null]
-//     ]
-//   ]
-// };
-//
-// updateShappedRecipe(attunedStone);
+var attunedStone = {
+  name: "witchery:ingredient:10",
+  recipes: [
+    [
+      [whiffOfMagic, gemQuartz, dustStabilizedMagic],
+      [magnanimousGem, shardCrystal, magnanimousGem],
+      [null, lavaBucket, null]
+    ],
+    [
+      [whiffOfMagic, crystalCertusQuartz, dustStabilizedMagic],
+      [magnanimousGem, shardCrystal, magnanimousGem],
+      [null, lavaBucket, null]
+    ]
+  ]
+};
+
+updateShappedRecipe(attunedStone);
 
 
 // Made on the Clay Pot <witchery:stew> <witchery:stewraw>

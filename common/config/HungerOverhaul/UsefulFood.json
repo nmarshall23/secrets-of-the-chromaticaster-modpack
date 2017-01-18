@@ -1,9 +1,0 @@
-{
-    "foods": [
-        {
-            "name": "UsefulFood:CarrotSoup",
-            "hunger": 1,
-            "saturationModifier": 0.25
-        }
-    ]
-}

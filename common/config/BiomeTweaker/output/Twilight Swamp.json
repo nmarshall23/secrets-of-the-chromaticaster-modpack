@@ -104,14 +104,7 @@
       "Max Group Count": 4
     }
   ],
-  "Spawnable Water Creatures": [
-    {
-      "Entity Class": "mysticalmobs.common.entity.EntityFish",
-      "Weight": 1000,
-      "Min Group Count": 7,
-      "Max Group Count": 20
-    }
-  ],
+  "Spawnable Water Creatures": [],
   "Spawnable Cave Creatures": [
     {
       "Entity Class": "net.minecraft.entity.passive.EntityBat",

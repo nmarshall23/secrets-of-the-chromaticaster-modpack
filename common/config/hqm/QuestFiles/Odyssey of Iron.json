@@ -1,0 +1,1374 @@
+{
+  "name": "Odyssey of Iron",
+  "description": "Iron has much to teach you. Do not rush take the time to learn the wonders opened to you.",
+  "quests": [
+    {
+      "name": "Iron Pickaxe",
+      "description": "Iron Tools are more durable then Bronze. While Bronze is more receptive to enchantments.",
+      "x": 255,
+      "y": 13,
+      "icon": {
+        "id": "minecraft:iron_pickaxe"
+      },
+      "prerequisites": [
+        "{Odyssey of Bronze}[Smelt Iron Ingots]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:iron_pickaxe"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crude Blast Furnace",
+      "description": "The Crude Blast Furnace is used to make steel. To form a Blast Furnace arrange 27 Blast Bricks in a 3x3x3 cube, and right-click one of the side\u0027s center blocks with the Engineer\u0027s Hammer. Refer to the Engineer\u0027s Manual for more information.",
+      "x": 258,
+      "y": 111,
+      "icon": {
+        "id": "ImmersiveEngineering:stoneDecoration",
+        "damage": 2
+      },
+      "prerequisites": [
+        "A Foul Paste"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:item_paste_bryntenere"
+              },
+              "required": 14
+            },
+            {
+              "item": {
+                "id": "minecraft:brick"
+              },
+              "required": 56
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:stoneDecoration",
+                "damage": 2
+              },
+              "required": 28
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Mine Lead Ore",
+      "x": 193,
+      "y": 42,
+      "icon": {
+        "id": "ImmersiveEngineering:ore",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Iron Pickaxe"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:ore",
+                "damage": 2
+              },
+              "required": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mine Nickel",
+      "description": "Nickel can be found..",
+      "x": 220,
+      "y": 50,
+      "icon": {
+        "id": "ElectriCraft:electricraft_block_ore",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Iron Pickaxe"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ElectriCraft:electricraft_block_ore",
+                "damage": 3
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "sotc.jmod:toolNickelPickaxe",
+          "nbt": "{ench:[0:{lvl:2s,id:34s},1:{lvl:1s,id:35s}],display:{Name:\"Lucky Nickel Pickaxe\"},ToolUtilities:PLACE:1b}"
+        },
+        {
+          "id": "sotc.jmod:toolNickelAxe",
+          "nbt": "{ench:[0:{lvl:1s,id:187s}],display:{Name:\"Nickel Axe of Tree Felling\"}}"
+        }
+      ]
+    },
+    {
+      "name": "Mine Sulfur",
+      "description": "Sulfur is found near lava.",
+      "x": 271,
+      "y": 52,
+      "icon": {
+        "id": "Railcraft:ore"
+      },
+      "prerequisites": [
+        "Iron Pickaxe"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:dust",
+                "damage": 1
+              },
+              "required": 14,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Mine Obsidian",
+      "x": 213,
+      "y": 11,
+      "icon": {
+        "id": "minecraft:obsidian"
+      },
+      "prerequisites": [
+        "Iron Pickaxe"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:obsidian"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mine Certus Quartz",
+      "x": 292,
+      "y": 13,
+      "icon": {
+        "id": "appliedenergistics2:tile.OreQuartz"
+      },
+      "prerequisites": [
+        "Iron Pickaxe"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:tile.OreQuartz"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Barbecue on a open flame",
+      "x": 107,
+      "y": 126,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.teppanII"
+      },
+      "prerequisites": [
+        "{Odyssey of Bronze}[Smelt Iron Ingots]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.teppanII"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cooking an Hearty Steak Dinner",
+      "x": 134,
+      "y": 145,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.foodPlate"
+      },
+      "prerequisites": [
+        "Barbecue on a open flame",
+        "{Prelude}[Drying Rack]"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.foodPlate"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "A Foul Paste",
+      "x": 257,
+      "y": 78,
+      "icon": {
+        "id": "sotc.jmod:item_paste_bryntenere"
+      },
+      "prerequisites": [
+        "Mine Sulfur"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:dust",
+                "damage": 1
+              },
+              "required": 14
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:tile.BlockSkyStone"
+              },
+              "required": 14
+            },
+            {
+              "item": {
+                "id": "minecraft:sand"
+              },
+              "required": 14
+            },
+            {
+              "item": {
+                "id": "minecraft:log"
+              },
+              "required": 7,
+              "precision": "ORE_DICTIONARY"
+            },
+            {
+              "item": {
+                "id": "minecraft:coal",
+                "damage": 1
+              },
+              "required": 21
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.dustWood"
+              },
+              "required": 7
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiMaterial",
+                "damage": 45
+              },
+              "required": 7
+            },
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.dustWood",
+                "damage": 1
+              },
+              "required": 21
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.stickCarbon"
+              },
+              "required": 7
+            },
+            {
+              "item": {
+                "id": "sotc.jmod:item_paste_bryntenere"
+              },
+              "required": 14
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Iron Back Pack",
+      "description": "A bigger backpack! Your Iron Back Pack will keep the upgrades from the basic backpack.",
+      "x": 297,
+      "y": 47,
+      "icon": {
+        "id": "ironbackpacks:ironBackpack",
+        "nbt": "{MostSigUUID:8060778830348044135L,LeastSigUUID:-8965696549102442774L,Items:[]}"
+      },
+      "prerequisites": [
+        "{Odyssey of Bronze}[Smelt Iron Ingots]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Collect the materials",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:part.plate"
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "ImmersiveEngineering:material",
+                "damage": 16
+              },
+              "required": 6
+            },
+            {
+              "item": {
+                "id": "ironbackpacks:treatedLeather"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Craft an Iron Back Pack",
+          "items": [
+            {
+              "item": {
+                "id": "ironbackpacks:ironBackpack",
+                "nbt": "{MostSigUUID:8060778830348044135L,LeastSigUUID:-8965696549102442774L,Items:[]}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ironbackpacks:keepOnDeathUpgrade"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "ironbackpacks:filterFuzzyUpgrade"
+        },
+        {
+          "id": "ironbackpacks:filterMiningUpgrade"
+        },
+        {
+          "id": "ironbackpacks:depthUpgrade"
+        }
+      ]
+    },
+    {
+      "name": "Gold Back Pack",
+      "x": 298,
+      "y": 76,
+      "icon": {
+        "id": "ironbackpacks:goldBackpack",
+        "nbt": "{MostSigUUID:6286785327989411315L,LeastSigUUID:-8252429676556792685L,Items:[]}"
+      },
+      "prerequisites": [
+        "Iron Back Pack"
+      ],
+      "trigger": "ANTI_TRIGGER"
+    },
+    {
+      "name": "Iron Hammer",
+      "description": "An Iron Hammer is even stronger then Bronze. While Bronze is more receptive to enchantments.",
+      "x": 25,
+      "y": 67,
+      "icon": {
+        "id": "hammerz:IronHammer"
+      },
+      "prerequisites": [
+        "{Odyssey of Bronze}[Smelt Iron Ingots]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "hammerz:IronHammer"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "hammerz:IronHammer",
+          "nbt": "{ench:[0:{lvl:3s,id:35s},1:{lvl:2s,id:32s}],display:{Name:\"Lucky Iron Hammer\"}}"
+        },
+        {
+          "id": "hammerz:IronHammer",
+          "nbt": "{ench:[0:{lvl:3s,id:34s},1:{lvl:1s,id:32s}],display:{Name:\"Hardened Iron Hammer\"}}"
+        }
+      ]
+    },
+    {
+      "name": "Nickel Hammer",
+      "description": "Nickel is less durable then Iron but far more then Bronze.It\u0027s enchantability exceeds Bronze and Iron, but is less then Gold, Platinum and magically enhanced materials.",
+      "x": 25,
+      "y": 95,
+      "icon": {
+        "id": "hammerz:NickelHammer"
+      },
+      "prerequisites": [
+        "Iron Hammer"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "hammerz:NickelHammer"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "hammerz:NickelHammer",
+          "nbt": "{ench:[0:{lvl:3s,id:35s},1:{lvl:2s,id:32s}],display:{Name:\"Lucky Nickel Hammer\"}}"
+        },
+        {
+          "id": "hammerz:NickelHammer",
+          "nbt": "{ench:[0:{lvl:3s,id:34s},1:{lvl:1s,id:32s}],display:{Name:\"Hardened Nickel Hammer\"}}"
+        }
+      ]
+    },
+    {
+      "name": "Improved Anvil",
+      "description": "This anvil is far more useful then others you may have seen. First renaming things is free. It only costs XP When repairing Enchanted tools.Also the amount repaired is proportional to the enchantability of the material and the number of enchantments.",
+      "x": 99,
+      "y": 91,
+      "icon": {
+        "id": "BetterAnvil:better_anvil"
+      },
+      "prerequisites": [
+        "{Odyssey of Bronze}[Smelt Iron Ingots]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "BetterAnvil:better_anvil"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ChromatiCraft:chromaticraft_item_oresilk"
+        }
+      ]
+    },
+    {
+      "name": "Irrigation for your farm",
+      "description": "Sprinklers will speed up the growth of your crops. You will need to connect them to a Wooden Water Tank with wooden irrigation channels. The Water Tank blocks will connect forming a multiblock. Wooden Water Tanks will fill with water when it is raining.",
+      "x": 52,
+      "y": 48,
+      "icon": {
+        "id": "AgriCraft:sprinkler"
+      },
+      "prerequisites": [
+        "{Odyssey of Bronze}[Smelt Iron Ingots]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "AgriCraft:sprinkler"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "AgriCraft:waterChannel"
+              },
+              "required": 12,
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "AgriCraft:waterTank"
+              },
+              "required": 4,
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "AgriCraft:sprinkler",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Platformer",
+      "x": 56,
+      "y": 94,
+      "icon": {
+        "id": "platforms:platform",
+        "damage": 50
+      },
+      "prerequisites": [
+        "{Odyssey of Bronze}[Smelt Iron Ingots]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "platforms:platform",
+                "damage": 50
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Monkey Wrench",
+      "x": 57,
+      "y": 123,
+      "icon": {
+        "id": "platforms:wrench"
+      },
+      "prerequisites": [
+        "Platformer"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "platforms:wrench"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Brewing barrel",
+      "x": 130,
+      "y": 186,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.blockBarrel"
+      },
+      "prerequisites": [
+        "Evaporator"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.blockBarrel"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Evaporator",
+      "x": 98,
+      "y": 186,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.evaporator"
+      },
+      "prerequisites": [
+        "Bucket"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.evaporator"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bucket",
+      "x": 69,
+      "y": 168,
+      "icon": {
+        "id": "minecraft:bucket"
+      },
+      "prerequisites": [
+        "{Odyssey of Bronze}[Smelt Iron Ingots]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:bucket"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LV Cap",
+      "x": 189,
+      "y": 12,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDevice",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Mine Lead Ore"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDevice",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rolling Machine",
+      "x": 184,
+      "y": 191,
+      "icon": {
+        "id": "Railcraft:machine.alpha",
+        "damage": 8
+      },
+      "prerequisites": [
+        "Iron Plates"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:machine.alpha",
+                "damage": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Forge Steel",
+      "x": 259,
+      "y": 172,
+      "icon": {
+        "id": "ImmersiveEngineering:metal",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Crude Blast Furnace"
+      ],
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metal",
+                "damage": 7
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "TIS-3D Computer",
+      "x": 140,
+      "y": 100,
+      "icon": {
+        "id": "tis3d:casing"
+      },
+      "prerequisites": [
+        "Unnamed2"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "tis3d:casing"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Basic Similsax Transtructor",
+      "x": 26,
+      "y": 39,
+      "icon": {
+        "id": "SimilsaxTranstructors:similsaxTranstructorBasic"
+      },
+      "prerequisites": [
+        "{Odyssey of Bronze}[Smelt Iron Ingots]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "SimilsaxTranstructors:similsaxTranstructorBasic"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Advanced Similsax Transtructor",
+      "x": 26,
+      "y": 12,
+      "icon": {
+        "id": "SimilsaxTranstructors:similsaxTranstructorAdvanced"
+      },
+      "prerequisites": [
+        "Basic Similsax Transtructor"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "SimilsaxTranstructors:similsaxTranstructorAdvanced"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Here to Pump You UP",
+      "x": 221,
+      "y": 87,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDevice2",
+        "damage": 6
+      },
+      "prerequisites": [
+        "Mine Nickel"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDevice2",
+                "damage": 6
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Boiling Box",
+      "x": 203,
+      "y": 146,
+      "icon": {
+        "id": "Railcraft:machine.beta",
+        "damage": 5
+      },
+      "prerequisites": [
+        "Here to Pump You UP"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:machine.beta",
+                "damage": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Getting Steamy",
+      "x": 170,
+      "y": 148,
+      "icon": {
+        "id": "Railcraft:machine.beta",
+        "damage": 8
+      },
+      "prerequisites": [
+        "Boiling Box"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:machine.beta",
+                "damage": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sleeping in a field",
+      "x": 77,
+      "y": 12,
+      "icon": {
+        "id": "OpenBlocks:sleepingBag"
+      },
+      "prerequisites": [
+        "{Odyssey of Bronze}[Smelt Iron Ingots]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:sleepingBag"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gear Swapper",
+      "x": 136,
+      "y": 72,
+      "icon": {
+        "id": "gearswap:gearSwapperIron"
+      },
+      "prerequisites": [
+        "{The Neglected Land}[Go to the Nether]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "gearswap:gearSwapperIron"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Printing Press",
+      "description": "The printing press is used to print books from print press plates. Used in combinations with the Typesetting Table. The Printing press is to be operated without a GUI. The Printing Press works with the reading glasses / monocle to help display information about what items are on the printing press and the quantity of those items.",
+      "x": 84,
+      "y": 60,
+      "icon": {
+        "id": "BiblioCraft:Printing Press"
+      },
+      "prerequisites": [
+        "{Odyssey of Bronze}[Smelt Iron Ingots]"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "BiblioCraft:item.BiblioGlasses"
+              }
+            },
+            {
+              "item": {
+                "id": "BiblioCraft:Typesetting Machine"
+              }
+            },
+            {
+              "item": {
+                "id": "BiblioCraft:item.BiblioChase"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "BiblioCraft:Printing Press"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "BiblioCraft:item.EnchantedPlate"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crow Bar",
+      "x": 157,
+      "y": 49,
+      "icon": {
+        "id": "Railcraft:tool.crowbar"
+      },
+      "prerequisites": [
+        "{Odyssey of Bronze}[Smelt Iron Ingots]"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:tool.crowbar"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unnamed2",
+      "x": 146,
+      "y": 23,
+      "icon": {
+        "id": "Railcraft:part.railbed"
+      },
+      "prerequisites": [
+        "Crow Bar"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:part.railbed"
+              },
+              "required": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unnamed2",
+      "x": 182,
+      "y": 117,
+      "icon": {
+        "id": "ImmersiveEngineering:metal",
+        "damage": 5
+      },
+      "prerequisites": [
+        "Mine Nickel"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metal",
+                "damage": 15
+              },
+              "required": 16
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metal",
+                "damage": 5
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "sotc.jmod:toolNickelAxe",
+          "nbt": "{ench:[0:{lvl:1s,id:187s},1:{lvl:1s,id:34s},2:{lvl:1s,id:32s}],display:{Name:\"Nickel Axe of Tree Felling\"}}"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Sky Stone",
+      "x": 245,
+      "y": 51,
+      "icon": {
+        "id": "appliedenergistics2:tile.BlockSkyStone"
+      },
+      "prerequisites": [
+        "Iron Pickaxe",
+        "A Foul Paste"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:tile.BlockSkyStone"
+              },
+              "required": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Iron Axe",
+      "x": 109,
+      "y": 26,
+      "icon": {
+        "id": "minecraft:iron_axe"
+      },
+      "prerequisites": [
+        "{Odyssey of Bronze}[Smelt Iron Ingots]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:iron_axe"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stir Fry",
+      "x": 92,
+      "y": 147,
+      "icon": {
+        "id": "plantmegapack:foodStirFry"
+      },
+      "prerequisites": [
+        "Barbecue on a open flame"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": []
+        },
+        {
+          "type": "DETECT",
+          "items": []
+        }
+      ]
+    },
+    {
+      "name": "Unnamed3",
+      "x": 41,
+      "y": 168,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.basesoupitem",
+        "damage": 5
+      },
+      "prerequisites": [
+        "Bucket"
+      ]
+    },
+    {
+      "name": "Beet Soup",
+      "x": 38,
+      "y": 200,
+      "icon": {
+        "id": "plantmegapack:foodBeetSoup"
+      },
+      "prerequisites": [
+        "Unnamed3"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": []
+        },
+        {
+          "type": "DETECT",
+          "items": []
+        }
+      ]
+    },
+    {
+      "name": "Tomato Soup",
+      "x": 15,
+      "y": 180,
+      "icon": {
+        "id": "plantmegapack:foodTomatoSoup"
+      },
+      "prerequisites": [
+        "Unnamed3"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": []
+        },
+        {
+          "type": "DETECT",
+          "items": []
+        }
+      ]
+    },
+    {
+      "name": "Broccoli Soup",
+      "x": 12,
+      "y": 150,
+      "icon": {
+        "id": "plantmegapack:foodBroccoliSoup"
+      },
+      "prerequisites": [
+        "Unnamed3"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": []
+        },
+        {
+          "type": "DETECT",
+          "items": []
+        }
+      ]
+    },
+    {
+      "name": "Iron Plates",
+      "x": 210,
+      "y": 172,
+      "icon": {
+        "id": "Railcraft:part.plate"
+      },
+      "prerequisites": [
+        "{Odyssey of Bronze}[Smelt Iron Ingots]"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metal",
+                "damage": 30
+              },
+              "required": 4,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Metal Barrel for hot liquids",
+      "x": 233,
+      "y": 191,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDevice2",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Iron Plates"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDevice2",
+                "damage": 7
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

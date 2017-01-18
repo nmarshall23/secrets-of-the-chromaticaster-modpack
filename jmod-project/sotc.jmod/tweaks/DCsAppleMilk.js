@@ -2,6 +2,10 @@ loadjs("functions.js");
 
 log('Loaded DCsAppleMilk Tweaks');
 
+// Remove shappless recipe tea and rotten fleash to leather.
+removeRecipes("minecraft:leather");
+
+
 
 // Clay Pan
 // Fix recipe conflict with AMT pan and GardenContainers Pots

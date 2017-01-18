@@ -20,15 +20,15 @@ val ThaumiumMD  = 750 * HammerMult;
 val VoidMD  = 150 * HammerMult;
 val ElementalMD  = 2061 * HammerMult;
 
+
+
 // <hammerz:PlatinumHammer>.maxDamage = PlatinumMD;
 <hammerz:DiamondHammer>.maxDamage = DiamondMD;
 // <hammerz:InvarHammer>.maxDamage = InvarMD;
 <hammerz:SteelHammer>.maxDamage = SteelMD;
 <hammerz:HSLA>.maxDamage = HSLAMD;
 <hammerz:IronHammer>.maxDamage = IronMD;
-<hammerz:Thaumium>.maxDamage = ThaumiumMD;
-<hammerz:Void>.maxDamage = VoidMD;
-<hammerz:Elemental>.maxDamage = ElementalMD;
+
 <hammerz:NickelHammer>.maxDamage = NickelMD;
 <hammerz:BronzeHammer>.maxDamage = BronzeMD;
 <hammerz:CopperHammer>.maxDamage = CopperMD;

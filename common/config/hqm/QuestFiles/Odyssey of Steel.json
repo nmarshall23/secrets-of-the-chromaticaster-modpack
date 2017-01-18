@@ -1,0 +1,769 @@
+{
+  "name": "Odyssey of Steel",
+  "description": "You have passed the last test of Sulfer and SkyStone. ",
+  "quests": [
+    {
+      "name": "Steel Pickaxe",
+      "description": "Steel has excellent durability. Only Platinum and Tools fortified with Diamond exceeds it. However Steel has poor receptivity to enchantments.",
+      "x": 196,
+      "y": 13,
+      "icon": {
+        "id": "Railcraft:tool.steel.pickaxe"
+      },
+      "prerequisites": [
+        "{Odyssey of Iron}[Forge Steel]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:tool.steel.pickaxe"
+              }
+            },
+            {
+              "item": {
+                "id": "Railcraft:tool.steel.axe"
+              }
+            },
+            {
+              "item": {
+                "id": "Railcraft:tool.steel.shovel"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mine Diamond",
+      "x": 196,
+      "y": 41,
+      "icon": {
+        "id": "minecraft:diamond_ore"
+      },
+      "prerequisites": [
+        "Steel Pickaxe"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:diamond_ore"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mine Silver",
+      "x": 170,
+      "y": 14,
+      "icon": {
+        "id": "ElectriCraft:electricraft_block_ore",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Steel Pickaxe"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ElectriCraft:electricraft_block_ore",
+                "damage": 2
+              },
+              "required": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Diamond Pickaxe",
+      "x": 196,
+      "y": 73,
+      "icon": {
+        "id": "minecraft:diamond_pickaxe"
+      },
+      "prerequisites": [
+        "Mine Diamond"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:diamond_pickaxe"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mine Platinum",
+      "x": 197,
+      "y": 107,
+      "icon": {
+        "id": "ElectriCraft:electricraft_block_ore",
+        "damage": 5
+      },
+      "prerequisites": [
+        "Diamond Pickaxe"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ElectriCraft:electricraft_block_ore",
+                "damage": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HSLA Steel Hammer",
+      "description": "HSLA Steel is a strengthened variant of Steel. However it does less damage then steel.",
+      "x": 98,
+      "y": 9,
+      "icon": {
+        "id": "hammerz:HSLA"
+      },
+      "prerequisites": [
+        "Unnamed2"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "hammerz:HSLA"
+              }
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "hammerz:HSLA",
+          "nbt": "{ench:[0:{lvl:4s,id:35s},1:{lvl:3s,id:32s}],display:{Name:\"Lucky HSLA Hammer\"}}"
+        },
+        {
+          "id": "hammerz:HSLA",
+          "nbt": "{ench:[0:{lvl:4s,id:34s},1:{lvl:2s,id:32s}],display:{Name:\"Hardened HSLA Hammer\"}}"
+        }
+      ]
+    },
+    {
+      "name": "Steel Hammer",
+      "description": "Steel has excellent durability. Only Platinum and Tools fortified with Diamond exceeds it.However Steel has poor receptivity to enchantments.",
+      "x": 296,
+      "y": 14,
+      "icon": {
+        "id": "hammerz:SteelHammer"
+      },
+      "prerequisites": [
+        "{Odyssey of Iron}[Nickel Hammer]",
+        "{Odyssey of Iron}[Forge Steel]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": []
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "hammerz:SteelHammer",
+          "nbt": "{ench:[0:{lvl:4s,id:35s},1:{lvl:3s,id:32s}],display:{Name:\"Lucky Steel Hammer\"}}"
+        },
+        {
+          "id": "hammerz:SteelHammer",
+          "nbt": "{ench:[0:{lvl:4s,id:34s},1:{lvl:2s,id:32s}],display:{Name:\"Hardened Steel Hammer\"}}"
+        }
+      ]
+    },
+    {
+      "name": "Platinum Tools",
+      "x": 198,
+      "y": 139,
+      "icon": {
+        "id": "sotc.jmod:toolPlatinumPickaxe"
+      },
+      "prerequisites": [
+        "Mine Platinum"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:toolPlatinumPickaxe"
+              }
+            },
+            {
+              "item": {
+                "id": "sotc.jmod:toolPlatinumAxe"
+              }
+            },
+            {
+              "item": {
+                "id": "sotc.jmod:toolPlatinumShovel"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unnamed1",
+      "x": 272,
+      "y": 53,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDevice",
+        "damage": 11
+      },
+      "prerequisites": [
+        "{Odyssey of Iron}[Forge Steel]"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDevice",
+                "damage": 11
+              },
+              "required": 16
+            },
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDevice",
+                "damage": 15
+              },
+              "required": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unnamed2",
+      "x": 122,
+      "y": 9,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 45
+      },
+      "prerequisites": [
+        "{Odyssey of Iron}[Forge Steel]"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "RotaryCraft:rotarycraft_item_machine",
+                "damage": 45
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unnamed3",
+      "x": 123,
+      "y": 35,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 75
+      },
+      "prerequisites": [
+        "Unnamed2"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "RotaryCraft:rotarycraft_item_machine",
+                "damage": 75
+              }
+            },
+            {
+              "item": {
+                "id": "RotaryCraft:rotarycraft_item_screwdriver"
+              }
+            },
+            {
+              "item": {
+                "id": "RotaryCraft:rotarycraft_item_meter"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unnamed4",
+      "x": 38,
+      "y": 71,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_engine",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Unnamed5"
+      ]
+    },
+    {
+      "name": "Unnamed5",
+      "x": 51,
+      "y": 50,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 16
+      },
+      "prerequisites": [
+        "Unnamed30"
+      ]
+    },
+    {
+      "name": "Unnamed6",
+      "x": 99,
+      "y": 92,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Unnamed18"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "RotaryCraft:rotarycraft_item_machine",
+                "damage": 7
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unnamed7",
+      "x": 87,
+      "y": 113,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_engine",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Unnamed6"
+      ]
+    },
+    {
+      "name": "Unnamed8",
+      "x": 26,
+      "y": 92,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 41
+      },
+      "prerequisites": [
+        "Unnamed4"
+      ]
+    },
+    {
+      "name": "Unnamed9",
+      "x": 13,
+      "y": 113,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_jump",
+        "damage": 24000
+      },
+      "prerequisites": [
+        "Unnamed8"
+      ]
+    },
+    {
+      "name": "Unnamed10",
+      "x": 99,
+      "y": 134,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 60
+      },
+      "prerequisites": [
+        "Unnamed7"
+      ]
+    },
+    {
+      "name": "Unnamed11",
+      "x": 25,
+      "y": 50,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 32
+      },
+      "prerequisites": [
+        "Unnamed4"
+      ]
+    },
+    {
+      "name": "Unnamed12",
+      "x": 125,
+      "y": 135,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_engine",
+        "damage": 4
+      },
+      "prerequisites": [
+        "Unnamed10"
+      ]
+    },
+    {
+      "name": "Unnamed13",
+      "x": 38,
+      "y": 113,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 67
+      },
+      "prerequisites": [
+        "Unnamed4"
+      ]
+    },
+    {
+      "name": "Unnamed14",
+      "x": 63,
+      "y": 71,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 23
+      },
+      "prerequisites": [
+        "Unnamed4"
+      ]
+    },
+    {
+      "name": "Unnamed15",
+      "x": 13,
+      "y": 71,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 91
+      },
+      "prerequisites": [
+        "Unnamed4"
+      ]
+    },
+    {
+      "name": "Unnamed16",
+      "x": 112,
+      "y": 156,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 14
+      },
+      "prerequisites": [
+        "Unnamed12"
+      ]
+    },
+    {
+      "name": "Unnamed17",
+      "x": 137,
+      "y": 156,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 20
+      },
+      "prerequisites": [
+        "Unnamed12"
+      ]
+    },
+    {
+      "name": "Unnamed18",
+      "x": 75,
+      "y": 92,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_canola",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Unnamed14",
+        "Unnamed19"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "RotaryCraft:rotarycraft_item_canola",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unnamed19",
+      "x": 51,
+      "y": 92,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 11
+      },
+      "prerequisites": [
+        "Unnamed4"
+      ]
+    },
+    {
+      "name": "Unnamed20",
+      "x": 63,
+      "y": 114,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 25
+      },
+      "prerequisites": [
+        "Unnamed19",
+        "{The Neglected Land}[Ghast Tear]"
+      ]
+    },
+    {
+      "name": "Unnamed21",
+      "x": 50,
+      "y": 135,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 128
+      },
+      "prerequisites": [
+        "Unnamed20"
+      ]
+    },
+    {
+      "name": "Unnamed22",
+      "x": 75,
+      "y": 135,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 18,
+        "nbt": "{lvl:64000,liquid:\"rc jet fuel\"}"
+      },
+      "prerequisites": [
+        "Unnamed20"
+      ]
+    },
+    {
+      "name": "Unnamed23",
+      "x": 61,
+      "y": 156,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_engine",
+        "damage": 8
+      },
+      "prerequisites": [
+        "Unnamed22"
+      ]
+    },
+    {
+      "name": "Unnamed24",
+      "x": 88,
+      "y": 156,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_engine",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Unnamed22"
+      ]
+    },
+    {
+      "name": "Unnamed25",
+      "x": 75,
+      "y": 178,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_steelpack",
+        "nbt": "{liquid:\"rc jet fuel\",fuel:30000,jet:1b,cooling:1b,wing:1b}"
+      },
+      "prerequisites": [
+        "Unnamed22"
+      ]
+    },
+    {
+      "name": "Unnamed26",
+      "x": 100,
+      "y": 178,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine"
+      },
+      "prerequisites": [
+        "Unnamed24"
+      ]
+    },
+    {
+      "name": "Unnamed27",
+      "x": 125,
+      "y": 177,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_bedpick",
+        "nbt": "{ench:[0:{lvl:1s,id:33s}]}"
+      },
+      "prerequisites": [
+        "Unnamed26"
+      ]
+    },
+    {
+      "name": "Unnamed28",
+      "x": 26,
+      "y": 135,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 33
+      },
+      "prerequisites": [
+        "Unnamed21"
+      ]
+    },
+    {
+      "name": "Unnamed28",
+      "x": 284,
+      "y": 34,
+      "icon": {
+        "id": "ImmersiveEngineering:stoneDecoration",
+        "damage": 6
+      },
+      "prerequisites": [
+        "{Odyssey of Iron}[Forge Steel]"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metal",
+                "damage": 38
+              },
+              "required": 27
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:stoneDecoration",
+                "damage": 6
+              },
+              "required": 27
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DC Engine",
+      "x": 90,
+      "y": 40,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_engine"
+      },
+      "prerequisites": [
+        "Unnamed3"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "RotaryCraft:rotarycraft_item_shaftcraft",
+                "damage": 2
+              }
+            },
+            {
+              "item": {
+                "id": "RotaryCraft:rotarycraft_item_shaftcraft"
+              },
+              "required": 2
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "RotaryCraft:rotarycraft_item_engine"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:lever"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unnamed30",
+      "x": 169,
+      "y": 51,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_enginecraft",
+        "damage": 11
+      },
+      "prerequisites": [
+        "Mine Diamond"
+      ]
+    },
+    {
+      "name": "Unnamed30",
+      "x": 60,
+      "y": 22,
+      "icon": {
+        "id": "RotaryCraft:rotarycraft_item_machine",
+        "damage": 6
+      },
+      "prerequisites": [
+        "DC Engine"
+      ]
+    }
+  ],
+  "reputationBar": []
+}

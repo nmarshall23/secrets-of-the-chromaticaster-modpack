@@ -32,18 +32,6 @@
       "Weight": 4,
       "Min Group Count": 4,
       "Max Group Count": 4
-    },
-    {
-      "Entity Class": "com.rwtema.menagerie.entities.Ents.EntityRat",
-      "Weight": 6,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
-      "Entity Class": "com.rwtema.menagerie.entities.Ents.EntityOliphant",
-      "Weight": 1,
-      "Min Group Count": 1,
-      "Max Group Count": 1
     }
   ],
   "Spawnable Monsters": [
@@ -90,6 +78,12 @@
       "Max Group Count": 1
     },
     {
+      "Entity Class": "ninja.shadowfox.shadowfox_botany.common.entity.EntityVoidCreeper",
+      "Weight": 10,
+      "Min Group Count": 1,
+      "Max Group Count": 3
+    },
+    {
       "Entity Class": "mysticalmobs.common.entity.EntityEye",
       "Weight": 6,
       "Min Group Count": 1,
@@ -120,12 +114,6 @@
       "Max Group Count": 1
     },
     {
-      "Entity Class": "com.rwtema.menagerie.entities.Ents.EntityInfestedVillager",
-      "Weight": 10,
-      "Min Group Count": 1,
-      "Max Group Count": 1
-    },
-    {
       "Entity Class": "com.rwtema.menagerie.entities.Ents.EntityLivingArmor",
       "Weight": 5,
       "Min Group Count": 3,
@@ -138,12 +126,6 @@
       "Weight": 10,
       "Min Group Count": 4,
       "Max Group Count": 4
-    },
-    {
-      "Entity Class": "mysticalmobs.common.entity.EntityFish",
-      "Weight": 1000,
-      "Min Group Count": 7,
-      "Max Group Count": 20
     }
   ],
   "Spawnable Cave Creatures": [

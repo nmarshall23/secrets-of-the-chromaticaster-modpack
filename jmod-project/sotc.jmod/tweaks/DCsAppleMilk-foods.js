@@ -2,6 +2,20 @@ loadjs("functions.js");
 
 log('Loaded DCsAppleMilk Foods Tweaks');
 
+
+// out, input, texture, display
+var stewSimple = "sotc.jmod:food_stew_simple";
+var stewIngredients = "sotc.jmod:minced_carrot_potatos";
+
+var stewMeaty = "sotc.jmod:food_stew_meaty";
+var stewMeatyIngredients = "sotc.jmod:minced_meat_vegies";
+
+AppleMilkTea2.addClayPanRecipe(stewSimple, stewIngredients, "orange",
+  "Favorful Stew..");
+AppleMilkTea2.addClayPanRecipe(stewMeaty, stewMeatyIngredients, "orange",
+  "Favorful Stew..");
+
+
 var washedRice = {
   name: "DCsAppleMilk:defeatedcrow.mincedFoods:3",
   shapelessRecipes: [
@@ -23,33 +37,33 @@ var mincedMushrooms = {
 updateShappedRecipe(mincedMushrooms);
 
 var foods = {
-/*
-  cookedRice: {
-    name: "DCsAppleMilk:defeatedcrow.bowlBlock",
-    hunger: 2,
-    saturation: 0.2
-  },
-  stewMushroom: {
-    name: "DCsAppleMilk:defeatedcrow.bowlBlock:1",
-    hunger: 3,
-    saturation: 0.5
-  },
-  stewSalmon: {
-    name: "DCsAppleMilk:defeatedcrow.bowlBlock:3",
-    hunger: 5,
-    saturation: 1.0
-  },
-  soupPumpkin: {
-    name: "DCsAppleMilk:defeatedcrow.bowlBlock:6",
-    hunger: 4,
-    saturation: 0.2
-  },
-  soupBlt: {
-    name: "DCsAppleMilk:defeatedcrow.bowlBlock:7",
-    hunger: 5,
-    saturation: 1.0
-  },
-*/
+  /*
+    cookedRice: {
+      name: "DCsAppleMilk:defeatedcrow.bowlBlock",
+      hunger: 2,
+      saturation: 0.2
+    },
+    stewMushroom: {
+      name: "DCsAppleMilk:defeatedcrow.bowlBlock:1",
+      hunger: 3,
+      saturation: 0.5
+    },
+    stewSalmon: {
+      name: "DCsAppleMilk:defeatedcrow.bowlBlock:3",
+      hunger: 5,
+      saturation: 1.0
+    },
+    soupPumpkin: {
+      name: "DCsAppleMilk:defeatedcrow.bowlBlock:6",
+      hunger: 4,
+      saturation: 0.2
+    },
+    soupBlt: {
+      name: "DCsAppleMilk:defeatedcrow.bowlBlock:7",
+      hunger: 5,
+      saturation: 1.0
+    },
+  */
   bakedApple: {
     name: "DCsAppleMilk:defeatedcrow.bakedApple",
     hunger: 2,
@@ -82,7 +96,7 @@ var foods = {
     saturation: 0.8,
     num: 4,
     shapelessRecipes: [
-	["foodBread", "cropApple"]
+      ["foodBread", "cropApple"]
     ]
   },
   eggSandwich: {
@@ -91,7 +105,7 @@ var foods = {
     saturation: 0.8,
     num: 4,
     shapelessRecipes: [
-	["foodBread", "foodegg"]
+      ["foodBread", "foodegg"]
     ]
   },
   cassisSandwich: {
@@ -100,7 +114,7 @@ var foods = {
     saturation: 0.8,
     num: 4,
     shapelessRecipes: [
-	["foodBread", "foodCassisPreserve"]
+      ["foodBread", "foodCassisPreserve"]
     ]
   },
   yuzuSandwich: {
@@ -109,21 +123,23 @@ var foods = {
     saturation: 0.8,
     num: 4,
     shapelessRecipes: [
-	["foodBread", "foodYuzeMarmalade"]
+      ["foodBread", "foodYuzeMarmalade"]
     ]
   },
 
   toffyApple: {
     name: "DCsAppleMilk:defeatedcrow.toffyApple",
     hunger: 2,
-    saturation: 1.0 
+    saturation: 1.0
   },
   iceToffyApple: {
     name: "DCsAppleMilk:defeatedcrow.icyToffyApple",
     hunger: 2,
     saturation: 1.0,
     shapelessRecipes: [
-      ["DCsAppleMilk:defeatedcrow.toffyApple", "powderMana", "cropBelladonna", "minecraft:snowball"]
+      ["DCsAppleMilk:defeatedcrow.toffyApple", "powderMana",
+        "cropBelladonna", "minecraft:snowball"
+      ]
     ]
   },
   windToffyApple: {
@@ -131,7 +147,9 @@ var foods = {
     hunger: 2,
     saturation: 1.0,
     shapelessRecipes: [
-      ["DCsAppleMilk:defeatedcrow.toffyApple", "powderMana", "cropBelladonna", "minecraft:feather"]
+      ["DCsAppleMilk:defeatedcrow.toffyApple", "powderMana",
+        "cropBelladonna", "minecraft:feather"
+      ]
     ]
   },
   goldToffyApple: {
@@ -139,7 +157,9 @@ var foods = {
     hunger: 2,
     saturation: 1.0,
     shapelessRecipes: [
-      ["DCsAppleMilk:defeatedcrow.toffyApple", "powderMana", "cropBelladonna", "nuggetGold"]
+      ["DCsAppleMilk:defeatedcrow.toffyApple", "powderMana",
+        "cropBelladonna", "nuggetGold"
+      ]
     ]
   },
   greenToffyApple: {
@@ -147,7 +167,9 @@ var foods = {
     hunger: 2,
     saturation: 1.0,
     shapelessRecipes: [
-      ["DCsAppleMilk:defeatedcrow.toffyApple", "powderMana", "cropBelladonna", "treeLeaves"]
+      ["DCsAppleMilk:defeatedcrow.toffyApple", "powderMana",
+        "cropBelladonna", "treeLeaves"
+      ]
     ]
   },
   chocolateApple: {

@@ -54,6 +54,30 @@
       "Weight": 100,
       "Min Group Count": 4,
       "Max Group Count": 4
+    },
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntityEye",
+      "Weight": 50,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntityEnderEye",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "com.rwtema.menagerie.entities.Ents.EntityMummy",
+      "Weight": 100,
+      "Min Group Count": 1,
+      "Max Group Count": 4
+    },
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntitySkeletonWarrior",
+      "Weight": 100,
+      "Min Group Count": 2,
+      "Max Group Count": 4
     }
   ],
   "Spawnable Water Creatures": [],

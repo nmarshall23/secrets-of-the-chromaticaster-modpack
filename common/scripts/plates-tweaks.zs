@@ -14,11 +14,11 @@ val ingots = {
 "Copper": <ore:ingotCopper>,
 "Tin": <ore:ingotTin>,
 "Iron": <ore:ingotIron>,
-"Invar": <ore:ingotInvar>,
+// "Invar": <ore:ingotInvar>,
 "Steel": <ore:ingotSteel>,
 "Constantan": <ore:ingotConstantan>,
-"Titanium": <ore:ingotTitanium>
-
+// "Titanium": <ore:ingotTitanium>
+"Lead" : <ore:ingotLead>
 //"ingotHSLA": <ore:ingotHSLA>,
 //"gemDiamond": <ore:gemDiamond>,
 //"ingotPlatinum": <ore:ingotPlatinum>
@@ -36,12 +36,12 @@ val hasRailCraftRecipeList =  {
 
 
 val plates = {
-"Copper": <Railcraft:part.plate:3>,
+"Copper": <ImmersiveEngineering:metal:31>,
 "Tin":    <Railcraft:part.plate:2>,
 "Constantan": <ImmersiveEngineering:metal:36>,
 "Aluminum": <ImmersiveEngineering:metal:32>,
-"Iron":   <Railcraft:part.plate:0>,
-"Steel":  <Railcraft:part.plate:1>,
+"Iron":   <ImmersiveEngineering:metal:30>,
+"Steel":  <ImmersiveEngineering:metal:38>,
 "Lead": <ImmersiveEngineering:metal:33>
 } as IItemStack[string];
 
@@ -76,14 +76,14 @@ for material, ingot in ingots {
    val hammer = <ImmersiveEngineering:tool:0>;
 
    recipes.removeShapeless(plate);
-   recipes.addShapeless(plate, [hammer.reuse(), ingot]);
-   //print("found Plate: " + plate.displayName );
+   recipes.addShapeless(plate, [hammer, ingot]);
+   print("found Plate: " + plate.displayName );
    mods.immersiveengineering.MetalPress.removeRecipe(plate);
    mods.immersiveengineering.MetalPress.addRecipe(plate * 6, ingot, <ImmersiveEngineering:mold:0>, rfPerOp, 4);
 
-   if(hasRailCraftRecipe) {
-      mods.railcraft.Rolling.removeRecipe(hasRailCraftRecipe);
-   }
+//   if(hasRailCraftRecipe) {
+//      mods.railcraft.Rolling.removeRecipe(hasRailCraftRecipe);
+//   }
 
    mods.railcraft.Rolling.addShaped(plate * 6, [
 	[ingot, ingot, null],
@@ -148,7 +148,7 @@ val wireCoil2Materials = {
 "redstone":  <ore:dustRedstone>
 } as IIngredient[string];
 
-val coilSizeDefinitions = {"lv": "6", "mv": "2", "hv": "4", "steel": "4", "redstone":"4"} as string[string];
+val coilSizeDefinitions = {"lv": "6", "mv": "4", "hv": "4", "steel": "4", "redstone":"4"} as string[string];
 
 for material, coil in wireCoils {
 
@@ -157,8 +157,14 @@ for material, coil in wireCoils {
    var outStackSize = coilSizeDefinitions[material] as int;
    recipes.remove(coil);
 
-   val stick = <ore:stickWood>;
+   val stick = <ore:treatedStick>;
    mods.railcraft.Rolling.addShaped(coil * outStackSize, [
+	[null,          coil1Material, null],
+	[coil2Material, stick,         coil2Material],
+	[null,          coil1Material, null]]);
+
+   var out = outStackSize - 2;
+   recipes.addShaped(coil * out, [
 	[null,          coil1Material, null],
 	[coil2Material, stick,         coil2Material],
 	[null,          coil1Material, null]]);

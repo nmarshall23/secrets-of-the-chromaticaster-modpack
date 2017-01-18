@@ -126,16 +126,21 @@
       "Weight": 1,
       "Min Group Count": 1,
       "Max Group Count": 1
-    }
-  ],
-  "Spawnable Water Creatures": [
+    },
     {
-      "Entity Class": "mysticalmobs.common.entity.EntityFish",
-      "Weight": 1000,
-      "Min Group Count": 7,
-      "Max Group Count": 20
+      "Entity Class": "mysticalmobs.common.entity.EntityEye",
+      "Weight": 50,
+      "Min Group Count": 1,
+      "Max Group Count": 1
+    },
+    {
+      "Entity Class": "mysticalmobs.common.entity.EntityEnderEye",
+      "Weight": 20,
+      "Min Group Count": 1,
+      "Max Group Count": 1
     }
   ],
+  "Spawnable Water Creatures": [],
   "Spawnable Cave Creatures": [
     {
       "Entity Class": "net.minecraft.entity.passive.EntityBat",

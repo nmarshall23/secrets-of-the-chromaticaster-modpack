@@ -1,3 +1,5 @@
+(function() {
+
 var ModDN = "Secrets of the Chromaticaster";
 var ModId = "sotc.jmod";
 
@@ -45,3 +47,5 @@ addShapedRecipe(ModId + ":toolPipeLead", [
   [null, "ingotLead", null],
   ["ingotLead", null, null]
 ]);
+
+})();

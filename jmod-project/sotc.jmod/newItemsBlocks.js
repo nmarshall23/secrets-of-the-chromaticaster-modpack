@@ -1,3 +1,5 @@
+(function() {
+
 loadjs("functions.js");
 
 
@@ -18,3 +20,6 @@ var blockPlatinum = {
 };
 
 addCustomBlock(blockPlatinum);
+
+
+})();

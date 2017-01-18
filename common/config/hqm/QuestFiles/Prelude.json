@@ -1,0 +1,3573 @@
+{
+  "name": "Prelude",
+  "description": "You must learn how to survive in the Over World. You can\u0027t harvest everything you must have to proper tools. You will need a farm, and learn how to cook.     Progression is made by completing quests leading down.",
+  "quests": [
+    {
+      "name": "Collect Gravel",
+      "description": "Wood will splinter, and Stone is heavy. Flint is a superior material to make tools from. You can find Flint in gravel. Or you can craft three gavel into two flint.",
+      "x": 148,
+      "y": 46,
+      "icon": {
+        "id": "minecraft:gravel"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Collect Gravel",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:gravel"
+              },
+              "required": 9
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:flint",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Flint Pickaxe",
+      "description": "A Flint Pickaxe has the same harvest as Stone. You will need it to harvest Tin and Copper. Flint lasts much longer then Stone or Wood, but less then any metal.",
+      "x": 148,
+      "y": 75,
+      "icon": {
+        "id": "sotc.jmod:toolFlintPickaxe"
+      },
+      "prerequisites": [
+        "Collect Gravel"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:toolFlintPickaxe"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:flint",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "Copper Ore",
+      "description": "Copper can be used to craft tools that will last much longer then Flint tools. Copper Ore is found around height 48, ±16 meters, in long narrow veins, centered around a Mother lode of ore.",
+      "x": 165,
+      "y": 98,
+      "icon": {
+        "id": "ElectriCraft:electricraft_block_ore"
+      },
+      "prerequisites": [
+        "Flint Pickaxe"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ElectriCraft:electricraft_block_ore"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Tin Ore",
+      "description": "Tin is most used as a component of machines. Tin can be found around height 60, ±12 meters, in long narrow veins, centered around a Mother lode of ore.",
+      "x": 133,
+      "y": 98,
+      "icon": {
+        "id": "ElectriCraft:electricraft_block_ore",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Flint Pickaxe"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ElectriCraft:electricraft_block_ore",
+                "damage": 1
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Furnace to cook and smelt",
+      "description": "Collect plenty of stones to craft 4 compressed cobblestone. Then craft a Furnace.",
+      "x": 92,
+      "y": 27,
+      "icon": {
+        "id": "minecraft:furnace"
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:cobblestone"
+              },
+              "required": 31,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraUtilities:cobblestone_compressed"
+              },
+              "required": 4,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:furnace"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "plantmegapack:seedBellPepperRed",
+          "amount": 2
+        },
+        {
+          "id": "plantmegapack:seedOnion",
+          "amount": 2
+        },
+        {
+          "id": "plantmegapack:seedCucumber",
+          "amount": 2
+        },
+        {
+          "id": "plantmegapack:seedTomato",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Time to use that Education",
+      "description": "You need to find Tin and Copper to make bronze tools..",
+      "x": 162,
+      "y": 142,
+      "icon": {
+        "id": "sotc.jmod:item_dust_bronze"
+      },
+      "prerequisites": [
+        "Engineering your Future"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "longDescription": "To make bronze you will need to first craft an Engineer\u0027s Hammer.",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:tool"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "To make dusts, place an Ore Block with your Engineer\u0027s Hammer in the crafting grid.",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metal",
+                "damage": 10
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.oreDust",
+                "damage": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "Bronze dust is made from 3 copper dust and 1 tin dust.",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:item_dust_bronze"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ImmersiveEngineering:metal",
+          "damage": 10,
+          "amount": 3
+        },
+        {
+          "id": "DCsAppleMilk:defeatedcrow.oreDust",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Build a Coal Coak Oven",
+      "description": "A Coke oven is used to make Coal Coke, and Creosote Oil. Coal Coke will burn for twice as long as Coal. Creosote Oil is used to treat wood. To Build the Coke Oven, place 27 of the Coke Bricks in a 3x3x3 cube then right-click one of the sides\u0027 center block with an Engineer\u0027s Hammer. Refer to the Engineer\u0027s Manual for more information.  ",
+      "x": 106,
+      "y": 146,
+      "icon": {
+        "id": "ImmersiveEngineering:stoneDecoration",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Engineer\u0027s Manual"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:stoneDecoration",
+                "damage": 1
+              },
+              "required": 27
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Stone Hammer",
+      "description": "Hammers will mine in a 3 by 3 area. Makes them very useful to make mineshafts.",
+      "x": 57,
+      "y": 26,
+      "icon": {
+        "id": "hammerz:StoneHammer"
+      },
+      "prerequisites": [
+        "Furnace to cook and smelt"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "hammerz:StoneHammer"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Composting your Future",
+      "description": "Compost is great stuff, you can use it like bonemeal. Although it is 30% less efficient then Bone meal.",
+      "x": 197,
+      "y": 26,
+      "icon": {
+        "id": "GardenCore:compost_bin"
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Craft a Compost Bin",
+          "items": [
+            {
+              "item": {
+                "id": "GardenCore:compost_bin"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Compost 8 items",
+          "longDescription": "Place extra seeds and saplings in the Compost Bin. Slowly these will turn into compost.It takes 8 items to make 1 compost. ",
+          "items": [
+            {
+              "item": {
+                "id": "GardenCore:compost_pile"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Craft garden soil",
+          "longDescription": "Starting out your best use of compost is to make garden soil. Tilled Garden Soil does not require water, for crops to grow. However there are some crops there just will not grow in garden soil. ",
+          "items": [
+            {
+              "item": {
+                "id": "GardenCore:garden_soil"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "GardenCore:compost_pile",
+          "amount": 6
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "plantmegapack:seedLettuce"
+        },
+        {
+          "id": "plantmegapack:seedTomato"
+        },
+        {
+          "id": "plantmegapack:seedBellPepperYellow"
+        },
+        {
+          "id": "plantmegapack:seedOnion"
+        }
+      ]
+    },
+    {
+      "name": "I hope you like Stew",
+      "description": "To make a meal you are going to have to cook those raw crops. Once you have crafted a Clay Pan, place it on top of a furnace, or open flame. You may need to hold shift to place it on top of a Furnace.",
+      "x": 70,
+      "y": 46,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.emptyPanG"
+      },
+      "prerequisites": [
+        "Gather Clay"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Fire the Clay",
+          "longDescription": "To craft a Clay Pan you need 5 Hardened Clay, and 5 bricks. You can make Hardened Clay by smelting it in a Furnace. ",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:hardened_clay"
+              },
+              "required": 5
+            },
+            {
+              "item": {
+                "id": "minecraft:brick"
+              },
+              "required": 5
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "longDescription": "Craft a medium clay flower pot. Use 5 Hardened Clay in a U formation. ",
+          "items": [
+            {
+              "item": {
+                "id": "GardenContainers:medium_pot"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "longDescription": "Craft a Clay Pan. In the crafting table place a medium clay flower pot in the middle slot. Then place Bricks, to it\u0027s sides and make a row of bricks below.",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.emptyPanG"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "DCsAppleMilk:defeatedcrow.emptyPanG"
+        },
+        {
+          "id": "minecraft:furnace"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "minecraft:bow",
+          "nbt": "{ench:[0:{lvl:2s,id:34s},1:{lvl:1s,id:134s},2:{lvl:1s,id:135s}],display:{Name:\"Lesser Bow of the Hunt\"}}"
+        },
+        {
+          "id": "plantmegapack:foodWildRice",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "Seeds of your growth",
+      "description": "Clearly you need seeds to make a farm.",
+      "x": 177,
+      "y": 46,
+      "icon": {
+        "id": "sotc.jmod:toolFlintHoe"
+      },
+      "prerequisites": [
+        "Collect Gravel",
+        "Composting your Future"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:toolFlintHoe"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Collect seeds",
+          "longDescription": "Away from water sources, Use a Flint Hoe on grass. This may uncover seeds.",
+          "items": [
+            {
+              "item": {
+                "id": "AgriCraft:seedPotato"
+              }
+            },
+            {
+              "item": {
+                "id": "AgriCraft:seedCarrot"
+              }
+            },
+            {
+              "item": {
+                "id": "ImmersiveEngineering:seed"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:bread"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "plantmegapack:seedOnion",
+          "amount": 2
+        },
+        {
+          "id": "plantmegapack:seedCorn",
+          "amount": 2
+        },
+        {
+          "id": "plantmegapack:seedBellPepperRed",
+          "amount": 2
+        },
+        {
+          "id": "plantmegapack:seedCucumber",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Growing Crops",
+      "description": "Crops grow faster if you water them.",
+      "x": 109,
+      "y": 108,
+      "icon": {
+        "id": "ExtraUtilities:watering_can",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Tin Ore"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Craft a Watering Can",
+          "longDescription": "You will need to fill the Watering Can with water by right click it on water.",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraUtilities:watering_can",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Engineering your Future",
+      "description": "An Engineer\u0027s Hammer is used to crush ores into dust. It is also used to complete some multiblock structures. Perhaps you should consult the manual.",
+      "x": 150,
+      "y": 118,
+      "icon": {
+        "id": "ImmersiveEngineering:tool"
+      },
+      "prerequisites": [
+        "Tin Ore",
+        "Copper Ore"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "parentrequirement": 1,
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Craft an Engineer\u0027s Hammer",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:tool"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Aluminum Ore",
+      "description": "Aluminum is another metal used mostly in building machines. The stone furnace does a poor job of smelting Aluminum. Other means of extracting this ore will yield more ingots. You will find Aluminum Ore around height 94, ±34 meters. Medium mother lodes with 2-4 horizontal veins.",
+      "x": 122,
+      "y": 75,
+      "icon": {
+        "id": "ElectriCraft:electricraft_block_ore",
+        "damage": 4
+      },
+      "prerequisites": [
+        "Flint Pickaxe"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ElectriCraft:electricraft_block_ore",
+                "damage": 4
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Mind your table manners",
+      "description": "A cultured person like yourself uses Chopsticks.",
+      "x": 17,
+      "y": 81,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.chopsticksBox",
+        "damage": 4
+      },
+      "prerequisites": [
+        "Less is Grater then More"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.chopsticksBox",
+                "damage": 4
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "plantmegapack:foodRice",
+          "amount": 4
+        },
+        {
+          "id": "plantmegapack:seedBellPepperRed",
+          "amount": 4
+        },
+        {
+          "id": "plantmegapack:seedOnion",
+          "amount": 4
+        },
+        {
+          "id": "plantmegapack:seedLettuce",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "Less is Grater then More",
+      "description": "A food grater is used to Mince ingredients to prepare then to be cooked.",
+      "x": 39,
+      "y": 53,
+      "icon": {
+        "id": "AMTAddonJP:addonamtjp.grater_wooden"
+      },
+      "prerequisites": [
+        "I hope you like Stew"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "AMTAddonJP:addonamtjp.grater_wooden"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "plantmegapack:seedBeet",
+          "amount": 4
+        },
+        {
+          "id": "plantmegapack:foodRice",
+          "amount": 4
+        },
+        {
+          "id": "plantmegapack:seedBellPepperRed",
+          "amount": 4
+        },
+        {
+          "id": "plantmegapack:seedTomato",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "Tanning Rack",
+      "description": "A Tanning Rack is a simple machine. Place rawhide on each side and wait. There is no way of speeding up this process. However with some ingenuity you could automate the process of placing rawhide, and removing leather.",
+      "x": 219,
+      "y": 46,
+      "icon": {
+        "id": "HarderWildlife:machine_tanner"
+      },
+      "prerequisites": [
+        "Rawhide"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "HarderWildlife:machine_tanner"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:leather"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HarderWildlife:rawLeather",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Drying Rack",
+      "description": "The Drying Rack uses the climate to change items, either Drying them or allowing Fermentation. Drying Mode is active when it\u0027s in brightness of 10 or more. Fermentation mode is active in brightness of 9 or less. The the humidity of the biome will effect how fast the Drying Rack works. Drying Mode, works faster in low humidity, while Fermentation works faster in high humidity. ",
+      "x": 209,
+      "y": 122,
+      "icon": {
+        "id": "AMTAddonJP:addonamtjp.drying_rack"
+      },
+      "prerequisites": [
+        "Linen String"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "AMTAddonJP:addonamtjp.drying_rack"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "AMTAddonJP:addonamtjp.materials"
+              },
+              "required": 16
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "AMTAddonJP:addonamtjp.materials",
+                "damage": 5
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "plantmegapack:seedEggplant",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Rawhide",
+      "description": "Animals will drop their Rawhide, you will have to treat it to make leather.",
+      "x": 219,
+      "y": 14,
+      "icon": {
+        "id": "HarderWildlife:rawLeather"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "HarderWildlife:rawLeather"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Basic Back Pack",
+      "description": "A backpack to hold all your stuff.",
+      "x": 206,
+      "y": 70,
+      "icon": {
+        "id": "ironbackpacks:basicBackpack",
+        "nbt": "{MostSigUUID:3910775054578960208L,LeastSigUUID:-7099153627969910187L,Items:[]}"
+      },
+      "prerequisites": [
+        "Tanning Rack",
+        "Linen String"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Collect the materials",
+          "items": [
+            {
+              "item": {
+                "id": "AMTAddonJP:addonamtjp.linen_ball"
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "minecraft:stick"
+              },
+              "required": 6
+            },
+            {
+              "item": {
+                "id": "minecraft:leather"
+              },
+              "required": 3
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Craft a Basic Back Pack",
+          "items": [
+            {
+              "item": {
+                "id": "ironbackpacks:basicBackpack"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ironbackpacks:keepOnDeathUpgrade"
+        },
+        {
+          "id": "ironbackpacks:additionalUpgradeSlotsUpgrade"
+        }
+      ]
+    },
+    {
+      "name": "Linen String",
+      "description": "Often you can use Linen String as an replacement for Spider String.",
+      "x": 192,
+      "y": 100,
+      "icon": {
+        "id": "AMTAddonJP:addonamtjp.linen_ball"
+      },
+      "prerequisites": [
+        "Copper Shears"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:tallgrass",
+                "damage": 1
+              },
+              "required": 12
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "AMTAddonJP:addonamtjp.linen_ball"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Backpack Upgrades",
+      "description": "Your backpack can be upgraded with more functionality.To apply a backpack upgrade place the upgrade with the backpack in a crafting grid.",
+      "x": 220,
+      "y": 99,
+      "icon": {
+        "id": "ironbackpacks:upgradeCore"
+      },
+      "prerequisites": [
+        "Basic Back Pack"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Craft Upgrade Cores",
+          "items": [
+            {
+              "item": {
+                "id": "ironbackpacks:upgradeCore"
+              },
+              "required": 3
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Craft Button Upgrade",
+          "longDescription": "Hold shift to learn more about these backpack upgrades.",
+          "items": [
+            {
+              "item": {
+                "id": "ironbackpacks:damageBarUpgrade"
+              }
+            },
+            {
+              "item": {
+                "id": "ironbackpacks:buttonUpgrade"
+              }
+            },
+            {
+              "item": {
+                "id": "ironbackpacks:filterBasicUpgrade"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ironbackpacks:upgradeCore",
+          "amount": 3
+        },
+        {
+          "id": "ironbackpacks:additionalUpgradeSlotsUpgrade"
+        }
+      ]
+    },
+    {
+      "name": "Leather Tunic",
+      "description": "Armor is the key to survival. You will need better armor, but this will do. ",
+      "x": 233,
+      "y": 70,
+      "icon": {
+        "id": "minecraft:leather_chestplate"
+      },
+      "prerequisites": [
+        "Tanning Rack"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:leather_chestplate"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:leather_leggings"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:leather_helmet"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:leather_boots"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:leather_chestplate"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:leather_boots"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:leather_chestplate",
+          "nbt": "{ench:[0:{lvl:1s,id:4s}]}"
+        },
+        {
+          "id": "minecraft:leather_boots",
+          "nbt": "{ench:[0:{lvl:1s,id:2s}]}"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Saddled with work",
+      "description": "Who wants to walk everywhere you should saddle one of these horses and explore afar. ",
+      "x": 246,
+      "y": 45,
+      "icon": {
+        "id": "minecraft:saddle"
+      },
+      "prerequisites": [
+        "Tanning Rack"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:saddle"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Copper Shears",
+      "description": "With shears you can collect grass, leaves and wool.",
+      "x": 178,
+      "y": 77,
+      "icon": {
+        "id": "sotc.jmod:toolCopperShears"
+      },
+      "prerequisites": [
+        "Copper Ore"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:toolCopperShears"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Wish for a Horse of your own",
+      "description": "Can\u0027t find any horses? There is this cantrip that will create a horse.",
+      "x": 246,
+      "y": 16,
+      "icon": {
+        "id": "minecraft:lead"
+      },
+      "prerequisites": [
+        "Saddled with work",
+        "{Forgotten Magic}[Witch\u0027s Seeds]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "GraveStone:GSPileOfBones"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 22
+              },
+              "required": 16
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 21
+              },
+              "required": 32
+            },
+            {
+              "item": {
+                "id": "minecraft:leather"
+              },
+              "required": 64
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:spawn_egg",
+          "damage": 100
+        }
+      ]
+    },
+    {
+      "name": "Engineer\u0027s Manual",
+      "description": "The Engineer\u0027s Manual is a book added by Immersive Engineering. It is an in-game guide to the mod and it\u0027s mechanics.",
+      "x": 125,
+      "y": 126,
+      "icon": {
+        "id": "ImmersiveEngineering:tool",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Engineering your Future"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:tool",
+                "damage": 3
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ImmersiveEngineering:tool"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Locker Mk I",
+      "description": "It\u0027s like a chest that forms a locker when two are stacked vertically. This will only happen if both are made from the same materials.",
+      "x": 306,
+      "y": 86,
+      "icon": {
+        "id": "EnhancedInventories:locker",
+        "nbt": "{coreBlockMeta:0s,frameName:\"frame.mc.netherrack\",coreBlockName:\"minecraft:planks\"}"
+      },
+      "prerequisites": [
+        "A Chest for your stuff"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "EnhancedInventories:locker",
+                "nbt": "{coreBlockMeta:4s,frameName:\"frame.mc.stone\",coreBlockName:\"minecraft:planks\"}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "EnhancedInventories:locker",
+          "amount": 2,
+          "nbt": "{coreBlockMeta:4s,frameName:\"frame.mc.stone\",coreBlockName:\"minecraft:planks\"}"
+        },
+        {
+          "id": "EnhancedInventories:locker",
+          "amount": 2,
+          "nbt": "{coreBlockMeta:1s,frameName:\"frame.mc.stone\",coreBlockName:\"minecraft:planks\"}"
+        },
+        {
+          "id": "EnhancedInventories:locker",
+          "amount": 2,
+          "nbt": "{coreBlockMeta:0s,frameName:\"frame.mc.stone\",coreBlockName:\"minecraft:planks\"}"
+        },
+        {
+          "id": "EnhancedInventories:locker",
+          "amount": 2,
+          "nbt": "{coreBlockMeta:2s,frameName:\"frame.mc.stone\",coreBlockName:\"minecraft:planks\"}"
+        }
+      ]
+    },
+    {
+      "name": "Improved Chest Mk I",
+      "description": "These chests will only form a double chest when both are made from the same materials. They can also be Upgraded.",
+      "x": 281,
+      "y": 85,
+      "icon": {
+        "id": "EnhancedInventories:improvedChest",
+        "nbt": "{coreBlockMeta:0s,frameName:\"frame.mc.stone\",colorID:8b,coreBlockName:\"minecraft:planks\"}"
+      },
+      "prerequisites": [
+        "A Chest for your stuff"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "EnhancedInventories:improvedChest",
+                "nbt": "{coreBlockMeta:0s,frameName:\"frame.mc.stone\",colorID:8b,coreBlockName:\"minecraft:planks\"}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "EnhancedInventories:improvedChest",
+          "amount": 2,
+          "nbt": "{coreBlockMeta:4s,frameName:\"frame.mc.stone\",colorID:9b,coreBlockName:\"minecraft:planks\"}"
+        },
+        {
+          "id": "EnhancedInventories:improvedChest",
+          "amount": 2,
+          "nbt": "{coreBlockMeta:0s,frameName:\"frame.mc.stone\",colorID:13b,coreBlockName:\"minecraft:planks\"}"
+        },
+        {
+          "id": "EnhancedInventories:improvedChest",
+          "amount": 2,
+          "nbt": "{coreBlockMeta:2s,frameName:\"frame.mc.stone\",colorID:14b,coreBlockName:\"minecraft:planks\"}"
+        },
+        {
+          "id": "EnhancedInventories:improvedChest",
+          "amount": 2,
+          "nbt": "{coreBlockMeta:1s,frameName:\"frame.mc.stone\",colorID:7b,coreBlockName:\"minecraft:planks\"}"
+        }
+      ]
+    },
+    {
+      "name": "A Chest for your stuff",
+      "description": "Wood chests are but the first means of storing your stuff.",
+      "x": 296,
+      "y": 46,
+      "icon": {
+        "id": "witchery:refillingchest"
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:chest"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:chest",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Shelves",
+      "description": "The shelf can hold up to 4 different stacks of items and can be used without a GUI. Right-clicking the Shelf with any Block or Item will put it on the shelf. Right clicking an item or block that is on the Shelf will cause that item or block to pop off. ",
+      "x": 271,
+      "y": 45,
+      "icon": {
+        "id": "BiblioCraft:BiblioShelf"
+      },
+      "prerequisites": [
+        "A Chest for your stuff"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "BiblioCraft:BiblioShelf"
+              },
+              "required": 2,
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "BiblioCraft:BiblioShelf",
+          "amount": 2
+        },
+        {
+          "id": "BiblioCraft:BiblioShelf",
+          "damage": 2,
+          "amount": 2
+        },
+        {
+          "id": "BiblioCraft:BiblioShelf",
+          "damage": 3,
+          "amount": 2
+        },
+        {
+          "id": "BiblioCraft:BiblioShelf",
+          "damage": 4,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Storage Drawers",
+      "description": "Put your most frequently used items within convenient reach. Right-Click: Insert full stack in hand into drawer. Double-Right-Click: Insert all compatible stacks in inventory into drawer. Left-Click: Remove a single item from the drawer. Shift+Left-Click: Remove a full stack from the drawer. Shift+Right-Click with empty hand: Open a UI to see exact item counts and manage applied upgrades. ",
+      "x": 261,
+      "y": 69,
+      "icon": {
+        "id": "StorageDrawers:halfDrawers4"
+      },
+      "prerequisites": [
+        "A Chest for your stuff"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "StorageDrawers:halfDrawers4"
+              },
+              "required": 2,
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "StorageDrawers:tape"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "StorageDrawers:halfDrawers4",
+          "amount": 2
+        },
+        {
+          "id": "StorageDrawers:halfDrawers4",
+          "damage": 1,
+          "amount": 2
+        },
+        {
+          "id": "StorageDrawers:halfDrawers4",
+          "damage": 2,
+          "amount": 2
+        },
+        {
+          "id": "StorageDrawers:halfDrawers4",
+          "damage": 3,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Work Table",
+      "description": "An Upgrade to your basic crafting table which remembers the last nine used recipes. Left click one of the recipes shown in the right-hand side to automatically fill in the crafting grid. Right-click to lock a memorized recipe and prevent a newer recipe from bumping it off. Resources need to go into the internal inventory.",
+      "x": 296,
+      "y": 18,
+      "icon": {
+        "id": "Forestry:factory2",
+        "damage": 2
+      },
+      "prerequisites": [
+        "A Chest for your stuff"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:crafting_table"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:book"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:chest"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Forestry:factory2",
+                "damage": 2
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "Forestry:factory2",
+          "damage": 2
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Engineer\u0027s ToolBox",
+      "description": "The Engineer\u0027s ToolBox is used to store tools and other items.Right-clicking it will open it. Each slot can only store a specific type of item/block; \"Food\" can store edibles, \"Tools\" can store tools, \"Wiring\" can store Immersive Engineering coils and similar items, and \"Anything\" can store, as it sounds, any block or item.",
+      "x": 13,
+      "y": 155,
+      "icon": {
+        "id": "ImmersiveEngineering:toolbox"
+      },
+      "prerequisites": [
+        "Wooden Post"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:toolbox"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Place to keep your Armor",
+      "description": "This armor stand store your armor, just right click to swap a piece. If it powered redstone is placed under it, it will swap all of your armor when you right click.",
+      "x": 96,
+      "y": 65,
+      "icon": {
+        "id": "BiblioCraft:Armor Stand"
+      },
+      "prerequisites": [
+        "Aluminum Ore"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "BiblioCraft:Armor Stand"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "BiblioCraft:Armor Stand"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Size Upgrade Mk II",
+      "description": "Improved Chests and Lockers can be upgraded in place. Craft an size upgrade and right click using the upgrade on the Improved Chest or Locker.",
+      "x": 294,
+      "y": 109,
+      "icon": {
+        "id": "EnhancedInventories:sizeUpgrade",
+        "nbt": "{frameName:\"frame.ore.tin\"}"
+      },
+      "prerequisites": [
+        "Improved Chest Mk I",
+        "Locker Mk I",
+        "Hidden Has Tin"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "EnhancedInventories:functionUpgrade"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "EnhancedInventories:sizeUpgrade",
+                "nbt": "{frameName:\"frame.ore.tin\"}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "EnhancedInventories:sizeUpgrade",
+          "nbt": "{frameName:\"frame.ore.tin\"}"
+        },
+        {
+          "id": "EnhancedInventories:sizeUpgrade",
+          "nbt": "{frameName:\"Copper Plate Frame\"}"
+        }
+      ]
+    },
+    {
+      "name": "Hidden Has Tin",
+      "x": 300,
+      "y": 134,
+      "icon": {
+        "id": "ElectriCraft:electricraft_item_ingots",
+        "damage": 1
+      },
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ElectriCraft:electricraft_item_ingots",
+                "damage": 1
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wooden Storage Crate",
+      "description": "The Wooden Storage Crate is like a chest but when broken, all of the items are kept. Right-clicking it allows access to it\u0027s contents.",
+      "x": 87,
+      "y": 126,
+      "icon": {
+        "id": "ImmersiveEngineering:woodenDevice",
+        "damage": 4
+      },
+      "prerequisites": [
+        "Build a Coal Coak Oven"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:woodenDevice",
+                "damage": 4
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ImmersiveEngineering:woodenDevice",
+          "damage": 4,
+          "amount": 2
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Wooden Barrel",
+      "description": "The Wooden Barrel will stores liquids, and keep it\u0027s contents when broken. Right-clicking it with a Bucket, or bottle will transfer the liquid from the Bucket to the Wooden Barrel. However, not all liquids can be stored in a Wooden Barrel; \"hot\" liquids (such as Lava) and \"gases\" (such as Steam) are not allowed in it. ",
+      "x": 71,
+      "y": 166,
+      "icon": {
+        "id": "ImmersiveEngineering:woodenDevice",
+        "damage": 6
+      },
+      "prerequisites": [
+        "Build a Coal Coak Oven"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:woodenDevice",
+                "damage": 6
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Wooden Post",
+      "description": "The Wooden Post is a block for placing lights, wires and Transformer on in an aestheticly pleasing way. It is four blocks tall. The wooden part of it is climbable, similar to a Ladder. Hitting a side of the top block with an Engineer\u0027s Hammer will spring an \"arm\" from it. The arm will automatically flip if a block is placed under it.",
+      "x": 43,
+      "y": 166,
+      "icon": {
+        "id": "ImmersiveEngineering:woodenDevice"
+      },
+      "prerequisites": [
+        "Wooden Barrel"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:woodenDevice"
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Creosote Oil Challenge",
+      "description": "When you cook Coal or Logs in your Coke Oven, Creosote Oil is created as a by product. You can use Creosote Oil to treat wood in several ways. ",
+      "x": 68,
+      "y": 143,
+      "icon": {
+        "id": "ImmersiveEngineering:fluidContainers"
+      },
+      "prerequisites": [
+        "Build a Coal Coak Oven"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Have Creosote Oil Bottles ",
+          "longDescription": "To obtain a bottle of Creosote Oil, Place empty glass bottles in the blue slot of the Coke Oven. In Immersive Engineering Machines blue is input, and red is output.",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:fluidContainers"
+              },
+              "required": 2
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Craft Wooden Ties",
+          "longDescription": "You can craft a bottle of Creosote Oil with wood slabs to make wooden Ties, which are used with iron rails to make track.",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:part.tie"
+              },
+              "required": 4
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Craft Creosote Wood Block",
+          "longDescription": "A bottle of Creosote Oil and a wood log, makes a Creosote Wood Block that can be crafting into stairs and slabs.",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:cube",
+                "damage": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Craft Treated Wood",
+          "longDescription": "Lastly surrounding a bottle of Creosote Oil with wood planks makes Treated Wood Planks. These can be crafting into many things.",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:treatedWood"
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "sotc.jmod:toolCopperAxe",
+          "nbt": "{ench:[0:{lvl:1s,id:187s}],display:{Name:\"Copper Axe of Tree Felling\"}}"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Chalcedony",
+      "description": "An odd jewel chalcedony can be made by cooking flint blocks. Specialized tools can be made from chalcedony. ",
+      "x": 151,
+      "y": 167,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.chalcedony"
+      },
+      "prerequisites": [
+        "Time to use that Education"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:flint"
+              },
+              "required": 8
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.flintBlock"
+              },
+              "required": 2
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.chalcedony"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Chalcedony Tools",
+      "description": "Tools can be made of Chalcedony are superior to Flint. However Copper tools more then double the durability. Althought Chalcedony is sharper then Copper. ",
+      "x": 187,
+      "y": 190,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.chalcedonyStoneCutter"
+      },
+      "prerequisites": [
+        "Chalcedony"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "longDescription": "Pruning shears are a tool to assist in the harvest of the crop. It will harvest some crops in a 3x3 area.",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.chalcedonyShears"
+              }
+            },
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.chalcedonyStoneCutter"
+              }
+            },
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.chalcedonyKnife"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "DCsAppleMilk:defeatedcrow.chalcedony",
+          "amount": 3
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Bowl Rack",
+      "description": "A bowl rack is a great place to keep your bowls after you have used them.",
+      "x": 11,
+      "y": 27,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.bowlRack"
+      },
+      "prerequisites": [
+        "Less is Grater then More"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.bowlRack"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "plantmegapack:seedBellPepperRed",
+          "amount": 2
+        },
+        {
+          "id": "plantmegapack:seedBeet",
+          "amount": 2
+        },
+        {
+          "id": "plantmegapack:seedLettuce",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Mushroom Soup",
+      "x": 13,
+      "y": 54,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.bowlBlock",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Mind your table manners"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.mincedFoods"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.bowlBlock",
+                "damage": 1
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Simple Stew",
+      "description": "A rather bland and Light Meal. However it will substain you. Before you start, make sure your Clay Pan is on top of a heat source. For example a Furnace.",
+      "x": 70,
+      "y": 73,
+      "icon": {
+        "id": "sotc.jmod:food_stew_simple"
+      },
+      "prerequisites": [
+        "Less is Grater then More"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Mince Vegetables",
+          "longDescription": "To make Minced Carrots and Potatos, place the grater in the crafting table with two Carrots and two Potatos.",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:minced_carrot_potatos"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Cook Stew",
+          "longDescription": "Use the Minced Vegetable on Clay Pan. Once you have done so, you will beable to see the stew inside the pan. Next to serve the stew, take an empty bowl, and use that on the Clay Pan. Each time you do so, the liquid level will go down. ",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:food_stew_simple"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Meatly Stew",
+      "description": "Do you miss hearty and flavorful food? This stew is just what you need. ",
+      "x": 73,
+      "y": 106,
+      "icon": {
+        "id": "sotc.jmod:food_stew_meaty"
+      },
+      "prerequisites": [
+        "Simple Stew"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Mince Ingredients",
+          "longDescription": "Use a grater in the crafting table with any raw Meat, two Carrots, two Potatos, and either a Garlic or Onion.",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:minced_meat_vegies"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Cook Stew",
+          "longDescription": "Just like the Simple Stew, use the Minced Ingredients for Meaty Stew on a Clay Pan, to cook the Meaty Stew. Use Bowls to serve yourself.",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:food_stew_meaty"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "New Ladders",
+      "description": "Ever wish you could place ladders to go up or down? Well now you can! After you have placed one sturdy ladder left click it with a sturdy ladder in hand, will place it on top of the stack of ladders. The rope ladder works the same way but only placing ladders down.",
+      "x": 92,
+      "y": 91,
+      "icon": {
+        "id": "LLadders:tile.lladders.block.sturdyladder"
+      },
+      "prerequisites": [
+        "Aluminum Ore"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "LLadders:tile.lladders.block.sturdyladder"
+              },
+              "required": 16
+            },
+            {
+              "item": {
+                "id": "LLadders:tile.lladders.block.ropeladder"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Chutes not Ladders",
+      "description": "Chutes are like simple hoppers. They just place what\u0027s inside them into an inventory below them. ",
+      "x": 211,
+      "y": 167,
+      "icon": {
+        "id": "BuildCraft|Factory:blockHopper"
+      },
+      "prerequisites": [
+        "Tin Plates"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:part.plate",
+                "damage": 2
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "minecraft:chest"
+              }
+            },
+            {
+              "item": {
+                "id": "RotaryCraft:rotarycraft_item_enginecraft",
+                "damage": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "BuildCraft|Factory:blockHopper"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "BuildCraft|Factory:blockHopper",
+          "amount": 2
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "A Bed don\u0027t look under it",
+      "description": "Odd how sleeping keeps monsters from appearing.",
+      "x": 271,
+      "y": 16,
+      "icon": {
+        "id": "minecraft:bed"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:wool",
+                "damage": 14
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "minecraft:wool"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:bed"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Tin Plates",
+      "description": "Tin Plates are made by placing the Engineer\u0027s Hammer and a Tin Ingot in the crafting table. You will find that Plates are often used to craft machines. There must be a way of automating the creation of plates.",
+      "x": 196,
+      "y": 144,
+      "icon": {
+        "id": "Railcraft:part.plate",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Engineering your Future"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:part.plate",
+                "damage": 2
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "ImmersiveEngineering:tool"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Copper Plates",
+      "description": "Copper Plates are made by placing the Engineer\u0027s Hammer and a Copper Ingot in the crafting table. You will find that Plates are often used to craft machines. There must be a way of automating the creation of plates.",
+      "x": 222,
+      "y": 145,
+      "icon": {
+        "id": "Railcraft:part.plate",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Tin Plates"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:part.plate",
+                "damage": 3
+              },
+              "required": 8
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "Railcraft:part.plate",
+                "damage": 3
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "sotc.jmod:toolCopperAxe",
+          "nbt": "{ench:[0:{lvl:1s,id:187s}],display:{Name:\"Copper Axe of Tree Felling\"}}"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Gather Clay",
+      "description": "You will need to find clay. It\u0027s used to build many useful machines. For example Clay Pans make the next tier of food. Coke Brick\u0027s can be used to make an Coke Oven that will cook, Logs into charcoal and Coal into Coal Coke. ",
+      "x": 117,
+      "y": 46,
+      "icon": {
+        "id": "minecraft:clay_ball"
+      },
+      "prerequisites": [
+        "Collect Gravel",
+        "Furnace to cook and smelt"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:clay_ball"
+              },
+              "required": 24
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:clay",
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "BLT Soup",
+      "x": 11,
+      "y": 121,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.bowlBlock",
+        "damage": 7
+      },
+      "prerequisites": [
+        "Mind your table manners"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.mincedFoods",
+                "damage": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.bowlBlock",
+                "damage": 7
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Chicken Rice Soup",
+      "x": 32,
+      "y": 105,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.bowlBlock",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Mind your table manners",
+        "Rice"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.mincedFoods",
+                "damage": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.bowlBlock",
+                "damage": 3
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Wooden Bucket",
+      "description": "Can Pickup Water and Milk.",
+      "x": 129,
+      "y": 166,
+      "icon": {
+        "id": "sotc.jmod:itemWoodenBucket"
+      },
+      "prerequisites": [
+        "Build a Coal Coak Oven"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:treatedWood"
+              },
+              "required": 4
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:itemWoodenBucket"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Smelted Bronze",
+      "description": "To make Bronze ingots, place the Bronze Dust in a Furnace.",
+      "x": 139,
+      "y": 190,
+      "icon": {
+        "id": "Forestry:ingotBronze"
+      },
+      "prerequisites": [
+        "Wooden Bucket",
+        "Chalcedony"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Forestry:ingotBronze"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Flint Axe",
+      "description": "You are going to need a lot of wood. Craft a flint Axe to chop down trees.",
+      "x": 130,
+      "y": 20,
+      "icon": {
+        "id": "sotc.jmod:toolFlintAxe"
+      },
+      "prerequisites": [
+        "Collect Gravel"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:flint"
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "minecraft:stick"
+              },
+              "required": 2
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:toolFlintAxe"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "longDescription": "Hand in these magic components, to receive an Enchanted Axe",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:toolFlintAxe"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 21
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 18
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "sotc.jmod:toolFlintAxe",
+          "nbt": "{ench:[0:{lvl:1s,id:187s}],display:{Name:\"Axe of Tree Felling\"}}"
+        }
+      ]
+    },
+    {
+      "name": "Flint Shovel",
+      "description": "You have a farm to build. That\u0027s going to require some digging. Craft a Flint Shovel.",
+      "x": 165,
+      "y": 20,
+      "icon": {
+        "id": "sotc.jmod:toolFlintShovel"
+      },
+      "prerequisites": [
+        "Collect Gravel"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:flint"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:stick"
+              },
+              "required": 2
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:toolFlintShovel"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Pickeled Treats",
+      "x": 235,
+      "y": 122,
+      "icon": {
+        "id": "AMTAddonJP:addonamtjp.dish_square",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Drying Rack"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "plantmegapack:foodEggplant"
+              },
+              "required": 4
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "AMTAddonJP:addonamtjp.dish_square",
+                "damage": 2
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "For the Barbecue",
+      "description": "You have slaughtered a pig in one blow. Time for a feast!",
+      "x": 297,
+      "y": 161,
+      "icon": {
+        "id": "AMTAddonJP:addonamtjp.roast_pig"
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "AMTAddonJP:addonamtjp.roast_pig"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "A Fruit so Sour ",
+      "x": 272,
+      "y": 134,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.leafTea",
+        "damage": 3
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.leafTea",
+                "damage": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.leafTea",
+                "damage": 3
+              },
+              "required": 8
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.saplingYuzu"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Boxs of stuff",
+      "description": "A good way of storing logs, is to make them into boxs.",
+      "x": 104,
+      "y": 5,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.WoodBox",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Flint Axe"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.WoodBox"
+              },
+              "required": 3,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "longDescription": "You can smelt those boxes into charcoal. Three planks will smelt three items.",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.Charcoalcontainer"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "sotc.jmod:toolFlintAxe",
+          "nbt": "{ench:[0:{lvl:1s,id:187s}],display:{Name:\"Axe of Tree Felling\"}}"
+        }
+      ]
+    },
+    {
+      "name": "Secret Chocolate Quests",
+      "x": 248,
+      "y": 175,
+      "icon": {
+        "id": "minecraft:dye",
+        "damage": 3
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:dye",
+                "damage": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:dye",
+                "damage": 3
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "sotc.jmod:itemWoodenBucket_milk"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:sugar"
+              },
+              "required": 2
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.mincedFoods",
+                "damage": 8
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Sinful Apples",
+      "x": 269,
+      "y": 196,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.chocolateFruits",
+        "damage": 12
+      },
+      "prerequisites": [
+        "Secret Chocolate Quests"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:sugar"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "minecraft:stick"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "minecraft:apple"
+              },
+              "required": 4
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.toffyApple"
+              },
+              "required": 4
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.chocolateFruits",
+                "damage": 12
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Give me that Chocolate Suger",
+      "x": 271,
+      "y": 161,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.chocolateFruits",
+        "damage": 11
+      },
+      "prerequisites": [
+        "Secret Chocolate Quests"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:itemWoodenBucket_milk"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:sugar"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.milkCandy"
+              },
+              "required": 2
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.condensedMilk"
+              },
+              "required": 16
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.chocolateFruits",
+                "damage": 11
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Cookies?",
+      "x": 297,
+      "y": 190,
+      "icon": {
+        "id": "minecraft:cookie"
+      },
+      "prerequisites": [
+        "Secret Chocolate Quests"
+      ],
+      "trigger": "ANTI_TRIGGER"
+    },
+    {
+      "name": "Rice",
+      "x": 45,
+      "y": 80,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.mincedFoods",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Less is Grater then More"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "plantmegapack:foodRice"
+              },
+              "required": 6,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.mincedFoods",
+                "damage": 3
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "plantmegapack:seedBellPepperRed"
+        },
+        {
+          "id": "plantmegapack:seedTomato"
+        },
+        {
+          "id": "plantmegapack:seedBeet"
+        },
+        {
+          "id": "plantmegapack:seedCelery"
+        }
+      ]
+    },
+    {
+      "name": "Compost Challenge",
+      "description": "Challenges are not part of the progression. However they do offer great rewards.",
+      "x": 185,
+      "y": 3,
+      "icon": {
+        "id": "GardenCore:compost_pile"
+      },
+      "prerequisites": [
+        "Composting your Future"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "GardenCore:compost_pile"
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "plantmegapack:seedLettuce"
+        },
+        {
+          "id": "plantmegapack:seedOnion"
+        },
+        {
+          "id": "plantmegapack:seedCorn"
+        },
+        {
+          "id": "plantmegapack:seedBellPepperRed"
+        }
+      ]
+    },
+    {
+      "name": "Leather Challenge",
+      "description": "Challenges are not part of the progression. However they do offer great rewards.",
+      "x": 246,
+      "y": 98,
+      "icon": {
+        "id": "minecraft:leather"
+      },
+      "prerequisites": [
+        "Leather Tunic"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:leather"
+              },
+              "required": 64
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "plantmegapack:foodRice"
+        },
+        {
+          "id": "plantmegapack:seedTomato"
+        },
+        {
+          "id": "plantmegapack:seedCorn"
+        },
+        {
+          "id": "plantmegapack:seedBroccoli"
+        }
+      ]
+    },
+    {
+      "name": "Copper Challenge",
+      "description": "Challenges are not part of the progression. However they do offer great rewards.",
+      "x": 183,
+      "y": 122,
+      "icon": {
+        "id": "sotc.jmod:toolCopperPickaxe",
+        "nbt": "{ench:[0:{lvl:1s,id:35s},1:{lvl:2s,id:34s}],display:{Name:\"Lucky Copper Pickaxe\"},ToolUtilities:PLACE:1b}"
+      },
+      "prerequisites": [
+        "Copper Ore"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ElectriCraft:electricraft_block_ore"
+              },
+              "required": 10
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "ElectriCraft:electricraft_item_ingots"
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "minecraft:stick"
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 21
+              },
+              "required": 16
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 22
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 18
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "sotc.jmod:toolCopperAxe",
+          "nbt": "{ench:[0:{lvl:1s,id:187s}],display:{Name:\"Copper Axe of Tree Felling\"}}"
+        },
+        {
+          "id": "sotc.jmod:toolCopperPickaxe",
+          "nbt": "{ench:[0:{lvl:1s,id:35s},1:{lvl:2s,id:34s}],display:{Name:\"Lucky Copper Pickaxe\"},ToolUtilities:PLACE:1b}"
+        }
+      ]
+    },
+    {
+      "name": "Stuff in your Pepper",
+      "x": 52,
+      "y": 122,
+      "icon": {
+        "id": "plantmegapack:foodStuffedPepperRed"
+      },
+      "prerequisites": [
+        "Rice"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "plantmegapack:foodBellPepperRed"
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.bowlBlock"
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "minecraft:baked_potato"
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "plantmegapack:foodOnion"
+              },
+              "required": 3
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "plantmegapack:foodStuffedPepperRed"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Wood Challenge",
+      "x": 74,
+      "y": 5,
+      "icon": {
+        "id": "DCsAppleMilk:defeatedcrow.WoodBox"
+      },
+      "prerequisites": [
+        "Boxs of stuff"
+      ],
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.WoodBox"
+              },
+              "required": 8,
+              "precision": "ORE_DICTIONARY"
+            },
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.WoodBox"
+              },
+              "required": 8,
+              "precision": "ORE_DICTIONARY"
+            },
+            {
+              "item": {
+                "id": "DCsAppleMilk:defeatedcrow.WoodBox"
+              },
+              "required": 8,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "plantmegapack:seedCorn"
+        },
+        {
+          "id": "plantmegapack:seedOnion"
+        },
+        {
+          "id": "plantmegapack:seedTomato"
+        },
+        {
+          "id": "plantmegapack:seedLettuce"
+        }
+      ]
+    },
+    {
+      "name": "Bucket of Milk",
+      "x": 112,
+      "y": 191,
+      "icon": {
+        "id": "sotc.jmod:itemWoodenBucket_milk"
+      },
+      "prerequisites": [
+        "Wooden Bucket"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:itemWoodenBucket_milk"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Fertilizer",
+      "description": "Don\u0027t have the seeds to grow more a plant? You need fertilizer. When used on a plant more of them will sprout around the first one.          Does not work on AgriCraft crops or Magical Plants.",
+      "x": 225,
+      "y": 195,
+      "icon": {
+        "id": "plantmegapack:powderFertilizer"
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:dye",
+                "damage": 15
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "minecraft:string"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "longDescription": "A task where the player has to craft specific items. You will first need to craft a plant powder. There are several kinds barries, ferns, leaves, and mushrooms. Collect 7 of the same type. ",
+          "items": [
+            {
+              "item": {
+                "id": "plantmegapack:powderFertilizer"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "plantmegapack:powderFertilizer",
+          "amount": 2
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Unnamed",
+      "x": 33,
+      "y": 26,
+      "prerequisites": [
+        "Less is Grater then More"
+      ]
+    },
+    {
+      "name": "Unnamed1",
+      "x": 20,
+      "y": 2,
+      "prerequisites": [
+        "Unnamed"
+      ]
+    }
+  ],
+  "reputationBar": []
+}

@@ -7,6 +7,11 @@ log('Loaded BiblioCraft Tweaks');
 var witcheryAltar = "witchery:altar";
 var livingRock = "livingrock";
 var manaPearl = "manaPearl";
+var pixieDust = "Botania:manaResource:8";
+var ingotElementium = "Botania:manaResource:7";
+var alchemyCatalyst = "Botania:alchemyCatalyst";
+var livingRock = "Botania:livingrock";
+
 
 var pumpkin = "minecraft:pumpkin";
 var naturesFiber = "ChromatiCraft:chromaticraft_item_crafting:31";
@@ -18,7 +23,9 @@ var gunpowder = "minecraft:gunpowder";
 var livingWood = "livingwood";
 var nuggetTerrasteel = "nuggetTerrasteel";
 var dropCarminite = "TwilightForest:item.carminite";
+var hugeWaterLily = "TwilightForest:tile.HugeWaterLily";
 
+var alchemyCatalyst = "Botania:alchemyCatalyst";
 
 var runeAltar = {
 	name: "Botania:runeAltar",
@@ -54,7 +61,7 @@ var alfheimPortal = {
 	recipes: [
 		[
 			[livingWood, nuggetTerrasteel, livingWood],
-			[livingWood, dropCarminite, livingWood],
+			[livingWood, hugeWaterLily, livingWood],
 			[livingWood, nuggetTerrasteel, livingWood]
 		]
 	]
@@ -62,5 +69,17 @@ var alfheimPortal = {
 
 updateShappedRecipe(alfheimPortal);
 
+/////////////////////////////////////////
 
+var conjurationCatalyst = {
+	name: "Botania:conjurationCatalyst",
+	recipes: [
+		[
+			[livingRock, pixieDust, livingRock],
+			[ingotElementium, alchemyCatalyst, ingotElementium],
+			[livingRock, dropCarminite, livingRock]
+		]
+	]
+};
 
+updateShappedRecipe(conjurationCatalyst);

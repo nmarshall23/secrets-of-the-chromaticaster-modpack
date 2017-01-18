@@ -48,7 +48,6 @@ addCreativeTab(ModId + ".tools", ModDN + ": Tools and Weapons", ModId +
 loadjs("cleanup.js");
 
 
-
 loadjs("oreDict/AMTAddonJP.js");
 loadjs("oreDict/ChromatiCraft.js");
 loadjs("oreDict/gears.js");
@@ -75,15 +74,17 @@ loadjs("removed/vanilla.js");
 
 loadjs("loot/removals.js");
 
+
 loadjs("materials.js");
 loadjs("blockprops.js");
 loadjs("craftingItems.js");
 loadjs("foods.js");
 loadjs("newItemsBlocks.js");
 loadjs("tools.js");
+
 // loadjs("armor.js");
 
-
+/*
 loadjs("tweaks/vanilla.js");
 loadjs("tweaks/AgriCraft.js");
 loadjs("tweaks/AMTAddonJP.js");
@@ -100,6 +101,10 @@ loadjs("tweaks/chisel.js");
 
 loadjs("tweaks/DCsAppleMilk.js");
 loadjs("tweaks/DCsAppleMilk-foods.js");
+loadjs("tweaks/DCsAppleMilk-jawcrush.js");
+loadjs("tweaks/DCsAppleMilk-cookingPlate.js");
+
+
 
 loadjs("tweaks/ExtraTrees.js");
 loadjs("tweaks/ExtraUtilities.js");
@@ -119,7 +124,12 @@ loadjs("tweaks/LLadders.js");
 loadjs("tweaks/magTools.js");
 loadjs("tweaks/plantmegapack.js");
 loadjs("tweaks/OpenBlocks.js");
+
+loadjs("tweaks/PlatesTweaks.js");
+
 loadjs("tweaks/Railcraft.js");
+loadjs("tweaks/Rotarycraft.js");
+
 loadjs("tweaks/SimilsaxTranstructors.js");
 loadjs("tweaks/TwilightForest.js");
 
@@ -128,5 +138,5 @@ loadjs("tweaks/witchery.js");
 // loadjs("tweaks/yegamolchattels.js");
 
 
-
+*/
 // loadjs("loot/additions.js");

@@ -23,3 +23,35 @@ for (var i in planks) {
 		[null, stick, null]
 	]);
 }
+
+
+var compostables = {
+	chromatiBerries: {
+		name: "ChromatiCraft:chromaticraft_item_berry:*",
+		time: 100
+	},
+	chromaticCraftDyes: {
+		name: "ChromatiCraft:chromaticraft_item_dye:*",
+		time: 200
+	},
+	teaLeafs: {
+		name: "DCsAppleMilk:defeatedcrow.leafTea:*",
+		time: 100
+	},
+	belladonna: {
+		name: "witchery:ingredient:21",
+		time: 120
+	},
+	mandrake: {
+		name: "witchery:ingredient:22",
+		time: 120
+	},
+	waterArtichoke: {
+		name: "witchery:ingredient:69",
+		time: 150
+	}
+};
+
+for each(item in compostables) {
+	GardenStuff.addCompostableItem(item.name, item.time);
+}

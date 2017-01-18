@@ -1,0 +1,570 @@
+{
+  "name": "The Neglected Land",
+  "description": "The Overworld is connected to other stranger places then our home. ",
+  "quests": [
+    {
+      "name": "Go to the Nether",
+      "description": "There are resources that can only be found in the Nether. Go Collect Netherrack and Soulsand. ",
+      "x": 79,
+      "y": 14,
+      "icon": {
+        "id": "minecraft:portal"
+      },
+      "prerequisites": [
+        "{Odyssey of Iron}[Mine Obsidian]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "LOCATION",
+          "locations": [
+            {
+              "name": "Vist the Nether",
+              "icon": {
+                "id": "minecraft:end_portal"
+              },
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "dim": -1,
+              "radius": -1,
+              "visible": "NONE"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:netherrack"
+              },
+              "required": 64
+            },
+            {
+              "item": {
+                "id": "minecraft:soul_sand"
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Twilight Hunter and Explorer",
+      "description": "To find your way around the Twilight Forest, a magical map can me crafted.",
+      "x": 197,
+      "y": 15,
+      "icon": {
+        "id": "TwilightForest:item.magicMapFocus"
+      },
+      "prerequisites": [
+        "{Forgotten Magic}[Portal of the Twilight Forest]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "To Kill a Raven",
+          "longDescription": "You will need a Raven\u0027s feather and a Torchberry to make a Magic Map Focus.  Torchberries are fairly commonly found underground in the Twilight Forest.",
+          "items": []
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.magicMapFocus"
+              }
+            },
+            {
+              "item": {
+                "id": "TwilightForest:item.magicMap"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "TwilightForest:item.magicMapFocus",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Rules of the Forest",
+      "description": "A curse have been placed on this land. Straying outside of the forest without out a protective charm will cause negative effects. Kill a Naga to progress to the next area.",
+      "x": 258,
+      "y": 15,
+      "icon": {
+        "id": "TwilightForest:item.nagaScale"
+      },
+      "prerequisites": [
+        "{Forgotten Magic}[Portal of the Twilight Forest]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "description": "Kill the Naga",
+          "longDescription": "The Naga is a large snake-like creature, it can be found in the Naga Courtyard. If it is not attacked for a while it will begin to heal itself. ",
+          "mobs": [
+            {
+              "name": "Snake Fight!",
+              "mob": "TwilightForest.Naga",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Twilight Lich",
+      "description": "As you Explorer the Forest you will find towers guarded by magical field. Once you have defeated a Naga you can enter. At the very top of this tower is the Twilight Lich. You must defeat him to enter the swamp.",
+      "x": 258,
+      "y": 47,
+      "icon": {
+        "id": "TwilightForest:item.scepterTwilight"
+      },
+      "prerequisites": [
+        "Rules of the Forest"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Twilight Lich",
+              "icon": {
+                "id": "TwilightForest:item.scepterTwilight"
+              },
+              "mob": "TwilightForest.Twilight Lich",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "The Labyrinth",
+      "description": "In small hills found throughout the Swamp hold Labyrinths. You will need to explore a Labyrinth before you can the fire swamp.",
+      "x": 258,
+      "y": 81,
+      "icon": {
+        "id": "TwilightForest:tile.TFMazestone",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Twilight Lich"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Minotaurs",
+              "icon": {
+                "id": "TwilightForest:item.meefRaw"
+              },
+              "mob": "TwilightForest.Minotaur",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Liveroots",
+      "description": "Liveroots are found underground, it is harvested by an axe. Use this root to make Ironwood Ingots. Ironwood Tools are more durable then iron, are easier to use then most tools, and have a strong affinity for enchantments. ",
+      "x": 212,
+      "y": 38,
+      "icon": {
+        "id": "TwilightForest:item.liveRoot"
+      },
+      "prerequisites": [
+        "Twilight Hunter and Explorer"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.liveRoot"
+              },
+              "required": 9
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.ironwoodRaw"
+              },
+              "required": 9
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.ironwoodIngot"
+              },
+              "required": 18
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Hail Hydra",
+      "description": "The Hydra can be found in the Hydra Lair in the middle of a Fire Swamp. Killing it and obtaining Fiery Blood from it will allow you to enter the Dark Forest.",
+      "x": 274,
+      "y": 106,
+      "icon": {
+        "id": "TwilightForest:item.hydraChop"
+      },
+      "prerequisites": [
+        "The Labyrinth"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Hydra",
+              "icon": {
+                "id": "TwilightForest:item.fieryBlood"
+              },
+              "mob": "TwilightForest.Hydra",
+              "kills": 1,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Fiery Blood",
+      "description": "The Blood of the Hydra can be used to create Fiery Ingots. Tools made from these ingots have twice the durability of Platinum, are slightly easier to use, and are slightly sharper, and have the same affinity for enchantments as gold. ",
+      "x": 275,
+      "y": 141,
+      "icon": {
+        "id": "TwilightForest:item.fieryIngot"
+      },
+      "prerequisites": [
+        "Hail Hydra"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.fieryIngot"
+              },
+              "required": 6
+            },
+            {
+              "item": {
+                "id": "TwilightForest:item.fieryPick"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Steeleaf",
+      "description": "These leaves can be used to craft tools with durability far greater then steel. But they are not as strong as Steel Tools. They share the same Harvest Level as Iron. ",
+      "x": 243,
+      "y": 105,
+      "icon": {
+        "id": "TwilightForest:item.steeleafIngot"
+      },
+      "prerequisites": [
+        "The Labyrinth"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "TwilightForest:item.steeleafIngot"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hollow Hills",
+      "description": "These are marked on your Magic Map as triangles. They come in three sizes, tiny, medium, and large. As they get bigger so does the danger, as does the amount of loot.",
+      "x": 182,
+      "y": 38,
+      "icon": {
+        "id": "TwilightForest:tile.TFPlant",
+        "damage": 14
+      },
+      "prerequisites": [
+        "Twilight Hunter and Explorer"
+      ],
+      "tasks": [
+        {
+          "type": "KILL",
+          "mobs": [
+            {
+              "name": "Redcap",
+              "mob": "TwilightForest.Redcap",
+              "kills": 3,
+              "exact": false
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "A realm far below the void",
+      "x": 29,
+      "y": 16,
+      "icon": {
+        "id": "ExtraUtilities:dark_portal"
+      },
+      "prerequisites": [
+        "{Forgotten Magic}[OtherWorldly Chalk]",
+        "{Forgotten Magic}[Crystalline Stone]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraUtilities:dark_portal"
+              }
+            }
+          ]
+        },
+        {
+          "type": "LOCATION",
+          "description": "Go to the Deep Dark",
+          "locations": [
+            {
+              "name": "The Deep Dark",
+              "icon": {
+                "id": "ExtraUtilities:dark_portal"
+              },
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "dim": -100,
+              "radius": -1,
+              "visible": "NONE"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Dangers of the Dark",
+      "description": "Light is vital in the Deep Dark; spending too long in the darkness will leave you as prey for the Shadows, which attack in half-heart ticks. Invisible, the Shadows can prove deadly if you are carelessly exploring, or run off into the dark to avoid attack. Fortunately, light keeps the Shadows at bay. ",
+      "x": 29,
+      "y": 47,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDecoration",
+        "damage": 2
+      },
+      "prerequisites": [
+        "A realm far below the void"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiMaterial"
+              },
+              "required": 16
+            },
+            {
+              "item": {
+                "id": "appliedenergistics2:item.ItemMultiMaterial",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ghast Tear",
+      "x": 65,
+      "y": 38,
+      "icon": {
+        "id": "minecraft:ghast_tear"
+      },
+      "prerequisites": [
+        "Go to the Nether"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:ghast_tear"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Glowstone",
+      "description": "This stone is forms on ceilings and overhanges. It holds great magic potential.",
+      "x": 93,
+      "y": 38,
+      "icon": {
+        "id": "minecraft:glowstone"
+      },
+      "prerequisites": [
+        "Go to the Nether"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:glowstone_dust"
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:glowstone",
+          "amount": 4
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Unnamed2",
+      "x": 106,
+      "y": 61,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDevice2",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Glowstone"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDecoration",
+                "damage": 2
+              },
+              "required": 8
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:metalDevice2",
+                "damage": 3
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}

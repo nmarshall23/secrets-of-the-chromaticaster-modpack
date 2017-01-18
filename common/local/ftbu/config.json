@@ -9,18 +9,20 @@
     "need_online_players": true,
     "use_separate_thread": true
   },
+  "chunkloading": {
+    "enabled": true,
+    "max_player_offline_hours": -1.0
+  },
   "commands": {
     "back": false,
     "home": false,
     "name_admin": "admin",
-    "player_can_use_spawnpoint": false,
     "spawn": false,
     "tplast": false,
     "warp": false
   },
   "general": {
     "blocked_entities": [],
-    "disable_chunkloading": false,
     "restart_timer": 0.0,
     "safe_spawn": true,
     "server_info_difficulty": true,
@@ -38,19 +40,16 @@
       "minecraft:wooden_pickaxe 1 0",
       "minecraft:wooden_shovel 1 0",
       "minecraft:torch 32 0",
-      "battlegear2:dagger.iron 1 0",
-      "HardcoreQuesting:quest_book"
+      "HardcoreQuesting:quest_book 1 0"
     ]
   },
   "permissions_admin": {
-    "admin_server_info": true,
     "allow_creative_interact_secure": true,
     "badge": "",
     "break_whitelist": [
       "OpenBlocks:grave",
       "GraveStone:GSGraveStone"
     ],
-    "chunkloader_type": "offline",
     "cross_dim_homes": true,
     "custom_config": {},
     "dimension_blacklist": [],
@@ -59,18 +58,15 @@
     "max_claims": 1000,
     "max_homes": 100,
     "max_loaded_chunks": 50,
-    "offline_chunkloader_timer": 24.0,
     "show_rank": true
   },
   "permissions_player": {
-    "admin_server_info": false,
     "allow_creative_interact_secure": false,
     "badge": "",
     "break_whitelist": [
       "OpenBlocks:grave",
       "GraveStone:GSGraveStone"
     ],
-    "chunkloader_type": "offline",
     "cross_dim_homes": true,
     "custom_config": {},
     "dimension_blacklist": [
@@ -81,7 +77,6 @@
     "max_claims": 100,
     "max_homes": 1,
     "max_loaded_chunks": 50,
-    "offline_chunkloader_timer": 10.0,
     "show_rank": true
   },
   "tops": {

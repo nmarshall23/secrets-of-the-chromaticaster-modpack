@@ -1,10 +1,51 @@
 TODO
 ====
 
-Remove Chisel concrete from smelting gravel. Add ReactorCraft Concrete to oredic, and Chisel group.
+Quest Fixes
+-----------
+
+* Meaty Stew has wrong text, 
+
+* Chalcedony lacks detection item
+
+* More show what needed for crafting..
+* [X] Coke Oven, says 3x3x4 should be 3x3x3
 
 
-Change to use just ElectriCraft ores.
+
+Quest Rewards
+-------------
+
+* !!!, Backpack had stuff in it. Might have been wrong stuff.
+* Limit Backpacks requres to 1. SIUD is messed up on them.
+* [?] Mana Tabet quest bugged, wronge tablet?
+
+Crafting Fixes
+--------------
+* DCsAMT2 Slot Panel receipe should be 4 panels, not one.
+* [X] In RoC Blasting Furnace, Add receipe for Electrum Alloying
+* [X] Fix Witchery Atuned stone, receipe Should not require diamonds
+
+Other Changes
+--------------
+* Remove Chisel concrete from smelting gravel. Add ReactorCraft Concrete to oredic, and Chisel group.
+* Remove Pigs from Mounten Bioms
+* Copper, Bronze tools recycleing in Jaw Crusher?
+* Jaw Crusher, add recipe make ingots to dust
+
+
+
+Chromaic Progression Notes
+---------------------------
+
+* After, Elemental Awareness, came 'Crystal Engergy'
+* 
+
+Food Progression
+----------------
+Increase PMP sandwhiches hunger val, reduce the amount made when crafting, from 4, to 2. 
+
+
 Check on NEI ores resource.
 
 Change oreCadmium HarvestLevel.Steel

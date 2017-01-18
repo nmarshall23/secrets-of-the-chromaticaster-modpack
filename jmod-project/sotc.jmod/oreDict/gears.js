@@ -1,3 +1,4 @@
+(function() {
 var gears = [
   ["RotaryCraft:rotarycraft_item_enginecraft:9", "gearWood"], // rotarycraft wooden gear
   ["RotaryCraft:rotarycraft_item_enginecraft:10", "gearStone"], // rotarycraft stone gear
@@ -9,3 +10,4 @@ var gears = [
 for (var n in gears) {
   addOreDict(gears[n][0], gears[n][1]);
 }
+})();

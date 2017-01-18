@@ -1,3 +1,5 @@
+(function() {
+
 var toolHeads = [
 "magnanimoustools:MagHammerHead",
 "magnanimoustools:MagEarthMoverHead",
@@ -8,3 +10,5 @@ var toolHeads = [
 for(var n in toolHeads){
   addOreDict(toolHeads[n], "toolHead");
 }
+
+})();

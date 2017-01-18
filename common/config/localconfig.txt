@@ -8,6 +8,12 @@
 # Full Example #2: [eirairc/client.cfg]/notifications.D:notificationSoundVolume
 # Also see the localconfig-example.txt for a collection of presets for commonly used mods.
 
+# pvpsettings
+pvpsettings.txt/*
+
+# Xaerominimap
+xaerominimap.txt/*
+
 # AgriCraft
 [agricraft/Configuration.cfg]/agricraft/"Enable NEI"
 [agricraft/Configuration.cfg]/agricraft/"Render journal in analyzer"

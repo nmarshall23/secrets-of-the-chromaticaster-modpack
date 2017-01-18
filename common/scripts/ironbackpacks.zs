@@ -33,23 +33,12 @@ function altBackpackRecipe(outBackpack as IItemStack, inBackpack as IItemStack, 
 val leather = <minecraft:leather>;
 val stickWood = <ore:stickWood>;
 val itemString = <ore:itemString>;
-val bronzeBelt = <Thaumcraft:ItemBaubleBlanks:2>;
-val ironBelt = <TravellersGear:simpleGear:1>;
+// val bronzeBelt = <Thaumcraft:ItemBaubleBlanks:2>;
+// val ironBelt = <TravellersGear:simpleGear:1>;
 
-val basicBackpackWithFilter = <ironbackpacks:basicBackpack>.withTag({Upgrades: [{Upgrade: 3 as byte}, {Upgrade: 6 as byte}], Added: 1, Items: []});
-val basicBackpackWithDeposit = <ironbackpacks:basicBackpack>.withTag({Upgrades: [{Upgrade: 3 as byte}, {Upgrade: 13 as byte}], Items: []});
+// val basicBackpackWithFilter = <ironbackpacks:basicBackpack>.withTag({Upgrades: [{Upgrade: 3 as byte}, {Upgrade: 6 as byte}], Added: 1, Items: []});
+// val basicBackpackWithDeposit = <ironbackpacks:basicBackpack>.withTag({Upgrades: [{Upgrade: 3 as byte}, {Upgrade: 13 as byte}], Items: []});
 
-recipes.addShaped(basicBackpackWithFilter, [
-  [itemString, leather, itemString],
-  [stickWood,  leather, stickWood],
-  [stickWood,  bronzeBelt, stickWood]
-       ]);
-
-recipes.addShaped(basicBackpackWithDeposit, [
-  [itemString, leather, itemString],
-  [stickWood,  leather, stickWood],
-  [stickWood,  ironBelt, stickWood]
-  ]);
 
 
 //Alt recipes for iron Backpack using iron plates

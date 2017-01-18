@@ -59,18 +59,6 @@
       "Weight": 3,
       "Min Group Count": 1,
       "Max Group Count": 4
-    },
-    {
-      "Entity Class": "thaumcraft.common.entities.monster.EntityFireBat",
-      "Weight": 10,
-      "Min Group Count": 1,
-      "Max Group Count": 2
-    },
-    {
-      "Entity Class": "thaumcraft.common.entities.monster.EntityWisp",
-      "Weight": 5,
-      "Min Group Count": 1,
-      "Max Group Count": 1
     }
   ],
   "Spawnable Water Creatures": [],

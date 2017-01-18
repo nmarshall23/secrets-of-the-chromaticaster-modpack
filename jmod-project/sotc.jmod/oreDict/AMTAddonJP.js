@@ -1,3 +1,5 @@
+(function() {
+
 addOreDict("AMTAddonJP:addonamtjp.linen_ball:3", "itemBundleCloth");
 addOreDict("AMTAddonJP:addonamtjp.linen_ball:2", "itemBundleCloth");
 
@@ -14,3 +16,5 @@ var boxBasicLogs = [
 for (var n in boxBasicLogs) {
   addOreDict(boxBasicLogs[n], "boxBasicLogs");
 }
+
+})();

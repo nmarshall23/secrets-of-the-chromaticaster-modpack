@@ -1,3 +1,5 @@
+(function() {
+
 var plates = [
   ["Railcraft:part.plate:0", "plateIron"],
   ["Railcraft:part.plate:1", "plateSteel"],
@@ -9,3 +11,5 @@ var plates = [
 for (var n in plates) {
   addOreDict(plates[n][0], plates[n][1]);
 }
+
+})();

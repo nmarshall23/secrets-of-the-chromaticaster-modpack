@@ -3,6 +3,13 @@ import minetweaker.item.IItemStack;
 import minetweaker.item.IIngredient;
 
 // Removal List.
+
+
+val botaniaLexicon = <Botania:lexicon>;
+val manaSteelIngot = <Botania:manaResource>;
+val manaBottle = <Botania:manaBottle>;
+
+
 val iron_ingot = <minecraft:iron_ingot>;
 val iron_pickaxe = <minecraft:iron_pickaxe>;
 val steel_sword = <Railcraft:tool.steel.sword>;
@@ -21,7 +28,7 @@ val steel_plate = <Railcraft:armor.steel.plate>;
 val steel_legs = <Railcraft:armor.steel.legs>;
 val steel_boots = <Railcraft:armor.steel.boots>;
 
-val spectreIron = <RandomThings:ingredient:4>;
+// val spectreIron = <RandomThings:ingredient:4>;
 
 val book = <minecraft:book>;
 val paper = <minecraft:paper>;
@@ -29,23 +36,22 @@ val map = <minecraft:map>;
 val compass = <minecraft:compass>;
 
 val ingotSteel = <ImmersiveEngineering:metal:8>;
-val thaumium = <Thaumcraft:ItemResource:2>;
-val pickaxeThaumium = <Thaumcraft:ItemPickThaumium>;
-val gemCuter = <WitchingGadgets:item.WG_Material:8>;
+
+
 val apple = <minecraft:apple>;
 val saddle = <minecraft:saddle>;
 val oakSapling = <minecraft:sapling>;
 val obsidian = <minecraft:obsidian>;
 val bread = <minecraft:bread>;
 val bucket = <minecraft:bucket>;
-val baubleRing = <Thaumcraft:ItemBaubleBlanks:1>;
+
 val String = <minecraft:string>;
 val dbattery = <DCsAppleMilk:defeatedcrow.battery>;
 val wheat = <minecraft:wheat>;
 
 
-val amber = <Thaumcraft:ItemResource:6>;
-val baubleAmulet = <Thaumcraft:ItemBaubleBlanks>;
+
+
 val bones = <minecraft:bone>;
 val rottenFlesh = <minecraft:rotten_flesh>;
 
@@ -66,19 +72,23 @@ vanilla.loot.addChestLoot("strongholdLibrary", chromaticraftNotes.weight(90), 4,
 vanilla.loot.addChestLoot("strongholdLibrary", largePaperBox.weight(100));
 
 val ironSteelLoot = [iron_ingot, iron_pickaxe, steel_pickaxe, steel_shears,
- steel_ingot, steel_block, thaumium, pickaxeThaumium, bucket, ingotSteel] as IItemStack[];
+ steel_ingot, steel_block, bucket, ingotSteel,
+ botaniaLexicon, manaSteelIngot, manaBottle
+] as IItemStack[];
 
-val villageBlacksmithBoringLoot = [gemCuter, apple, saddle, oakSapling, bread, diamond, obsidian, saddle] as IItemStack[];
-val dungeonChestBoringLoot = [bread, baubleRing, baubleAmulet, String, apple,
-dbattery, wheat, amber, saddle, bones, rottenFlesh,
+val villageBlacksmithBoringLoot = [apple, saddle, oakSapling, bread, diamond, obsidian, saddle] as IItemStack[];
+
+val dungeonChestBoringLoot = [bread, String, apple,
+dbattery, wheat, saddle, bones, rottenFlesh,
 mintSeed, tinGearBushing, tntMineCart, mineCart, lexicon] as IItemStack[];
 
 val strongholdBoringLoot = [redstone, amtLicor, <plantmegapack:wrapFish>,
 <plantmegapack:wrapBeef>, <plantmegapack:wrapChicken>, <plantmegapack:wrapPork>,
 <plantmegapack:wrapRice>, <plantmegapack:wrapCornBeef>, <plantmegapack:wrapCornChicken>,
 <plantmegapack:wrapCornFish>, <plantmegapack:wrapCornPork>, <plantmegapack:wrapCornRice>,
-<witchery:stew>, <TwilightForest:item.hydraChop>,
-<Thaumcraft:ItemThaumonomicon>, <Thaumcraft:ItemHoeThaumium>] as IItemStack[];
+<witchery:stew>, <TwilightForest:item.hydraChop>] as IItemStack[];
+
+
 
 
 // Remove Iron and Steel from Common Loot chest

@@ -1,3 +1,5 @@
+(function() {
+
 loadjs("functions.js");
 
 var simpleStew = {
@@ -158,3 +160,5 @@ var foodRCFlour = {
 };
 
 additionalRecipe(foodRCFlour);
+
+})();

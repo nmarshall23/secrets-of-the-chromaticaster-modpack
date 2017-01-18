@@ -1,0 +1,3035 @@
+{
+  "name": "Forgotten Magic",
+  "description": "Discover the foundations of magic",
+  "quests": [
+    {
+      "name": "Crystalline Stone",
+      "description": "Crystalline Stone is made on the Cating Table. You will need a great amount to fix broken Pylons.",
+      "x": 114,
+      "y": 108,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_block_pylonstruct"
+      },
+      "prerequisites": [
+        "Elemental Manipulator",
+        "Casting Table",
+        "Crystal Stone Trigger"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_pylonstruct"
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Chromatic Notes",
+      "description": "Fragments of Chromaticraft Research notes have been scattered in Dungeon Chests.      To really understand Chromatic Energies you are going to have to examine an active pylon. Get within 1 meter of the glowing ball of engery.",
+      "x": 142,
+      "y": 55,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_item_tiered",
+        "damage": 13
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Find an Info Fragment",
+          "longDescription": "Once found to read the Info Fragment, you need to place it in your Chromatic Lexicon.  Shift Right click the Chromatic Lexicon to open the Info Fragment inventory.  Place your newly found Fragment inside.",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_fragment"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ChromatiCraft:chromaticraft_item_fragment",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Ender Forest",
+      "description": "Past Explorers found Forest where Ender Men gathered in great numbers. There are resources that can only be found there.",
+      "x": 154,
+      "y": 35,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_block_decoflower"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Collect Energetic Essence",
+          "longDescription": "Energetic Essence is dropped by some kind of Clover.",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_crafting",
+                "damage": 28
+              },
+              "required": 3
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Collect Motive Dust",
+          "longDescription": "Motive Dust is dropped by a flower favored by Ender Men.",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_crafting",
+                "damage": 26
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Portal of the Twilight Forest",
+      "description": "There is a mound not far from where you entered the Overworld, under this is a portal to a realm bathed in Twilight. It is said that the Chromaticaster left many clues to his art in that realm. To unlock it, you must pay the toll.",
+      "x": 154,
+      "y": 75,
+      "icon": {
+        "id": "TwilightForest:tile.TFPortal"
+      },
+      "tasks": [
+        {
+          "type": "CONSUME",
+          "description": "Pay the Toll in Gold",
+          "longDescription": "You will find Gold Coins in bags carried by knights and clerics of the Crimson Cult.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:gold_nugget"
+              },
+              "required": 2
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "description": "Making an Offering",
+          "longDescription": "Find an Elemental Shard to wake the spirits. Four torches to light the way. Eight Mandrake to walk the path. Sixteen Belladonna to finish the rite.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:torch"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 22
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 21
+              },
+              "required": 16
+            }
+          ]
+        },
+        {
+          "type": "LOCATION",
+          "description": "Down the Rabbit Hole",
+          "longDescription": "Jump in the portal",
+          "locations": [
+            {
+              "name": "Twilight Forest",
+              "icon": {
+                "id": "TwilightForest:tile.TFPortal"
+              },
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "dim": 7,
+              "radius": -1,
+              "visible": "NONE"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Witches\u0027 Cauldron",
+      "description": "A Witches\u0027 Cauldron, is used for brewing interesting potions and spells.",
+      "x": 223,
+      "y": 36,
+      "icon": {
+        "id": "witchery:cauldron"
+      },
+      "prerequisites": [
+        "Witch\u0027s Seeds"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 153
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:cauldron"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "amount": 2
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Witch\u0027s Seeds",
+      "x": 178,
+      "y": 35,
+      "icon": {
+        "id": "witchery:seedsbelladonna"
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Collect these magic seeds",
+          "longDescription": "Hoe dirt till you find Mandrake Seeds, Belladonna Seeds, Snowbell Seeds and Water Artichoke Seeds.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:seedsmandrake"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:seedsartichoke"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:seedssnowbell"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:seedsbelladonna"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "GardenCore:garden_soil",
+          "amount": 3
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Trees of Every Color",
+      "x": 165,
+      "y": 125,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+        "damage": 4
+      },
+      "prerequisites": [
+        "Casting Table"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling"
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+                "damage": 2
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+                "damage": 3
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+                "damage": 4
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+                "damage": 5
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+                "damage": 6
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+                "damage": 7
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+                "damage": 8
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+                "damage": 9
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+                "damage": 10
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+                "damage": 11
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+                "damage": 12
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+                "damage": 13
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+                "damage": 14
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_dyesapling",
+                "damage": 15
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry",
+                "damage": 8
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry",
+                "damage": 9
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry",
+                "damage": 10
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry",
+                "damage": 11
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry"
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry",
+                "damage": 2
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry",
+                "damage": 3
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry",
+                "damage": 4
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry",
+                "damage": 5
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry",
+                "damage": 6
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry",
+                "damage": 7
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry",
+                "damage": 12
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry",
+                "damage": 13
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry",
+                "damage": 14
+              }
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_berry",
+                "damage": 15
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2,
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Cook up some Mutandis",
+      "description": "Mutandis is a mutagen that is used by witches and warlocks to mutate plants into other species. Simply use Mutandis on small plants, grass, flowers, saplings, etc. and it will be randomly converted to another plant.",
+      "x": 239,
+      "y": 62,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 14
+      },
+      "prerequisites": [
+        "Witches\u0027 Cauldron",
+        "So Toasty"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Make sure your Witches\u0027 Cauldron is full of water and has a heat source under it. Then toss in Mandrake Root, Exhale of the Horned One and an Egg.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 14
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "witchery:ingredient",
+          "damage": 14,
+          "amount": 4
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "So Toasty",
+      "description": "A witches oven is able to capture the by-products produced in the cooking process. It can not smelt ores. But does cook food faster.",
+      "x": 251,
+      "y": 39,
+      "icon": {
+        "id": "witchery:witchesovenidle"
+      },
+      "prerequisites": [
+        "{Prelude}[Tin Ore]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:witchesovenidle"
+              }
+            },
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 26
+              },
+              "required": 8
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 27
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "minecraft:clay_ball",
+          "amount": 24
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Witch Trees?",
+      "description": "There are magic trees that do not grew wild in the Overworld. You need to use Mutandis to converted other plants into Rowan, Hawthorn and Alder saplings.",
+      "x": 239,
+      "y": 93,
+      "icon": {
+        "id": "witchery:witchsapling",
+        "damage": 2
+      },
+      "prerequisites": [
+        "Cook up some Mutandis"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:witchsapling",
+                "damage": 2
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "witchery:witchsapling"
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "witchery:witchsapling",
+                "damage": 1
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "witchery:ingredient",
+          "damage": 14,
+          "amount": 4
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Loot Chest",
+      "description": "Loot Chests like these are found in hidden structures. ",
+      "x": 116,
+      "y": 55,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_block_lootchest"
+      },
+      "prerequisites": [
+        "Chromatic Notes"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_lootchest"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Casting Table",
+      "description": "Surely the wooden crafting table is not sufficient to do all your crafting.",
+      "x": 141,
+      "y": 99,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_item_placer",
+        "damage": 5
+      },
+      "prerequisites": [
+        "Chromatic Notes",
+        "Casting Table Trigger"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "longDescription": "You will need to use a Elemental Manipulator to activate the Casting Table. Once a recipe is set, use it on the Casting table to start the operation. ",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_placer",
+                "damage": 5
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ],
+      "rewardchoice": [
+        {
+          "id": "ChromatiCraft:chromaticraft_item_shard",
+          "damage": 6,
+          "amount": 4
+        },
+        {
+          "id": "ChromatiCraft:chromaticraft_item_shard",
+          "damage": 14,
+          "amount": 4
+        },
+        {
+          "id": "ChromatiCraft:chromaticraft_item_shard",
+          "damage": 12,
+          "amount": 4
+        },
+        {
+          "id": "ChromatiCraft:chromaticraft_item_shard",
+          "damage": 11,
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "Repair Crystal Pylons",
+      "description": "To wield the power of the Chromaticaster you will need to repair the broken Crystal Pylons. Replace any missing Crystalline Stone blocks.",
+      "x": 114,
+      "y": 137,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_block_pylonstruct",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Crystalline Stone"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_pylonstruct",
+                "damage": 2
+              },
+              "required": 32
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_pylonstruct",
+                "damage": 1
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_pylonstruct",
+                "damage": 7
+              },
+              "required": 12
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_pylonstruct",
+                "damage": 8
+              },
+              "required": 15
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ChromatiCraft:chromaticraft_item_fragment"
+        }
+      ]
+    },
+    {
+      "name": "Division Sigil",
+      "x": 297,
+      "y": 12,
+      "icon": {
+        "id": "ExtraUtilities:divisionSigil"
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 2,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraUtilities:divisionSigil"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:enchanting_table"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ExtraUtilities:divisionSigil",
+                "nbt": "{damage:256}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ChromatiCraft:chromaticraft_item_fragment"
+        }
+      ]
+    },
+    {
+      "name": "Magnanimous Trees",
+      "description": "A very rare Tree. In their core a gem of great power grows.",
+      "x": 190,
+      "y": 55,
+      "icon": {
+        "id": "magnanimoustools:MagSapling"
+      },
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "magnanimoustools:MagnanimousGem"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "magnanimoustools:MagStick"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Magnanimous Tools",
+      "description": "Magnanimous Tools are superior to Steel tools, with very good enchantability. To make them first craft a tool head, and a hardened Handle, then combine them in an anvil.This will require some XP. Oddly these tools can not be repaired on an anvil.",
+      "x": 213,
+      "y": 73,
+      "icon": {
+        "id": "magnanimoustools:MagnanimousPick"
+      },
+      "prerequisites": [
+        "Magnanimous Trees"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "magnanimoustools:HardenedHandle"
+              }
+            },
+            {
+              "item": {
+                "id": "magnanimoustools:MagEarthMoverHead"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Enchanting Table",
+      "x": 266,
+      "y": 139,
+      "icon": {
+        "id": "minecraft:enchanting_table"
+      },
+      "prerequisites": [
+        "Attuned Stone",
+        "{Odyssey of Iron}[Mine Obsidian]"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:enchanting_table"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Attuned Stone",
+      "description": "Attuned stones can be used to link non-magical devices to the magical currents present in the world.",
+      "x": 253,
+      "y": 115,
+      "icon": {
+        "id": "witchery:ingredient",
+        "damage": 10
+      },
+      "prerequisites": [
+        "Witch Trees?",
+        "Nature\u0027s Altar"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:ingredient",
+                "damage": 10
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Distillery",
+      "description": "A distillery used by a witch is a construct used for distilling magical ingredients. It is unlike a normal distillery, because it heats itself using energy obtained from a nearby altar, the distillery must be within about 14 (to 16) blocks of an altar to draw power from it.",
+      "x": 280,
+      "y": 100,
+      "icon": {
+        "id": "witchery:distilleryidle"
+      },
+      "prerequisites": [
+        "Attuned Stone"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:distilleryidle"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Unnamed2",
+      "x": 291,
+      "y": 138,
+      "icon": {
+        "id": "DisenchanterMod:BlockDisenchantmentTable"
+      },
+      "prerequisites": [
+        "Enchanting Table"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "DisenchanterMod:BlockDisenchantmentTable"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unnamed3",
+      "x": 267,
+      "y": 72,
+      "icon": {
+        "id": "witchery:spinningwheel"
+      },
+      "prerequisites": [
+        "Attuned Stone"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:spinningwheel"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Kettle",
+      "x": 299,
+      "y": 116,
+      "icon": {
+        "id": "witchery:kettle"
+      },
+      "prerequisites": [
+        "Attuned Stone"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:kettle"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Nature\u0027s Altar",
+      "description": "An altar is a focal point to concentrate the magic present in the surrounding area into single usable source of power. Since witchcraft is a method to harness the power of nature, placing an altar in a location with little or no living things will yield very little magic to work with. ",
+      "x": 228,
+      "y": 116,
+      "icon": {
+        "id": "witchery:altar"
+      },
+      "prerequisites": [
+        "Witch Trees?"
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "longDescription": "An altar is created by placing six altar blocks in a 2x3 pattern; you will know it is correct when a red cloth appears over the top of the altar.",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:altar"
+              },
+              "required": 6
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Frozen flowers",
+      "description": "Found in cold empty places.",
+      "x": 141,
+      "y": 9,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_block_decoflower",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Ender Forest"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_crafting",
+                "damage": 27
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Reeds of the Void",
+      "description": "Found in eerie and damp places.",
+      "x": 120,
+      "y": 8,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_block_decoflower",
+        "damage": 4
+      },
+      "prerequisites": [
+        "Ender Forest"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_crafting",
+                "damage": 30
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        },
+        {
+          "id": "HardcoreQuesting:bags"
+        }
+      ]
+    },
+    {
+      "name": "Berries So high",
+      "description": "Found atop of the Jungle Canopy these berries give off an odd aura. ",
+      "x": 97,
+      "y": 10,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_block_decoflower",
+        "damage": 3
+      },
+      "prerequisites": [
+        "Ender Forest"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_crafting",
+                "damage": 29
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Crazy Ivy",
+      "description": "Found on cliff faces.",
+      "x": 103,
+      "y": 35,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_block_decoflower",
+        "damage": 5
+      },
+      "prerequisites": [
+        "Ender Forest"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_crafting",
+                "damage": 31
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Like a vertical escalator",
+      "description": "Once you have placed this block down. Stand on it and jump to be transported to the next floor. Crouch to go down a floor.",
+      "x": 298,
+      "y": 81,
+      "icon": {
+        "id": "OpenBlocks:elevator"
+      },
+      "prerequisites": [
+        "Distillery"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "OpenBlocks:elevator"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "OpenBlocks:elevator",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Cerasu Wood",
+      "x": 17,
+      "y": 151,
+      "icon": {
+        "id": "dendrology:sapling0",
+        "damage": 2
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0",
+                "damage": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0",
+                "damage": 2
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Porffor Wood",
+      "x": 50,
+      "y": 172,
+      "icon": {
+        "id": "dendrology:sapling1",
+        "damage": 2
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling1",
+                "damage": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling1",
+                "damage": 2
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Ewcaly Wood",
+      "x": 28,
+      "y": 171,
+      "icon": {
+        "id": "dendrology:sapling0",
+        "damage": 4
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0",
+                "damage": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0",
+                "damage": 4
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Hekur Wood",
+      "x": 62,
+      "y": 191,
+      "icon": {
+        "id": "dendrology:sapling0",
+        "damage": 5
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0",
+                "damage": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0",
+                "damage": 5
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Tuopa Wood",
+      "x": 39,
+      "y": 191,
+      "icon": {
+        "id": "dendrology:sapling1",
+        "damage": 4
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling1",
+                "damage": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling1",
+                "damage": 4
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Cedrum Wood",
+      "x": 29,
+      "y": 132,
+      "icon": {
+        "id": "dendrology:sapling0",
+        "damage": 1
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0",
+                "damage": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0",
+                "damage": 1
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Kiparis Wood",
+      "x": 73,
+      "y": 172,
+      "icon": {
+        "id": "dendrology:sapling0",
+        "damage": 6
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0",
+                "damage": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0",
+                "damage": 6
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Delnas Wood",
+      "x": 40,
+      "y": 152,
+      "icon": {
+        "id": "dendrology:sapling0",
+        "damage": 3
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0",
+                "damage": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0",
+                "damage": 3
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Acemus Wood",
+      "x": 19,
+      "y": 112,
+      "icon": {
+        "id": "dendrology:sapling0"
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Kulist Wood",
+      "x": 62,
+      "y": 153,
+      "icon": {
+        "id": "dendrology:sapling0",
+        "damage": 7
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0",
+                "damage": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling0",
+                "damage": 7
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Lata Wood",
+      "x": 51,
+      "y": 133,
+      "icon": {
+        "id": "dendrology:sapling1"
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling1"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Nucis Wood",
+      "x": 41,
+      "y": 113,
+      "icon": {
+        "id": "dendrology:sapling1",
+        "damage": 1
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling1",
+                "damage": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling1",
+                "damage": 1
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Salyx Wood",
+      "x": 31,
+      "y": 93,
+      "icon": {
+        "id": "dendrology:sapling1",
+        "damage": 3
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling1",
+                "damage": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "CONSUME",
+          "items": [
+            {
+              "item": {
+                "id": "dendrology:sapling1",
+                "damage": 3
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Casting Table Trigger",
+      "x": 49,
+      "y": 53,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_item_fragment",
+        "nbt": "{page:\"CASTTABLE\"}"
+      },
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_fragment",
+                "nbt": "{page:\"CASTTABLE\"}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crystal Stone Trigger",
+      "x": 51,
+      "y": 84,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_item_fragment",
+        "nbt": "{page:\"CRYSTALSTONE\"}"
+      },
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_fragment",
+                "nbt": "{page:\"CRYSTALSTONE\"}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crystal Seeds Trigger",
+      "description": "Experimentation in Chromaticraft will requires many Crystal Shards. It\u0027s far simpler to grow the shards you need, then to hunt for cave crystals.",
+      "x": 85,
+      "y": 200,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_item_fragment",
+        "nbt": "{page:\"SEED\"}"
+      },
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_fragment",
+                "nbt": "{page:\"SEED\"}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crystal Seeds",
+      "description": "Experimentation in Chromaticraft will requires many Crystal Shards. It\u0027s far simpler to grow the shards you need, then to hunt for cave crystals.",
+      "x": 100,
+      "y": 157,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_block_plant"
+      },
+      "prerequisites": [
+        "Crystal Seeds Trigger",
+        "Crafting with Runes"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "Crystal Blooms occasionally drop seeds and / or Crystal Shards. It might be best to find a means to automate harvesting them. ",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed",
+                "damage": 1
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed",
+                "damage": 2
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed",
+                "damage": 3
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed",
+                "damage": 4
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed",
+                "damage": 5
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed",
+                "damage": 6
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed",
+                "damage": 7
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed",
+                "damage": 8
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed",
+                "damage": 9
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed",
+                "damage": 10
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed",
+                "damage": 11
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed",
+                "damage": 12
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed",
+                "damage": 13
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed",
+                "damage": 14
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_seed",
+                "damage": 15
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Runes Trigger",
+      "x": 64,
+      "y": 103,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_item_fragment",
+        "nbt": "{page:\"USINGRUNES\"}"
+      },
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_fragment",
+                "nbt": "{page:\"USINGRUNES\"}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Crafting with Runes",
+      "description": "To craft with runes you will need to augment the power of your Casting Table, by building a Casting Room. This is a 13 meter square room, and 7 meters tall. In the floor you will place the runes as required. Leave yourself a little space around the Casting Room, there will be need for it when you upgrade.",
+      "x": 90,
+      "y": 129,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_block_rune",
+        "damage": 1
+      },
+      "prerequisites": [
+        "Runes Trigger",
+        "Crystalline Stone"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:lapis_block"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "minecraft:coal_block"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_pylonstruct",
+                "damage": 8
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_pylonstruct",
+                "damage": 7
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_pylonstruct",
+                "damage": 1
+              },
+              "required": 32
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_pylonstruct",
+                "damage": 2
+              },
+              "required": 52
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_block_pylonstruct"
+              },
+              "required": 116
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Pylon Compass",
+      "description": "The pylon compass scans the energy field that permeates the world and analyzes it to calculate the location of the nearest pylon of each crystal element.",
+      "x": 125,
+      "y": 160,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_item_finder"
+      },
+      "prerequisites": [
+        "Pylon Compass Trigger",
+        "Casting Table"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_finder"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Pylon Compass Trigger",
+      "x": 98,
+      "y": 209,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_item_fragment",
+        "nbt": "{page:\"FINDER\"}"
+      },
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_fragment",
+                "nbt": "{page:\"FINDER\"}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Elemental Manipulator Trigger",
+      "x": 31,
+      "y": 40,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_item_fragment",
+        "nbt": "{page:\"WAND\"}"
+      },
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_fragment",
+                "nbt": "{page:\"WAND\"}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Elemental Manipulator",
+      "description": "The manipulator is your first foray into this strange new field of crystal elements and chromatic forces. The tool seems to be your main way of activating blocks, either to start some operation or to change settings on a device. It also seems capable of testing the connectivity of segments of a crystal network, and drawing energy off a pylon into yourself.",
+      "x": 118,
+      "y": 82,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_item_tool"
+      },
+      "prerequisites": [
+        "Chromatic Notes",
+        "Elemental Manipulator Trigger"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "A pylon needs to be active and have had time to build up a charge for you to draw energy off of it.",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_tool"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Crystal Bees Trigger",
+      "x": 23,
+      "y": 12,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_item_fragment",
+        "nbt": "{page:\"BEES\"}"
+      },
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_fragment",
+                "nbt": "{page:\"BEES\"}"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "OtherWorldly Chalk",
+      "x": 238,
+      "y": 10,
+      "icon": {
+        "id": "witchery:chalkotherwhere"
+      },
+      "prerequisites": [
+        "Witches\u0027 Cauldron"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "witchery:chalkotherwhere"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "A Botanical Garden",
+      "x": 179,
+      "y": 75,
+      "icon": {
+        "id": "Botania:lexicon"
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:lexicon"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 3
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:flowerBag"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:pestleAndMortar"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:fertilizer"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Collect a Rainbow of Flowers",
+      "x": 175,
+      "y": 101,
+      "icon": {
+        "id": "Botania:flower",
+        "damage": 2
+      },
+      "prerequisites": [
+        "A Botanical Garden"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:flower"
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 1
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 2
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 3
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 4
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 5
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 6
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 7
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 8
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 9
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 10
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 11
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 12
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 13
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 14
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 15
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Pure Daisy",
+      "description": "The Pure Daisy is not only the most basic, but also the most important flower a botanist can have.This flower will purify any adjacent Wood and Stone blocks, into Livingwood and Livingrock.",
+      "x": 204,
+      "y": 126,
+      "icon": {
+        "id": "Botania:specialFlower",
+        "nbt": "{type:\"puredaisy\"}"
+      },
+      "prerequisites": [
+        "Petal Apothecary"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"puredaisy\"}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:livingrock0SlabFull"
+              },
+              "required": 8
+            },
+            {
+              "item": {
+                "id": "Botania:livingwood"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "DayBloom",
+      "x": 191,
+      "y": 149,
+      "icon": {
+        "id": "Botania:specialFlower",
+        "nbt": "{type:\"daybloom\"}"
+      },
+      "prerequisites": [
+        "Pure Daisy"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:petal",
+                "damage": 1
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "Botania:petal",
+                "damage": 3
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "Botania:petal",
+                "damage": 4
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "minecraft:wheat_seeds"
+              },
+              "required": 2,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"daybloom\"}"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Endoflame",
+      "description": "The Endoflame is a very rudimentary generating flower, it will absorb any combustible items or blocks dropped on the nearby vicinity (albeit only one at a time) and burn through them to generate mana while the fuel lasts.",
+      "x": 205,
+      "y": 200,
+      "icon": {
+        "id": "Botania:specialFlower",
+        "nbt": "{type:\"endoflame\"}"
+      },
+      "prerequisites": [
+        "Wand of the Forest"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:dye"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "Botania:petal",
+                "damage": 12
+              },
+              "required": 2
+            },
+            {
+              "item": {
+                "id": "Botania:petal",
+                "damage": 14
+              }
+            },
+            {
+              "item": {
+                "id": "Botania:petal",
+                "damage": 8
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:wheat_seeds"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 23
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:specialFlower",
+                "nbt": "{type:\"endoflame\"}"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "A Pool Not For Swimming",
+      "x": 218,
+      "y": 149,
+      "icon": {
+        "id": "Botania:pool"
+      },
+      "prerequisites": [
+        "Pure Daisy"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:livingrock"
+              },
+              "required": 10
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:pool"
+              },
+              "required": 2
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Wand of the Forest",
+      "x": 205,
+      "y": 171,
+      "icon": {
+        "id": "Botania:twigWand",
+        "nbt": "{color1:11,color2:11,boundTileZ:0,boundTileX:0,boundTileY:-1}"
+      },
+      "prerequisites": [
+        "A Pool Not For Swimming",
+        "DayBloom"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:livingwood"
+              },
+              "required": 6
+            },
+            {
+              "item": {
+                "id": "Botania:flower",
+                "damage": 1
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaResource",
+                "damage": 3
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "Botania:petal",
+                "damage": 3
+              },
+              "required": 2,
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:twigWand",
+                "nbt": "{color1:11,color2:11,boundTileZ:0,boundTileX:0,boundTileY:-1}"
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Unnamed8",
+      "x": 241,
+      "y": 139,
+      "icon": {
+        "id": "Botania:runeAltar"
+      },
+      "prerequisites": [
+        "A Pool Not For Swimming",
+        "Nature\u0027s Altar"
+      ],
+      "trigger": "ANTI_TRIGGER"
+    },
+    {
+      "name": "Petal Apothecary",
+      "x": 203,
+      "y": 98,
+      "icon": {
+        "id": "Botania:altar"
+      },
+      "prerequisites": [
+        "A Botanical Garden"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:altar"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:itemWoodenBucket"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "sotc.jmod:itemWoodenBucket_water"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags"
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Mana Tablet",
+      "x": 231,
+      "y": 171,
+      "icon": {
+        "id": "Botania:manaTablet",
+        "nbt": "{mana:500000,creative:1b}"
+      },
+      "prerequisites": [
+        "A Pool Not For Swimming"
+      ],
+      "trigger": "ANTI_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:livingrock"
+              },
+              "required": 8
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "items": [
+            {
+              "item": {
+                "id": "Botania:manaTablet"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Crystal Shards",
+      "x": 131,
+      "y": 193,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_item_shard"
+      },
+      "trigger": "TASK_TRIGGER",
+      "triggertasks": 1,
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_shard"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_shard"
+              },
+              "required": 8,
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "amount": 2
+        },
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Chroma Collector",
+      "x": 146,
+      "y": 144,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_item_placer",
+        "damage": 4
+      },
+      "prerequisites": [
+        "Chroma Collector ",
+        "Casting Table"
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:stone"
+              },
+              "required": 3
+            },
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_shard"
+              },
+              "required": 4,
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "minecraft:glowstone"
+              }
+            },
+            {
+              "item": {
+                "id": "minecraft:ender_eye"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_placer",
+                "damage": 4
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:bags",
+          "damage": 2
+        }
+      ]
+    },
+    {
+      "name": "Chroma Collector ",
+      "x": 21,
+      "y": 59,
+      "icon": {
+        "id": "ChromatiCraft:chromaticraft_item_fragment",
+        "nbt": "{page:\"COLLECTOR\"}"
+      },
+      "trigger": "QUEST_TRIGGER",
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": [
+            {
+              "item": {
+                "id": "ChromatiCraft:chromaticraft_item_fragment",
+                "nbt": "{page:\"COLLECTOR\"}"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reputationBar": []
+}
