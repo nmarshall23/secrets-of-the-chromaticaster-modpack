@@ -26,7 +26,8 @@ AppleMilkTea2.removeDryingRecipe(powderBlaze);
 
 var oreAluminum = "ElectriCraft:electricraft_block_ore:4";
 var dustAluminum = "ImmersiveEngineering:metal:11";
-//mods.amt.Processor.addRecipe(dustAluminum * 2, nuggetAluminum * 4, [oreAluminum], false, 0.1, false, 1);
+//mods.amt.Processor.addRecipe(dustAluminum * 2, nuggetAluminum * 4, [oreAluminum],
+//  false, 0.1, false, 1);
 
 // output, sec, inputs, secChance, tier
 AppleMilkTea2.addJawCrusherRecipe(dustAluminum + "@2", [oreAluminum], 1);
@@ -38,29 +39,46 @@ AppleMilkTea2.addJawCrusherRecipe(dustSkyStone, [blockSkyStone], 2);
 
 // Ingot to dust
 // XXX Need to fix the plugin to use oredic.
-AppleMilkTea2.addJawCrusherRecipe("DCsAppleMilk:defeatedcrow.oreDust:5", [
-  "minecraft:gold_ingot"
-], 3);
-AppleMilkTea2.addJawCrusherRecipe("DCsAppleMilk:defeatedcrow.oreDust:2", [
-  "ElectriCraft:electricraft_item_ingots:0" // "ingotCopper"
-], 3);
-AppleMilkTea2.addJawCrusherRecipe("DCsAppleMilk:defeatedcrow.oreDust:1", [
-  "ElectriCraft:electricraft_item_ingots:1" // "ingotTin"
-], 3);
-AppleMilkTea2.addJawCrusherRecipe("DCsAppleMilk:defeatedcrow.oreDust:3", [
-  "ElectriCraft:electricraft_item_ingots:2" // "ingotSilver"
-], 3);
-AppleMilkTea2.addJawCrusherRecipe("DCsAppleMilk:defeatedcrow.oreDust:6", [
-  "ElectriCraft:electricraft_item_ingots:3" // "ingotNickel"
-], 3);
+// AppleMilkTea2.addJawCrusherRecipe("DCsAppleMilk:defeatedcrow.oreDust:5", [
+//  "minecraft:gold_ingot"
+// ], 3);
+
+// AppleMilkTea2.addJawCrusherRecipe("DCsAppleMilk:defeatedcrow.oreDust:2", [
+//  "ElectriCraft:electricraft_item_ingots:0" // "ingotCopper"
+// ], 3);
+
+// AppleMilkTea2.addJawCrusherRecipe("DCsAppleMilk:defeatedcrow.oreDust:1", [
+//  "ElectriCraft:electricraft_item_ingots:1" // "ingotTin"
+// ], 3);
+
+// AppleMilkTea2.addJawCrusherRecipe("DCsAppleMilk:defeatedcrow.oreDust:3", [
+//  "ElectriCraft:electricraft_item_ingots:2" // "ingotSilver"
+// ], 3);
+
+// AppleMilkTea2.addJawCrusherRecipe("DCsAppleMilk:defeatedcrow.oreDust:6", [
+//  "ElectriCraft:electricraft_item_ingots:3" // "ingotNickel"
+// ], 3);
+
+AppleMilkTea2.addJawCrusherRecipe("plantmegapack:foodCornFlour", [
+  "plantmegapack:foodCorn"
+], 0);
+AppleMilkTea2.addJawCrusherRecipe("RotaryCraft:rotarycraft_item_powders:9", [
+  "minecraft:wheat"
+], 0);
 
 
 // ingots and plates to dusts
-// loadjs("resourceMaps.js");
-//
-// for each(metal in resourceMetalsMap) {
-//   // metal.ingotOreDic -> metal.dustOreDic
-//   // metal.plateOreDic -> metal.dustOreDic
-//   AppleMilkTea2.addJawCrusherRecipe(metal.dustOreDic, [metal.ingotOreDic], 3);
-//   AppleMilkTea2.addJawCrusherRecipe(metal.plateOreDic, [metal.ingotOreDic], 3);
-// }
+loadjs("resourceMaps.js");
+for each(metal in resourceMetalsMap) {
+  // metal.ingotOreDic -> metal.dustOreDic
+  // metal.plateOreDic -> metal.dustOreDic
+  if (metal.dustOreDic) {
+    AppleMilkTea2.addJawCrusherRecipe(metal.dustOreDic, [metal.ingotOreDic], 3);
+
+    if (metal.plateOreDic) {
+      AppleMilkTea2.addJawCrusherRecipe(metal.dustOreDic, [metal.plateOreDic], 3);
+    }
+  }
+
+
+}

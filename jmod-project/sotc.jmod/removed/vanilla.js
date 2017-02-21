@@ -20,7 +20,7 @@ removeRecipes("minecraft:wool");
 removeRecipes("minecraft:bread");
 removeRecipes("minecraft:cookie");
 removeRecipes("minecraft:pumpkin_pie");
-removeRecipes("minecraft:cake");
+// removeRecipes("minecraft:cake");
 
 // No need for vanilla mushroom stew
 removeRecipes("minecraft:mushroom_stew");

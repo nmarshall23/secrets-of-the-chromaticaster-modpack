@@ -32,9 +32,6 @@ val hasRailCraftRecipeList =  {
 } as IItemStack[string];
 
 
-
-
-
 val plates = {
 "Copper": <ImmersiveEngineering:metal:31>,
 "Tin":    <Railcraft:part.plate:2>,

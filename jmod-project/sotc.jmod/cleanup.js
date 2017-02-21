@@ -13,9 +13,7 @@
 // 	}
 // }
 
-if (isModLoaded("GeoStrata")) {
-	hideFromNEI("GeoStrata:geostrata_block_oretile:*");
-}
+
 
 var unUsedOres = [
 	["NetherOres:tile.netherores.ore.1:15", "NetherOres"],
@@ -48,9 +46,8 @@ var unUsedOres = [
 	// ["Mariculture:rocks:2", "Mariculture"], // Aluminum
 
 ];
-
-for (var ore in unUsedOres) {
-	hideFromNEI(unUsedOres[ore][0]);
-	// if ((unUsedOres[ore][1] == null) || isModLoaded(unUsedOres[ore][1])) {
-	// }
+for each(ore in unUsedOres) {
+	if ((ore[1] != null) && isModLoaded(ore[1])) {
+		hideFromNEI(ore[0]);
+	}
 }

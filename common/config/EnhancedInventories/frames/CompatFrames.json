@@ -27,7 +27,7 @@
 		"ColorBlue":10,
 		"FrameType":0,
 		"tier":1,
-		"materials":{ "name": "Railcraft:part.plate", "meta": 3}
+		"materials":{ "name": "ImmersiveEngineering:metal", "meta": 31}
 	},
 	"Tin":{
 		"name":"frame.ore.tin",
@@ -63,7 +63,7 @@
 		"ColorBlue":192,
 		"FrameType":1,
 		"tier":3,
-		"materials":{ "name": "Railcraft:part.plate", "meta": 0}
+		"materials":{ "name": "ImmersiveEngineering:metal", "meta": 30}
 	},
 	"Aluminum":{
 		"name":"Aluminum Frame",
@@ -109,6 +109,15 @@
 		"FrameType":0,
 		"tier":4,
 		"materials":"ingotSteel"
+	},
+	"Steel Plate":{
+		"name":"Steel Plate Frame",
+		"ColorRed":128,
+		"ColorGreen":128,
+		"ColorBlue":128,
+		"FrameType":0,
+		"tier":4,
+		"materials":{ "name": "ImmersiveEngineering:metal", "meta": 38}
 	},
 	"Platinum":{
 		"name":"frame.ore.platinum",

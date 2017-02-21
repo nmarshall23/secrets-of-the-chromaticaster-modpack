@@ -22,17 +22,27 @@ Quest Rewards
 
 Crafting Fixes
 --------------
-* DCsAMT2 Slot Panel receipe should be 4 panels, not one.
+* [X] DCsAMT2 Slot Panel receipe should be 4 panels, not one.
 * [X] In RoC Blasting Furnace, Add receipe for Electrum Alloying
 * [X] Fix Witchery Atuned stone, receipe Should not require diamonds
+* [R] Add Smelting ElcCraf Quartz dust to AE2 Silcon
+* [] Remove BC Flood Gate
+* [R] Add OreDic Recipes for Const in RoC Blast Furnice, or add Forestry and RoC Ingots
 
 Other Changes
 --------------
 * Remove Chisel concrete from smelting gravel. Add ReactorCraft Concrete to oredic, and Chisel group.
 * Remove Pigs from Mounten Bioms
 * Copper, Bronze tools recycleing in Jaw Crusher?
-* Jaw Crusher, add recipe make ingots to dust
+* [R] Fix Enhanced Inventories using Railcraft Plates over IE.
+* [X] Jaw Crusher, add recipe make ingots to dust
+* [R] Add Et Futurum Raw Mutton to allMeats, check meals using Mutton
+* [ ] Garden Trees Posts - Need Receipes to make them with other axes
 
+Food Values
+-----------
+
+* Apple Brownie, 
 
 
 Chromaic Progression Notes

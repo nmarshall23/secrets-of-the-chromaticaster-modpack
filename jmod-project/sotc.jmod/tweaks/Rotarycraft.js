@@ -1,10 +1,10 @@
 var alloyingRecipes = [{
   output: "ingotBronze",
-  ingredient: "ElectriCraft:electricraft_item_ingots:0",
+  ingredient: "ingotTin",
   temperature: 550,
   hasBonusOut: true,
   additives: [{
-    name: "ElectriCraft:electricraft_item_ingots:1",
+    name: "ingotCopper",
     chance: "100",
     decrease: "1"
   }]
@@ -20,11 +20,11 @@ var alloyingRecipes = [{
   }]
 }, {
   output: "ingotConstantan",
-  ingredient: "ElectriCraft:electricraft_item_ingots:3",
+  ingredient: "ingotCopper",
   temperature: 600,
   hasBonusOut: true,
   additives: [{
-    name: "ElectriCraft:electricraft_item_ingots:0",
+    name: "ingotNickel",
     chance: "100",
     decrease: "1"
   }]

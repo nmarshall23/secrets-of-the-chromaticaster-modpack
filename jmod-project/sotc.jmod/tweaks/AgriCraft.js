@@ -1,3 +1,5 @@
+(function() {
+
 loadjs("functions.js");
 
 log('Loaded AgriCraft Tweaks');
@@ -24,3 +26,5 @@ var seedAnalyzer = {
 };
 
 updateShappedRecipe(seedAnalyzer);
+
+})();

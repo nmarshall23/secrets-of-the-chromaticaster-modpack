@@ -60,7 +60,7 @@ shaped=
 shaped=
 	glass	ae2:ItemPart.Terminal	glass,
 	cable						_								cable,
-	oredictionary:plateSteel	fluixCrystal				oredictionary:plateSteel,
+	oredictionary:plateIron		fluixCrystal	oredictionary:plateIron,
 	-> ae2:BlockChest
 
 # Storage
@@ -81,7 +81,7 @@ shaped=
 shaped=
 	ae2:BlockSkyStone:1 ae2:ItemMaterial.PurifiedFluixCrystal ae2:BlockSkyStone:1,
 	ae2:ItemMaterial.PurifiedFluixCrystal ae2:ItemMaterial.EngProcessor ae2:ItemMaterial.PurifiedFluixCrystal,
-	ae2:BlockSkyStone:1 ae2:ItemMaterial.PurifiedFluixCrystal ae2:BlockSkyStone:1
+	TwilightForest:tile.TFMazestone:1 ae2:ItemMaterial.PurifiedFluixCrystal TwilightForest:tile.TFMazestone:1
 	-> ae2:BlockController
 
 shapeless=

@@ -50,6 +50,8 @@ loadjs("cleanup.js");
 
 loadjs("oreDict/AMTAddonJP.js");
 loadjs("oreDict/ChromatiCraft.js");
+
+loadjs("oreDict/etfuturum.js");
 loadjs("oreDict/gears.js");
 loadjs("oreDict/HarderWildlife.js");
 loadjs("oreDict/magnanimoustools.js");
@@ -84,7 +86,7 @@ loadjs("tools.js");
 
 // loadjs("armor.js");
 
-/*
+
 loadjs("tweaks/vanilla.js");
 loadjs("tweaks/AgriCraft.js");
 loadjs("tweaks/AMTAddonJP.js");
@@ -96,7 +98,7 @@ loadjs("tweaks/betterbuilderswands.js");
 loadjs("tweaks/BiblioCraft.js");
 loadjs("tweaks/Botania.js");
 loadjs("tweaks/BuildCraft.js");
-// loadjs("tweaks/catwalks.js");
+loadjs("tweaks/catwalks.js");
 loadjs("tweaks/chisel.js");
 
 loadjs("tweaks/DCsAppleMilk.js");
@@ -105,6 +107,7 @@ loadjs("tweaks/DCsAppleMilk-jawcrush.js");
 loadjs("tweaks/DCsAppleMilk-cookingPlate.js");
 
 
+loadjs("tweaks/ElectriCraft.js");
 
 loadjs("tweaks/ExtraTrees.js");
 loadjs("tweaks/ExtraUtilities.js");
@@ -138,5 +141,5 @@ loadjs("tweaks/witchery.js");
 // loadjs("tweaks/yegamolchattels.js");
 
 
-*/
+
 // loadjs("loot/additions.js");

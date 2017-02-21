@@ -178,7 +178,7 @@ shaped=
 
 shaped=
 	mc:iron_ingot	mc:sticky_piston	mc:iron_ingot,
-	fluixCrystal	_						mc:iron_ingot,
+	fluixCrystal	_						ImmersiveEngineering:material:11,
 	mc:iron_ingot	mc:sticky_piston	mc:iron_ingot
 	-> ae2:BlockInscriber
 

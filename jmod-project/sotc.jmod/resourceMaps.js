@@ -20,7 +20,8 @@ var resourceMetalsMap = {
   Copper: {
     ingotOreDic: "ingotCopper",
     plateOreDic: "plateCopper",
-    dustOreDic: "dustCopper"
+    dustOreDic: "dustCopper",
+    nuggetOreDic: "nuggetCopper"
   },
   Tin: {
     ingotOreDic: "ingotTin",
@@ -58,8 +59,7 @@ var resourceMetalsMap = {
   },
   Steel: {
     ingotOreDic: "ingotSteel",
-    plateOreDic: "plateSteel",
-    dustOreDic: "dustSteel"
+    plateOreDic: "plateSteel"
   },
   Lead: {
     ingotOreDic: "ingotLead",

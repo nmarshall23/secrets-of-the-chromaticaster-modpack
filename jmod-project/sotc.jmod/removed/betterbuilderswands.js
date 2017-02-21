@@ -1,10 +1,14 @@
-var removed = [
-  "betterbuilderswands:wandStone"
-]
+(function() {
 
-for(var n in removed){
-  removeRecipes(removed[n]);
-  hideFromNEI(removed[n]);
-}
+  var removed = [
+    "betterbuilderswands:wandStone"
+  ]
 
-addToolTip(removed ,["info.sotc.jmod.tooltips.removed.item"]);
+  for (var n in removed) {
+    removeRecipes(removed[n]);
+    hideFromNEI(removed[n]);
+  }
+
+  addToolTip(removed, ["info.sotc.jmod.tooltips.removed.item"]);
+
+})();
